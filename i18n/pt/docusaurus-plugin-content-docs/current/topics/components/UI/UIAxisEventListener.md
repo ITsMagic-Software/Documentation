@@ -26,10 +26,12 @@ if (comp != null) {
     comp.axisName = "value";
     // read the axisName value:
     String axisNameValue = comp.axisName;
+
     // set the value value:
     comp.value = new Vector2(1, 1);
     // read the value value:
     Vector2 valueValue = comp.value;
+
 }
 ```
 

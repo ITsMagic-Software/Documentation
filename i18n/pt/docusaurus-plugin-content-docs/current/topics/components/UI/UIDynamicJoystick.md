@@ -27,26 +27,32 @@ if (comp != null) {
     comp.backgroundColor = new Color(255, 255, 255, 255);
     // read the backgroundColor value:
     Color backgroundColorValue = comp.backgroundColor;
+
     // set the backgroundTexture value:
     comp.backgroundTexture = tex;
     // read the backgroundTexture value:
     Texture backgroundTextureValue = comp.backgroundTexture;
+
     // set the handleSize value:
     comp.handleSize = 1;
     // read the handleSize value:
     int handleSizeValue = comp.handleSize;
+
     // set the handlerColor value:
     comp.handlerColor = new Color(255, 255, 255, 255);
     // read the handlerColor value:
     Color handlerColorValue = comp.handlerColor;
+
     // set the handlerTexture value:
     comp.handlerTexture = tex;
     // read the handlerTexture value:
     Texture handlerTextureValue = comp.handlerTexture;
+
     // set the size value:
     comp.size = 1;
     // read the size value:
     int sizeValue = comp.size;
+
 }
 ```
 

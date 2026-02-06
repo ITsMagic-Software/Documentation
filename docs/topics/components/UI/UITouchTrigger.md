@@ -24,6 +24,7 @@ UITouchTrigger comp = myObject.findComponent(UITouchTrigger.class);
 if (comp != null) {
     // read the selectedTouch value:
     Touch selectedTouchValue = comp.selectedTouch;
+
 }
 ```
 

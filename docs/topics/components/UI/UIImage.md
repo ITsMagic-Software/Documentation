@@ -27,14 +27,17 @@ if (comp != null) {
     comp.border = 1f;
     // read the border value:
     float borderValue = comp.border;
+
     // set the color value:
     comp.color = new Color(255, 255, 255, 255);
     // read the color value:
     Color colorValue = comp.color;
+
     // set the texture value:
     comp.texture = tex;
     // read the texture value:
     Texture textureValue = comp.texture;
+
 }
 ```
 

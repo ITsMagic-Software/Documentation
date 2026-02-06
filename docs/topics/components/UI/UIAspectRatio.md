@@ -26,10 +26,12 @@ if (comp != null) {
     comp.mode = new Mode();
     // read the mode value:
     Mode modeValue = comp.mode;
+
     // set the proportion value:
     comp.proportion = 1f;
     // read the proportion value:
     float proportionValue = comp.proportion;
+
 }
 ```
 

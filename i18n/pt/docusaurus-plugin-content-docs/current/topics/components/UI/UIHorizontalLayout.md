@@ -26,6 +26,7 @@ if (comp != null) {
     comp.spacing = 1;
     // read the spacing value:
     int spacingValue = comp.spacing;
+
 }
 ```
 

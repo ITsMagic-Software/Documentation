@@ -27,10 +27,12 @@ if (comp != null) {
     float valueValue = comp.value;
     // read the angle value:
     float angleValue = comp.angle;
+
     // set the lerp value:
     comp.lerp = 1f;
     // read the lerp value:
     float lerpValue = comp.lerp;
+
     // set the maxAngle value:
     comp.maxAngle = 1f;
     // read the maxAngle value:
@@ -41,14 +43,17 @@ if (comp != null) {
     boolean downValue = comp.down;
     // read the up value:
     boolean upValue = comp.up;
+
     // set the color value:
     comp.color = new Color(255, 255, 255, 255);
     // read the color value:
     Color colorValue = comp.color;
+
     // set the texture value:
     comp.texture = tex;
     // read the texture value:
     Texture textureValue = comp.texture;
+
 }
 ```
 

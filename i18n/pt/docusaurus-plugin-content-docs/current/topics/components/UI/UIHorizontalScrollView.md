@@ -26,6 +26,7 @@ if (comp != null) {
     comp.scroll = 1;
     // read the scroll value:
     int scrollValue = comp.scroll;
+
 }
 ```
 

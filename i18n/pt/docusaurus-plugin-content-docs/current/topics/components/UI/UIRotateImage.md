@@ -27,10 +27,12 @@ if (comp != null) {
     comp.angle = 1f;
     // read the angle value:
     float angleValue = comp.angle;
+
     // set the texture value:
     comp.texture = tex;
     // read the texture value:
     Texture textureValue = comp.texture;
+
 }
 ```
 

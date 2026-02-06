@@ -26,14 +26,17 @@ if (comp != null) {
     comp.color = new Color(255, 255, 255, 255);
     // read the color value:
     Color colorValue = comp.color;
+
     // set the text value:
     comp.text = "value";
     // read the text value:
     String textValue = comp.text;
+
     // set the textSize value:
     comp.textSize = 1f;
     // read the textSize value:
     float textSizeValue = comp.textSize;
+
 }
 ```
 

@@ -26,6 +26,7 @@ if (comp != null) {
     comp.maxHitDistance = 1f;
     // read the maxHitDistance value:
     float maxHitDistanceValue = comp.maxHitDistance;
+
 }
 ```
 
