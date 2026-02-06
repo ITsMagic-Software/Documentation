@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vector3.dot Explained</title>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.9.3/lib/p5.min.js"></script>
+    <style>
+      :root { color-scheme: dark; }
+      body {
+        margin: 0;
+        background: #121212;
+        color: #ebebeb;
+        font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+        overflow: hidden;
+      }
+      #hint {
+        position: fixed;
+        left: 12px;
+        bottom: 10px;
+        font-size: 12px;
+        opacity: 0.8;
+      }
+      canvas { display: block; }
+    </style>
+  </head>
+  <body>
+    <div id="hint">Blue: dot &gt; 0 | Yellow: dot ≈ 0 | Red: dot &lt; 0</div>
+    <script>
+      let angle = 0;
+
+      function setup() {
+        createCanvas(window.innerWidth, 420);
+        textFont('monospace');
+      }
+
+      function windowResized() {
+        resizeCanvas(window.innerWidth, 420);
+      }
+
+      function drawArrow(v, col, label) {
+        push();
+        stroke(col);
+        fill(col);
+        strokeWeight(3);
+        line(0, 0, v.x, v.y);
+
+        push();
+        translate(v.x, v.y);
+        rotate(v.heading());
+        triangle(0, 0, -12, 6, -12, -6);
+        pop();
+
+        noStroke();
+        text(label, v.x + 8, v.y + 8);
+        pop();
+      }
+
+      function draw() {
+        background(18);
+        translate(width * 0.5, height * 0.6);
+
+        const a = createVector(1, 0);
+        const b = createVector(cos(angle), sin(angle));
+
+        const dot = a.dot(b);
+        const theta = acos(constrain(dot, -1, 1));
+
+        const scale = 140;
+        const av = p5.Vector.mult(a, scale);
+        const bv = p5.Vector.mult(b, scale);
+
+        stroke(80);
+        strokeWeight(1);
+        line(-width, 0, width, 0);
+        line(0, -height, 0, height);
+
+        let dotColor = color(120, 180, 255);
+        if (abs(dot) < 0.02) dotColor = color(255, 220, 120);
+        if (dot < 0) dotColor = color(255, 120, 120);
+
+        drawArrow(av, color(120, 180, 255), 'A');
+        drawArrow(bv, dotColor, 'B');
+
+        noFill();
+        stroke(230);
+        strokeWeight(2);
+        arc(0, 0, 80, 80, 0, b.heading());
+
+        resetMatrix();
+        fill(235);
+        noStroke();
+        textSize(16);
+        text('Vector A = (1, 0)', 20, 30);
+        text(`Vector B = (${b.x.toFixed(3)}, ${b.y.toFixed(3)})`, 20, 56);
+        text(`dot(A, B) = ${dot.toFixed(3)}`, 20, 82);
+        text(`theta = ${degrees(theta).toFixed(1)}°`, 20, 108);
+
+        angle += 0.02;
+      }
+    </script>
+  </body>
+</html>
