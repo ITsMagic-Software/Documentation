@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Vector Dot Product</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.9.3/lib/p5.min.js"></script>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: #0b0b0b;
+      overflow: hidden;
+      touch-action: none;
+    }
+    canvas {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+<script>
+let size, origin;
+let vecA, vecB;
+let dragA = false, dragB = false;
+
+function setup() {
+  size = min(windowWidth, windowHeight);
+  createCanvas(size, size);
+  origin = createVector(width / 2, height / 2);
+
+  vecA = createVector(width * 0.25, 0);
+  vecB = createVector(0, -height * 0.25);
+
+  textAlign(CENTER, CENTER);
+}
+
+function windowResized() {
+  size = min(windowWidth, windowHeight);
+  resizeCanvas(size, size);
+  origin.set(width / 2, height / 2);
+}
+
+function draw() {
+  background(15);
+  translate(origin.x, origin.y);
+
+  // Axes
+  stroke(60);
+  line(-width, 0, width, 0);
+  line(0, -height, 0, height);
+
+  // Vectors
+  drawVector(vecA, color(0, 200, 255), "A");
+  drawVector(vecB, color(255, 200, 0), "B");
+
+  // Dot product
+  let dot = vecA.dot(vecB);
+  let magA = vecA.mag();
+  let magB = vecB.mag();
+  let align = (magA && magB) ? dot / (magA * magB) : 0;
+
+  // Projection
+  let proj = vecA.copy().normalize().mult(dot / magA);
+  stroke(255, 80, 80);
+  strokeWeight(3);
+  line(0, 0, proj.x, proj.y);
+
+  resetMatrix();
+  drawUI(dot, align);
+}
+
+function drawVector(v, col, label) {
+  stroke(col);
+  strokeWeight(5);
+  line(0, 0, v.x, v.y);
+
+  push();
+  translate(v.x, v.y);
+  rotate(v.heading());
+  fill(col);
+  noStroke();
+  triangle(-12, -7, -12, 7, 0, 0);
+  pop();
+
+  noStroke();
+  fill(col);
+  textSize(size * 0.04);
+  text(label, origin.x + v.x * 1.1, origin.y + v.y * 1.1);
+}
+
+function drawUI(dot, align) {
+  fill(240);
+  noStroke();
+  textSize(size * 0.045);
+  text("Vector Dot Product", width / 2, size * 0.07);
+
+  textSize(size * 0.04);
+  text(
+    "dot(A, B): " + dot.toFixed(1) +
+    "\nalignment: " + align.toFixed(2),
+    width / 2,
+    size * 0.88
+  );
+}
+
+function toVec(x, y) {
+  return createVector(x - origin.x, y - origin.y);
+}
+
+function mousePressed() {
+  let m = toVec(mouseX, mouseY);
+  if (p5.Vector.dist(m, vecA) < 30) dragA = true;
+  if (p5.Vector.dist(m, vecB) < 30) dragB = true;
+}
+
+function mouseDragged() {
+  let m = toVec(mouseX, mouseY);
+  if (dragA) vecA.set(m);
+  if (dragB) vecB.set(m);
+}
+
+function mouseReleased() {
+  dragA = dragB = false;
+}
+
+// Touch
+function touchStarted() { mousePressed(); return false; }
+function touchMoved() { mouseDragged(); return false; }
+function touchEnded() { mouseReleased(); return false; }
+</script>
+</body>
+</html>
