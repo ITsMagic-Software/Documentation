@@ -1,8 +1,0 @@
-:root {
-  --aa-search-input-height: 36px;
-}
-
-body.dark,
-body[data-theme="dark"] {
-  --aa-muted-color-alpha: 1;
-}

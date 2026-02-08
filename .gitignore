@@ -6,3 +6,4 @@ yarn-error.log*
 /node_modules/.cache/
 /node_modules/.cache/webpack/
 /tools/secrets/
+node_modules/
