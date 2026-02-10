@@ -1,7 +1,3 @@
-import Links from '../../../links.mdx';
-
-<Links />
-
 # Component
 
 Referência completa da API de `Component`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -47,65 +43,65 @@ public class Component extends InspectorMemory
 
 | Signature | Returns | Description |
 | --- | --- | --- |
-| setComponentObject([SpatialObject]) | [void] | Executa `setComponentObject` e retorna quando a chamada do motor termina. |
-| getComponentInspector() | [ComponentInspector] | Executa `getComponentInspector` e retorna quando a chamada do motor termina. |
-| start() | [void] | Executa a operação start. |
-| preRepeat() | [void] | Executa a operação preRepeat. |
-| parallelRepeat() | [void] | Executa a operação parallelRepeat. |
-| disabledParallelRepeat() | [void] | Executa a operação disabledParallelRepeat. |
-| repeat() | [void] | Executa a operação repeat. |
-| disabledRepeat() | [void] | Executa a operação disabledRepeat. |
-| stoppedRepeat() | [void] | Executa a operação stoppedRepeat. |
-| pausedRepeat() | [void] | Executa a operação pausedRepeat. |
-| onDetach() | [void] | Executa a operação onDetach. |
-| prePhysics() | [void] | Executa a operação prePhysics. |
-| posPhysics() | [void] | Executa a operação posPhysics. |
-| posWheelPhysics() | [void] | Executa a operação posWheelPhysics. |
-| onCollision([Collision]) | [void] | Executa a operação onCollision usando os parâmetros informados (collision). |
-| onCollisionEnter([Collision]) | [void] | Executa a operação onCollisionEnter usando os parâmetros informados (collision). |
-| onCollisionStop([Collision]) | [void] | Executa a operação onCollisionStop usando os parâmetros informados (collision). |
-| onKeyDown([Key]) | [void] | Executa a operação onKeyDown usando os parâmetros informados (key). |
-| onKeyPressed([Key]) | [void] | Executa a operação onKeyPressed usando os parâmetros informados (key). |
-| onKeyUp([Key]) | [void] | Executa a operação onKeyUp usando os parâmetros informados (key). |
-| invoke([float], [Runnable]) | [void] | Executa a operação invoke usando os parâmetros informados (delaySeconds, invokeListener). |
-| invokeFrames([int], [Runnable]) | [void] | Executa a operação invokeFrames usando os parâmetros informados (frames, invokeListener). |
-| invoke([float], [InvokeListener]) | [void] | Executa a operação invoke usando os parâmetros informados (delaySeconds, invokeListener). |
-| invokeFrames([int], [InvokeListener]) | [void] | Executa a operação invokeFrames usando os parâmetros informados (frames, invokeListener). |
-| cancelAllInvokes() | [void] | Executa a operação cancelAllInvokes. |
-| print([String]) | [void] | Executa a operação print usando os parâmetros informados (message). |
-| print([Quaternion]) | [void] | Executa a operação print usando os parâmetros informados (message). |
-| print([Vector3]) | [void] | Executa a operação print usando os parâmetros informados (message). |
-| print([Vector2]) | [void] | Executa a operação print usando os parâmetros informados (message). |
-| print([Object]) | [void] | Executa a operação print usando os parâmetros informados (message). |
-| print([int]) | [void] | Executa a operação print usando os parâmetros informados (t). |
-| print([float]) | [void] | Executa a operação print usando os parâmetros informados (t). |
-| print([double]) | [void] | Executa a operação print usando os parâmetros informados (t). |
-| print([long]) | [void] | Executa a operação print usando os parâmetros informados (t). |
-| print([char]) | [void] | Executa a operação print usando os parâmetros informados (t). |
-| print([short]) | [void] | Executa a operação print usando os parâmetros informados (t). |
-| getComponentMenu() | [String] | Retorna a propriedade `propriedade `component menu atual``. |
-| getComponentColor() | [Color] | Retorna a propriedade `propriedade `component color atual``. |
-| getComponentTittle() | [String] | Retorna a propriedade `propriedade `component tittle atual``. |
-| setInspector([ComponentInspector]) | [void] | Define ou atualiza a propriedade `propriedade `inspector``. |
-| getUserData() | &[lt];[T] [extends] [Object]&[gt]; [T] | Retorna a propriedade `propriedade `user data atual``. |
-| setUserData([Object]) | [void] | Define ou atualiza a propriedade `propriedade `user data``. |
-| destroy() | [void] | Executa a operação destroy. |
-| isHierarchyActive() | [boolean] | Retorna se hierarchy active é verdadeiro. |
-| getTittle() | [String] | Retorna a propriedade `propriedade `nome do componente``. |
-| componentClassMatch([Component], [Component], [Class]) | [boolean] | Executa `componentClassMatch` e retorna quando a chamada do motor termina. |
-| componentClassMatch([Component], [Component]) | [boolean] | Executa `componentClassMatch` e retorna quando a chamada do motor termina. |
-| getEngineComponent() | [Component] | Executa `getEngineComponent` e retorna quando a chamada do motor termina. |
-| getGUID() | [GUID] | Retorna a propriedade `propriedade `guid atual``. |
-| toString() | [String] | Retorna a propriedade `representação em string`. |
-| callFunction([String]) | [void] | Executa a operação callFunction usando os parâmetros informados (name). |
-| callFunction([String], [int]) | [void] | Executa a operação callFunction usando os parâmetros informados (name, args). |
-| callFunction([String], [float]) | [void] | Executa a operação callFunction usando os parâmetros informados (name, args). |
-| callFunction([String], [String]) | [void] | Executa a operação callFunction usando os parâmetros informados (name, args). |
-| callFunction([String], [boolean]) | [void] | Executa a operação callFunction usando os parâmetros informados (name, args). |
-| callFunction([String], [[Object]...]) | [void] | Executa a operação callFunction usando os parâmetros informados (name, args). |
+| `setComponentObject(SpatialObject)` | `void` | Executa `setComponentObject` e retorna quando a chamada do motor termina. |
+| `getComponentInspector()` | `ComponentInspector` | Executa `getComponentInspector` e retorna quando a chamada do motor termina. |
+| `start()` | `void` | Executa a operação start. |
+| `preRepeat()` | `void` | Executa a operação preRepeat. |
+| `parallelRepeat()` | `void` | Executa a operação parallelRepeat. |
+| `disabledParallelRepeat()` | `void` | Executa a operação disabledParallelRepeat. |
+| `repeat()` | `void` | Executa a operação repeat. |
+| `disabledRepeat()` | `void` | Executa a operação disabledRepeat. |
+| `stoppedRepeat()` | `void` | Executa a operação stoppedRepeat. |
+| `pausedRepeat()` | `void` | Executa a operação pausedRepeat. |
+| `onDetach()` | `void` | Executa a operação onDetach. |
+| `prePhysics()` | `void` | Executa a operação prePhysics. |
+| `posPhysics()` | `void` | Executa a operação posPhysics. |
+| `posWheelPhysics()` | `void` | Executa a operação posWheelPhysics. |
+| `onCollision(Collision)` | `void` | Executa a operação onCollision usando os parâmetros informados (collision). |
+| `onCollisionEnter(Collision)` | `void` | Executa a operação onCollisionEnter usando os parâmetros informados (collision). |
+| `onCollisionStop(Collision)` | `void` | Executa a operação onCollisionStop usando os parâmetros informados (collision). |
+| `onKeyDown(Key)` | `void` | Executa a operação onKeyDown usando os parâmetros informados (key). |
+| `onKeyPressed(Key)` | `void` | Executa a operação onKeyPressed usando os parâmetros informados (key). |
+| `onKeyUp(Key)` | `void` | Executa a operação onKeyUp usando os parâmetros informados (key). |
+| `invoke(float, Runnable)` | `void` | Executa a operação invoke usando os parâmetros informados (delaySeconds, invokeListener). |
+| `invokeFrames(int, Runnable)` | `void` | Executa a operação invokeFrames usando os parâmetros informados (frames, invokeListener). |
+| `invoke(float, InvokeListener)` | `void` | Executa a operação invoke usando os parâmetros informados (delaySeconds, invokeListener). |
+| `invokeFrames(int, InvokeListener)` | `void` | Executa a operação invokeFrames usando os parâmetros informados (frames, invokeListener). |
+| `cancelAllInvokes()` | `void` | Executa a operação cancelAllInvokes. |
+| `print(String)` | `void` | Executa a operação print usando os parâmetros informados (message). |
+| `print(Quaternion)` | `void` | Executa a operação print usando os parâmetros informados (message). |
+| `print(Vector3)` | `void` | Executa a operação print usando os parâmetros informados (message). |
+| `print(Vector2)` | `void` | Executa a operação print usando os parâmetros informados (message). |
+| `print(Object)` | `void` | Executa a operação print usando os parâmetros informados (message). |
+| `print(int)` | `void` | Executa a operação print usando os parâmetros informados (t). |
+| `print(float)` | `void` | Executa a operação print usando os parâmetros informados (t). |
+| `print(double)` | `void` | Executa a operação print usando os parâmetros informados (t). |
+| `print(long)` | `void` | Executa a operação print usando os parâmetros informados (t). |
+| `print(char)` | `void` | Executa a operação print usando os parâmetros informados (t). |
+| `print(short)` | `void` | Executa a operação print usando os parâmetros informados (t). |
+| `getComponentMenu()` | `String` | Retorna a propriedade `propriedade `component menu atual``. |
+| `getComponentColor()` | `Color` | Retorna a propriedade `propriedade `component color atual``. |
+| `getComponentTittle()` | `String` | Retorna a propriedade `propriedade `component tittle atual``. |
+| `setInspector(ComponentInspector)` | `void` | Define ou atualiza a propriedade `propriedade `inspector``. |
+| `getUserData()` | `<T extends Object> T` | Retorna a propriedade `propriedade `user data atual``. |
+| `setUserData(Object)` | `void` | Define ou atualiza a propriedade `propriedade `user data``. |
+| `destroy()` | `void` | Executa a operação destroy. |
+| `isHierarchyActive()` | `boolean` | Retorna se hierarchy active é verdadeiro. |
+| `getTittle()` | `String` | Retorna a propriedade `propriedade `nome do componente``. |
+| `componentClassMatch(Component, Component, Class)` | `boolean` | Executa `componentClassMatch` e retorna quando a chamada do motor termina. |
+| `componentClassMatch(Component, Component)` | `boolean` | Executa `componentClassMatch` e retorna quando a chamada do motor termina. |
+| `getEngineComponent()` | `Component` | Executa `getEngineComponent` e retorna quando a chamada do motor termina. |
+| `getGUID()` | `GUID` | Retorna a propriedade `propriedade `guid atual``. |
+| `toString()` | `String` | Retorna a propriedade `representação em string`. |
+| `callFunction(String)` | `void` | Executa a operação callFunction usando os parâmetros informados (name). |
+| `callFunction(String, int)` | `void` | Executa a operação callFunction usando os parâmetros informados (name, args). |
+| `callFunction(String, float)` | `void` | Executa a operação callFunction usando os parâmetros informados (name, args). |
+| `callFunction(String, String)` | `void` | Executa a operação callFunction usando os parâmetros informados (name, args). |
+| `callFunction(String, boolean)` | `void` | Executa a operação callFunction usando os parâmetros informados (name, args). |
+| `callFunction(String, Object...)` | `void` | Executa a operação callFunction usando os parâmetros informados (name, args). |
 
 ## Métodos Estáticos (1)
 
 | Signature | Returns | Description |
 | --- | --- | --- |
-| inspectorController() | [ClassInspectorEntry] | Executa `inspectorController` e retorna quando a chamada do motor termina. |
+| `inspectorController()` | `ClassInspectorEntry` | Executa `inspectorController` e retorna quando a chamada do motor termina. |

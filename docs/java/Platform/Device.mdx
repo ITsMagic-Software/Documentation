@@ -1,7 +1,3 @@
-import Links from '../../links.mdx';
-
-<Links />
-
 # Device
 
 Complete API reference for `Device`, including constructors, attributes, virtual attributes, and methods.
@@ -22,13 +18,13 @@ public class Device
 
 | Signature | Returns | Description |
 | --- | --- | --- |
-| getBatteryPercentage() | [int] | Returns the device's battery percentage. |
-| availableProcessors() | [int] | Returns the number of available processors on the device. |
-| openURL([String]) | [void] | Opens the specified URL in the default web browser. |
-| openLink([String]) | [void] | Opens the specified link in the default web browser. |
-| vibrateOneShot([long]) | [void] | Vibrates the device for the specified duration (in milliseconds). |
-| vibratePattern([long][], [int]) | [void] | Makes the device vibrate following the time durations (in milliseconds) defined in the array, alternating between vibration and pause (starting with a pause). After completing the array, the repetition begins at the specified index (-1 to not repeat). |
-| stopVibrate() | [void] | Stops any ongoing vibration on the device. |
-| setMouseVisible([boolean]) | [void] | Sets the visibility of the mouse cursor on the device. |
-| setClipboard([String]) | [void] | Copies the given text to the device's clipboard. |
-| getClipboard() | [String] | Returns the text in the device's clipboard. |
+| `getBatteryPercentage()` | `int` | Returns the device's battery percentage. |
+| `availableProcessors()` | `int` | Returns the number of available processors on the device. |
+| `openURL(String)` | `void` | Opens the specified URL in the default web browser. |
+| `openLink(String)` | `void` | Opens the specified link in the default web browser. |
+| `vibrateOneShot(long)` | `void` | Vibrates the device for the specified duration (in milliseconds). |
+| `vibratePattern(long[], int)` | `void` | Makes the device vibrate following the time durations (in milliseconds) defined in the array, alternating between vibration and pause (starting with a pause). After completing the array, the repetition begins at the specified index (-1 to not repeat). |
+| `stopVibrate()` | `void` | Stops any ongoing vibration on the device. |
+| `setMouseVisible(boolean)` | `void` | Sets the visibility of the mouse cursor on the device. |
+| `setClipboard(String)` | `void` | Copies the given text to the device's clipboard. |
+| `getClipboard()` | `String` | Returns the text in the device's clipboard. |

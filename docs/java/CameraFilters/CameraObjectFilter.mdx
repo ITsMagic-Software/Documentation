@@ -1,7 +1,3 @@
-import Links from '../../links.mdx';
-
-<Links />
-
 # CameraObjectFilter
 
 Complete API reference for `CameraObjectFilter`, including constructors, attributes, virtual attributes, and methods.
@@ -22,18 +18,18 @@ public interface CameraObjectFilter
 
 | Signature | Returns | Description |
 | --- | --- | --- |
-| filterShadow() | [boolean] | Filters which Shadow will be rendered. Return true to render and false to ignore. |
-| @MethodArgs([\{"renderer"\}]) | [void] | Filters which ModelRenderer will be rendered. Return true to render and false to ignore. |
-| filterRenderer([ModelRenderer]) | [boolean] | Executes `filterRenderer` and returns after the underlying engine call finishes. |
-| @MethodArgs([\{"renderer"\}]) | [void] | Filters which SkinnedModelRenderer will be rendered. Return true to render and false to ignore. |
-| filterRenderer([SkinnedModelRenderer]) | [boolean] | Executes `filterRenderer` and returns after the underlying engine call finishes. |
-| @MethodArgs([\{"material"], ["bake"\}]) | [void] | Filters which Bake will be rendered. Return true to render and false to ignore. |
-| filterMaterialBake([Material], [Vertex]) | [boolean] | Executes `filterMaterialBake` and returns after the underlying engine call finishes. |
-| @MethodArgs([\{"component"\}]) | [void] | Filters which 3DText will be rendered. Return true to render and false to ignore. |
-| filter3DText([Component]) | [boolean] | Executes `filter3DText` and returns after the underlying engine call finishes. |
-| renderFog() | [boolean] | Defines whether the Fog will render. Return true to render and false to ignore. |
-| renderParticles() | [boolean] | Defines whether Particles will render. Return true to render and false to ignore. |
-| @MethodArgs([\{"particleEmitter"\}]) | [void] | Filters which ParticleEmitter will be rendered. Return true to render and false to ignore. |
-| filterParticle([ParticleEmitter]) | [boolean] | Executes `filterParticle` and returns after the underlying engine call finishes. |
-| overrideAmbientLight() | [Color] | Overrides the Ambient Light Color. Return the Color that will override. |
-| overrideIndirectLight() | [Color] | Overrides the Indirect Light Color. Return the Color that will override. |
+| `filterShadow()` | `boolean` | Filters which Shadow will be rendered. Return true to render and false to ignore. |
+| `@MethodArgs([\{"renderer"\}])` | `void` | Filters which ModelRenderer will be rendered. Return true to render and false to ignore. |
+| `filterRenderer(ModelRenderer)` | `boolean` | Executes `filterRenderer` and returns after the underlying engine call finishes. |
+| `@MethodArgs([\{"renderer"\}])` | `void` | Filters which SkinnedModelRenderer will be rendered. Return true to render and false to ignore. |
+| `filterRenderer(SkinnedModelRenderer)` | `boolean` | Executes `filterRenderer` and returns after the underlying engine call finishes. |
+| `@MethodArgs([\{"material"], ["bake"\}])` | `void` | Filters which Bake will be rendered. Return true to render and false to ignore. |
+| `filterMaterialBake(Material, Vertex)` | `boolean` | Executes `filterMaterialBake` and returns after the underlying engine call finishes. |
+| `@MethodArgs([\{"component"\}])` | `void` | Filters which 3DText will be rendered. Return true to render and false to ignore. |
+| `filter3DText(Component)` | `boolean` | Executes `filter3DText` and returns after the underlying engine call finishes. |
+| `renderFog()` | `boolean` | Defines whether the Fog will render. Return true to render and false to ignore. |
+| `renderParticles()` | `boolean` | Defines whether Particles will render. Return true to render and false to ignore. |
+| `@MethodArgs([\{"particleEmitter"\}])` | `void` | Filters which ParticleEmitter will be rendered. Return true to render and false to ignore. |
+| `filterParticle(ParticleEmitter)` | `boolean` | Executes `filterParticle` and returns after the underlying engine call finishes. |
+| `overrideAmbientLight()` | `Color` | Overrides the Ambient Light Color. Return the Color that will override. |
+| `overrideIndirectLight()` | `Color` | Overrides the Indirect Light Color. Return the Color that will override. |

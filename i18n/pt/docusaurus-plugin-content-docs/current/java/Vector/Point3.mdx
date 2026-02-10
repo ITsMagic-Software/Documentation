@@ -1,7 +1,3 @@
-import Links from '../../links.mdx';
-
-<Links />
-
 # Point3
 
 Referência completa da API de `Point3`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -45,66 +41,66 @@ public class Point3
 
 | Signature | Returns | Description |
 | --- | --- | --- |
-| mul([Point3]) | [Point3] | Executa a operação mul usando os parâmetros informados (value). |
-| mul([int], [int], [int]) | [Point3] | Executa a operação mul usando os parâmetros informados (x, y, z). |
-| mul([int]) | [Point3] | Executa a operação mul usando os parâmetros informados (a). |
-| mulLocal([Vector3]) | [void] | Executa a operação mulLocal usando os parâmetros informados (value). |
-| mulLocal([Point3]) | [void] | Executa a operação mulLocal usando os parâmetros informados (value). |
-| mulLocal([float], [float], [float]) | [void] | Executa a operação mulLocal usando os parâmetros informados (x, y, z). |
-| mulLocal([float]) | [void] | Executa a operação mulLocal usando os parâmetros informados (a). |
-| div([Point3]) | [Point3] | Executa a operação div usando os parâmetros informados (value). |
-| div([int], [int], [int]) | [Point3] | Executa a operação div usando os parâmetros informados (x, y, z). |
-| div([int]) | [Point3] | Executa a operação div usando os parâmetros informados (a). |
-| divLocal([Vector3]) | [void] | Executa a operação divLocal usando os parâmetros informados (value). |
-| divLocal([Point3]) | [void] | Executa a operação divLocal usando os parâmetros informados (value). |
-| divLocal([float], [float], [float]) | [void] | Executa a operação divLocal usando os parâmetros informados (x, y, z). |
-| divLocal([float]) | [void] | Executa a operação divLocal usando os parâmetros informados (a). |
-| sum([Point3]) | [Point3] | Executa a operação sum usando os parâmetros informados (value). |
-| sum([int], [int], [int]) | [Point3] | Executa a operação sum usando os parâmetros informados (x, y, z). |
-| sum([int]) | [Point3] | Executa a operação sum usando os parâmetros informados (a). |
-| sumLocal([Vector3]) | [void] | Executa a operação sumLocal usando os parâmetros informados (value). |
-| sumLocal([Point3]) | [void] | Executa a operação sumLocal usando os parâmetros informados (value). |
-| sumLocal([float], [float], [float]) | [void] | Executa a operação sumLocal usando os parâmetros informados (x, y, z). |
-| sumLocal([float]) | [void] | Executa a operação sumLocal usando os parâmetros informados (a). |
-| sub([Point3]) | [Point3] | Executa a operação sub usando os parâmetros informados (value). |
-| sub([int], [int], [int]) | [Point3] | Executa a operação sub usando os parâmetros informados (x, y, z). |
-| sub([int]) | [Point3] | Executa a operação sub usando os parâmetros informados (a). |
-| subLocal([Vector3]) | [void] | Executa a operação subLocal usando os parâmetros informados (value). |
-| subLocal([Point3]) | [void] | Executa a operação subLocal usando os parâmetros informados (value). |
-| subLocal([float], [float], [float]) | [void] | Executa a operação subLocal usando os parâmetros informados (x, y, z). |
-| subLocal([float]) | [void] | Executa a operação subLocal usando os parâmetros informados (a). |
-| equals([Point3]) | [boolean] | Compara esta instância com outra para igualdade/ordem. |
-| equals([int], [int], [int]) | [boolean] | Compara esta instância com outra para igualdade/ordem. |
-| equals([int]) | [boolean] | Compara esta instância com outra para igualdade/ordem. |
-| set([Point3]) | [void] | Define ou atualiza the value. |
-| set([int], [int], [int]) | [void] | Define ou atualiza the value. |
-| set([int]) | [void] | Define ou atualiza the value. |
-| lerp([Point3], [int]) | [void] | Executa a operação lerp usando os parâmetros informados (vector3, speed). |
-| lerp([int], [int], [int], [int]) | [void] | Executa a operação lerp usando os parâmetros informados (x, y, z, speed). |
-| lerp([int], [int]) | [void] | Executa a operação lerp usando os parâmetros informados (a, speed). |
-| lerpInSeconds([Point3], [int]) | [void] | Executa a operação lerpInSeconds usando os parâmetros informados (vector3, speed). |
-| lerpInSeconds([int], [int], [int], [int]) | [void] | Executa a operação lerpInSeconds usando os parâmetros informados (x, y, z, speed). |
-| lerpInSeconds([int], [int]) | [void] | Executa a operação lerpInSeconds usando os parâmetros informados (a, speed). |
-| blend([Point3], [int]) | [void] | Executa a operação blend usando os parâmetros informados (vector3, blend). |
-| blend([int], [int], [int], [int]) | [void] | Executa a operação blend usando os parâmetros informados (x, y, z, blend). |
-| blend([int], [int]) | [void] | Executa a operação blend usando os parâmetros informados (a, blend). |
-| normalize() | [Point3] | Executa a operação normalize. |
-| normalizeLocal() | [void] | Executa a operação normalizeLocal. |
-| length() | [float] | Executa a operação length. |
-| sqrLength() | [float] | Executa a operação sqrLength. |
-| distance([Point3]) | [float] | Executa a operação distance usando os parâmetros informados (vector3). |
-| sqrDistance([Point3]) | [float] | Executa a operação sqrDistance usando os parâmetros informados (vector3). |
-| dot([Point3]) | [float] | Executa a operação dot usando os parâmetros informados (vector3). |
-| dot([int], [int], [int]) | [float] | Executa a operação dot usando os parâmetros informados (x, y, z). |
-| dot([int]) | [float] | Executa a operação dot usando os parâmetros informados (a). |
-| cross([Point3]) | [Vector3] | Executa a operação cross usando os parâmetros informados (value). |
-| cross([int], [int], [int]) | [Vector3] | Executa a operação cross usando os parâmetros informados (x, y, z). |
-| copy() | [Point3] | Retorna uma cópia da instância de Point3. |
-| toString() | [String] | Retorna a propriedade `representação em string`. |
+| `mul(Point3)` | `Point3` | Executa a operação mul usando os parâmetros informados (value). |
+| `mul(int, int, int)` | `Point3` | Executa a operação mul usando os parâmetros informados (x, y, z). |
+| `mul(int)` | `Point3` | Executa a operação mul usando os parâmetros informados (a). |
+| `mulLocal(Vector3)` | `void` | Executa a operação mulLocal usando os parâmetros informados (value). |
+| `mulLocal(Point3)` | `void` | Executa a operação mulLocal usando os parâmetros informados (value). |
+| `mulLocal(float, float, float)` | `void` | Executa a operação mulLocal usando os parâmetros informados (x, y, z). |
+| `mulLocal(float)` | `void` | Executa a operação mulLocal usando os parâmetros informados (a). |
+| `div(Point3)` | `Point3` | Executa a operação div usando os parâmetros informados (value). |
+| `div(int, int, int)` | `Point3` | Executa a operação div usando os parâmetros informados (x, y, z). |
+| `div(int)` | `Point3` | Executa a operação div usando os parâmetros informados (a). |
+| `divLocal(Vector3)` | `void` | Executa a operação divLocal usando os parâmetros informados (value). |
+| `divLocal(Point3)` | `void` | Executa a operação divLocal usando os parâmetros informados (value). |
+| `divLocal(float, float, float)` | `void` | Executa a operação divLocal usando os parâmetros informados (x, y, z). |
+| `divLocal(float)` | `void` | Executa a operação divLocal usando os parâmetros informados (a). |
+| `sum(Point3)` | `Point3` | Executa a operação sum usando os parâmetros informados (value). |
+| `sum(int, int, int)` | `Point3` | Executa a operação sum usando os parâmetros informados (x, y, z). |
+| `sum(int)` | `Point3` | Executa a operação sum usando os parâmetros informados (a). |
+| `sumLocal(Vector3)` | `void` | Executa a operação sumLocal usando os parâmetros informados (value). |
+| `sumLocal(Point3)` | `void` | Executa a operação sumLocal usando os parâmetros informados (value). |
+| `sumLocal(float, float, float)` | `void` | Executa a operação sumLocal usando os parâmetros informados (x, y, z). |
+| `sumLocal(float)` | `void` | Executa a operação sumLocal usando os parâmetros informados (a). |
+| `sub(Point3)` | `Point3` | Executa a operação sub usando os parâmetros informados (value). |
+| `sub(int, int, int)` | `Point3` | Executa a operação sub usando os parâmetros informados (x, y, z). |
+| `sub(int)` | `Point3` | Executa a operação sub usando os parâmetros informados (a). |
+| `subLocal(Vector3)` | `void` | Executa a operação subLocal usando os parâmetros informados (value). |
+| `subLocal(Point3)` | `void` | Executa a operação subLocal usando os parâmetros informados (value). |
+| `subLocal(float, float, float)` | `void` | Executa a operação subLocal usando os parâmetros informados (x, y, z). |
+| `subLocal(float)` | `void` | Executa a operação subLocal usando os parâmetros informados (a). |
+| `equals(Point3)` | `boolean` | Compara esta instância com outra para igualdade/ordem. |
+| `equals(int, int, int)` | `boolean` | Compara esta instância com outra para igualdade/ordem. |
+| `equals(int)` | `boolean` | Compara esta instância com outra para igualdade/ordem. |
+| `set(Point3)` | `void` | Define ou atualiza the value. |
+| `set(int, int, int)` | `void` | Define ou atualiza the value. |
+| `set(int)` | `void` | Define ou atualiza the value. |
+| `lerp(Point3, int)` | `void` | Executa a operação lerp usando os parâmetros informados (vector3, speed). |
+| `lerp(int, int, int, int)` | `void` | Executa a operação lerp usando os parâmetros informados (x, y, z, speed). |
+| `lerp(int, int)` | `void` | Executa a operação lerp usando os parâmetros informados (a, speed). |
+| `lerpInSeconds(Point3, int)` | `void` | Executa a operação lerpInSeconds usando os parâmetros informados (vector3, speed). |
+| `lerpInSeconds(int, int, int, int)` | `void` | Executa a operação lerpInSeconds usando os parâmetros informados (x, y, z, speed). |
+| `lerpInSeconds(int, int)` | `void` | Executa a operação lerpInSeconds usando os parâmetros informados (a, speed). |
+| `blend(Point3, int)` | `void` | Executa a operação blend usando os parâmetros informados (vector3, blend). |
+| `blend(int, int, int, int)` | `void` | Executa a operação blend usando os parâmetros informados (x, y, z, blend). |
+| `blend(int, int)` | `void` | Executa a operação blend usando os parâmetros informados (a, blend). |
+| `normalize()` | `Point3` | Executa a operação normalize. |
+| `normalizeLocal()` | `void` | Executa a operação normalizeLocal. |
+| `length()` | `float` | Executa a operação length. |
+| `sqrLength()` | `float` | Executa a operação sqrLength. |
+| `distance(Point3)` | `float` | Executa a operação distance usando os parâmetros informados (vector3). |
+| `sqrDistance(Point3)` | `float` | Executa a operação sqrDistance usando os parâmetros informados (vector3). |
+| `dot(Point3)` | `float` | Executa a operação dot usando os parâmetros informados (vector3). |
+| `dot(int, int, int)` | `float` | Executa a operação dot usando os parâmetros informados (x, y, z). |
+| `dot(int)` | `float` | Executa a operação dot usando os parâmetros informados (a). |
+| `cross(Point3)` | `Vector3` | Executa a operação cross usando os parâmetros informados (value). |
+| `cross(int, int, int)` | `Vector3` | Executa a operação cross usando os parâmetros informados (x, y, z). |
+| `copy()` | `Point3` | Retorna uma cópia da instância de Point3. |
+| `toString()` | `String` | Retorna a propriedade `representação em string`. |
 
 ## Métodos Estáticos (2)
 
 | Signature | Returns | Description |
 | --- | --- | --- |
-| inspectorController() | [ClassInspectorEntry] | Executa `inspectorController` e retorna quando a chamada do motor termina. |
-| zero() | [Point3] | Executa a operação zero. |
+| `inspectorController()` | `ClassInspectorEntry` | Executa `inspectorController` e retorna quando a chamada do motor termina. |
+| `zero()` | `Point3` | Executa a operação zero. |

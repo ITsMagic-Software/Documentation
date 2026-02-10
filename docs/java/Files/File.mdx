@@ -1,7 +1,3 @@
-import Links from '../../links.mdx';
-
-<Links />
-
 # File
 
 Complete API reference for `File`, including constructors, attributes, virtual attributes, and methods.
@@ -35,58 +31,58 @@ public class File extends File
 
 | Signature | Returns | Description |
 | --- | --- | --- |
-| getName() | [String] | Returns the current name. |
-| getParent() | [String] | Returns the current parent. |
-| getParentFile() | [File] | Returns the current parent file. |
-| getPath() | [String] | Returns the current path. |
-| isAbsolute() | [boolean] | Returns whether absolute is true. |
-| getAbsolutePath() | [String] | Returns the current absolute path. |
-| getAbsoluteFile() | [File] | Returns the current absolute file. |
-| getCanonicalPath() | [String] | Executes `getCanonicalPath` and returns after the underlying engine call finishes. |
-| getCanonicalFile() | [File] | Executes `getCanonicalFile` and returns after the underlying engine call finishes. |
-| toURL() | [URL] | Executes `toURL` and returns after the underlying engine call finishes. |
-| toURI() | [URI] | Executes `toURI` and returns after the underlying engine call finishes. |
-| canRead() | [boolean] | Returns whether read is true. |
-| canWrite() | [boolean] | Returns whether write is true. |
-| exists() | [boolean] | Executes `exists` and returns after the underlying engine call finishes. |
-| isDirectory() | [boolean] | Returns whether directory is true. |
-| isFile() | [boolean] | Returns whether file is true. |
-| isHidden() | [boolean] | Returns whether hidden is true. |
-| lastModified() | [long] | Executes `lastModified` and returns after the underlying engine call finishes. |
-| length() | [long] | Executes `length` and returns after the underlying engine call finishes. |
-| createNewFile() | [boolean] | Executes `createNewFile` and returns after the underlying engine call finishes. |
-| delete() | [boolean] | Removes an item from the collection. |
-| deleteOnExit() | [void] | Removes on exit from the collection. |
-| list() | [String][] | Executes `list` and returns after the underlying engine call finishes. |
-| list([FilenameFilter]) | [String][] | Performs the list operation using the provided parameters (filter). |
-| listFiles() | [File][] | Executes `listFiles` and returns after the underlying engine call finishes. |
-| listFiles([FilenameFilter]) | [File][] | Performs the listFiles operation using the provided parameters (filter). |
-| listFiles([FileFilter]) | [File][] | Performs the listFiles operation using the provided parameters (filter). |
-| mkdir() | [boolean] | Executes `mkdir` and returns after the underlying engine call finishes. |
-| mkdirs() | [boolean] | Executes `mkdirs` and returns after the underlying engine call finishes. |
-| renameTo([File]) | [boolean] | Performs the renameTo operation using the provided parameters (dest). |
-| setLastModified([long]) | [boolean] | Sets or updates the last modified. |
-| setReadOnly() | [boolean] | Sets or updates the read only. |
-| setWritable([boolean], [boolean]) | [boolean] | Sets or updates the writable. |
-| setWritable([boolean]) | [boolean] | Sets or updates the writable. |
-| setReadable([boolean], [boolean]) | [boolean] | Sets or updates the readable. |
-| setReadable([boolean]) | [boolean] | Sets or updates the readable. |
-| setExecutable([boolean], [boolean]) | [boolean] | Sets or updates the executable. |
-| setExecutable([boolean]) | [boolean] | Sets or updates the executable. |
-| canExecute() | [boolean] | Returns whether execute is true. |
-| getTotalSpace() | [long] | Returns the current total space. |
-| getFreeSpace() | [long] | Returns the current free space. |
-| getUsableSpace() | [long] | Returns the current usable space. |
-| compareTo([File]) | [int] | Compares this instance with another for equality/order. |
-| equals([Object]) | [boolean] | Compares this instance with another for equality/order. |
-| hashCode() | [int] | Returns whether code is true. |
-| toPath() | [Path] | Executes `toPath` and returns after the underlying engine call finishes. |
-| isAccessible() | [boolean] | Returns whether accessible is true. |
-| isAccessible([String]) | [boolean] | Returns whether accessible is true. |
+| `getName()` | `String` | Returns the current name. |
+| `getParent()` | `String` | Returns the current parent. |
+| `getParentFile()` | `File` | Returns the current parent file. |
+| `getPath()` | `String` | Returns the current path. |
+| `isAbsolute()` | `boolean` | Returns whether absolute is true. |
+| `getAbsolutePath()` | `String` | Returns the current absolute path. |
+| `getAbsoluteFile()` | `File` | Returns the current absolute file. |
+| `getCanonicalPath()` | `String` | Executes `getCanonicalPath` and returns after the underlying engine call finishes. |
+| `getCanonicalFile()` | `File` | Executes `getCanonicalFile` and returns after the underlying engine call finishes. |
+| `toURL()` | `URL` | Executes `toURL` and returns after the underlying engine call finishes. |
+| `toURI()` | `URI` | Executes `toURI` and returns after the underlying engine call finishes. |
+| `canRead()` | `boolean` | Returns whether read is true. |
+| `canWrite()` | `boolean` | Returns whether write is true. |
+| `exists()` | `boolean` | Executes `exists` and returns after the underlying engine call finishes. |
+| `isDirectory()` | `boolean` | Returns whether directory is true. |
+| `isFile()` | `boolean` | Returns whether file is true. |
+| `isHidden()` | `boolean` | Returns whether hidden is true. |
+| `lastModified()` | `long` | Executes `lastModified` and returns after the underlying engine call finishes. |
+| `length()` | `long` | Executes `length` and returns after the underlying engine call finishes. |
+| `createNewFile()` | `boolean` | Executes `createNewFile` and returns after the underlying engine call finishes. |
+| `delete()` | `boolean` | Removes an item from the collection. |
+| `deleteOnExit()` | `void` | Removes on exit from the collection. |
+| `list()` | [String][] | Executes `list` and returns after the underlying engine call finishes. |
+| `list(FilenameFilter)` | [String][] | Performs the list operation using the provided parameters (filter). |
+| `listFiles()` | [File][] | Executes `listFiles` and returns after the underlying engine call finishes. |
+| `listFiles(FilenameFilter)` | [File][] | Performs the listFiles operation using the provided parameters (filter). |
+| `listFiles(FileFilter)` | [File][] | Performs the listFiles operation using the provided parameters (filter). |
+| `mkdir()` | `boolean` | Executes `mkdir` and returns after the underlying engine call finishes. |
+| `mkdirs()` | `boolean` | Executes `mkdirs` and returns after the underlying engine call finishes. |
+| `renameTo(File)` | `boolean` | Performs the renameTo operation using the provided parameters (dest). |
+| `setLastModified(long)` | `boolean` | Sets or updates the last modified. |
+| `setReadOnly()` | `boolean` | Sets or updates the read only. |
+| `setWritable(boolean, boolean)` | `boolean` | Sets or updates the writable. |
+| `setWritable(boolean)` | `boolean` | Sets or updates the writable. |
+| `setReadable(boolean, boolean)` | `boolean` | Sets or updates the readable. |
+| `setReadable(boolean)` | `boolean` | Sets or updates the readable. |
+| `setExecutable(boolean, boolean)` | `boolean` | Sets or updates the executable. |
+| `setExecutable(boolean)` | `boolean` | Sets or updates the executable. |
+| `canExecute()` | `boolean` | Returns whether execute is true. |
+| `getTotalSpace()` | `long` | Returns the current total space. |
+| `getFreeSpace()` | `long` | Returns the current free space. |
+| `getUsableSpace()` | `long` | Returns the current usable space. |
+| `compareTo(File)` | `int` | Compares this instance with another for equality/order. |
+| `equals(Object)` | `boolean` | Compares this instance with another for equality/order. |
+| `hashCode()` | `int` | Returns whether code is true. |
+| `toPath()` | `Path` | Executes `toPath` and returns after the underlying engine call finishes. |
+| `isAccessible()` | `boolean` | Returns whether accessible is true. |
+| `isAccessible(String)` | `boolean` | Returns whether accessible is true. |
 
 ## Static Methods (2)
 
 | Signature | Returns | Description |
 | --- | --- | --- |
-| createTempFile([String], [String], [File]) | [File] | Executes `createTempFile` and returns after the underlying engine call finishes. |
-| createTempFile([String], [String]) | [File] | Executes `createTempFile` and returns after the underlying engine call finishes. |
+| `createTempFile(String, String, File)` | `File` | Executes `createTempFile` and returns after the underlying engine call finishes. |
+| `createTempFile(String, String)` | `File` | Executes `createTempFile` and returns after the underlying engine call finishes. |

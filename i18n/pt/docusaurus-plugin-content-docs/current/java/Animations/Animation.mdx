@@ -1,7 +1,3 @@
-import Links from '../../links.mdx';
-
-<Links />
-
 # Animation
 
 Referência completa da API de `Animation`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -46,20 +42,20 @@ public class Animation
 
 | Signature | Returns | Description |
 | --- | --- | --- |
-| play() | [void] | Reproduz a animação. |
-| playInLoop() | [void] | Reproduz a animação em loop. |
-| stop() | [void] | Para a animação. |
-| stopLoop() | [void] | Para a animação em loop. |
-| isPlaying() | [boolean] | Retorna se a animação está sendo reproduzida. |
-| isLoop() | [boolean] | Retorna se a animação está em loop. |
-| getTimeLineAt([int]) | [TimeLine] | Retorna a propriedade `timeline da animação do índice especificado`. |
-| addTimeLine([TimeLine]) | [void] | Adiciona uma timeline na animação. |
-| removeTimeLine([TimeLine]) | [void] | Remove uma timeline da animação. |
-| getLength() | [int] | Retorna a propriedade `duração da animação`. |
-| sortFrames() | [void] | Reorganiza os frames da animação. Chame após modificar uma animação. |
+| `play()` | `void` | Reproduz a animação. |
+| `playInLoop()` | `void` | Reproduz a animação em loop. |
+| `stop()` | `void` | Para a animação. |
+| `stopLoop()` | `void` | Para a animação em loop. |
+| `isPlaying()` | `boolean` | Retorna se a animação está sendo reproduzida. |
+| `isLoop()` | `boolean` | Retorna se a animação está em loop. |
+| `getTimeLineAt(int)` | `TimeLine` | Retorna a propriedade `timeline da animação do índice especificado`. |
+| `addTimeLine(TimeLine)` | `void` | Adiciona uma timeline na animação. |
+| `removeTimeLine(TimeLine)` | `void` | Remove uma timeline da animação. |
+| `getLength()` | `int` | Retorna a propriedade `duração da animação`. |
+| `sortFrames()` | `void` | Reorganiza os frames da animação. Chame após modificar uma animação. |
 
 ## Métodos Estáticos (1)
 
 | Signature | Returns | Description |
 | --- | --- | --- |
-| loadFile([AnimationFile]) | [Animation] | Carrega um AnimationFile. |
+| `loadFile(AnimationFile)` | `Animation` | Carrega um AnimationFile. |

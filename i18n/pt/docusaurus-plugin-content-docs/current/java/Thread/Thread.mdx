@@ -1,7 +1,3 @@
-import Links from '../../links.mdx';
-
-<Links />
-
 # Thread
 
 Referência completa da API de `Thread`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -35,42 +31,42 @@ public class Thread
 
 | Signature | Returns | Description |
 | --- | --- | --- |
-| start() | [void] | Executa a operação start. |
-| run() | [void] | Executa a operação run. |
-| isInterruptCalled() | [boolean] | Retorna se interrupt called é verdadeiro. |
-| interrupt() | [void] | Executa a operação interrupt. |
-| isInterrupted() | [boolean] | Retorna se interrupted é verdadeiro. |
-| toString() | [String] | Retorna a propriedade `representação em string`. |
-| getContextClassLoader() | [ClassLoader] | Retorna a propriedade `propriedade `context class loader atual``. |
-| setContextClassLoader([ClassLoader]) | [void] | Define ou atualiza a propriedade `propriedade `context class loader``. |
-| getStackTrace() | [StackTraceElement][] | Retorna a propriedade `propriedade `stack trace atual``. |
-| getId() | [long] | Retorna a propriedade `propriedade `id atual``. |
-| getState() | [State] | Retorna a propriedade `propriedade `state atual``. |
-| getUncaughtExceptionHandler() | [UncaughtExceptionHandler] | Retorna a propriedade `propriedade `uncaught exception handler atual``. |
-| setUncaughtExceptionHandler([UncaughtExceptionHandler]) | [void] | Define ou atualiza a propriedade `propriedade `uncaught exception handler``. |
-| join() | [void] | Executa `join` e retorna quando a chamada do motor termina. |
-| join([long]) | [void] | Executa `join` e retorna quando a chamada do motor termina. |
-| join([long], [int]) | [void] | Executa `join` e retorna quando a chamada do motor termina. |
-| isAlive() | [boolean] | Retorna se alive é verdadeiro. |
-| setPriority([int]) | [void] | Define ou atualiza a propriedade `propriedade `priority``. |
-| getPriority() | [int] | Retorna a propriedade `propriedade `priority atual``. |
-| setName([String]) | [void] | Define ou atualiza a propriedade `propriedade `name``. |
-| getName() | [String] | Retorna a propriedade `propriedade `name atual``. |
-| getThreadGroup() | [ThreadGroup] | Retorna a propriedade `propriedade `thread group atual``. |
+| `start()` | `void` | Executa a operação start. |
+| `run()` | `void` | Executa a operação run. |
+| `isInterruptCalled()` | `boolean` | Retorna se interrupt called é verdadeiro. |
+| `interrupt()` | `void` | Executa a operação interrupt. |
+| `isInterrupted()` | `boolean` | Retorna se interrupted é verdadeiro. |
+| `toString()` | `String` | Retorna a propriedade `representação em string`. |
+| `getContextClassLoader()` | `ClassLoader` | Retorna a propriedade `propriedade `context class loader atual``. |
+| `setContextClassLoader(ClassLoader)` | `void` | Define ou atualiza a propriedade `propriedade `context class loader``. |
+| `getStackTrace()` | [StackTraceElement][] | Retorna a propriedade `propriedade `stack trace atual``. |
+| `getId()` | `long` | Retorna a propriedade `propriedade `id atual``. |
+| `getState()` | `State` | Retorna a propriedade `propriedade `state atual``. |
+| `getUncaughtExceptionHandler()` | `UncaughtExceptionHandler` | Retorna a propriedade `propriedade `uncaught exception handler atual``. |
+| `setUncaughtExceptionHandler(UncaughtExceptionHandler)` | `void` | Define ou atualiza a propriedade `propriedade `uncaught exception handler``. |
+| `join()` | `void` | Executa `join` e retorna quando a chamada do motor termina. |
+| `join(long)` | `void` | Executa `join` e retorna quando a chamada do motor termina. |
+| `join(long, int)` | `void` | Executa `join` e retorna quando a chamada do motor termina. |
+| `isAlive()` | `boolean` | Retorna se alive é verdadeiro. |
+| `setPriority(int)` | `void` | Define ou atualiza a propriedade `propriedade `priority``. |
+| `getPriority()` | `int` | Retorna a propriedade `propriedade `priority atual``. |
+| `setName(String)` | `void` | Define ou atualiza a propriedade `propriedade `name``. |
+| `getName()` | `String` | Retorna a propriedade `propriedade `name atual``. |
+| `getThreadGroup()` | `ThreadGroup` | Retorna a propriedade `propriedade `thread group atual``. |
 
 ## Métodos Estáticos (12)
 
 | Signature | Returns | Description |
 | --- | --- | --- |
-| update() | [void] | Executa `update` e retorna quando a chamada do motor termina. |
-| interruptAll() | [void] | Executa `interruptAll` e retorna quando a chamada do motor termina. |
-| requestEngineThread() | [void] | Executa `requestEngineThread` e retorna quando a chamada do motor termina. |
-| requestOpenglEngineThread() | [void] | Executa `requestOpenglEngineThread` e retorna quando a chamada do motor termina. |
-| isEngineThread() | [boolean] | Executa `isEngineThread` e retorna quando a chamada do motor termina. |
-| isOpenglEngineThread() | [boolean] | Executa `isOpenglEngineThread` e retorna quando a chamada do motor termina. |
-| runOnEngine([Runnable]) | [void] | Executa a operação runOnEngine usando os parâmetros informados (runnable). |
-| runOnEngine([float], [Runnable]) | [void] | Executa a operação runOnEngine usando os parâmetros informados (delaySeconds, runnable). |
-| runOnUIThread([Runnable]) | [void] | Executa a operação runOnUIThread usando os parâmetros informados (runnable). |
-| sleep([long]) | [void] | Executa a operação sleep usando os parâmetros informados (milis). |
-| sleep([long], [int]) | [void] | Executa a operação sleep usando os parâmetros informados (milis, nanos). |
-| dumpStack() | [void] | Executa a operação dumpStack. |
+| `update()` | `void` | Executa `update` e retorna quando a chamada do motor termina. |
+| `interruptAll()` | `void` | Executa `interruptAll` e retorna quando a chamada do motor termina. |
+| `requestEngineThread()` | `void` | Executa `requestEngineThread` e retorna quando a chamada do motor termina. |
+| `requestOpenglEngineThread()` | `void` | Executa `requestOpenglEngineThread` e retorna quando a chamada do motor termina. |
+| `isEngineThread()` | `boolean` | Executa `isEngineThread` e retorna quando a chamada do motor termina. |
+| `isOpenglEngineThread()` | `boolean` | Executa `isOpenglEngineThread` e retorna quando a chamada do motor termina. |
+| `runOnEngine(Runnable)` | `void` | Executa a operação runOnEngine usando os parâmetros informados (runnable). |
+| `runOnEngine(float, Runnable)` | `void` | Executa a operação runOnEngine usando os parâmetros informados (delaySeconds, runnable). |
+| `runOnUIThread(Runnable)` | `void` | Executa a operação runOnUIThread usando os parâmetros informados (runnable). |
+| `sleep(long)` | `void` | Executa a operação sleep usando os parâmetros informados (milis). |
+| `sleep(long, int)` | `void` | Executa a operação sleep usando os parâmetros informados (milis, nanos). |
+| `dumpStack()` | `void` | Executa a operação dumpStack. |

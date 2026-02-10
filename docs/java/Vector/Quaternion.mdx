@@ -1,7 +1,3 @@
-import Links from '../../links.mdx';
-
-<Links />
-
 # Quaternion
 
 Complete API reference for `Quaternion`, including constructors, attributes, virtual attributes, and methods.
@@ -48,72 +44,72 @@ public class Quaternion
 
 | Signature | Returns | Description |
 | --- | --- | --- |
-| increment([float], [float], [float]) | [void] | Performs the increment operation using the provided parameters (eulerX, eulerY, eulerZ). |
-| mul([Quaternion]) | [Quaternion] | Performs the mul operation using the provided parameters (value). |
-| mul([float], [float], [float], [float]) | [Quaternion] | Performs the mul operation using the provided parameters (w, x, y, z). |
-| mulLocal([Quaternion]) | [void] | Performs the mulLocal operation using the provided parameters (value). |
-| mulLocal([float], [float], [float], [float]) | [void] | Performs the mulLocal operation using the provided parameters (w, x, y, z). |
-| multiply([Quaternion]) | [Quaternion] | Performs the multiply operation using the provided parameters (value). |
-| multiply([float], [float], [float], [float]) | [Quaternion] | Performs the multiply operation using the provided parameters (w, x, y, z). |
-| sum([Quaternion]) | [Quaternion] | Performs the sum operation using the provided parameters (value). |
-| sum([float], [float], [float], [float]) | [Quaternion] | Performs the sum operation using the provided parameters (w, x, y, z). |
-| sumLocal([Quaternion]) | [void] | Performs the sumLocal operation using the provided parameters (value). |
-| sumLocal([float], [float], [float], [float]) | [void] | Performs the sumLocal operation using the provided parameters (w, x, y, z). |
-| add([Quaternion]) | [Quaternion] | Adds an item to the collection. |
-| add([float], [float], [float], [float]) | [Quaternion] | Adds an item to the collection. |
-| normalize() | [Quaternion] | Executes `normalize` and returns after the underlying engine call finishes. |
-| normalizeLocal() | [void] | Executes `normalizeLocal` and returns after the underlying engine call finishes. |
-| equals([Quaternion]) | [boolean] | Compares this instance with another for equality/order. |
-| equals([float], [float], [float], [float]) | [boolean] | Compares this instance with another for equality/order. |
-| equals([float]) | [boolean] | Compares this instance with another for equality/order. |
-| blend([Quaternion], [float]) | [Quaternion] | Performs the blend operation using the provided parameters (quaternion, blend). |
-| blendLocal([Quaternion], [float]) | [void] | Executes `blendLocal` and returns after the underlying engine call finishes. |
-| selfLookTo([Vector3]) | [void] | Performs the selfLookTo operation using the provided parameters (direction). |
-| selfLookTo([Vector3], [Vector3]) | [void] | Performs the selfLookTo operation using the provided parameters (from, to). |
-| localLookTo([Vector3]) | [void] | Performs the localLookTo operation using the provided parameters (direction). |
-| localLookTo([Vector3], [Vector3]) | [void] | Performs the localLookTo operation using the provided parameters (from, to). |
-| lookTo([Vector3]) | [void] | Performs the lookTo operation using the provided parameters (direction). |
-| lookTo([Vector3], [Vector3]) | [void] | Performs the lookTo operation using the provided parameters (from, to). |
-| lookTo([Vector3], [Vector3], [Vector3]) | [void] | Performs the lookTo operation using the provided parameters (from, to, up). |
-| lookToLocal([Vector3]) | [void] | Executes `lookToLocal` and returns after the underlying engine call finishes. |
-| lookToLocal([Vector3], [Vector3]) | [void] | Executes `lookToLocal` and returns after the underlying engine call finishes. |
-| lookToLocal([Vector3], [boolean], [boolean]) | [void] | Executes `lookToLocal` and returns after the underlying engine call finishes. |
-| lookToLocal([Vector3], [Vector3], [boolean], [boolean]) | [void] | Executes `lookToLocal` and returns after the underlying engine call finishes. |
-| slerp([Quaternion], [float]) | [Quaternion] | Performs the slerp operation using the provided parameters (b, t). |
-| slerpLocal([Quaternion], [float]) | [void] | Performs the slerpLocal operation using the provided parameters (b, t). |
-| slerpLocal([Quaternion], [Quaternion], [float]) | [void] | Performs the slerpLocal operation using the provided parameters (a, b, t). |
-| set([Quaternion]) | [void] | Sets or updates the the value. |
-| set([float], [float], [float], [float]) | [void] | Sets or updates the the value. |
-| set([float]) | [void] | Sets or updates the the value. |
-| setIdentity() | [void] | Sets or updates the identity. |
-| setFromEuler([float], [float], [float]) | [void] | Sets or updates the from euler. |
-| setFromEuler([Vector3]) | [void] | Sets or updates the from euler. |
-| toEuler() | [Vector3] | Executes `toEuler` and returns after the underlying engine call finishes. |
-| copy() | [Quaternion] | Returns a copy of this Quaternion instance. |
-| rotateVector([Vector3]) | [Vector3] | Transforms or moves vector accordingly. |
-| rotateVector([Vector3], [Vector3]) | [Vector3] | Transforms or moves vector accordingly. |
-| equals([Object]) | [boolean] | Compares this instance with another for equality/order. |
-| pointerEquals([Object]) | [boolean] | Performs the pointerEquals operation using the provided parameters (otherObject). |
-| notEquals([Object]) | [boolean] | Performs the notEquals operation using the provided parameters (otherObject). |
-| mul([Object]) | [T] | Performs the mul operation using the provided parameters (otherObject). |
-| mulEqual([Object]) | [void] | Performs the mulEqual operation using the provided parameters (otherObject). |
-| serializeToString() | [String] | Executes `serializeToString` and returns after the underlying engine call finishes. |
-| deserializeLocal([String]) | [void] | Performs the deserializeLocal operation using the provided parameters (str). |
+| `increment(float, float, float)` | `void` | Performs the increment operation using the provided parameters (eulerX, eulerY, eulerZ). |
+| `mul(Quaternion)` | `Quaternion` | Performs the mul operation using the provided parameters (value). |
+| `mul(float, float, float, float)` | `Quaternion` | Performs the mul operation using the provided parameters (w, x, y, z). |
+| `mulLocal(Quaternion)` | `void` | Performs the mulLocal operation using the provided parameters (value). |
+| `mulLocal(float, float, float, float)` | `void` | Performs the mulLocal operation using the provided parameters (w, x, y, z). |
+| `multiply(Quaternion)` | `Quaternion` | Performs the multiply operation using the provided parameters (value). |
+| `multiply(float, float, float, float)` | `Quaternion` | Performs the multiply operation using the provided parameters (w, x, y, z). |
+| `sum(Quaternion)` | `Quaternion` | Performs the sum operation using the provided parameters (value). |
+| `sum(float, float, float, float)` | `Quaternion` | Performs the sum operation using the provided parameters (w, x, y, z). |
+| `sumLocal(Quaternion)` | `void` | Performs the sumLocal operation using the provided parameters (value). |
+| `sumLocal(float, float, float, float)` | `void` | Performs the sumLocal operation using the provided parameters (w, x, y, z). |
+| `add(Quaternion)` | `Quaternion` | Adds an item to the collection. |
+| `add(float, float, float, float)` | `Quaternion` | Adds an item to the collection. |
+| `normalize()` | `Quaternion` | Executes `normalize` and returns after the underlying engine call finishes. |
+| `normalizeLocal()` | `void` | Executes `normalizeLocal` and returns after the underlying engine call finishes. |
+| `equals(Quaternion)` | `boolean` | Compares this instance with another for equality/order. |
+| `equals(float, float, float, float)` | `boolean` | Compares this instance with another for equality/order. |
+| `equals(float)` | `boolean` | Compares this instance with another for equality/order. |
+| `blend(Quaternion, float)` | `Quaternion` | Performs the blend operation using the provided parameters (quaternion, blend). |
+| `blendLocal(Quaternion, float)` | `void` | Executes `blendLocal` and returns after the underlying engine call finishes. |
+| `selfLookTo(Vector3)` | `void` | Performs the selfLookTo operation using the provided parameters (direction). |
+| `selfLookTo(Vector3, Vector3)` | `void` | Performs the selfLookTo operation using the provided parameters (from, to). |
+| `localLookTo(Vector3)` | `void` | Performs the localLookTo operation using the provided parameters (direction). |
+| `localLookTo(Vector3, Vector3)` | `void` | Performs the localLookTo operation using the provided parameters (from, to). |
+| `lookTo(Vector3)` | `void` | Performs the lookTo operation using the provided parameters (direction). |
+| `lookTo(Vector3, Vector3)` | `void` | Performs the lookTo operation using the provided parameters (from, to). |
+| `lookTo(Vector3, Vector3, Vector3)` | `void` | Performs the lookTo operation using the provided parameters (from, to, up). |
+| `lookToLocal(Vector3)` | `void` | Executes `lookToLocal` and returns after the underlying engine call finishes. |
+| `lookToLocal(Vector3, Vector3)` | `void` | Executes `lookToLocal` and returns after the underlying engine call finishes. |
+| `lookToLocal(Vector3, boolean, boolean)` | `void` | Executes `lookToLocal` and returns after the underlying engine call finishes. |
+| `lookToLocal(Vector3, Vector3, boolean, boolean)` | `void` | Executes `lookToLocal` and returns after the underlying engine call finishes. |
+| `slerp(Quaternion, float)` | `Quaternion` | Performs the slerp operation using the provided parameters (b, t). |
+| `slerpLocal(Quaternion, float)` | `void` | Performs the slerpLocal operation using the provided parameters (b, t). |
+| `slerpLocal(Quaternion, Quaternion, float)` | `void` | Performs the slerpLocal operation using the provided parameters (a, b, t). |
+| `set(Quaternion)` | `void` | Sets or updates the the value. |
+| `set(float, float, float, float)` | `void` | Sets or updates the the value. |
+| `set(float)` | `void` | Sets or updates the the value. |
+| `setIdentity()` | `void` | Sets or updates the identity. |
+| `setFromEuler(float, float, float)` | `void` | Sets or updates the from euler. |
+| `setFromEuler(Vector3)` | `void` | Sets or updates the from euler. |
+| `toEuler()` | `Vector3` | Executes `toEuler` and returns after the underlying engine call finishes. |
+| `copy()` | `Quaternion` | Returns a copy of this Quaternion instance. |
+| `rotateVector(Vector3)` | `Vector3` | Transforms or moves vector accordingly. |
+| `rotateVector(Vector3, Vector3)` | `Vector3` | Transforms or moves vector accordingly. |
+| `equals(Object)` | `boolean` | Compares this instance with another for equality/order. |
+| `pointerEquals(Object)` | `boolean` | Performs the pointerEquals operation using the provided parameters (otherObject). |
+| `notEquals(Object)` | `boolean` | Performs the notEquals operation using the provided parameters (otherObject). |
+| `mul(Object)` | `T` | Performs the mul operation using the provided parameters (otherObject). |
+| `mulEqual(Object)` | `void` | Performs the mulEqual operation using the provided parameters (otherObject). |
+| `serializeToString()` | `String` | Executes `serializeToString` and returns after the underlying engine call finishes. |
+| `deserializeLocal(String)` | `void` | Performs the deserializeLocal operation using the provided parameters (str). |
 
 ## Static Methods (13)
 
 | Signature | Returns | Description |
 | --- | --- | --- |
-| fromEuler([Vector3]) | [Quaternion] | Performs the fromEuler operation using the provided parameters (value). |
-| fromEuler([float], [float], [float]) | [Quaternion] | Performs the fromEuler operation using the provided parameters (x, y, z). |
-| createFromEuler([Vector3]) | [Quaternion] | Creates a new from euler. |
-| createFromEuler([float], [float], [float]) | [Quaternion] | Creates a new from euler. |
-| zero() | [Quaternion] | Executes `zero` and returns after the underlying engine call finishes. |
-| slerp([Quaternion], [Quaternion], [float]) | [Quaternion] | Performs the slerp operation using the provided parameters (a, b, t). |
-| lookAt([Vector3], [Vector3]) | [Quaternion] | Performs the lookAt operation using the provided parameters (from, to). |
-| lookAt([Vector3], [Vector3], [Vector3]) | [Quaternion] | Performs the lookAt operation using the provided parameters (from, to, up). |
-| angleAxis([float], [Vector3]) | [Quaternion] | Performs the angleAxis operation using the provided parameters (angle, value). |
-| angleAxis([float], [float], [float], [float]) | [Quaternion] | Performs the angleAxis operation using the provided parameters (angle, x, y, z). |
-| lookRotation([Vector3]) | [Quaternion] | Performs the lookRotation operation using the provided parameters (forward). |
-| lookRotation([Vector3], [Vector3]) | [Quaternion] | Performs the lookRotation operation using the provided parameters (forward, upwards). |
-| isNull([Object]) | [boolean] | Returns whether null is true. |
+| `fromEuler(Vector3)` | `Quaternion` | Performs the fromEuler operation using the provided parameters (value). |
+| `fromEuler(float, float, float)` | `Quaternion` | Performs the fromEuler operation using the provided parameters (x, y, z). |
+| `createFromEuler(Vector3)` | `Quaternion` | Creates a new from euler. |
+| `createFromEuler(float, float, float)` | `Quaternion` | Creates a new from euler. |
+| `zero()` | `Quaternion` | Executes `zero` and returns after the underlying engine call finishes. |
+| `slerp(Quaternion, Quaternion, float)` | `Quaternion` | Performs the slerp operation using the provided parameters (a, b, t). |
+| `lookAt(Vector3, Vector3)` | `Quaternion` | Performs the lookAt operation using the provided parameters (from, to). |
+| `lookAt(Vector3, Vector3, Vector3)` | `Quaternion` | Performs the lookAt operation using the provided parameters (from, to, up). |
+| `angleAxis(float, Vector3)` | `Quaternion` | Performs the angleAxis operation using the provided parameters (angle, value). |
+| `angleAxis(float, float, float, float)` | `Quaternion` | Performs the angleAxis operation using the provided parameters (angle, x, y, z). |
+| `lookRotation(Vector3)` | `Quaternion` | Performs the lookRotation operation using the provided parameters (forward). |
+| `lookRotation(Vector3, Vector3)` | `Quaternion` | Performs the lookRotation operation using the provided parameters (forward, upwards). |
+| `isNull(Object)` | `boolean` | Returns whether null is true. |

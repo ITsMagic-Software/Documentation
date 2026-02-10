@@ -1,7 +1,3 @@
-import Links from '../../links.mdx';
-
-<Links />
-
 # Color
 
 Referência completa da API de `Color`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -40,122 +36,122 @@ public class Color
 
 | Signature | Returns | Description |
 | --- | --- | --- |
-| set([Color]) | [void] | Define a propriedade `Cor desta instância para a Cor especificada`. |
-| getInt() | [int] | Retorna a propriedade `propriedade `valor int da Cor``. |
-| setInt([int]) | [void] | Define a propriedade `Cor para a Cor do valor int especificado`. |
-| fromHexString([String]) | [void] | Define a propriedade `Cor para a Cor do código hexadecimal especificado`. |
-| fromHex([String]) | [void] | Define a propriedade `Cor para a Cor do código hexadecimal especificado`. |
-| getHexString() | [String] | Retorna a propriedade `propriedade `código hexadecimal da Cor``. |
-| toHex() | [String] | Retorna a propriedade `propriedade `código hexadecimal da Cor``. |
-| getIntAlpha() | [int] | Retorna a propriedade `propriedade `valor int da opacidade (canal alfa) da Cor (0-255)``. |
-| setIntAlpha([int]) | [void] | Define a propriedade `propriedade `valor int da opacidade (canal alfa) da Cor (0-255)``. |
-| getIntRed() | [int] | Retorna a propriedade `propriedade `valor int do canal vermelho da Cor (0-255)``. |
-| setIntRed([int]) | [void] | Define a propriedade `propriedade `valor int do canal vermelho da Cor (0-255)``. |
-| getIntGreen() | [int] | Retorna a propriedade `propriedade `valor int do canal verde da Cor (0-255)``. |
-| setIntGreen([int]) | [void] | Define a propriedade `propriedade `valor int do canal verde da Cor (0-255)``. |
-| getIntBlue() | [int] | Retorna a propriedade `propriedade `valor int do canal azul da Cor (0-255)``. |
-| setIntBlue([int]) | [void] | Define a propriedade `propriedade `valor int do canal azul da Cor (0-255)``. |
-| setInts([int], [int], [int], [int]) | [void] | Define os valores int dos canais ARGB (alfa, vermelho, verde e azul) para os valores especificados, respectivamente. |
-| setInts([int], [int], [int]) | [void] | Define os valores int dos canais RGB (vermelho, verde e azul) para os valores especificados, respectivamente. |
-| getFloatAlpha() | [float] | Retorna a propriedade `propriedade `valor float da opacidade (canal alfa) da Cor (0``.0f - 1.0f). |
-| setFloatAlpha([float]) | [void] | Define a propriedade `propriedade `valor float da opacidade (canal alfa) da Cor (0``.0f - 1.0f). |
-| getFloatRed() | [float] | Retorna a propriedade `propriedade `valor float do canal vermelho da Cor (0``.0f - 1.0f). |
-| setFloatRed([float]) | [void] | Define a propriedade `propriedade `valor float do canal vermelho da Cor (0``.0f - 1.0f). |
-| getFloatGreen() | [float] | Retorna a propriedade `propriedade `valor float do canal verde da Cor (0``.0f - 1.0f). |
-| setFloatGreen([float]) | [void] | Define a propriedade `propriedade `valor float do canal verde da Cor (0``.0f - 1.0f). |
-| getFloatBlue() | [float] | Retorna a propriedade `propriedade `valor float do canal azul da Cor (0``.0f - 1.0f). |
-| setFloatBlue([float]) | [void] | Define a propriedade `propriedade `valor float do canal azul da Cor (0``.0f - 1.0f). |
-| setFloats([float], [float], [float], [float]) | [void] | Define os valores float dos canais ARGB (alfa, vermelho, verde e azul) para os valores especificados, respectivamente. |
-| setFloats([float], [float], [float]) | [void] | Define os valores float dos canais RGB (vermelho, verde e azul) para os valores especificados, respectivamente. |
-| sum([Color]) | [Color] | Soma a Cor atual com a Cor especificada e retorna uma nova Cor. |
-| sum([Vector3]) | [Color] | Soma a Cor atual com o Vector3 especificado e retorna uma nova Cor. |
-| sum([Vector2]) | [Color] | Soma a Cor atual com o Vector2 especificado e retorna uma nova Cor. |
-| sub([Color]) | [Color] | Subtrai a Cor especificada da Cor atual e retorna uma nova Cor. |
-| sub([Vector3]) | [Color] | Subtrai o Vector3 especificado da Cor atual e retorna uma nova Cor. |
-| sub([Vector2]) | [Color] | Subtrai o Vector2 especificado da Cor atual e retorna uma nova Cor. |
-| mul([Color]) | [Color] | Multiplica a Cor atual pela Cor especificada e retorna uma nova Cor. |
-| mul([Vector3]) | [Color] | Multiplica a Cor atual pelo Vector3 especificado e retorna uma nova Cor. |
-| mul([Vector2]) | [Color] | Multiplica a Cor atual pelo Vector2 especificado e retorna uma nova Cor. |
-| div([Color]) | [Color] | Divide a Cor atual pela Cor especificada e retorna uma nova Cor. |
-| div([Vector3]) | [Color] | Divide a Cor atual pelo Vector3 especificado e retorna uma nova Cor. |
-| div([Vector2]) | [Color] | Divide a Cor atual pelo Vector2 especificado e retorna uma nova Cor. |
-| sumLocal([Color]) | [void] | Soma a Cor atual com a Cor especificada e modifica a Cor atual. |
-| sumLocal([Vector3]) | [void] | Soma a Cor atual com o Vector3 especificado e modifica a Cor atual. |
-| sumLocal([Vector2]) | [void] | Soma a Cor atual com o Vector2 especificado e modifica a Cor atual. |
-| subLocal([Color]) | [void] | Subtrai a Cor especificada da Cor atual e modifica a Cor atual. |
-| subLocal([Vector3]) | [void] | Subtrai o Vector3 especificado da Cor atual e modifica a Cor atual. |
-| subLocal([Vector2]) | [void] | Subtrai o Vector2 especificado da Cor atual e modifica a Cor atual. |
-| mulLocal([Color]) | [void] | Multiplica a Cor atual pela Cor especificada e modifica a Cor atual. |
-| mulLocal([Vector3]) | [void] | Multiplica a Cor atual pelo Vector3 especificado e modifica a Cor atual. |
-| mulLocal([Vector2]) | [void] | Multiplica a Cor atual pelo Vector2 especificado e modifica a Cor atual. |
-| divLocal([Color]) | [void] | Divide a Cor atual pela Cor especificada e modifica a Cor atual. |
-| divLocal([Vector3]) | [void] | Divide a Cor atual pelo Vector3 especificado e modifica a Cor atual. |
-| divLocal([Vector2]) | [void] | Divide a Cor atual pelo Vector2 especificado e modifica a Cor atual. |
-| lerp([Color], [float]) | [void] | Faz uma interpolação/suavização entre a Cor atual e a Cor especificada com base na velocidade/intervalo fornecido e modifica a Cor atual. |
-| lerp([float], [float], [float], [float], [float]) | [void] | Faz uma interpolação/suavização entre a Cor atual e os valores ARGB (alfa, vermelho, verde e azul) especificados com base na velocidade/intervalo fornecido e modifica a Cor atual. |
-| lerp([float], [float]) | [void] | Faz uma interpolação/suavização entre a Cor atual e o valor especificado com base na velocidade/intervalo fornecido e modifica a Cor atual. |
-| lerpOut([Color], [float]) | [Color] | Faz uma interpolação/suavização entre a Cor atual e a Cor especificada com base na velocidade/intervalo fornecido e retorna uma nova Cor. |
-| lerpOut([float], [float], [float], [float], [float]) | [Color] | Faz uma interpolação/suavização entre a Cor atual e os valores ARGB (alfa, vermelho, verde e azul) especificados com base na velocidade/intervalo fornecido e retorna uma nova Cor. |
-| lerpOut([float], [float]) | [Color] | Faz uma interpolação/suavização entre a Cor atual e o valor especificado com base na velocidade/intervalo fornecido e retorna uma nova Cor. |
-| lerpInSeconds([Color], [float]) | [void] | Faz uma interpolação/suavização entre a Cor atual e a Cor especificada com base na velocidade/intervalo fornecido em um segundo e modifica a Cor atual. |
-| lerpInSeconds([float], [float], [float], [float], [float]) | [void] | Faz uma interpolação/suavização entre a Cor atual e os valores ARGB (alfa, vermelho, verde e azul) especificados com base na velocidade/intervalo fornecido em um segundo e modifica a Cor atual. |
-| lerpInSeconds([float], [float]) | [void] | Faz uma interpolação/suavização entre a Cor atual e o valor especificado com base na velocidade/intervalo fornecido em um segundo e modifica a Cor atual. |
-| lerpOutInSeconds([Color], [float]) | [Color] | Faz uma interpolação/suavização entre a Cor atual e a Cor especificada com base na velocidade/intervalo fornecido em um segundo e retorna uma nova Cor. |
-| lerpOutInSeconds([float], [float], [float], [float], [float]) | [Color] | Faz uma interpolação/suavização entre a Cor atual e os valores ARGB (alfa, vermelho, verde e azul) especificados com base na velocidade/intervalo fornecido em um segundo e retorna uma nova Cor. |
-| lerpOutInSeconds([float], [float]) | [Color] | Faz uma interpolação/suavização entre a Cor atual e o valor especificado com base na velocidade/intervalo fornecido em um segundo e retorna uma nova Cor. |
-| blend([Color], [float]) | [void] | Faz uma mistura entre a Cor atual e a Cor especificada com base na porcentagem fornecida (0-1) e modifica a Cor atual. |
-| blend([float], [float], [float], [float], [float]) | [void] | Faz uma mistura entre a Cor atual e os valores ARGB (alfa, vermelho, verde e azul) especificados com base na porcentagem fornecida (0-1) e modifica a Cor atual. |
-| blend([float], [float]) | [void] | Faz uma mistura entre a Cor atual e o valor especificado com base na porcentagem fornecida (0-1) e modifica a Cor atual. |
-| blendOut([Color], [float]) | [Color] | Faz uma mistura entre a Cor atual e a Cor especificada com base na porcentagem fornecida (0-1) e retorna uma nova Cor. |
-| blendOut([float], [float], [float], [float], [float]) | [Color] | Faz uma mistura entre a Cor atual e os valores ARGB (alfa, vermelho, verde e azul) especificados com base na porcentagem fornecida (0-1) e retorna uma nova Cor. |
-| blendOut([float], [float]) | [Color] | Faz uma mistura entre a Cor atual e o valor especificado com base na porcentagem fornecida (0-1) e retorna uma nova Cor. |
-| toString() | [String] | Retorna uma String dos valores int ARGB (alfa, vermelho, verde e azul) da Cor. |
-| copy() | [Color] | Retorna uma cópia da instância da Cor atual. |
-| equals([Object]) | [boolean] | Retorna verdadeiro se a Cor especificada é igual à Cor atual. |
-| pointerEquals([Object]) | [boolean] | Retorna verdadeiro se à instância da Cor especificada é igual a instância da Cor atual. |
-| notEquals([Object]) | [boolean] | Retorna verdadeiro se a Cor especificada é diferente da Cor atual. |
-| greaterThan([Object]) | [boolean] | Retorna verdadeiro se a Cor atual tiver valores maiores que a Cor especificada. |
-| greaterThan([float]) | [boolean] | Retorna verdadeiro se a Cor atual tiver valores maiores que o valor especificado. |
-| greaterThan([int]) | [boolean] | Retorna verdadeiro se a Cor atual tiver valores maiores que o valor especificado. |
-| greaterThan([long]) | [boolean] | Retorna verdadeiro se a Cor atual tiver valores maiores que o valor especificado. |
-| greaterThan([double]) | [boolean] | Retorna verdadeiro se a Cor atual tiver valores maiores que o valor especificado. |
-| greaterOrEqualsThan([Object]) | [boolean] | Retorna verdadeiro se a Cor atual tiver valores maiores ou iguais aos da Cor especificada. |
-| greaterOrEqualsThan([float]) | [boolean] | Retorna verdadeiro se a Cor atual tiver valores maiores ou iguais ao valor especificado. |
-| greaterOrEqualsThan([int]) | [boolean] | Retorna verdadeiro se a Cor atual tiver valores maiores ou iguais ao valor especificado. |
-| greaterOrEqualsThan([long]) | [boolean] | Retorna verdadeiro se a Cor atual tiver valores maiores ou iguais ao valor especificado. |
-| greaterOrEqualsThan([double]) | [boolean] | Retorna verdadeiro se a Cor atual tiver valores maiores ou iguais ao valor especificado. |
-| lessThan([Object]) | [boolean] | Retorna verdadeiro se a Cor atual tiver valores menores que a Cor especificada. |
-| lessThan([float]) | [boolean] | Retorna verdadeiro se a Cor atual tiver valores menores que o valor especificado. |
-| lessThan([int]) | [boolean] | Retorna verdadeiro se a Cor atual tiver valores menores que o valor especificado. |
-| lessThan([long]) | [boolean] | Retorna verdadeiro se a Cor atual tiver valores menores que o valor especificado. |
-| lessThan([double]) | [boolean] | Retorna verdadeiro se a Cor atual tiver valores menores que o valor especificado. |
-| lessOrEqualsThan([Object]) | [boolean] | Retorna verdadeiro se a Cor atual tiver valores menores ou iguais aos da Cor especificada. |
-| lessOrEqualsThan([float]) | [boolean] | Retorna verdadeiro se a Cor atual tiver valores menores ou iguais ao valor especificado. |
-| lessOrEqualsThan([int]) | [boolean] | Retorna verdadeiro se a Cor atual tiver valores menores ou iguais ao valor especificado. |
-| lessOrEqualsThan([long]) | [boolean] | Retorna verdadeiro se a Cor atual tiver valores menores ou iguais ao valor especificado. |
-| lessOrEqualsThan([double]) | [boolean] | Retorna verdadeiro se a Cor atual tiver valores menores ou iguais ao valor especificado. |
-| sum([Object]) | [T] | Soma 2 cores e retorna uma nova Cor. |
-| sumEqual([Object]) | [void] | Soma 2 cores e modifica a própria Cor com o resultado. |
-| div([Object]) | [T] | Divide 2 cores e retorna uma nova Cor. |
-| divEqual([Object]) | [void] | Divide 2 cores e modifica a própria Cor com o resultado. |
-| mul([Object]) | [T] | Multiplica 2 cores e retorna uma nova Cor. |
-| mulEqual([Object]) | [void] | Multiplica 2 cores e modifica a própria Cor com o resultado. |
-| sub([Object]) | [T] | Subtrai 2 cores e retorna uma nova Cor. |
-| subEqual([Object]) | [void] | Subtrai 2 cores e modifica a própria Cor com o resultado. |
-| serializeToString() | [String] | Serializa a cor para uma String no formato '[R;G;B;A]'. |
-| deserializeLocal([String]) | [void] | Desserializa uma String no formato '[R;G;B;A]' e define os valores nesta cor. |
+| `set(Color)` | `void` | Define a propriedade `Cor desta instância para a Cor especificada`. |
+| `getInt()` | `int` | Retorna a propriedade `propriedade `valor int da Cor``. |
+| `setInt(int)` | `void` | Define a propriedade `Cor para a Cor do valor int especificado`. |
+| `fromHexString(String)` | `void` | Define a propriedade `Cor para a Cor do código hexadecimal especificado`. |
+| `fromHex(String)` | `void` | Define a propriedade `Cor para a Cor do código hexadecimal especificado`. |
+| `getHexString()` | `String` | Retorna a propriedade `propriedade `código hexadecimal da Cor``. |
+| `toHex()` | `String` | Retorna a propriedade `propriedade `código hexadecimal da Cor``. |
+| `getIntAlpha()` | `int` | Retorna a propriedade `propriedade `valor int da opacidade (canal alfa) da Cor (0-255)``. |
+| `setIntAlpha(int)` | `void` | Define a propriedade `propriedade `valor int da opacidade (canal alfa) da Cor (0-255)``. |
+| `getIntRed()` | `int` | Retorna a propriedade `propriedade `valor int do canal vermelho da Cor (0-255)``. |
+| `setIntRed(int)` | `void` | Define a propriedade `propriedade `valor int do canal vermelho da Cor (0-255)``. |
+| `getIntGreen()` | `int` | Retorna a propriedade `propriedade `valor int do canal verde da Cor (0-255)``. |
+| `setIntGreen(int)` | `void` | Define a propriedade `propriedade `valor int do canal verde da Cor (0-255)``. |
+| `getIntBlue()` | `int` | Retorna a propriedade `propriedade `valor int do canal azul da Cor (0-255)``. |
+| `setIntBlue(int)` | `void` | Define a propriedade `propriedade `valor int do canal azul da Cor (0-255)``. |
+| `setInts(int, int, int, int)` | `void` | Define os valores int dos canais ARGB (alfa, vermelho, verde e azul) para os valores especificados, respectivamente. |
+| `setInts(int, int, int)` | `void` | Define os valores int dos canais RGB (vermelho, verde e azul) para os valores especificados, respectivamente. |
+| `getFloatAlpha()` | `float` | Retorna a propriedade `propriedade `valor float da opacidade (canal alfa) da Cor (0``.0f - 1.0f). |
+| `setFloatAlpha(float)` | `void` | Define a propriedade `propriedade `valor float da opacidade (canal alfa) da Cor (0``.0f - 1.0f). |
+| `getFloatRed()` | `float` | Retorna a propriedade `propriedade `valor float do canal vermelho da Cor (0``.0f - 1.0f). |
+| `setFloatRed(float)` | `void` | Define a propriedade `propriedade `valor float do canal vermelho da Cor (0``.0f - 1.0f). |
+| `getFloatGreen()` | `float` | Retorna a propriedade `propriedade `valor float do canal verde da Cor (0``.0f - 1.0f). |
+| `setFloatGreen(float)` | `void` | Define a propriedade `propriedade `valor float do canal verde da Cor (0``.0f - 1.0f). |
+| `getFloatBlue()` | `float` | Retorna a propriedade `propriedade `valor float do canal azul da Cor (0``.0f - 1.0f). |
+| `setFloatBlue(float)` | `void` | Define a propriedade `propriedade `valor float do canal azul da Cor (0``.0f - 1.0f). |
+| `setFloats(float, float, float, float)` | `void` | Define os valores float dos canais ARGB (alfa, vermelho, verde e azul) para os valores especificados, respectivamente. |
+| `setFloats(float, float, float)` | `void` | Define os valores float dos canais RGB (vermelho, verde e azul) para os valores especificados, respectivamente. |
+| `sum(Color)` | `Color` | Soma a Cor atual com a Cor especificada e retorna uma nova Cor. |
+| `sum(Vector3)` | `Color` | Soma a Cor atual com o Vector3 especificado e retorna uma nova Cor. |
+| `sum(Vector2)` | `Color` | Soma a Cor atual com o Vector2 especificado e retorna uma nova Cor. |
+| `sub(Color)` | `Color` | Subtrai a Cor especificada da Cor atual e retorna uma nova Cor. |
+| `sub(Vector3)` | `Color` | Subtrai o Vector3 especificado da Cor atual e retorna uma nova Cor. |
+| `sub(Vector2)` | `Color` | Subtrai o Vector2 especificado da Cor atual e retorna uma nova Cor. |
+| `mul(Color)` | `Color` | Multiplica a Cor atual pela Cor especificada e retorna uma nova Cor. |
+| `mul(Vector3)` | `Color` | Multiplica a Cor atual pelo Vector3 especificado e retorna uma nova Cor. |
+| `mul(Vector2)` | `Color` | Multiplica a Cor atual pelo Vector2 especificado e retorna uma nova Cor. |
+| `div(Color)` | `Color` | Divide a Cor atual pela Cor especificada e retorna uma nova Cor. |
+| `div(Vector3)` | `Color` | Divide a Cor atual pelo Vector3 especificado e retorna uma nova Cor. |
+| `div(Vector2)` | `Color` | Divide a Cor atual pelo Vector2 especificado e retorna uma nova Cor. |
+| `sumLocal(Color)` | `void` | Soma a Cor atual com a Cor especificada e modifica a Cor atual. |
+| `sumLocal(Vector3)` | `void` | Soma a Cor atual com o Vector3 especificado e modifica a Cor atual. |
+| `sumLocal(Vector2)` | `void` | Soma a Cor atual com o Vector2 especificado e modifica a Cor atual. |
+| `subLocal(Color)` | `void` | Subtrai a Cor especificada da Cor atual e modifica a Cor atual. |
+| `subLocal(Vector3)` | `void` | Subtrai o Vector3 especificado da Cor atual e modifica a Cor atual. |
+| `subLocal(Vector2)` | `void` | Subtrai o Vector2 especificado da Cor atual e modifica a Cor atual. |
+| `mulLocal(Color)` | `void` | Multiplica a Cor atual pela Cor especificada e modifica a Cor atual. |
+| `mulLocal(Vector3)` | `void` | Multiplica a Cor atual pelo Vector3 especificado e modifica a Cor atual. |
+| `mulLocal(Vector2)` | `void` | Multiplica a Cor atual pelo Vector2 especificado e modifica a Cor atual. |
+| `divLocal(Color)` | `void` | Divide a Cor atual pela Cor especificada e modifica a Cor atual. |
+| `divLocal(Vector3)` | `void` | Divide a Cor atual pelo Vector3 especificado e modifica a Cor atual. |
+| `divLocal(Vector2)` | `void` | Divide a Cor atual pelo Vector2 especificado e modifica a Cor atual. |
+| `lerp(Color, float)` | `void` | Faz uma interpolação/suavização entre a Cor atual e a Cor especificada com base na velocidade/intervalo fornecido e modifica a Cor atual. |
+| `lerp(float, float, float, float, float)` | `void` | Faz uma interpolação/suavização entre a Cor atual e os valores ARGB (alfa, vermelho, verde e azul) especificados com base na velocidade/intervalo fornecido e modifica a Cor atual. |
+| `lerp(float, float)` | `void` | Faz uma interpolação/suavização entre a Cor atual e o valor especificado com base na velocidade/intervalo fornecido e modifica a Cor atual. |
+| `lerpOut(Color, float)` | `Color` | Faz uma interpolação/suavização entre a Cor atual e a Cor especificada com base na velocidade/intervalo fornecido e retorna uma nova Cor. |
+| `lerpOut(float, float, float, float, float)` | `Color` | Faz uma interpolação/suavização entre a Cor atual e os valores ARGB (alfa, vermelho, verde e azul) especificados com base na velocidade/intervalo fornecido e retorna uma nova Cor. |
+| `lerpOut(float, float)` | `Color` | Faz uma interpolação/suavização entre a Cor atual e o valor especificado com base na velocidade/intervalo fornecido e retorna uma nova Cor. |
+| `lerpInSeconds(Color, float)` | `void` | Faz uma interpolação/suavização entre a Cor atual e a Cor especificada com base na velocidade/intervalo fornecido em um segundo e modifica a Cor atual. |
+| `lerpInSeconds(float, float, float, float, float)` | `void` | Faz uma interpolação/suavização entre a Cor atual e os valores ARGB (alfa, vermelho, verde e azul) especificados com base na velocidade/intervalo fornecido em um segundo e modifica a Cor atual. |
+| `lerpInSeconds(float, float)` | `void` | Faz uma interpolação/suavização entre a Cor atual e o valor especificado com base na velocidade/intervalo fornecido em um segundo e modifica a Cor atual. |
+| `lerpOutInSeconds(Color, float)` | `Color` | Faz uma interpolação/suavização entre a Cor atual e a Cor especificada com base na velocidade/intervalo fornecido em um segundo e retorna uma nova Cor. |
+| `lerpOutInSeconds(float, float, float, float, float)` | `Color` | Faz uma interpolação/suavização entre a Cor atual e os valores ARGB (alfa, vermelho, verde e azul) especificados com base na velocidade/intervalo fornecido em um segundo e retorna uma nova Cor. |
+| `lerpOutInSeconds(float, float)` | `Color` | Faz uma interpolação/suavização entre a Cor atual e o valor especificado com base na velocidade/intervalo fornecido em um segundo e retorna uma nova Cor. |
+| `blend(Color, float)` | `void` | Faz uma mistura entre a Cor atual e a Cor especificada com base na porcentagem fornecida (0-1) e modifica a Cor atual. |
+| `blend(float, float, float, float, float)` | `void` | Faz uma mistura entre a Cor atual e os valores ARGB (alfa, vermelho, verde e azul) especificados com base na porcentagem fornecida (0-1) e modifica a Cor atual. |
+| `blend(float, float)` | `void` | Faz uma mistura entre a Cor atual e o valor especificado com base na porcentagem fornecida (0-1) e modifica a Cor atual. |
+| `blendOut(Color, float)` | `Color` | Faz uma mistura entre a Cor atual e a Cor especificada com base na porcentagem fornecida (0-1) e retorna uma nova Cor. |
+| `blendOut(float, float, float, float, float)` | `Color` | Faz uma mistura entre a Cor atual e os valores ARGB (alfa, vermelho, verde e azul) especificados com base na porcentagem fornecida (0-1) e retorna uma nova Cor. |
+| `blendOut(float, float)` | `Color` | Faz uma mistura entre a Cor atual e o valor especificado com base na porcentagem fornecida (0-1) e retorna uma nova Cor. |
+| `toString()` | `String` | Retorna uma String dos valores int ARGB (alfa, vermelho, verde e azul) da Cor. |
+| `copy()` | `Color` | Retorna uma cópia da instância da Cor atual. |
+| `equals(Object)` | `boolean` | Retorna verdadeiro se a Cor especificada é igual à Cor atual. |
+| `pointerEquals(Object)` | `boolean` | Retorna verdadeiro se à instância da Cor especificada é igual a instância da Cor atual. |
+| `notEquals(Object)` | `boolean` | Retorna verdadeiro se a Cor especificada é diferente da Cor atual. |
+| `greaterThan(Object)` | `boolean` | Retorna verdadeiro se a Cor atual tiver valores maiores que a Cor especificada. |
+| `greaterThan(float)` | `boolean` | Retorna verdadeiro se a Cor atual tiver valores maiores que o valor especificado. |
+| `greaterThan(int)` | `boolean` | Retorna verdadeiro se a Cor atual tiver valores maiores que o valor especificado. |
+| `greaterThan(long)` | `boolean` | Retorna verdadeiro se a Cor atual tiver valores maiores que o valor especificado. |
+| `greaterThan(double)` | `boolean` | Retorna verdadeiro se a Cor atual tiver valores maiores que o valor especificado. |
+| `greaterOrEqualsThan(Object)` | `boolean` | Retorna verdadeiro se a Cor atual tiver valores maiores ou iguais aos da Cor especificada. |
+| `greaterOrEqualsThan(float)` | `boolean` | Retorna verdadeiro se a Cor atual tiver valores maiores ou iguais ao valor especificado. |
+| `greaterOrEqualsThan(int)` | `boolean` | Retorna verdadeiro se a Cor atual tiver valores maiores ou iguais ao valor especificado. |
+| `greaterOrEqualsThan(long)` | `boolean` | Retorna verdadeiro se a Cor atual tiver valores maiores ou iguais ao valor especificado. |
+| `greaterOrEqualsThan(double)` | `boolean` | Retorna verdadeiro se a Cor atual tiver valores maiores ou iguais ao valor especificado. |
+| `lessThan(Object)` | `boolean` | Retorna verdadeiro se a Cor atual tiver valores menores que a Cor especificada. |
+| `lessThan(float)` | `boolean` | Retorna verdadeiro se a Cor atual tiver valores menores que o valor especificado. |
+| `lessThan(int)` | `boolean` | Retorna verdadeiro se a Cor atual tiver valores menores que o valor especificado. |
+| `lessThan(long)` | `boolean` | Retorna verdadeiro se a Cor atual tiver valores menores que o valor especificado. |
+| `lessThan(double)` | `boolean` | Retorna verdadeiro se a Cor atual tiver valores menores que o valor especificado. |
+| `lessOrEqualsThan(Object)` | `boolean` | Retorna verdadeiro se a Cor atual tiver valores menores ou iguais aos da Cor especificada. |
+| `lessOrEqualsThan(float)` | `boolean` | Retorna verdadeiro se a Cor atual tiver valores menores ou iguais ao valor especificado. |
+| `lessOrEqualsThan(int)` | `boolean` | Retorna verdadeiro se a Cor atual tiver valores menores ou iguais ao valor especificado. |
+| `lessOrEqualsThan(long)` | `boolean` | Retorna verdadeiro se a Cor atual tiver valores menores ou iguais ao valor especificado. |
+| `lessOrEqualsThan(double)` | `boolean` | Retorna verdadeiro se a Cor atual tiver valores menores ou iguais ao valor especificado. |
+| `sum(Object)` | `T` | Soma 2 cores e retorna uma nova Cor. |
+| `sumEqual(Object)` | `void` | Soma 2 cores e modifica a própria Cor com o resultado. |
+| `div(Object)` | `T` | Divide 2 cores e retorna uma nova Cor. |
+| `divEqual(Object)` | `void` | Divide 2 cores e modifica a própria Cor com o resultado. |
+| `mul(Object)` | `T` | Multiplica 2 cores e retorna uma nova Cor. |
+| `mulEqual(Object)` | `void` | Multiplica 2 cores e modifica a própria Cor com o resultado. |
+| `sub(Object)` | `T` | Subtrai 2 cores e retorna uma nova Cor. |
+| `subEqual(Object)` | `void` | Subtrai 2 cores e modifica a própria Cor com o resultado. |
+| `serializeToString()` | `String` | Serializa a cor para uma String no formato '[R;G;B;A]'. |
+| `deserializeLocal(String)` | `void` | Desserializa uma String no formato '[R;G;B;A]' e define os valores nesta cor. |
 
 ## Métodos Estáticos (10)
 
 | Signature | Returns | Description |
 | --- | --- | --- |
-| genericInterface() | [GenericClassInspectorEntry] | Executa `genericInterface` e retorna quando a chamada do motor termina. |
-| inspectorController() | [ClassInspectorEntry] | Executa `inspectorController` e retorna quando a chamada do motor termina. |
-| RED() | [Color] | Retorna a propriedade `Cor vermelha (255, 255, 0, 0)`. |
-| WHITE() | [Color] | Retorna a propriedade `Cor branca (255, 255, 255, 255)`. |
-| BLACK() | [Color] | Retorna a propriedade `Cor preta (255, 0, 0, 0)`. |
-| GREEN() | [Color] | Retorna a propriedade `Cor verde (255, 0, 255, 0)`. |
-| BLUE() | [Color] | Retorna a propriedade `Cor azul (255, 0, 0, 255)`. |
-| YELLOW() | [Color] | Retorna a propriedade `Cor amarela (255, 241, 196, 15)`. |
-| PINK() | [Color] | Retorna a propriedade `Cor vermelha (255, 255, 0, 255)`. |
-| isNull([Object]) | [boolean] | Retorna verdadeiro se a Cor especificada for nula. |
+| `genericInterface()` | `GenericClassInspectorEntry` | Executa `genericInterface` e retorna quando a chamada do motor termina. |
+| `inspectorController()` | `ClassInspectorEntry` | Executa `inspectorController` e retorna quando a chamada do motor termina. |
+| `RED()` | `Color` | Retorna a propriedade `Cor vermelha (255, 255, 0, 0)`. |
+| `WHITE()` | `Color` | Retorna a propriedade `Cor branca (255, 255, 255, 255)`. |
+| `BLACK()` | `Color` | Retorna a propriedade `Cor preta (255, 0, 0, 0)`. |
+| `GREEN()` | `Color` | Retorna a propriedade `Cor verde (255, 0, 255, 0)`. |
+| `BLUE()` | `Color` | Retorna a propriedade `Cor azul (255, 0, 0, 255)`. |
+| `YELLOW()` | `Color` | Retorna a propriedade `Cor amarela (255, 241, 196, 15)`. |
+| `PINK()` | `Color` | Retorna a propriedade `Cor vermelha (255, 255, 0, 255)`. |
+| `isNull(Object)` | `boolean` | Retorna verdadeiro se a Cor especificada for nula. |

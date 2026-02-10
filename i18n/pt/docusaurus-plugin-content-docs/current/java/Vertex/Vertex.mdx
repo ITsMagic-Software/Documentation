@@ -1,7 +1,3 @@
-import Links from '../../links.mdx';
-
-<Links />
-
 # Vertex
 
 Referência completa da API de `Vertex`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -48,64 +44,64 @@ public class Vertex
 
 | Signature | Returns | Description |
 | --- | --- | --- |
-| getVertices() | [List]&[lt];[Vector3]&[gt]; | Retorna a propriedade `propriedade `vertices atual``. |
-| getVerticesArray() | [float][] | Retorna a propriedade `propriedade `vertices array atual``. |
-| getVerticesBuffer() | [NativeFloatBuffer] | Retorna a propriedade `propriedade `vertices buffer atual``. |
-| setVertices([[List]&lt;Vector3&gt;]) | [void] | Define ou atualiza a propriedade `propriedade `vertices``. |
-| setVertices([float][]) | [void] | Define ou atualiza a propriedade `propriedade `vertices``. |
-| setVertices([NativeFloatBuffer]) | [void] | Define ou atualiza a propriedade `propriedade `vertices``. |
-| setVertices([Vector3Buffer]) | [void] | Define ou atualiza a propriedade `propriedade `vertices``. |
-| getTriangles() | [List]&[lt];[Vector3]&[gt]; | Retorna a propriedade `propriedade `triangles atual``. |
-| getTrianglesArray() | [int][] | Retorna a propriedade `propriedade `triangles array atual``. |
-| getTrianglesBuffer() | [NativeIntBuffer] | Retorna a propriedade `propriedade `triangles buffer atual``. |
-| setTriangles([[List]&lt;Vector3&gt;]) | [void] | Define ou atualiza a propriedade `propriedade `triangles``. |
-| setTriangles([int][]) | [void] | Define ou atualiza a propriedade `propriedade `triangles``. |
-| setTriangles([NativeIntBuffer]) | [void] | Define ou atualiza a propriedade `propriedade `triangles``. |
-| setTriangles([Point3Buffer]) | [void] | Define ou atualiza a propriedade `propriedade `triangles``. |
-| getNormals() | [List]&[lt];[Vector3]&[gt]; | Retorna a propriedade `propriedade `normals atual``. |
-| getNormalsArray() | [float][] | Retorna a propriedade `propriedade `normals array atual``. |
-| getNormalsBuffer() | [NativeFloatBuffer] | Retorna a propriedade `propriedade `normals buffer atual``. |
-| setNormals([[List]&lt;Vector3&gt;]) | [void] | Define ou atualiza a propriedade `propriedade `normals``. |
-| setNormals([float][]) | [void] | Define ou atualiza a propriedade `propriedade `normals``. |
-| setNormals([NativeFloatBuffer]) | [void] | Define ou atualiza a propriedade `propriedade `normals``. |
-| setNormals([Vector3Buffer]) | [void] | Define ou atualiza a propriedade `propriedade `normals``. |
-| getUVs() | [List]&[lt];[Vector2]&[gt]; | Retorna a propriedade `propriedade `uvs atual``. |
-| getUVsArray() | [float][] | Retorna a propriedade `propriedade `uvs array atual``. |
-| getUVsBuffer() | [NativeFloatBuffer] | Retorna a propriedade `propriedade `uvs buffer atual``. |
-| setUVs([[List]&lt;Vector2&gt;]) | [void] | Define ou atualiza a propriedade `propriedade `uvs``. |
-| setUVs([float][]) | [void] | Define ou atualiza a propriedade `propriedade `uvs``. |
-| setUVs([NativeFloatBuffer]) | [void] | Define ou atualiza a propriedade `propriedade `uvs``. |
-| setUVs([Vector2Buffer]) | [void] | Define ou atualiza a propriedade `propriedade `uvs``. |
-| getJoints() | [List]&[lt];[Vector3]&[gt]; | Retorna a propriedade `propriedade `joints atual``. |
-| getJointsArray() | [float][] | Retorna a propriedade `propriedade `joints array atual``. |
-| getJointsBuffer() | [NativeFloatBuffer] | Retorna a propriedade `propriedade `joints buffer atual``. |
-| setJoints([[List]&lt;Vector3&gt;]) | [void] | Define ou atualiza a propriedade `propriedade `joints``. |
-| setJoints([float][]) | [void] | Define ou atualiza a propriedade `propriedade `joints``. |
-| setJoints([NativeFloatBuffer]) | [void] | Define ou atualiza a propriedade `propriedade `joints``. |
-| setJoints([Vector3Buffer]) | [void] | Define ou atualiza a propriedade `propriedade `joints``. |
-| getWeights() | [List]&[lt];[Vector3]&[gt]; | Retorna a propriedade `propriedade `weights atual``. |
-| getWeightsArray() | [float][] | Retorna a propriedade `propriedade `weights array atual``. |
-| getWeightsBuffer() | [NativeFloatBuffer] | Retorna a propriedade `propriedade `weights buffer atual``. |
-| setWeights([[List]&lt;Vector3&gt;]) | [void] | Define ou atualiza a propriedade `propriedade `weights``. |
-| setWeights([float][]) | [void] | Define ou atualiza a propriedade `propriedade `weights``. |
-| setWeights([NativeFloatBuffer]) | [void] | Define ou atualiza a propriedade `propriedade `weights``. |
-| setWeights([Vector3Buffer]) | [void] | Define ou atualiza a propriedade `propriedade `weights``. |
-| traceLaser([Transform], [Ray]) | [LaserHit] | Executa a operação traceLaser usando os parâmetros informados (transform, ray). |
-| traceLaser([Transform], [Ray], [RayMode]) | [LaserHit] | Executa a operação traceLaser usando os parâmetros informados (transform, ray, rayMode). |
-| traceLaser([Transform], [Ray], [RayMode], [boolean]) | [LaserHit] | Executa a operação traceLaser usando os parâmetros informados (transform, ray, rayMode, backfaceCulling). |
-| traceLaserAsync([Transform], [Ray], [AsyncLaserListener]) | [void] | Executa a operação traceLaserAsync usando os parâmetros informados (transform, ray, asyncLaserListener). |
-| traceLaserAsync([Transform], [Ray], [AsyncLaserListener], [RayMode]) | [void] | Executa a operação traceLaserAsync usando os parâmetros informados (transform, ray, asyncLaserListener, rayMode). |
-| traceLaserAsync([Transform], [Ray], [AsyncLaserListener], [RayMode], [boolean]) | [void] | Executa a operação traceLaserAsync usando os parâmetros informados (transform, ray, asyncLaserListener, rayMode, backfaceCulling). |
-| apply() | [void] | Executa a operação apply. |
-| applyAsync() | [void] | Executa `applyAsync` e retorna quando a chamada do motor termina. |
-| getBoundingBox() | [AABB] | Retorna a propriedade `propriedade `bounding box atual``. |
-| recalculateBoundingBox() | [AABB] | Executa a operação recalculateBoundingBox. |
+| `getVertices()` | [List]&[lt];[Vector3]&[gt]; | Retorna a propriedade `propriedade `vertices atual``. |
+| `getVerticesArray()` | [float][] | Retorna a propriedade `propriedade `vertices array atual``. |
+| `getVerticesBuffer()` | `NativeFloatBuffer` | Retorna a propriedade `propriedade `vertices buffer atual``. |
+| `setVertices([List&lt;Vector3&gt;])` | `void` | Define ou atualiza a propriedade `propriedade `vertices``. |
+| `setVertices(float[])` | `void` | Define ou atualiza a propriedade `propriedade `vertices``. |
+| `setVertices(NativeFloatBuffer)` | `void` | Define ou atualiza a propriedade `propriedade `vertices``. |
+| `setVertices(Vector3Buffer)` | `void` | Define ou atualiza a propriedade `propriedade `vertices``. |
+| `getTriangles()` | [List]&[lt];[Vector3]&[gt]; | Retorna a propriedade `propriedade `triangles atual``. |
+| `getTrianglesArray()` | [int][] | Retorna a propriedade `propriedade `triangles array atual``. |
+| `getTrianglesBuffer()` | `NativeIntBuffer` | Retorna a propriedade `propriedade `triangles buffer atual``. |
+| `setTriangles([List&lt;Vector3&gt;])` | `void` | Define ou atualiza a propriedade `propriedade `triangles``. |
+| `setTriangles(int[])` | `void` | Define ou atualiza a propriedade `propriedade `triangles``. |
+| `setTriangles(NativeIntBuffer)` | `void` | Define ou atualiza a propriedade `propriedade `triangles``. |
+| `setTriangles(Point3Buffer)` | `void` | Define ou atualiza a propriedade `propriedade `triangles``. |
+| `getNormals()` | [List]&[lt];[Vector3]&[gt]; | Retorna a propriedade `propriedade `normals atual``. |
+| `getNormalsArray()` | [float][] | Retorna a propriedade `propriedade `normals array atual``. |
+| `getNormalsBuffer()` | `NativeFloatBuffer` | Retorna a propriedade `propriedade `normals buffer atual``. |
+| `setNormals([List&lt;Vector3&gt;])` | `void` | Define ou atualiza a propriedade `propriedade `normals``. |
+| `setNormals(float[])` | `void` | Define ou atualiza a propriedade `propriedade `normals``. |
+| `setNormals(NativeFloatBuffer)` | `void` | Define ou atualiza a propriedade `propriedade `normals``. |
+| `setNormals(Vector3Buffer)` | `void` | Define ou atualiza a propriedade `propriedade `normals``. |
+| `getUVs()` | [List]&[lt];[Vector2]&[gt]; | Retorna a propriedade `propriedade `uvs atual``. |
+| `getUVsArray()` | [float][] | Retorna a propriedade `propriedade `uvs array atual``. |
+| `getUVsBuffer()` | `NativeFloatBuffer` | Retorna a propriedade `propriedade `uvs buffer atual``. |
+| `setUVs([List&lt;Vector2&gt;])` | `void` | Define ou atualiza a propriedade `propriedade `uvs``. |
+| `setUVs(float[])` | `void` | Define ou atualiza a propriedade `propriedade `uvs``. |
+| `setUVs(NativeFloatBuffer)` | `void` | Define ou atualiza a propriedade `propriedade `uvs``. |
+| `setUVs(Vector2Buffer)` | `void` | Define ou atualiza a propriedade `propriedade `uvs``. |
+| `getJoints()` | [List]&[lt];[Vector3]&[gt]; | Retorna a propriedade `propriedade `joints atual``. |
+| `getJointsArray()` | [float][] | Retorna a propriedade `propriedade `joints array atual``. |
+| `getJointsBuffer()` | `NativeFloatBuffer` | Retorna a propriedade `propriedade `joints buffer atual``. |
+| `setJoints([List&lt;Vector3&gt;])` | `void` | Define ou atualiza a propriedade `propriedade `joints``. |
+| `setJoints(float[])` | `void` | Define ou atualiza a propriedade `propriedade `joints``. |
+| `setJoints(NativeFloatBuffer)` | `void` | Define ou atualiza a propriedade `propriedade `joints``. |
+| `setJoints(Vector3Buffer)` | `void` | Define ou atualiza a propriedade `propriedade `joints``. |
+| `getWeights()` | [List]&[lt];[Vector3]&[gt]; | Retorna a propriedade `propriedade `weights atual``. |
+| `getWeightsArray()` | [float][] | Retorna a propriedade `propriedade `weights array atual``. |
+| `getWeightsBuffer()` | `NativeFloatBuffer` | Retorna a propriedade `propriedade `weights buffer atual``. |
+| `setWeights([List&lt;Vector3&gt;])` | `void` | Define ou atualiza a propriedade `propriedade `weights``. |
+| `setWeights(float[])` | `void` | Define ou atualiza a propriedade `propriedade `weights``. |
+| `setWeights(NativeFloatBuffer)` | `void` | Define ou atualiza a propriedade `propriedade `weights``. |
+| `setWeights(Vector3Buffer)` | `void` | Define ou atualiza a propriedade `propriedade `weights``. |
+| `traceLaser(Transform, Ray)` | `LaserHit` | Executa a operação traceLaser usando os parâmetros informados (transform, ray). |
+| `traceLaser(Transform, Ray, RayMode)` | `LaserHit` | Executa a operação traceLaser usando os parâmetros informados (transform, ray, rayMode). |
+| `traceLaser(Transform, Ray, RayMode, boolean)` | `LaserHit` | Executa a operação traceLaser usando os parâmetros informados (transform, ray, rayMode, backfaceCulling). |
+| `traceLaserAsync(Transform, Ray, AsyncLaserListener)` | `void` | Executa a operação traceLaserAsync usando os parâmetros informados (transform, ray, asyncLaserListener). |
+| `traceLaserAsync(Transform, Ray, AsyncLaserListener, RayMode)` | `void` | Executa a operação traceLaserAsync usando os parâmetros informados (transform, ray, asyncLaserListener, rayMode). |
+| `traceLaserAsync(Transform, Ray, AsyncLaserListener, RayMode, boolean)` | `void` | Executa a operação traceLaserAsync usando os parâmetros informados (transform, ray, asyncLaserListener, rayMode, backfaceCulling). |
+| `apply()` | `void` | Executa a operação apply. |
+| `applyAsync()` | `void` | Executa `applyAsync` e retorna quando a chamada do motor termina. |
+| `getBoundingBox()` | `AABB` | Retorna a propriedade `propriedade `bounding box atual``. |
+| `recalculateBoundingBox()` | `AABB` | Executa a operação recalculateBoundingBox. |
 
 ## Métodos Estáticos (4)
 
 | Signature | Returns | Description |
 | --- | --- | --- |
-| loadFile([VertexFile]) | [Vertex] | Carrega file no objeto. |
-| loadFile([File]) | [Vertex] | Carrega file no objeto. |
-| loadFile([InputStream]) | [Vertex] | Carrega file no objeto. |
-| loadPrimitive([int]) | [Vertex] | Carrega primitive no objeto. |
+| `loadFile(VertexFile)` | `Vertex` | Carrega file no objeto. |
+| `loadFile(File)` | `Vertex` | Carrega file no objeto. |
+| `loadFile(InputStream)` | `Vertex` | Carrega file no objeto. |
+| `loadPrimitive(int)` | `Vertex` | Carrega primitive no objeto. |

@@ -1,7 +1,3 @@
-import Links from '../../links.mdx';
-
-<Links />
-
 # File
 
 Referência completa da API de `File`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -35,58 +31,58 @@ public class File extends File
 
 | Signature | Returns | Description |
 | --- | --- | --- |
-| getName() | [String] | Retorna a propriedade `propriedade `name atual``. |
-| getParent() | [String] | Retorna a propriedade `propriedade `parent atual``. |
-| getParentFile() | [File] | Retorna a propriedade `propriedade `parent file atual``. |
-| getPath() | [String] | Retorna a propriedade `propriedade `path atual``. |
-| isAbsolute() | [boolean] | Retorna se absolute é verdadeiro. |
-| getAbsolutePath() | [String] | Retorna a propriedade `propriedade `absolute path atual``. |
-| getAbsoluteFile() | [File] | Retorna a propriedade `propriedade `absolute file atual``. |
-| getCanonicalPath() | [String] | Executa `getCanonicalPath` e retorna quando a chamada do motor termina. |
-| getCanonicalFile() | [File] | Executa `getCanonicalFile` e retorna quando a chamada do motor termina. |
-| toURL() | [URL] | Executa `toURL` e retorna quando a chamada do motor termina. |
-| toURI() | [URI] | Executa a operação toURI. |
-| canRead() | [boolean] | Retorna se read é verdadeiro. |
-| canWrite() | [boolean] | Retorna se write é verdadeiro. |
-| exists() | [boolean] | Executa a operação exists. |
-| isDirectory() | [boolean] | Retorna se directory é verdadeiro. |
-| isFile() | [boolean] | Retorna se file é verdadeiro. |
-| isHidden() | [boolean] | Retorna se hidden é verdadeiro. |
-| lastModified() | [long] | Executa a operação lastModified. |
-| length() | [long] | Executa a operação length. |
-| createNewFile() | [boolean] | Executa `createNewFile` e retorna quando a chamada do motor termina. |
-| delete() | [boolean] | Remove an item da coleção. |
-| deleteOnExit() | [void] | Remove on exit da coleção. |
-| list() | [String][] | Executa a operação list. |
-| list([FilenameFilter]) | [String][] | Executa a operação list usando os parâmetros informados (filter). |
-| listFiles() | [File][] | Executa a operação listFiles. |
-| listFiles([FilenameFilter]) | [File][] | Executa a operação listFiles usando os parâmetros informados (filter). |
-| listFiles([FileFilter]) | [File][] | Executa a operação listFiles usando os parâmetros informados (filter). |
-| mkdir() | [boolean] | Executa a operação mkdir. |
-| mkdirs() | [boolean] | Executa a operação mkdirs. |
-| renameTo([File]) | [boolean] | Executa a operação renameTo usando os parâmetros informados (dest). |
-| setLastModified([long]) | [boolean] | Define ou atualiza a propriedade `propriedade `last modified``. |
-| setReadOnly() | [boolean] | Define ou atualiza a propriedade `propriedade `read only``. |
-| setWritable([boolean], [boolean]) | [boolean] | Define ou atualiza a propriedade `propriedade `writable``. |
-| setWritable([boolean]) | [boolean] | Define ou atualiza a propriedade `propriedade `writable``. |
-| setReadable([boolean], [boolean]) | [boolean] | Define ou atualiza a propriedade `propriedade `readable``. |
-| setReadable([boolean]) | [boolean] | Define ou atualiza a propriedade `propriedade `readable``. |
-| setExecutable([boolean], [boolean]) | [boolean] | Define ou atualiza a propriedade `propriedade `executable``. |
-| setExecutable([boolean]) | [boolean] | Define ou atualiza a propriedade `propriedade `executable``. |
-| canExecute() | [boolean] | Retorna se execute é verdadeiro. |
-| getTotalSpace() | [long] | Retorna a propriedade `propriedade `total space atual``. |
-| getFreeSpace() | [long] | Retorna a propriedade `propriedade `free space atual``. |
-| getUsableSpace() | [long] | Retorna a propriedade `propriedade `usable space atual``. |
-| compareTo([File]) | [int] | Compara esta instância com outra para igualdade/ordem. |
-| equals([Object]) | [boolean] | Compara esta instância com outra para igualdade/ordem. |
-| hashCode() | [int] | Retorna se code é verdadeiro. |
-| toPath() | [Path] | Executa a operação toPath. |
-| isAccessible() | [boolean] | Retorna se accessible é verdadeiro. |
-| isAccessible([String]) | [boolean] | Retorna se accessible é verdadeiro. |
+| `getName()` | `String` | Retorna a propriedade `propriedade `name atual``. |
+| `getParent()` | `String` | Retorna a propriedade `propriedade `parent atual``. |
+| `getParentFile()` | `File` | Retorna a propriedade `propriedade `parent file atual``. |
+| `getPath()` | `String` | Retorna a propriedade `propriedade `path atual``. |
+| `isAbsolute()` | `boolean` | Retorna se absolute é verdadeiro. |
+| `getAbsolutePath()` | `String` | Retorna a propriedade `propriedade `absolute path atual``. |
+| `getAbsoluteFile()` | `File` | Retorna a propriedade `propriedade `absolute file atual``. |
+| `getCanonicalPath()` | `String` | Executa `getCanonicalPath` e retorna quando a chamada do motor termina. |
+| `getCanonicalFile()` | `File` | Executa `getCanonicalFile` e retorna quando a chamada do motor termina. |
+| `toURL()` | `URL` | Executa `toURL` e retorna quando a chamada do motor termina. |
+| `toURI()` | `URI` | Executa a operação toURI. |
+| `canRead()` | `boolean` | Retorna se read é verdadeiro. |
+| `canWrite()` | `boolean` | Retorna se write é verdadeiro. |
+| `exists()` | `boolean` | Executa a operação exists. |
+| `isDirectory()` | `boolean` | Retorna se directory é verdadeiro. |
+| `isFile()` | `boolean` | Retorna se file é verdadeiro. |
+| `isHidden()` | `boolean` | Retorna se hidden é verdadeiro. |
+| `lastModified()` | `long` | Executa a operação lastModified. |
+| `length()` | `long` | Executa a operação length. |
+| `createNewFile()` | `boolean` | Executa `createNewFile` e retorna quando a chamada do motor termina. |
+| `delete()` | `boolean` | Remove an item da coleção. |
+| `deleteOnExit()` | `void` | Remove on exit da coleção. |
+| `list()` | [String][] | Executa a operação list. |
+| `list(FilenameFilter)` | [String][] | Executa a operação list usando os parâmetros informados (filter). |
+| `listFiles()` | [File][] | Executa a operação listFiles. |
+| `listFiles(FilenameFilter)` | [File][] | Executa a operação listFiles usando os parâmetros informados (filter). |
+| `listFiles(FileFilter)` | [File][] | Executa a operação listFiles usando os parâmetros informados (filter). |
+| `mkdir()` | `boolean` | Executa a operação mkdir. |
+| `mkdirs()` | `boolean` | Executa a operação mkdirs. |
+| `renameTo(File)` | `boolean` | Executa a operação renameTo usando os parâmetros informados (dest). |
+| `setLastModified(long)` | `boolean` | Define ou atualiza a propriedade `propriedade `last modified``. |
+| `setReadOnly()` | `boolean` | Define ou atualiza a propriedade `propriedade `read only``. |
+| `setWritable(boolean, boolean)` | `boolean` | Define ou atualiza a propriedade `propriedade `writable``. |
+| `setWritable(boolean)` | `boolean` | Define ou atualiza a propriedade `propriedade `writable``. |
+| `setReadable(boolean, boolean)` | `boolean` | Define ou atualiza a propriedade `propriedade `readable``. |
+| `setReadable(boolean)` | `boolean` | Define ou atualiza a propriedade `propriedade `readable``. |
+| `setExecutable(boolean, boolean)` | `boolean` | Define ou atualiza a propriedade `propriedade `executable``. |
+| `setExecutable(boolean)` | `boolean` | Define ou atualiza a propriedade `propriedade `executable``. |
+| `canExecute()` | `boolean` | Retorna se execute é verdadeiro. |
+| `getTotalSpace()` | `long` | Retorna a propriedade `propriedade `total space atual``. |
+| `getFreeSpace()` | `long` | Retorna a propriedade `propriedade `free space atual``. |
+| `getUsableSpace()` | `long` | Retorna a propriedade `propriedade `usable space atual``. |
+| `compareTo(File)` | `int` | Compara esta instância com outra para igualdade/ordem. |
+| `equals(Object)` | `boolean` | Compara esta instância com outra para igualdade/ordem. |
+| `hashCode()` | `int` | Retorna se code é verdadeiro. |
+| `toPath()` | `Path` | Executa a operação toPath. |
+| `isAccessible()` | `boolean` | Retorna se accessible é verdadeiro. |
+| `isAccessible(String)` | `boolean` | Retorna se accessible é verdadeiro. |
 
 ## Métodos Estáticos (2)
 
 | Signature | Returns | Description |
 | --- | --- | --- |
-| createTempFile([String], [String], [File]) | [File] | Executa `createTempFile` e retorna quando a chamada do motor termina. |
-| createTempFile([String], [String]) | [File] | Executa `createTempFile` e retorna quando a chamada do motor termina. |
+| `createTempFile(String, String, File)` | `File` | Executa `createTempFile` e retorna quando a chamada do motor termina. |
+| `createTempFile(String, String)` | `File` | Executa `createTempFile` e retorna quando a chamada do motor termina. |

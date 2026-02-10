@@ -1,7 +1,3 @@
-import Links from '../../links.mdx';
-
-<Links />
-
 # Vertex
 
 Complete API reference for `Vertex`, including constructors, attributes, virtual attributes, and methods.
@@ -48,64 +44,64 @@ public class Vertex
 
 | Signature | Returns | Description |
 | --- | --- | --- |
-| getVertices() | [List]&[lt];[Vector3]&[gt]; | Returns the current vertices. |
-| getVerticesArray() | [float][] | Returns the current vertices array. |
-| getVerticesBuffer() | [NativeFloatBuffer] | Returns the current vertices buffer. |
-| setVertices([[List]&lt;Vector3&gt;]) | [void] | Sets or updates the vertices. |
-| setVertices([float][]) | [void] | Sets or updates the vertices. |
-| setVertices([NativeFloatBuffer]) | [void] | Sets or updates the vertices. |
-| setVertices([Vector3Buffer]) | [void] | Sets or updates the vertices. |
-| getTriangles() | [List]&[lt];[Vector3]&[gt]; | Returns the current triangles. |
-| getTrianglesArray() | [int][] | Returns the current triangles array. |
-| getTrianglesBuffer() | [NativeIntBuffer] | Returns the current triangles buffer. |
-| setTriangles([[List]&lt;Vector3&gt;]) | [void] | Sets or updates the triangles. |
-| setTriangles([int][]) | [void] | Sets or updates the triangles. |
-| setTriangles([NativeIntBuffer]) | [void] | Sets or updates the triangles. |
-| setTriangles([Point3Buffer]) | [void] | Sets or updates the triangles. |
-| getNormals() | [List]&[lt];[Vector3]&[gt]; | Returns the current normals. |
-| getNormalsArray() | [float][] | Returns the current normals array. |
-| getNormalsBuffer() | [NativeFloatBuffer] | Returns the current normals buffer. |
-| setNormals([[List]&lt;Vector3&gt;]) | [void] | Sets or updates the normals. |
-| setNormals([float][]) | [void] | Sets or updates the normals. |
-| setNormals([NativeFloatBuffer]) | [void] | Sets or updates the normals. |
-| setNormals([Vector3Buffer]) | [void] | Sets or updates the normals. |
-| getUVs() | [List]&[lt];[Vector2]&[gt]; | Returns the current uvs. |
-| getUVsArray() | [float][] | Returns the current uvs array. |
-| getUVsBuffer() | [NativeFloatBuffer] | Returns the current uvs buffer. |
-| setUVs([[List]&lt;Vector2&gt;]) | [void] | Sets or updates the uvs. |
-| setUVs([float][]) | [void] | Sets or updates the uvs. |
-| setUVs([NativeFloatBuffer]) | [void] | Sets or updates the uvs. |
-| setUVs([Vector2Buffer]) | [void] | Sets or updates the uvs. |
-| getJoints() | [List]&[lt];[Vector3]&[gt]; | Returns the current joints. |
-| getJointsArray() | [float][] | Returns the current joints array. |
-| getJointsBuffer() | [NativeFloatBuffer] | Returns the current joints buffer. |
-| setJoints([[List]&lt;Vector3&gt;]) | [void] | Sets or updates the joints. |
-| setJoints([float][]) | [void] | Sets or updates the joints. |
-| setJoints([NativeFloatBuffer]) | [void] | Sets or updates the joints. |
-| setJoints([Vector3Buffer]) | [void] | Sets or updates the joints. |
-| getWeights() | [List]&[lt];[Vector3]&[gt]; | Returns the current weights. |
-| getWeightsArray() | [float][] | Returns the current weights array. |
-| getWeightsBuffer() | [NativeFloatBuffer] | Returns the current weights buffer. |
-| setWeights([[List]&lt;Vector3&gt;]) | [void] | Sets or updates the weights. |
-| setWeights([float][]) | [void] | Sets or updates the weights. |
-| setWeights([NativeFloatBuffer]) | [void] | Sets or updates the weights. |
-| setWeights([Vector3Buffer]) | [void] | Sets or updates the weights. |
-| traceLaser([Transform], [Ray]) | [LaserHit] | Performs the traceLaser operation using the provided parameters (transform, ray). |
-| traceLaser([Transform], [Ray], [RayMode]) | [LaserHit] | Performs the traceLaser operation using the provided parameters (transform, ray, rayMode). |
-| traceLaser([Transform], [Ray], [RayMode], [boolean]) | [LaserHit] | Performs the traceLaser operation using the provided parameters (transform, ray, rayMode, backfaceCulling). |
-| traceLaserAsync([Transform], [Ray], [AsyncLaserListener]) | [void] | Performs the traceLaserAsync operation using the provided parameters (transform, ray, asyncLaserListener). |
-| traceLaserAsync([Transform], [Ray], [AsyncLaserListener], [RayMode]) | [void] | Performs the traceLaserAsync operation using the provided parameters (transform, ray, asyncLaserListener, rayMode). |
-| traceLaserAsync([Transform], [Ray], [AsyncLaserListener], [RayMode], [boolean]) | [void] | Performs the traceLaserAsync operation using the provided parameters (transform, ray, asyncLaserListener, rayMode, backfaceCulling). |
-| apply() | [void] | Executes `apply` and returns after the underlying engine call finishes. |
-| applyAsync() | [void] | Executes `applyAsync` and returns after the underlying engine call finishes. |
-| getBoundingBox() | [AABB] | Returns the current bounding box. |
-| recalculateBoundingBox() | [AABB] | Executes `recalculateBoundingBox` and returns after the underlying engine call finishes. |
+| `getVertices()` | [List]&[lt];[Vector3]&[gt]; | Returns the current vertices. |
+| `getVerticesArray()` | [float][] | Returns the current vertices array. |
+| `getVerticesBuffer()` | `NativeFloatBuffer` | Returns the current vertices buffer. |
+| `setVertices([List&lt;Vector3&gt;])` | `void` | Sets or updates the vertices. |
+| `setVertices(float[])` | `void` | Sets or updates the vertices. |
+| `setVertices(NativeFloatBuffer)` | `void` | Sets or updates the vertices. |
+| `setVertices(Vector3Buffer)` | `void` | Sets or updates the vertices. |
+| `getTriangles()` | [List]&[lt];[Vector3]&[gt]; | Returns the current triangles. |
+| `getTrianglesArray()` | [int][] | Returns the current triangles array. |
+| `getTrianglesBuffer()` | `NativeIntBuffer` | Returns the current triangles buffer. |
+| `setTriangles([List&lt;Vector3&gt;])` | `void` | Sets or updates the triangles. |
+| `setTriangles(int[])` | `void` | Sets or updates the triangles. |
+| `setTriangles(NativeIntBuffer)` | `void` | Sets or updates the triangles. |
+| `setTriangles(Point3Buffer)` | `void` | Sets or updates the triangles. |
+| `getNormals()` | [List]&[lt];[Vector3]&[gt]; | Returns the current normals. |
+| `getNormalsArray()` | [float][] | Returns the current normals array. |
+| `getNormalsBuffer()` | `NativeFloatBuffer` | Returns the current normals buffer. |
+| `setNormals([List&lt;Vector3&gt;])` | `void` | Sets or updates the normals. |
+| `setNormals(float[])` | `void` | Sets or updates the normals. |
+| `setNormals(NativeFloatBuffer)` | `void` | Sets or updates the normals. |
+| `setNormals(Vector3Buffer)` | `void` | Sets or updates the normals. |
+| `getUVs()` | [List]&[lt];[Vector2]&[gt]; | Returns the current uvs. |
+| `getUVsArray()` | [float][] | Returns the current uvs array. |
+| `getUVsBuffer()` | `NativeFloatBuffer` | Returns the current uvs buffer. |
+| `setUVs([List&lt;Vector2&gt;])` | `void` | Sets or updates the uvs. |
+| `setUVs(float[])` | `void` | Sets or updates the uvs. |
+| `setUVs(NativeFloatBuffer)` | `void` | Sets or updates the uvs. |
+| `setUVs(Vector2Buffer)` | `void` | Sets or updates the uvs. |
+| `getJoints()` | [List]&[lt];[Vector3]&[gt]; | Returns the current joints. |
+| `getJointsArray()` | [float][] | Returns the current joints array. |
+| `getJointsBuffer()` | `NativeFloatBuffer` | Returns the current joints buffer. |
+| `setJoints([List&lt;Vector3&gt;])` | `void` | Sets or updates the joints. |
+| `setJoints(float[])` | `void` | Sets or updates the joints. |
+| `setJoints(NativeFloatBuffer)` | `void` | Sets or updates the joints. |
+| `setJoints(Vector3Buffer)` | `void` | Sets or updates the joints. |
+| `getWeights()` | [List]&[lt];[Vector3]&[gt]; | Returns the current weights. |
+| `getWeightsArray()` | [float][] | Returns the current weights array. |
+| `getWeightsBuffer()` | `NativeFloatBuffer` | Returns the current weights buffer. |
+| `setWeights([List&lt;Vector3&gt;])` | `void` | Sets or updates the weights. |
+| `setWeights(float[])` | `void` | Sets or updates the weights. |
+| `setWeights(NativeFloatBuffer)` | `void` | Sets or updates the weights. |
+| `setWeights(Vector3Buffer)` | `void` | Sets or updates the weights. |
+| `traceLaser(Transform, Ray)` | `LaserHit` | Performs the traceLaser operation using the provided parameters (transform, ray). |
+| `traceLaser(Transform, Ray, RayMode)` | `LaserHit` | Performs the traceLaser operation using the provided parameters (transform, ray, rayMode). |
+| `traceLaser(Transform, Ray, RayMode, boolean)` | `LaserHit` | Performs the traceLaser operation using the provided parameters (transform, ray, rayMode, backfaceCulling). |
+| `traceLaserAsync(Transform, Ray, AsyncLaserListener)` | `void` | Performs the traceLaserAsync operation using the provided parameters (transform, ray, asyncLaserListener). |
+| `traceLaserAsync(Transform, Ray, AsyncLaserListener, RayMode)` | `void` | Performs the traceLaserAsync operation using the provided parameters (transform, ray, asyncLaserListener, rayMode). |
+| `traceLaserAsync(Transform, Ray, AsyncLaserListener, RayMode, boolean)` | `void` | Performs the traceLaserAsync operation using the provided parameters (transform, ray, asyncLaserListener, rayMode, backfaceCulling). |
+| `apply()` | `void` | Executes `apply` and returns after the underlying engine call finishes. |
+| `applyAsync()` | `void` | Executes `applyAsync` and returns after the underlying engine call finishes. |
+| `getBoundingBox()` | `AABB` | Returns the current bounding box. |
+| `recalculateBoundingBox()` | `AABB` | Executes `recalculateBoundingBox` and returns after the underlying engine call finishes. |
 
 ## Static Methods (4)
 
 | Signature | Returns | Description |
 | --- | --- | --- |
-| loadFile([VertexFile]) | [Vertex] | Loads file into the object. |
-| loadFile([File]) | [Vertex] | Loads file into the object. |
-| loadFile([InputStream]) | [Vertex] | Loads file into the object. |
-| loadPrimitive([int]) | [Vertex] | Loads primitive into the object. |
+| `loadFile(VertexFile)` | `Vertex` | Loads file into the object. |
+| `loadFile(File)` | `Vertex` | Loads file into the object. |
+| `loadFile(InputStream)` | `Vertex` | Loads file into the object. |
+| `loadPrimitive(int)` | `Vertex` | Loads primitive into the object. |

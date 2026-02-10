@@ -1,7 +1,3 @@
-import Links from '../../links.mdx';
-
-<Links />
-
 # StringOperations
 
 Referência completa da API de `StringOperations`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -22,32 +18,32 @@ public class StringOperations
 
 | Signature | Returns | Description |
 | --- | --- | --- |
-| div([String], [String]) | [String][] | Divide a string 'a' pelo delimitador 'b' e retorna um array de substrings. |
-| div([String], [int]) | [String][] | Divide a string 'a' em substrings de comprimento 'b' e retorna um array de substrings. |
-| sub([String], [String]) | [String] | Remove todas as ocorrências da substring 'b' da string 'a'. |
-| sub([String], [int]) | [String] | Remove os últimos 'b' caracteres da string 'a'. |
-| mul([String], [int]) | [String] | Repete a string 'a' 'b' vezes e Retorna a propriedade `string resultante`. |
-| modulus([String], [int]) | [String] | Retorna a propriedade `substring de 'a' a partir do índice 'b'`. |
-| equals([String], [String]) | [boolean] | Verifica se a string 'a' é igual à string 'b'. |
-| equals([String], [char]) | [boolean] | Verifica se a string 'a' é igual ao caractere 'b'. |
-| equals([String], [int]) | [boolean] | Verifica se a string 'a' é igual ao inteiro 'b' após a conversão. |
-| equals([String], [float]) | [boolean] | Verifica se a string 'a' é igual ao float 'b' após a conversão. |
-| equals([String], [long]) | [boolean] | Verifica se a string 'a' é igual ao long 'b' após a conversão. |
-| equals([String], [double]) | [boolean] | Verifica se a string 'a' é igual ao double 'b' após a conversão. |
-| equals([String], [boolean]) | [boolean] | Verifica se a string 'a' é igual ao booleano 'b' após a conversão. |
-| notEquals([String], [String]) | [boolean] | Verifica se a string 'a' não é igual à string 'b'. |
-| notEquals([String], [char]) | [boolean] | Verifica se a string 'a' não é igual ao caractere 'b'. |
-| notEquals([String], [int]) | [boolean] | Verifica se a string 'a' não é igual ao inteiro 'b' após a conversão. |
-| notEquals([String], [float]) | [boolean] | Verifica se a string 'a' não é igual ao float 'b' após a conversão. |
-| notEquals([String], [boolean]) | [boolean] | Verifica se a string 'a' não é igual ao booleano 'b' após a conversão. |
-| higherThan([String], [String]) | [boolean] | Verifica se o comprimento da string 'a' é maior que o comprimento da string 'b'. |
-| higherEqualThan([String], [String]) | [boolean] | Verifica se o comprimento da string 'a' é maior ou igual ao comprimento da string 'b'. |
-| higherThan([String], [int]) | [boolean] | Verifica se o comprimento da string 'a' é maior que o inteiro 'b'. |
-| higherEqualThan([String], [int]) | [boolean] | Verifica se o comprimento da string 'a' é maior ou igual ao inteiro 'b'. |
-| lessThan([String], [String]) | [boolean] | Verifica se o comprimento da string 'a' é menor que o comprimento da string 'b'. |
-| lessEqualThan([String], [String]) | [boolean] | Verifica se o comprimento da string 'a' é menor ou igual ao comprimento da string 'b'. |
-| lessThan([String], [int]) | [boolean] | Verifica se o comprimento da string 'a' é menor que o inteiro 'b'. |
-| lessEqualThan([String], [int]) | [boolean] | Verifica se o comprimento da string 'a' é menor ou igual ao inteiro 'b'. |
-| toUpper([String]) | [String] | Converte a string 'a' para maiúsculas. |
-| toLower([String]) | [String] | Converte a string 'a' para minúsculas. |
-| invert([String]) | [String] | Inverte a string 'a'. |
+| `div(String, String)` | [String][] | Divide a string 'a' pelo delimitador 'b' e retorna um array de substrings. |
+| `div(String, int)` | [String][] | Divide a string 'a' em substrings de comprimento 'b' e retorna um array de substrings. |
+| `sub(String, String)` | `String` | Remove todas as ocorrências da substring 'b' da string 'a'. |
+| `sub(String, int)` | `String` | Remove os últimos 'b' caracteres da string 'a'. |
+| `mul(String, int)` | `String` | Repete a string 'a' 'b' vezes e Retorna a propriedade `string resultante`. |
+| `modulus(String, int)` | `String` | Retorna a propriedade `substring de 'a' a partir do índice 'b'`. |
+| `equals(String, String)` | `boolean` | Verifica se a string 'a' é igual à string 'b'. |
+| `equals(String, char)` | `boolean` | Verifica se a string 'a' é igual ao caractere 'b'. |
+| `equals(String, int)` | `boolean` | Verifica se a string 'a' é igual ao inteiro 'b' após a conversão. |
+| `equals(String, float)` | `boolean` | Verifica se a string 'a' é igual ao float 'b' após a conversão. |
+| `equals(String, long)` | `boolean` | Verifica se a string 'a' é igual ao long 'b' após a conversão. |
+| `equals(String, double)` | `boolean` | Verifica se a string 'a' é igual ao double 'b' após a conversão. |
+| `equals(String, boolean)` | `boolean` | Verifica se a string 'a' é igual ao booleano 'b' após a conversão. |
+| `notEquals(String, String)` | `boolean` | Verifica se a string 'a' não é igual à string 'b'. |
+| `notEquals(String, char)` | `boolean` | Verifica se a string 'a' não é igual ao caractere 'b'. |
+| `notEquals(String, int)` | `boolean` | Verifica se a string 'a' não é igual ao inteiro 'b' após a conversão. |
+| `notEquals(String, float)` | `boolean` | Verifica se a string 'a' não é igual ao float 'b' após a conversão. |
+| `notEquals(String, boolean)` | `boolean` | Verifica se a string 'a' não é igual ao booleano 'b' após a conversão. |
+| `higherThan(String, String)` | `boolean` | Verifica se o comprimento da string 'a' é maior que o comprimento da string 'b'. |
+| `higherEqualThan(String, String)` | `boolean` | Verifica se o comprimento da string 'a' é maior ou igual ao comprimento da string 'b'. |
+| `higherThan(String, int)` | `boolean` | Verifica se o comprimento da string 'a' é maior que o inteiro 'b'. |
+| `higherEqualThan(String, int)` | `boolean` | Verifica se o comprimento da string 'a' é maior ou igual ao inteiro 'b'. |
+| `lessThan(String, String)` | `boolean` | Verifica se o comprimento da string 'a' é menor que o comprimento da string 'b'. |
+| `lessEqualThan(String, String)` | `boolean` | Verifica se o comprimento da string 'a' é menor ou igual ao comprimento da string 'b'. |
+| `lessThan(String, int)` | `boolean` | Verifica se o comprimento da string 'a' é menor que o inteiro 'b'. |
+| `lessEqualThan(String, int)` | `boolean` | Verifica se o comprimento da string 'a' é menor ou igual ao inteiro 'b'. |
+| `toUpper(String)` | `String` | Converte a string 'a' para maiúsculas. |
+| `toLower(String)` | `String` | Converte a string 'a' para minúsculas. |
+| `invert(String)` | `String` | Inverte a string 'a'. |

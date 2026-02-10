@@ -1,7 +1,3 @@
-import Links from '../../links.mdx';
-
-<Links />
-
 # Socket
 
 Referência completa da API de `Socket`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -37,46 +33,46 @@ public class Socket extends Socket
 
 | Signature | Returns | Description |
 | --- | --- | --- |
-| connect([SocketAddress]) | [void] | Executa `connect` e retorna quando a chamada do motor termina. |
-| connect([SocketAddress], [int]) | [void] | Executa `connect` e retorna quando a chamada do motor termina. |
-| bind([SocketAddress]) | [void] | Executa `bind` e retorna quando a chamada do motor termina. |
-| getInetAddress() | [InetAddress] | Retorna a propriedade `propriedade `inet address atual``. |
-| getLocalAddress() | [InetAddress] | Retorna a propriedade `propriedade `local address atual``. |
-| getPort() | [int] | Retorna a propriedade `propriedade `port atual``. |
-| getLocalPort() | [int] | Retorna a propriedade `propriedade `local port atual``. |
-| getRemoteSocketAddress() | [SocketAddress] | Retorna a propriedade `propriedade `remote socket address atual``. |
-| getLocalSocketAddress() | [SocketAddress] | Retorna a propriedade `propriedade `local socket address atual``. |
-| getChannel() | [SocketChannel] | Retorna a propriedade `propriedade `channel atual``. |
-| getInputStream() | [InputStream] | Executa `getInputStream` e retorna quando a chamada do motor termina. |
-| getOutputStream() | [OutputStream] | Executa `getOutputStream` e retorna quando a chamada do motor termina. |
-| setTcpNoDelay([boolean]) | [void] | Executa `setTcpNoDelay` e retorna quando a chamada do motor termina. |
-| getTcpNoDelay() | [boolean] | Executa `getTcpNoDelay` e retorna quando a chamada do motor termina. |
-| setSoLinger([boolean], [int]) | [void] | Executa `setSoLinger` e retorna quando a chamada do motor termina. |
-| getSoLinger() | [int] | Executa `getSoLinger` e retorna quando a chamada do motor termina. |
-| sendUrgentData([int]) | [void] | Executa `sendUrgentData` e retorna quando a chamada do motor termina. |
-| setOOBInline([boolean]) | [void] | Executa `setOOBInline` e retorna quando a chamada do motor termina. |
-| getOOBInline() | [boolean] | Executa `getOOBInline` e retorna quando a chamada do motor termina. |
-| setSoTimeout([int]) | [void] | Executa `setSoTimeout` e retorna quando a chamada do motor termina. |
-| getSoTimeout() | [int] | Executa `getSoTimeout` e retorna quando a chamada do motor termina. |
-| setSendBufferSize([int]) | [void] | Executa `setSendBufferSize` e retorna quando a chamada do motor termina. |
-| getSendBufferSize() | [int] | Executa `getSendBufferSize` e retorna quando a chamada do motor termina. |
-| setReceiveBufferSize([int]) | [void] | Executa `setReceiveBufferSize` e retorna quando a chamada do motor termina. |
-| getReceiveBufferSize() | [int] | Executa `getReceiveBufferSize` e retorna quando a chamada do motor termina. |
-| setKeepAlive([boolean]) | [void] | Executa `setKeepAlive` e retorna quando a chamada do motor termina. |
-| getKeepAlive() | [boolean] | Executa `getKeepAlive` e retorna quando a chamada do motor termina. |
-| setTrafficClass([int]) | [void] | Executa `setTrafficClass` e retorna quando a chamada do motor termina. |
-| getTrafficClass() | [int] | Executa `getTrafficClass` e retorna quando a chamada do motor termina. |
-| setReuseAddress([boolean]) | [void] | Executa `setReuseAddress` e retorna quando a chamada do motor termina. |
-| getReuseAddress() | [boolean] | Executa `getReuseAddress` e retorna quando a chamada do motor termina. |
-| close() | [void] | Executa `close` e retorna quando a chamada do motor termina. |
-| shutdownInput() | [void] | Executa `shutdownInput` e retorna quando a chamada do motor termina. |
-| shutdownOutput() | [void] | Executa `shutdownOutput` e retorna quando a chamada do motor termina. |
-| toString() | [String] | Retorna a propriedade `representação em string`. |
-| isConnected() | [boolean] | Retorna se connected é verdadeiro. |
-| isBound() | [boolean] | Retorna se bound é verdadeiro. |
-| isClosed() | [boolean] | Retorna se closed é verdadeiro. |
-| isInputShutdown() | [boolean] | Retorna se input shutdown é verdadeiro. |
-| isOutputShutdown() | [boolean] | Retorna se output shutdown é verdadeiro. |
-| setPerformancePreferences([int], [int], [int]) | [void] | Define ou atualiza a propriedade `propriedade `performance preferences``. |
-| hashCode() | [int] | Retorna se code é verdadeiro. |
-| equals([Object]) | [boolean] | Compara esta instância com outra para igualdade/ordem. |
+| `connect(SocketAddress)` | `void` | Executa `connect` e retorna quando a chamada do motor termina. |
+| `connect(SocketAddress, int)` | `void` | Executa `connect` e retorna quando a chamada do motor termina. |
+| `bind(SocketAddress)` | `void` | Executa `bind` e retorna quando a chamada do motor termina. |
+| `getInetAddress()` | `InetAddress` | Retorna a propriedade `propriedade `inet address atual``. |
+| `getLocalAddress()` | `InetAddress` | Retorna a propriedade `propriedade `local address atual``. |
+| `getPort()` | `int` | Retorna a propriedade `propriedade `port atual``. |
+| `getLocalPort()` | `int` | Retorna a propriedade `propriedade `local port atual``. |
+| `getRemoteSocketAddress()` | `SocketAddress` | Retorna a propriedade `propriedade `remote socket address atual``. |
+| `getLocalSocketAddress()` | `SocketAddress` | Retorna a propriedade `propriedade `local socket address atual``. |
+| `getChannel()` | `SocketChannel` | Retorna a propriedade `propriedade `channel atual``. |
+| `getInputStream()` | `InputStream` | Executa `getInputStream` e retorna quando a chamada do motor termina. |
+| `getOutputStream()` | `OutputStream` | Executa `getOutputStream` e retorna quando a chamada do motor termina. |
+| `setTcpNoDelay(boolean)` | `void` | Executa `setTcpNoDelay` e retorna quando a chamada do motor termina. |
+| `getTcpNoDelay()` | `boolean` | Executa `getTcpNoDelay` e retorna quando a chamada do motor termina. |
+| `setSoLinger(boolean, int)` | `void` | Executa `setSoLinger` e retorna quando a chamada do motor termina. |
+| `getSoLinger()` | `int` | Executa `getSoLinger` e retorna quando a chamada do motor termina. |
+| `sendUrgentData(int)` | `void` | Executa `sendUrgentData` e retorna quando a chamada do motor termina. |
+| `setOOBInline(boolean)` | `void` | Executa `setOOBInline` e retorna quando a chamada do motor termina. |
+| `getOOBInline()` | `boolean` | Executa `getOOBInline` e retorna quando a chamada do motor termina. |
+| `setSoTimeout(int)` | `void` | Executa `setSoTimeout` e retorna quando a chamada do motor termina. |
+| `getSoTimeout()` | `int` | Executa `getSoTimeout` e retorna quando a chamada do motor termina. |
+| `setSendBufferSize(int)` | `void` | Executa `setSendBufferSize` e retorna quando a chamada do motor termina. |
+| `getSendBufferSize()` | `int` | Executa `getSendBufferSize` e retorna quando a chamada do motor termina. |
+| `setReceiveBufferSize(int)` | `void` | Executa `setReceiveBufferSize` e retorna quando a chamada do motor termina. |
+| `getReceiveBufferSize()` | `int` | Executa `getReceiveBufferSize` e retorna quando a chamada do motor termina. |
+| `setKeepAlive(boolean)` | `void` | Executa `setKeepAlive` e retorna quando a chamada do motor termina. |
+| `getKeepAlive()` | `boolean` | Executa `getKeepAlive` e retorna quando a chamada do motor termina. |
+| `setTrafficClass(int)` | `void` | Executa `setTrafficClass` e retorna quando a chamada do motor termina. |
+| `getTrafficClass()` | `int` | Executa `getTrafficClass` e retorna quando a chamada do motor termina. |
+| `setReuseAddress(boolean)` | `void` | Executa `setReuseAddress` e retorna quando a chamada do motor termina. |
+| `getReuseAddress()` | `boolean` | Executa `getReuseAddress` e retorna quando a chamada do motor termina. |
+| `close()` | `void` | Executa `close` e retorna quando a chamada do motor termina. |
+| `shutdownInput()` | `void` | Executa `shutdownInput` e retorna quando a chamada do motor termina. |
+| `shutdownOutput()` | `void` | Executa `shutdownOutput` e retorna quando a chamada do motor termina. |
+| `toString()` | `String` | Retorna a propriedade `representação em string`. |
+| `isConnected()` | `boolean` | Retorna se connected é verdadeiro. |
+| `isBound()` | `boolean` | Retorna se bound é verdadeiro. |
+| `isClosed()` | `boolean` | Retorna se closed é verdadeiro. |
+| `isInputShutdown()` | `boolean` | Retorna se input shutdown é verdadeiro. |
+| `isOutputShutdown()` | `boolean` | Retorna se output shutdown é verdadeiro. |
+| `setPerformancePreferences(int, int, int)` | `void` | Define ou atualiza a propriedade `propriedade `performance preferences``. |
+| `hashCode()` | `int` | Retorna se code é verdadeiro. |
+| `equals(Object)` | `boolean` | Compara esta instância com outra para igualdade/ordem. |

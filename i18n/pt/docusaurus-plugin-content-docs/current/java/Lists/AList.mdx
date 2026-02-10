@@ -1,7 +1,3 @@
-import Links from '../../links.mdx';
-
-<Links />
-
 # AList
 
 Referência completa da API de `AList`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -29,36 +25,36 @@ public class AList
 
 | Signature | Returns | Description |
 | --- | --- | --- |
-| size() | [int] | Retorna a propriedade `propriedade `tamanho da lista (número de elementos)``. |
-| isEmpty() | [boolean] | Retorna se a lista está vazia. |
-| contains([Object]) | [boolean] | Retorna se a lista contém o elemento. |
-| iterator() | [Iterator]&[lt];[T]&[gt]; | Retorna um iterador sobre os elementos da lista. |
-| toArray() | [Object][] | Retorna um array com todos os elementos da lista. |
-| toArray([E[]]) | [E][] | Retorna um array com todos os elementos da lista, utilizando o array fornecido. |
-| add([T]) | [boolean] | Adiciona o elemento à lista. |
-| remove([Object]) | [boolean] | Remove o elemento da lista. |
-| addAll([Collection&lt;? extends T&gt;]) | [boolean] | Adiciona todos os elementos da coleção à lista. |
-| addAll([int], [Collection&lt;? extends T&gt;]) | [boolean] | Adiciona todos os elementos da coleção à lista no índice especificado. |
-| clear() | [void] | Remove todos os elementos da lista. |
-| equals([Object]) | [boolean] | Compara se a lista é igual ao objeto especificado. |
-| hashCode() | [int] | Retorna a propriedade `propriedade `código hash da lista``. |
-| get([int]) | [T] | Retorna a propriedade `propriedade `elemento no índice especificado``. |
-| set([int], [T]) | [T] | Define a propriedade `propriedade `elemento no índice para o valor fornecido``. |
-| add([int], [T]) | [void] | Adiciona o elemento no índice especificado. |
-| remove([int]) | [T] | Remove o elemento no índice especificado. |
-| indexOf([Object]) | [int] | Retorna a propriedade `propriedade `índice da primeira ocorrência do elemento especificado``. |
-| lastIndexOf([Object]) | [int] | Retorna a propriedade `propriedade `índice da última ocorrência do elemento especificado``. |
-| listIterator() | [ListIterator]&[lt];[T]&[gt]; | Retorna um iterador de lista sobre os elementos da lista. |
-| listIterator([int]) | [ListIterator]&[lt];[T]&[gt]; | Retorna um iterador de lista sobre os elementos da lista, começando no índice especificado. |
-| subList([int], [int]) | [List]&[lt];[T]&[gt]; | Retorna uma lista com os elementos entre os índices especificados. |
-| retainAll([Collection&lt;?&gt;]) | [boolean] | Retém apenas os elementos da lista que estão contidos na coleção especificada. |
-| removeAll([Collection&lt;?&gt;]) | [boolean] | Remove da lista todos os elementos que possuem o mesmo valor da coleção especificada. |
-| containsAll([Collection&lt;?&gt;]) | [boolean] | Verifica se a lista contém todos os elementos da coleção especificada. |
-| forEach([Consumer&lt;? super T&gt;]) | [void] | Executa a ação fornecida para cada elemento da lista. |
-| replaceAll([UnaryOperator&lt;T&gt;]) | [void] | Substitui cada elemento pelo resultado da aplicação do operador. |
-| sort([Comparator&lt;? super T&gt;]) | [void] | Ordena a lista usando o comparador fornecido. |
-| removeIf([Predicate&lt;? super T&gt;]) | [boolean] | Remove todos os elementos que satisfazem o predicado fornecido. |
-| spliterator() | [Spliterator]&[lt];[T]&[gt]; | Retorna um spliterator sobre os elementos da lista. |
-| stream() | [Stream]&[lt];[T]&[gt]; | Retorna um stream sequencial da lista. |
-| parallelStream() | [Stream]&[lt];[T]&[gt]; | Retorna um stream possivelmente paralelo da lista. |
-| getInternalList() | [List]&[lt];[T]&[gt]; | Retorna a propriedade `lista interna (para uso avançado)`. |
+| `size()` | `int` | Retorna a propriedade `propriedade `tamanho da lista (número de elementos)``. |
+| `isEmpty()` | `boolean` | Retorna se a lista está vazia. |
+| `contains(Object)` | `boolean` | Retorna se a lista contém o elemento. |
+| `iterator()` | [Iterator]&[lt];[T]&[gt]; | Retorna um iterador sobre os elementos da lista. |
+| `toArray()` | [Object][] | Retorna um array com todos os elementos da lista. |
+| `toArray([E[]])` | [E][] | Retorna um array com todos os elementos da lista, utilizando o array fornecido. |
+| `add(T)` | `boolean` | Adiciona o elemento à lista. |
+| `remove(Object)` | `boolean` | Remove o elemento da lista. |
+| `addAll([Collection&lt;? extends T&gt;])` | `boolean` | Adiciona todos os elementos da coleção à lista. |
+| `addAll(int, [Collection&lt;? extends T&gt;])` | `boolean` | Adiciona todos os elementos da coleção à lista no índice especificado. |
+| `clear()` | `void` | Remove todos os elementos da lista. |
+| `equals(Object)` | `boolean` | Compara se a lista é igual ao objeto especificado. |
+| `hashCode()` | `int` | Retorna a propriedade `propriedade `código hash da lista``. |
+| `get(int)` | `T` | Retorna a propriedade `propriedade `elemento no índice especificado``. |
+| `set(int, T)` | `T` | Define a propriedade `propriedade `elemento no índice para o valor fornecido``. |
+| `add(int, T)` | `void` | Adiciona o elemento no índice especificado. |
+| `remove(int)` | `T` | Remove o elemento no índice especificado. |
+| `indexOf(Object)` | `int` | Retorna a propriedade `propriedade `índice da primeira ocorrência do elemento especificado``. |
+| `lastIndexOf(Object)` | `int` | Retorna a propriedade `propriedade `índice da última ocorrência do elemento especificado``. |
+| `listIterator()` | [ListIterator]&[lt];[T]&[gt]; | Retorna um iterador de lista sobre os elementos da lista. |
+| `listIterator(int)` | [ListIterator]&[lt];[T]&[gt]; | Retorna um iterador de lista sobre os elementos da lista, começando no índice especificado. |
+| `subList(int, int)` | [List]&[lt];[T]&[gt]; | Retorna uma lista com os elementos entre os índices especificados. |
+| `retainAll([Collection&lt;?&gt;])` | `boolean` | Retém apenas os elementos da lista que estão contidos na coleção especificada. |
+| `removeAll([Collection&lt;?&gt;])` | `boolean` | Remove da lista todos os elementos que possuem o mesmo valor da coleção especificada. |
+| `containsAll([Collection&lt;?&gt;])` | `boolean` | Verifica se a lista contém todos os elementos da coleção especificada. |
+| `forEach([Consumer&lt;? super T&gt;])` | `void` | Executa a ação fornecida para cada elemento da lista. |
+| `replaceAll([UnaryOperator&lt;T&gt;])` | `void` | Substitui cada elemento pelo resultado da aplicação do operador. |
+| `sort([Comparator&lt;? super T&gt;])` | `void` | Ordena a lista usando o comparador fornecido. |
+| `removeIf([Predicate&lt;? super T&gt;])` | `boolean` | Remove todos os elementos que satisfazem o predicado fornecido. |
+| `spliterator()` | [Spliterator]&[lt];[T]&[gt]; | Retorna um spliterator sobre os elementos da lista. |
+| `stream()` | [Stream]&[lt];[T]&[gt]; | Retorna um stream sequencial da lista. |
+| `parallelStream()` | [Stream]&[lt];[T]&[gt]; | Retorna um stream possivelmente paralelo da lista. |
+| `getInternalList()` | [List]&[lt];[T]&[gt]; | Retorna a propriedade `lista interna (para uso avançado)`. |

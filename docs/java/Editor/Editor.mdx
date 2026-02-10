@@ -1,7 +1,3 @@
-import Links from '../../links.mdx';
-
-<Links />
-
 # Editor
 
 Complete API reference for `Editor`, including constructors, attributes, virtual attributes, and methods.
@@ -22,20 +18,20 @@ public class Editor
 
 | Signature | Returns | Description |
 | --- | --- | --- |
-| isEditor() | [boolean] | Indicates whether it's in editor mode, useful for editor-only logic. |
-| getSelectedObject() | [SpatialObject] | Returns the selected object in the editor. |
-| setSelectedObject([SpatialObject]) | [void] | Sets the selected object in the editor. |
-| inflateAnchoredFloatingPanel([View], [AnchorSide], [EditorPanel]) | [FloatingPanelArea] | Creates a floating panel anchored to the specified view. |
-| inflateAnchoredFloatingPanel([View], [AnchorSide], [EditorPanel], [float], [float]) | [FloatingPanelArea] | Creates a floating panel anchored to the specified view, with the given width and height (0.0f - 1.0f). |
-| inflateAnchoredFloatingPanelInDP([View], [AnchorSide], [EditorPanel], [int], [int]) | [FloatingPanelArea] | Creates a floating panel anchored to the specified view, with the given width and height in dp. |
-| inflateFloatingPanel([EditorPanel], [float], [float], [float], [float]) | [FloatingPanelArea] | Creates a floating panel at the specified position with given width and height (0.0f - 1.0f). |
-| inflateFloatingPanel([EditorPanel], [float], [float]) | [FloatingPanelArea] | Creates a centered floating panel with the specified width and height (0.0f - 1.0f). |
-| inflateFloatingPanelInDP([EditorPanel], [int], [int], [int], [int]) | [FloatingPanelArea] | Creates a floating panel at the specified position with given width and height in dp. |
-| inflateFloatingPanelInDP([EditorPanel], [int], [int]) | [FloatingPanelArea] | Creates a centered floating panel with the specified width and height in dp. |
-| dpToWidthPercentage([int]) | [float] | Converts dp value to width percentage (0.0f - 1.0f) based on screen size. |
-| dpToHeightPercentage([int]) | [float] | Converts dp value to height percentage (0.0f - 1.0f) based on screen size. |
-| pxToWidthPercentage([int]) | [float] | Converts px value to width percentage (0.0f - 1.0f) based on screen size. |
-| pxToHeightPercentage([int]) | [float] | Converts px value to height percentage (0.0f - 1.0f) based on screen size. |
-| findViewByID([View], [String]) | &[lt];[T] [extends] [View]&[gt]; [T] | Finds a child view with the given ID inside the specified view hierarchy. |
-| toView([Object]) | [View] | Returns the given object casted as a View. |
-| getIdOf([View]) | [String] | Returns the ID of the view (without prefix). |
+| `isEditor()` | `boolean` | Indicates whether it's in editor mode, useful for editor-only logic. |
+| `getSelectedObject()` | `SpatialObject` | Returns the selected object in the editor. |
+| `setSelectedObject(SpatialObject)` | `void` | Sets the selected object in the editor. |
+| `inflateAnchoredFloatingPanel(View, AnchorSide, EditorPanel)` | `FloatingPanelArea` | Creates a floating panel anchored to the specified view. |
+| `inflateAnchoredFloatingPanel(View, AnchorSide, EditorPanel, float, float)` | `FloatingPanelArea` | Creates a floating panel anchored to the specified view, with the given width and height (0.0f - 1.0f). |
+| `inflateAnchoredFloatingPanelInDP(View, AnchorSide, EditorPanel, int, int)` | `FloatingPanelArea` | Creates a floating panel anchored to the specified view, with the given width and height in dp. |
+| `inflateFloatingPanel(EditorPanel, float, float, float, float)` | `FloatingPanelArea` | Creates a floating panel at the specified position with given width and height (0.0f - 1.0f). |
+| `inflateFloatingPanel(EditorPanel, float, float)` | `FloatingPanelArea` | Creates a centered floating panel with the specified width and height (0.0f - 1.0f). |
+| `inflateFloatingPanelInDP(EditorPanel, int, int, int, int)` | `FloatingPanelArea` | Creates a floating panel at the specified position with given width and height in dp. |
+| `inflateFloatingPanelInDP(EditorPanel, int, int)` | `FloatingPanelArea` | Creates a centered floating panel with the specified width and height in dp. |
+| `dpToWidthPercentage(int)` | `float` | Converts dp value to width percentage (0.0f - 1.0f) based on screen size. |
+| `dpToHeightPercentage(int)` | `float` | Converts dp value to height percentage (0.0f - 1.0f) based on screen size. |
+| `pxToWidthPercentage(int)` | `float` | Converts px value to width percentage (0.0f - 1.0f) based on screen size. |
+| `pxToHeightPercentage(int)` | `float` | Converts px value to height percentage (0.0f - 1.0f) based on screen size. |
+| `findViewByID(View, String)` | `<T extends View> T` | Finds a child view with the given ID inside the specified view hierarchy. |
+| `toView(Object)` | `View` | Returns the given object casted as a View. |
+| `getIdOf(View)` | `String` | Returns the ID of the view (without prefix). |

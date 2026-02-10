@@ -1,7 +1,3 @@
-import Links from '../../links.mdx';
-
-<Links />
-
 # Laser
 
 Complete API reference for `Laser`, including constructors, attributes, virtual attributes, and methods.
@@ -46,23 +42,23 @@ public class Laser
 
 | Signature | Returns | Description |
 | --- | --- | --- |
-| trace([JAVARuntime.Ray]) | [LaserHit] | Traces a laser using the specified Ray. |
-| trace([Vector3], [Vector3]) | [LaserHit] | Traces a laser from a specified position and direction. |
-| trace([Vector3], [Vector3], [float]) | [LaserHit] | Traces a laser from a specified position and direction, with a defined maximum distance. |
-| trace([Vector3], [Vector3], [float], [PhysicsLayer]) | [LaserHit] | Traces a laser from a specified position, direction, and distance with the indicated PhysicsLayer. |
-| trace([Vector3], [Vector3], [PhysicsLayer]) | [LaserHit] | Traces a laser from a specified position and direction, in the indicated PhysicsLayer. |
-| traceAll([JAVARuntime.Ray]) | [List]&[lt];[LaserHit]&[gt]; | Traces a laser using the specified Ray and return all collisions. |
-| traceAll([Vector3], [Vector3]) | [List]&[lt];[LaserHit]&[gt]; | Traces a laser from a specified position and direction and return all collisions. |
-| traceAll([Vector3], [Vector3], [float]) | [List]&[lt];[LaserHit]&[gt]; | Traces a laser from a specified position and direction, with a defined maximum distance and return all collisions. |
-| traceAll([Vector3], [Vector3], [float], [PhysicsLayer]) | [List]&[lt];[LaserHit]&[gt]; | Traces a laser from a specified position, direction, and distance with the indicated PhysicsLayer and return all collisions. |
-| traceAll([Vector3], [Vector3], [PhysicsLayer]) | [List]&[lt];[LaserHit]&[gt]; | Traces a laser from a specified position and direction, in the indicated PhysicsLayer and return all collisions. |
-| traceSphere([JAVARuntime.Ray], [float]) | [LaserHit] | Traces a sphere sweep test laser using the specified Ray. |
-| traceSphere([Vector3], [Vector3], [float]) | [LaserHit] | Traces a sphere sweep test laser from a specified position and direction. |
-| traceSphere([Vector3], [Vector3], [float], [float]) | [LaserHit] | Traces a sphere sweep test laser from a specified position and direction, with a defined maximum distance. |
-| traceSphere([Vector3], [Vector3], [float], [PhysicsLayer], [float]) | [LaserHit] | Traces a sphere sweep test laser from a specified position, direction, and distance with the indicated PhysicsLayer. |
-| traceSphere([Vector3], [Vector3], [PhysicsLayer], [float]) | [LaserHit] | Traces a sphere sweep test laser from a specified position and direction, in the indicated PhysicsLayer. |
-| traceSphereAll([JAVARuntime.Ray], [float]) | [List]&[lt];[LaserHit]&[gt]; | Traces a sphere sweep test laser using the specified Ray and return all collisions. |
-| traceSphereAll([Vector3], [Vector3], [float]) | [List]&[lt];[LaserHit]&[gt]; | Traces a sphere sweep test laser from a specified position and direction and return all collisions. |
-| traceSphereAll([Vector3], [Vector3], [float], [float]) | [List]&[lt];[LaserHit]&[gt]; | Traces a sphere sweep test laser from a specified position and direction, with a defined maximum distance and return all collisions. |
-| traceSphereAll([Vector3], [Vector3], [float], [PhysicsLayer], [float]) | [List]&[lt];[LaserHit]&[gt]; | Traces a sphere sweep test laser from a specified position, direction, and distance with the indicated PhysicsLayer and return all collisions. |
-| traceSphereAll([Vector3], [Vector3], [PhysicsLayer], [float]) | [List]&[lt];[LaserHit]&[gt]; | Traces a sphere sweep test laser from a specified position and direction, in the indicated PhysicsLayer and return all collisions. |
+| `trace(JAVARuntime.Ray)` | `LaserHit` | Traces a laser using the specified Ray. |
+| `trace(Vector3, Vector3)` | `LaserHit` | Traces a laser from a specified position and direction. |
+| `trace(Vector3, Vector3, float)` | `LaserHit` | Traces a laser from a specified position and direction, with a defined maximum distance. |
+| `trace(Vector3, Vector3, float, PhysicsLayer)` | `LaserHit` | Traces a laser from a specified position, direction, and distance with the indicated PhysicsLayer. |
+| `trace(Vector3, Vector3, PhysicsLayer)` | `LaserHit` | Traces a laser from a specified position and direction, in the indicated PhysicsLayer. |
+| `traceAll(JAVARuntime.Ray)` | [List]&[lt];[LaserHit]&[gt]; | Traces a laser using the specified Ray and return all collisions. |
+| `traceAll(Vector3, Vector3)` | [List]&[lt];[LaserHit]&[gt]; | Traces a laser from a specified position and direction and return all collisions. |
+| `traceAll(Vector3, Vector3, float)` | [List]&[lt];[LaserHit]&[gt]; | Traces a laser from a specified position and direction, with a defined maximum distance and return all collisions. |
+| `traceAll(Vector3, Vector3, float, PhysicsLayer)` | [List]&[lt];[LaserHit]&[gt]; | Traces a laser from a specified position, direction, and distance with the indicated PhysicsLayer and return all collisions. |
+| `traceAll(Vector3, Vector3, PhysicsLayer)` | [List]&[lt];[LaserHit]&[gt]; | Traces a laser from a specified position and direction, in the indicated PhysicsLayer and return all collisions. |
+| `traceSphere(JAVARuntime.Ray, float)` | `LaserHit` | Traces a sphere sweep test laser using the specified Ray. |
+| `traceSphere(Vector3, Vector3, float)` | `LaserHit` | Traces a sphere sweep test laser from a specified position and direction. |
+| `traceSphere(Vector3, Vector3, float, float)` | `LaserHit` | Traces a sphere sweep test laser from a specified position and direction, with a defined maximum distance. |
+| `traceSphere(Vector3, Vector3, float, PhysicsLayer, float)` | `LaserHit` | Traces a sphere sweep test laser from a specified position, direction, and distance with the indicated PhysicsLayer. |
+| `traceSphere(Vector3, Vector3, PhysicsLayer, float)` | `LaserHit` | Traces a sphere sweep test laser from a specified position and direction, in the indicated PhysicsLayer. |
+| `traceSphereAll(JAVARuntime.Ray, float)` | [List]&[lt];[LaserHit]&[gt]; | Traces a sphere sweep test laser using the specified Ray and return all collisions. |
+| `traceSphereAll(Vector3, Vector3, float)` | [List]&[lt];[LaserHit]&[gt]; | Traces a sphere sweep test laser from a specified position and direction and return all collisions. |
+| `traceSphereAll(Vector3, Vector3, float, float)` | [List]&[lt];[LaserHit]&[gt]; | Traces a sphere sweep test laser from a specified position and direction, with a defined maximum distance and return all collisions. |
+| `traceSphereAll(Vector3, Vector3, float, PhysicsLayer, float)` | [List]&[lt];[LaserHit]&[gt]; | Traces a sphere sweep test laser from a specified position, direction, and distance with the indicated PhysicsLayer and return all collisions. |
+| `traceSphereAll(Vector3, Vector3, PhysicsLayer, float)` | [List]&[lt];[LaserHit]&[gt]; | Traces a sphere sweep test laser from a specified position and direction, in the indicated PhysicsLayer and return all collisions. |

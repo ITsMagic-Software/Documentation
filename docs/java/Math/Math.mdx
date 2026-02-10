@@ -1,7 +1,3 @@
-import Links from '../../links.mdx';
-
-<Links />
-
 # Math
 
 Complete API reference for `Math`, including constructors, attributes, virtual attributes, and methods.
@@ -33,71 +29,71 @@ public class Math
 | =([Float.SIZE /]) | [int] [BYTES_IN_FLOAT] | Performs the = operation. |
 | =([Integer.SIZE /]) | [int] [BYTES_IN_INT] | Performs the = operation. |
 | =([Short.SIZE /]) | [int] [BYTES_IN_SHORT] | Performs the = operation. |
-| bySecond() | [float] | Returns the value for this frame to reach 1 in one second (using deltaTime). |
-| bySecond([float]) | [float] | Returns the value for this frame to reach the specified value in one second (using deltaTime). |
-| sin([float]) | [float] | Returns the sine of the angle in degrees. |
-| cos([float]) | [float] | Returns the cosine of the angle in degrees. |
-| tan([float]) | [float] | Returns the tangent of the angle in degrees. |
-| asin([float]) | [float] | Returns the arcsine of the angle in degrees. |
-| acos([float]) | [float] | Returns the arccosine of the angle in degrees. |
-| atan([float]) | [float] | Returns the arctangent of the angle in degrees. |
-| atan2([float], [float]) | [float] | Returns the arctangent of y/x in degrees. |
-| sinRad([float]) | [float] | Returns the sine of the angle in radians. |
-| cosRad([float]) | [float] | Returns the cosine of the angle in radians. |
-| tanRad([float]) | [float] | Returns the tangent of the angle in radians. |
-| atan2Rad([float], [float]) | [float] | Returns the arctangent of y/x in radians. |
-| asinRad([float]) | [float] | Returns the arcsine of the angle in radians. |
-| acosRad([float]) | [float] | Returns the arccosine of the angle in radians. |
-| atanRad([float]) | [float] | Returns the arctangent of the angle in radians. |
-| sqrt([float]) | [float] | Returns the square root of the value. |
-| cbrt([float]) | [float] | Returns the cubic root of the value. |
-| pow([float], [float]) | [float] | Returns the value raised to the power of b. |
-| abs([float]) | [float] | Returns the absolute value. |
-| abs([int]) | [int] | Returns the absolute value. |
-| abs([double]) | [double] | Returns the absolute value. |
-| ceil([float]) | [float] | Returns the smallest integer greater than or equal to the value. |
-| floor([float]) | [float] | Returns the largest integer less than or equal to the value. |
-| round([float]) | [float] | Rounds the value to the nearest integer. |
-| exp([float]) | [float] | Returns Euler's number (e ≈ 2.718) raised to the given value. |
-| log([float]) | [float] | Returns the natural logarithm (base e) of the value. |
-| log10([float]) | [float] | Returns the base 10 logarithm of the value. |
-| toRadians([float]) | [float] | Converts degrees to radians. |
-| toDegrees([float]) | [float] | Converts radians to degrees. |
-| dptopx([int]) | [int] | Converts the value from dp (density-independent pixels) to px (pixels) based on the device screen density. |
-| deadzone([float], [float]) | [float] | Returns 0 if the value is within the deadzone, otherwise returns the original value. |
-| isOnDeadzone([float], [float]) | [boolean] | Checks if the value is within the deadzone. Returns true if it is, false otherwise. |
-| clamp([float], [float], [float]) | [float] | Clamps the value between min and max. |
-| clamp([float], [float]) | [float] | Clamps the value to be at least the specified minimum. |
-| clampMin([float], [float]) | [float] | Clamps the value to be at least the specified minimum. |
-| clamp01([float]) | [float] | Clamps the value between 0 and 1. |
-| max([float], [float]) | [float] | Returns the largest value. |
-| max([[float]...]) | [float] | Returns the largest value. |
-| max([int], [int]) | [int] | Returns the largest value. |
-| max([[int]...]) | [int] | Returns the largest value. |
-| max([double], [double]) | [double] | Returns the largest value. |
-| max([[double]...]) | [double] | Returns the largest value. |
-| max([long], [long]) | [long] | Returns the largest value. |
-| max([[long]...]) | [long] | Returns the largest value. |
-| min([float], [float]) | [float] | Returns the smallest value. |
-| min([[float]...]) | [float] | Returns the smallest value. |
-| min([int], [int]) | [int] | Returns the smallest value. |
-| min([[int]...]) | [int] | Returns the smallest value. |
-| min([double], [double]) | [double] | Returns the smallest value. |
-| min([[double]...]) | [double] | Returns the smallest value. |
-| min([long], [long]) | [long] | Returns the smallest value. |
-| min([[long]...]) | [long] | Returns the smallest value. |
-| blend([float], [float], [float]) | [float] | Blends a value towards the target using the specified blend factor (0..1). |
-| lerp([float], [float], [float]) | [float] | Interpolates a value towards the target with the specified speed. |
-| lerpInSeconds([float], [float], [float]) | [float] | Interpolates a value towards the target with the specified speed per second. |
-| negative([boolean]) | [boolean] | Returns the inverse of the value. |
-| negative([float]) | [float] | Returns the negative value. |
-| negative([int]) | [int] | Returns the negative value. |
-| inverseSQRT([float]) | [float] | Returns the inverse square root of the value. |
-| lerpAngle([float], [float], [float]) | [float] | Interpolates between two angles (0-360) with the specified progress, keeping the result in this range. |
-| lerpAngleInSeconds([float], [float], [float]) | [float] | Interpolates between two angles (0-360) with the specified progress per second, keeping the result in this range. |
-| clampAngleTo360([float]) | [float] | Keeps the angle between 0 and 360, keeping values in this range. |
-| rangeConverter([float], [float], [float], [float], [float]) | [float] | Converts a value from the range [oldMin, oldMax] to the range [newMin, newMax]. |
-| fixNaN([float]) | [float] | Returns 0 if the value is NaN, otherwise returns the specified value. |
-| pitchDegrees([Vector3], [Vector3]) | [float] | Executes `pitchDegrees` and returns after the underlying engine call finishes. |
-| normalizeDeg([float]) | [float] | Executes `normalizeDeg` and returns after the underlying engine call finishes. |
-| deltaPitchDegrees([float], [Vector3], [Vector3]) | [float] | Executes `deltaPitchDegrees` and returns after the underlying engine call finishes. |
+| `bySecond()` | `float` | Returns the value for this frame to reach 1 in one second (using deltaTime). |
+| `bySecond(float)` | `float` | Returns the value for this frame to reach the specified value in one second (using deltaTime). |
+| `sin(float)` | `float` | Returns the sine of the angle in degrees. |
+| `cos(float)` | `float` | Returns the cosine of the angle in degrees. |
+| `tan(float)` | `float` | Returns the tangent of the angle in degrees. |
+| `asin(float)` | `float` | Returns the arcsine of the angle in degrees. |
+| `acos(float)` | `float` | Returns the arccosine of the angle in degrees. |
+| `atan(float)` | `float` | Returns the arctangent of the angle in degrees. |
+| `atan2(float, float)` | `float` | Returns the arctangent of y/x in degrees. |
+| `sinRad(float)` | `float` | Returns the sine of the angle in radians. |
+| `cosRad(float)` | `float` | Returns the cosine of the angle in radians. |
+| `tanRad(float)` | `float` | Returns the tangent of the angle in radians. |
+| `atan2Rad(float, float)` | `float` | Returns the arctangent of y/x in radians. |
+| `asinRad(float)` | `float` | Returns the arcsine of the angle in radians. |
+| `acosRad(float)` | `float` | Returns the arccosine of the angle in radians. |
+| `atanRad(float)` | `float` | Returns the arctangent of the angle in radians. |
+| `sqrt(float)` | `float` | Returns the square root of the value. |
+| `cbrt(float)` | `float` | Returns the cubic root of the value. |
+| `pow(float, float)` | `float` | Returns the value raised to the power of b. |
+| `abs(float)` | `float` | Returns the absolute value. |
+| `abs(int)` | `int` | Returns the absolute value. |
+| `abs(double)` | `double` | Returns the absolute value. |
+| `ceil(float)` | `float` | Returns the smallest integer greater than or equal to the value. |
+| `floor(float)` | `float` | Returns the largest integer less than or equal to the value. |
+| `round(float)` | `float` | Rounds the value to the nearest integer. |
+| `exp(float)` | `float` | Returns Euler's number (e ≈ 2.718) raised to the given value. |
+| `log(float)` | `float` | Returns the natural logarithm (base e) of the value. |
+| `log10(float)` | `float` | Returns the base 10 logarithm of the value. |
+| `toRadians(float)` | `float` | Converts degrees to radians. |
+| `toDegrees(float)` | `float` | Converts radians to degrees. |
+| `dptopx(int)` | `int` | Converts the value from dp (density-independent pixels) to px (pixels) based on the device screen density. |
+| `deadzone(float, float)` | `float` | Returns 0 if the value is within the deadzone, otherwise returns the original value. |
+| `isOnDeadzone(float, float)` | `boolean` | Checks if the value is within the deadzone. Returns true if it is, false otherwise. |
+| `clamp(float, float, float)` | `float` | Clamps the value between min and max. |
+| `clamp(float, float)` | `float` | Clamps the value to be at least the specified minimum. |
+| `clampMin(float, float)` | `float` | Clamps the value to be at least the specified minimum. |
+| `clamp01(float)` | `float` | Clamps the value between 0 and 1. |
+| `max(float, float)` | `float` | Returns the largest value. |
+| `max(float...)` | `float` | Returns the largest value. |
+| `max(int, int)` | `int` | Returns the largest value. |
+| `max(int...)` | `int` | Returns the largest value. |
+| `max(double, double)` | `double` | Returns the largest value. |
+| `max(double...)` | `double` | Returns the largest value. |
+| `max(long, long)` | `long` | Returns the largest value. |
+| `max(long...)` | `long` | Returns the largest value. |
+| `min(float, float)` | `float` | Returns the smallest value. |
+| `min(float...)` | `float` | Returns the smallest value. |
+| `min(int, int)` | `int` | Returns the smallest value. |
+| `min(int...)` | `int` | Returns the smallest value. |
+| `min(double, double)` | `double` | Returns the smallest value. |
+| `min(double...)` | `double` | Returns the smallest value. |
+| `min(long, long)` | `long` | Returns the smallest value. |
+| `min(long...)` | `long` | Returns the smallest value. |
+| `blend(float, float, float)` | `float` | Blends a value towards the target using the specified blend factor (0..1). |
+| `lerp(float, float, float)` | `float` | Interpolates a value towards the target with the specified speed. |
+| `lerpInSeconds(float, float, float)` | `float` | Interpolates a value towards the target with the specified speed per second. |
+| `negative(boolean)` | `boolean` | Returns the inverse of the value. |
+| `negative(float)` | `float` | Returns the negative value. |
+| `negative(int)` | `int` | Returns the negative value. |
+| `inverseSQRT(float)` | `float` | Returns the inverse square root of the value. |
+| `lerpAngle(float, float, float)` | `float` | Interpolates between two angles (0-360) with the specified progress, keeping the result in this range. |
+| `lerpAngleInSeconds(float, float, float)` | `float` | Interpolates between two angles (0-360) with the specified progress per second, keeping the result in this range. |
+| `clampAngleTo360(float)` | `float` | Keeps the angle between 0 and 360, keeping values in this range. |
+| `rangeConverter(float, float, float, float, float)` | `float` | Converts a value from the range [oldMin, oldMax] to the range [newMin, newMax]. |
+| `fixNaN(float)` | `float` | Returns 0 if the value is NaN, otherwise returns the specified value. |
+| `pitchDegrees(Vector3, Vector3)` | `float` | Executes `pitchDegrees` and returns after the underlying engine call finishes. |
+| `normalizeDeg(float)` | `float` | Executes `normalizeDeg` and returns after the underlying engine call finishes. |
+| `deltaPitchDegrees(float, Vector3, Vector3)` | `float` | Executes `deltaPitchDegrees` and returns after the underlying engine call finishes. |

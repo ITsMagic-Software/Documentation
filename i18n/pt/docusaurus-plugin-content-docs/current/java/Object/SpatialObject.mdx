@@ -1,7 +1,3 @@
-import Links from '../../links.mdx';
-
-<Links />
-
 # SpatialObject
 
 Referência completa da API de `SpatialObject`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -66,153 +62,153 @@ public class SpatialObject
 
 | Signature | Returns | Description |
 | --- | --- | --- |
-| setNameOH([JAVARuntime.OHString]) | [void] | Define ou atualiza a propriedade `propriedade `name oh``. |
-| compareName([String]) | [boolean] | Compara esta instância com outra para igualdade/ordem. |
-| duplicate() | [SpatialObject] | Executa a operação duplicate. |
-| destroy() | [void] | Executa a operação destroy. |
-| sendEvent([String]) | [void] | Executa `sendEvent` e retorna quando a chamada do motor termina. |
-| sendEvent([String], [int]) | [void] | Executa `sendEvent` e retorna quando a chamada do motor termina. |
-| sendEvent([String], [float]) | [void] | Executa `sendEvent` e retorna quando a chamada do motor termina. |
-| sendEvent([String], [String]) | [void] | Executa `sendEvent` e retorna quando a chamada do motor termina. |
-| sendEvent([String], [boolean]) | [void] | Executa `sendEvent` e retorna quando a chamada do motor termina. |
-| sendEvent([String], [[Object]...]) | [void] | Executa `sendEvent` e retorna quando a chamada do motor termina. |
-| sendEventToHierarchy([String]) | [void] | Executa `sendEventToHierarchy` e retorna quando a chamada do motor termina. |
-| sendEventToHierarchy([String], [int]) | [void] | Executa `sendEventToHierarchy` e retorna quando a chamada do motor termina. |
-| sendEventToHierarchy([String], [float]) | [void] | Executa `sendEventToHierarchy` e retorna quando a chamada do motor termina. |
-| sendEventToHierarchy([String], [String]) | [void] | Executa `sendEventToHierarchy` e retorna quando a chamada do motor termina. |
-| sendEventToHierarchy([String], [boolean]) | [void] | Executa `sendEventToHierarchy` e retorna quando a chamada do motor termina. |
-| sendEventToHierarchy([String], [[Object]...]) | [void] | Executa `sendEventToHierarchy` e retorna quando a chamada do motor termina. |
-| callFunction([String]) | [void] | Executa a operação callFunction usando os parâmetros informados (name). |
-| callFunction([String], [int]) | [void] | Executa a operação callFunction usando os parâmetros informados (name, args). |
-| callFunction([String], [float]) | [void] | Executa a operação callFunction usando os parâmetros informados (name, args). |
-| callFunction([String], [String]) | [void] | Executa a operação callFunction usando os parâmetros informados (name, args). |
-| callFunction([String], [boolean]) | [void] | Executa a operação callFunction usando os parâmetros informados (name, args). |
-| callFunction([String], [[Object]...]) | [void] | Executa a operação callFunction usando os parâmetros informados (name, args). |
-| instantiate([ObjectFile]) | [SpatialObject] | Executa a operação instantiate usando os parâmetros informados (pFile). |
-| instantiate([ObjectFile], [Vector3]) | [SpatialObject] | Executa a operação instantiate usando os parâmetros informados (pFile, position). |
-| instantiate([ObjectFile], [Vector3], [Quaternion]) | [SpatialObject] | Executa a operação instantiate usando os parâmetros informados (pFile, position, rotation). |
-| instantiate([ObjectFile], [Vector3], [Quaternion], [Vector3]) | [SpatialObject] | Executa a operação instantiate usando os parâmetros informados (pFile, position, rotation, scale). |
-| instantiateHasChild([ObjectFile]) | [SpatialObject] | Executa a operação instantiateHasChild usando os parâmetros informados (pFile). |
-| instantiateHasChild([ObjectFile], [SpatialObject]) | [SpatialObject] | Executa a operação instantiateHasChild usando os parâmetros informados (pFile, parent). |
-| instantiateAsChild([ObjectFile]) | [SpatialObject] | Executa a operação instantiateAsChild usando os parâmetros informados (pFile). |
-| instantiateAsChild([ObjectFile], [SpatialObject]) | [SpatialObject] | Executa a operação instantiateAsChild usando os parâmetros informados (pFile, parent). |
-| findComponent([String]) | &[lt];[T] [extends] [Component]&[gt]; [T] | Executa a operação findComponent usando os parâmetros informados (tittle). |
-| findComponents([String]) | [List]&[lt];[Component]&[gt]; | Executa a operação findComponents usando os parâmetros informados (tittle). |
-| findComponent([Class]) | &[lt];[T] [extends] [Component]&[gt]; [T] | Executa a operação findComponent usando os parâmetros informados (classReference). |
-| findComponents([Class]) | [List]&[lt];[Component]&[gt]; | Executa a operação findComponents usando os parâmetros informados (classReference). |
-| findComponentInChildren([String]) | &[lt];[T] [extends] [Component]&[gt]; [T] | Executa a operação findComponentInChildren usando os parâmetros informados (tittle). |
-| findComponentInChildren([Class]) | &[lt];[T] [extends] [Component]&[gt]; [T] | Executa a operação findComponentInChildren usando os parâmetros informados (classReference). |
-| findComponentInParent([String]) | &[lt];[T] [extends] [Component]&[gt]; [T] | Executa `findComponentInParent` e retorna quando a chamada do motor termina. |
-| findComponentInParent([Class]) | &[lt];[T] [extends] [Component]&[gt]; [T] | Executa `findComponentInParent` e retorna quando a chamada do motor termina. |
-| removeComponent([Component]) | [void] | Remove component da coleção. |
-| addComponent([Component]) | [void] | Adiciona component à coleção. |
-| addComponent([Component], [Class]) | [void] | Adiciona component à coleção. |
-| addComponent([Component]) | [void] | Adiciona component à coleção. |
-| removeParent() | [void] | Remove parent da coleção. |
-| findChildObject([String]) | [SpatialObject] | Executa a operação findChildObject usando os parâmetros informados (name). |
-| findChildObject([JAVARuntime.OHString]) | [SpatialObject] | Executa a operação findChildObject usando os parâmetros informados (name). |
-| getChildAt([int]) | [SpatialObject] | Retorna a propriedade `propriedade `child at atual``. |
-| getChildIndex([SpatialObject]) | [int] | Retorna a propriedade `propriedade `child index atual``. |
-| swapChildrenPosition([SpatialObject], [SpatialObject]) | [void] | Executa a operação swapChildrenPosition usando os parâmetros informados (a, b). |
-| componentCount() | [int] | Executa a operação componentCount. |
-| getComponentAt([int]) | [Component] | Retorna a propriedade `propriedade `component at atual``. |
-| getComponentsAt([int]) | [Component] | Retorna a propriedade `propriedade `components at atual``. |
-| componentAt([int]) | [Component] | Executa a operação componentAt usando os parâmetros informados (idx). |
-| distance([SpatialObject]) | [float] | Executa a operação distance usando os parâmetros informados (other). |
-| distance([Transform]) | [float] | Executa a operação distance usando os parâmetros informados (other). |
-| distance([Vector3]) | [float] | Executa a operação distance usando os parâmetros informados (other). |
-| sqrtDistance([SpatialObject]) | [float] | Executa a operação sqrtDistance usando os parâmetros informados (other). |
-| sqrtDistance([Transform]) | [float] | Executa a operação sqrtDistance usando os parâmetros informados (other). |
-| sqrtDistance([Vector3]) | [float] | Executa a operação sqrtDistance usando os parâmetros informados (other). |
-| setPosition([float], [float], [float]) | [void] | Define ou atualiza a propriedade `propriedade `position``. |
-| setPositionX([float]) | [void] | Define ou atualiza a propriedade `propriedade `position x``. |
-| setPositionY([float]) | [void] | Define ou atualiza a propriedade `propriedade `position y``. |
-| setPositionZ([float]) | [void] | Define ou atualiza a propriedade `propriedade `position z``. |
-| setRotation([float], [float], [float]) | [void] | Define ou atualiza a propriedade `propriedade `rotation``. |
-| setRotation([float], [float], [float], [float]) | [void] | Define ou atualiza a propriedade `propriedade `rotation``. |
-| setScale([float], [float], [float]) | [void] | Define ou atualiza a propriedade `propriedade `scale``. |
-| setScale([float]) | [void] | Define ou atualiza a propriedade `propriedade `scale``. |
-| getGlobalPosition([Vector3]) | [Vector3] | Retorna a propriedade `propriedade `global position atual``. |
-| getGlobalRotation([Quaternion]) | [Quaternion] | Retorna a propriedade `propriedade `global rotation atual``. |
-| getGlobalScale([Vector3]) | [Vector3] | Retorna a propriedade `propriedade `global scale atual``. |
-| translate([float], [float], [float]) | [void] | Transforma ou move the object de acordo. |
-| move([float], [float], [float]) | [void] | Transforma ou move the object de acordo. |
-| rotate([float], [float], [float]) | [void] | Transforma ou move the object de acordo. |
-| translateInSeconds([float], [float], [float]) | [void] | Transforma ou move in seconds de acordo. |
-| moveInSeconds([float], [float], [float]) | [void] | Transforma ou move in seconds de acordo. |
-| rotateInSeconds([float], [float], [float]) | [void] | Transforma ou move in seconds de acordo. |
-| translateInSeconds([int], [int], [int]) | [void] | Executa `translateInSeconds` e retorna quando a chamada do motor termina. |
-| translateInSeconds([int], [int], [float]) | [void] | Executa `translateInSeconds` e retorna quando a chamada do motor termina. |
-| translateInSeconds([int], [float], [int]) | [void] | Executa `translateInSeconds` e retorna quando a chamada do motor termina. |
-| translateInSeconds([int], [float], [float]) | [void] | Executa `translateInSeconds` e retorna quando a chamada do motor termina. |
-| translateInSeconds([float], [int], [int]) | [void] | Executa `translateInSeconds` e retorna quando a chamada do motor termina. |
-| translateInSeconds([float], [int], [float]) | [void] | Executa `translateInSeconds` e retorna quando a chamada do motor termina. |
-| translateInSeconds([float], [float], [int]) | [void] | Executa `translateInSeconds` e retorna quando a chamada do motor termina. |
-| moveInSeconds([int], [int], [int]) | [void] | Executa `moveInSeconds` e retorna quando a chamada do motor termina. |
-| moveInSeconds([int], [int], [float]) | [void] | Executa `moveInSeconds` e retorna quando a chamada do motor termina. |
-| moveInSeconds([int], [float], [int]) | [void] | Executa `moveInSeconds` e retorna quando a chamada do motor termina. |
-| moveInSeconds([int], [float], [float]) | [void] | Executa `moveInSeconds` e retorna quando a chamada do motor termina. |
-| moveInSeconds([float], [int], [int]) | [void] | Executa `moveInSeconds` e retorna quando a chamada do motor termina. |
-| moveInSeconds([float], [int], [float]) | [void] | Executa `moveInSeconds` e retorna quando a chamada do motor termina. |
-| moveInSeconds([float], [float], [int]) | [void] | Executa `moveInSeconds` e retorna quando a chamada do motor termina. |
-| rotateInSeconds([int], [int], [int]) | [void] | Executa `rotateInSeconds` e retorna quando a chamada do motor termina. |
-| rotateInSeconds([int], [int], [float]) | [void] | Executa `rotateInSeconds` e retorna quando a chamada do motor termina. |
-| rotateInSeconds([int], [float], [int]) | [void] | Executa `rotateInSeconds` e retorna quando a chamada do motor termina. |
-| rotateInSeconds([int], [float], [float]) | [void] | Executa `rotateInSeconds` e retorna quando a chamada do motor termina. |
-| rotateInSeconds([float], [int], [int]) | [void] | Executa `rotateInSeconds` e retorna quando a chamada do motor termina. |
-| rotateInSeconds([float], [int], [float]) | [void] | Executa `rotateInSeconds` e retorna quando a chamada do motor termina. |
-| rotateInSeconds([float], [float], [int]) | [void] | Executa `rotateInSeconds` e retorna quando a chamada do motor termina. |
-| lookTo([SpatialObject]) | [void] | Executa `lookTo` e retorna quando a chamada do motor termina. |
-| lookTo([Vector3]) | [void] | Executa a operação lookTo usando os parâmetros informados (position). |
-| lookTo([float], [float], [float]) | [void] | Executa a operação lookTo usando os parâmetros informados (x, y, z). |
-| lookTo([SpatialObject], [boolean], [boolean]) | [void] | Executa `lookTo` e retorna quando a chamada do motor termina. |
-| lookTo([Vector3], [boolean], [boolean]) | [void] | Executa `lookTo` e retorna quando a chamada do motor termina. |
-| lookTo([float], [float], [float], [boolean], [boolean]) | [void] | Executa `lookTo` e retorna quando a chamada do motor termina. |
-| lookToIgnoreY([SpatialObject]) | [void] | Executa a operação lookToIgnoreY usando os parâmetros informados (object). |
-| lookToIgnoreY([Vector3]) | [void] | Executa a operação lookToIgnoreY usando os parâmetros informados (position). |
-| teleportTo([SpatialObject]) | [void] | Executa a operação teleportTo usando os parâmetros informados (object). |
-| teleportTo([Vector3]) | [void] | Executa a operação teleportTo usando os parâmetros informados (position). |
-| smoothLookTo([SpatialObject], [float]) | [void] | Executa a operação smoothLookTo usando os parâmetros informados (other, lerpSpeed). |
-| smoothLookTo([Vector3], [float]) | [void] | Executa a operação smoothLookTo usando os parâmetros informados (other, lerpSpeed). |
-| lerpLookTo([SpatialObject], [float]) | [void] | Executa a operação lerpLookTo usando os parâmetros informados (other, lerpSpeed). |
-| lerpLookTo([Vector3], [float]) | [void] | Executa a operação lerpLookTo usando os parâmetros informados (other, lerpSpeed). |
-| lerpLookToIgnoreY([SpatialObject], [float]) | [void] | Executa a operação lerpLookToIgnoreY usando os parâmetros informados (other, lerpSpeed). |
-| lerpLookToIgnoreY([Vector3], [float]) | [void] | Executa a operação lerpLookToIgnoreY usando os parâmetros informados (other, lerpSpeed). |
-| transformPoint([Vector3]) | [Vector3] | Executa a operação transformPoint usando os parâmetros informados (vector3). |
-| transformPoint([Vector3], [Vector3]) | [void] | Executa a operação transformPoint usando os parâmetros informados (vector3, out). |
-| inverseTransformPoint([Vector3]) | [Vector3] | Executa a operação inverseTransformPoint usando os parâmetros informados (vector3). |
-| inverseTransformPoint([Vector3], [Vector3]) | [void] | Executa a operação inverseTransformPoint usando os parâmetros informados (vector3, out). |
-| transformDirection([Vector3]) | [Vector3] | Executa a operação transformDirection usando os parâmetros informados (vector3). |
-| transformDirection([Vector3], [Vector3]) | [void] | Executa a operação transformDirection usando os parâmetros informados (vector3, out). |
-| inverseTransformDirection([Vector3]) | [Vector3] | Executa a operação inverseTransformDirection usando os parâmetros informados (vector3). |
-| inverseTransformDirection([Vector3], [Vector3]) | [void] | Executa a operação inverseTransformDirection usando os parâmetros informados (vector3, out). |
-| forward() | [Vector3] | Executa a operação forward. |
-| back() | [Vector3] | Executa a operação back. |
-| right() | [Vector3] | Executa a operação right. |
-| left() | [Vector3] | Executa a operação left. |
-| up() | [Vector3] | Executa a operação up. |
-| down() | [Vector3] | Executa a operação down. |
-| forward([Vector3]) | [Vector3] | Executa a operação forward usando os parâmetros informados (out). |
-| back([Vector3]) | [Vector3] | Executa a operação back usando os parâmetros informados (out). |
-| right([Vector3]) | [Vector3] | Executa a operação right usando os parâmetros informados (out). |
-| left([Vector3]) | [Vector3] | Executa a operação left usando os parâmetros informados (out). |
-| up([Vector3]) | [Vector3] | Executa a operação up usando os parâmetros informados (out). |
-| down([Vector3]) | [Vector3] | Executa a operação down usando os parâmetros informados (out). |
-| getState() | [int] | Retorna a propriedade `propriedade `state atual``. |
-| setState([int]) | [void] | Define ou atualiza a propriedade `propriedade `state``. |
-| getGlobalMatrix([float][]) | [float][] | Retorna a propriedade `propriedade `global matrix atual``. |
-| getLocalMatrix([float][]) | [float][] | Retorna a propriedade `propriedade `local matrix atual``. |
-| mulGlobalVector3([Vector3]) | [Vector3] | Executa a operação mulGlobalVector3 usando os parâmetros informados (vector3). |
-| mulLocalVector3([Vector3]) | [Vector3] | Executa a operação mulLocalVector3 usando os parâmetros informados (vector3). |
-| recalculateMatrices() | [void] | Executa a operação recalculateMatrices. |
-| toJson() | [String] | Executa a operação toJson. |
-| exists() | [boolean] | Executa a operação exists. |
-| compareTag([String]) | [boolean] | Compara esta instância com outra para igualdade/ordem. |
-| validate() | [boolean] | Executa `validate` e retorna quando a chamada do motor termina. |
+| `setNameOH(JAVARuntime.OHString)` | `void` | Define ou atualiza a propriedade `propriedade `name oh``. |
+| `compareName(String)` | `boolean` | Compara esta instância com outra para igualdade/ordem. |
+| `duplicate()` | `SpatialObject` | Executa a operação duplicate. |
+| `destroy()` | `void` | Executa a operação destroy. |
+| `sendEvent(String)` | `void` | Executa `sendEvent` e retorna quando a chamada do motor termina. |
+| `sendEvent(String, int)` | `void` | Executa `sendEvent` e retorna quando a chamada do motor termina. |
+| `sendEvent(String, float)` | `void` | Executa `sendEvent` e retorna quando a chamada do motor termina. |
+| `sendEvent(String, String)` | `void` | Executa `sendEvent` e retorna quando a chamada do motor termina. |
+| `sendEvent(String, boolean)` | `void` | Executa `sendEvent` e retorna quando a chamada do motor termina. |
+| `sendEvent(String, Object...)` | `void` | Executa `sendEvent` e retorna quando a chamada do motor termina. |
+| `sendEventToHierarchy(String)` | `void` | Executa `sendEventToHierarchy` e retorna quando a chamada do motor termina. |
+| `sendEventToHierarchy(String, int)` | `void` | Executa `sendEventToHierarchy` e retorna quando a chamada do motor termina. |
+| `sendEventToHierarchy(String, float)` | `void` | Executa `sendEventToHierarchy` e retorna quando a chamada do motor termina. |
+| `sendEventToHierarchy(String, String)` | `void` | Executa `sendEventToHierarchy` e retorna quando a chamada do motor termina. |
+| `sendEventToHierarchy(String, boolean)` | `void` | Executa `sendEventToHierarchy` e retorna quando a chamada do motor termina. |
+| `sendEventToHierarchy(String, Object...)` | `void` | Executa `sendEventToHierarchy` e retorna quando a chamada do motor termina. |
+| `callFunction(String)` | `void` | Executa a operação callFunction usando os parâmetros informados (name). |
+| `callFunction(String, int)` | `void` | Executa a operação callFunction usando os parâmetros informados (name, args). |
+| `callFunction(String, float)` | `void` | Executa a operação callFunction usando os parâmetros informados (name, args). |
+| `callFunction(String, String)` | `void` | Executa a operação callFunction usando os parâmetros informados (name, args). |
+| `callFunction(String, boolean)` | `void` | Executa a operação callFunction usando os parâmetros informados (name, args). |
+| `callFunction(String, Object...)` | `void` | Executa a operação callFunction usando os parâmetros informados (name, args). |
+| `instantiate(ObjectFile)` | `SpatialObject` | Executa a operação instantiate usando os parâmetros informados (pFile). |
+| `instantiate(ObjectFile, Vector3)` | `SpatialObject` | Executa a operação instantiate usando os parâmetros informados (pFile, position). |
+| `instantiate(ObjectFile, Vector3, Quaternion)` | `SpatialObject` | Executa a operação instantiate usando os parâmetros informados (pFile, position, rotation). |
+| `instantiate(ObjectFile, Vector3, Quaternion, Vector3)` | `SpatialObject` | Executa a operação instantiate usando os parâmetros informados (pFile, position, rotation, scale). |
+| `instantiateHasChild(ObjectFile)` | `SpatialObject` | Executa a operação instantiateHasChild usando os parâmetros informados (pFile). |
+| `instantiateHasChild(ObjectFile, SpatialObject)` | `SpatialObject` | Executa a operação instantiateHasChild usando os parâmetros informados (pFile, parent). |
+| `instantiateAsChild(ObjectFile)` | `SpatialObject` | Executa a operação instantiateAsChild usando os parâmetros informados (pFile). |
+| `instantiateAsChild(ObjectFile, SpatialObject)` | `SpatialObject` | Executa a operação instantiateAsChild usando os parâmetros informados (pFile, parent). |
+| `findComponent(String)` | `<T extends Component> T` | Executa a operação findComponent usando os parâmetros informados (tittle). |
+| `findComponents(String)` | [List]&[lt];[Component]&[gt]; | Executa a operação findComponents usando os parâmetros informados (tittle). |
+| `findComponent(Class)` | `<T extends Component> T` | Executa a operação findComponent usando os parâmetros informados (classReference). |
+| `findComponents(Class)` | [List]&[lt];[Component]&[gt]; | Executa a operação findComponents usando os parâmetros informados (classReference). |
+| `findComponentInChildren(String)` | `<T extends Component> T` | Executa a operação findComponentInChildren usando os parâmetros informados (tittle). |
+| `findComponentInChildren(Class)` | `<T extends Component> T` | Executa a operação findComponentInChildren usando os parâmetros informados (classReference). |
+| `findComponentInParent(String)` | `<T extends Component> T` | Executa `findComponentInParent` e retorna quando a chamada do motor termina. |
+| `findComponentInParent(Class)` | `<T extends Component> T` | Executa `findComponentInParent` e retorna quando a chamada do motor termina. |
+| `removeComponent(Component)` | `void` | Remove component da coleção. |
+| `addComponent(Component)` | `void` | Adiciona component à coleção. |
+| `addComponent(Component, Class)` | `void` | Adiciona component à coleção. |
+| `addComponent(Component)` | `void` | Adiciona component à coleção. |
+| `removeParent()` | `void` | Remove parent da coleção. |
+| `findChildObject(String)` | `SpatialObject` | Executa a operação findChildObject usando os parâmetros informados (name). |
+| `findChildObject(JAVARuntime.OHString)` | `SpatialObject` | Executa a operação findChildObject usando os parâmetros informados (name). |
+| `getChildAt(int)` | `SpatialObject` | Retorna a propriedade `propriedade `child at atual``. |
+| `getChildIndex(SpatialObject)` | `int` | Retorna a propriedade `propriedade `child index atual``. |
+| `swapChildrenPosition(SpatialObject, SpatialObject)` | `void` | Executa a operação swapChildrenPosition usando os parâmetros informados (a, b). |
+| `componentCount()` | `int` | Executa a operação componentCount. |
+| `getComponentAt(int)` | `Component` | Retorna a propriedade `propriedade `component at atual``. |
+| `getComponentsAt(int)` | `Component` | Retorna a propriedade `propriedade `components at atual``. |
+| `componentAt(int)` | `Component` | Executa a operação componentAt usando os parâmetros informados (idx). |
+| `distance(SpatialObject)` | `float` | Executa a operação distance usando os parâmetros informados (other). |
+| `distance(Transform)` | `float` | Executa a operação distance usando os parâmetros informados (other). |
+| `distance(Vector3)` | `float` | Executa a operação distance usando os parâmetros informados (other). |
+| `sqrtDistance(SpatialObject)` | `float` | Executa a operação sqrtDistance usando os parâmetros informados (other). |
+| `sqrtDistance(Transform)` | `float` | Executa a operação sqrtDistance usando os parâmetros informados (other). |
+| `sqrtDistance(Vector3)` | `float` | Executa a operação sqrtDistance usando os parâmetros informados (other). |
+| `setPosition(float, float, float)` | `void` | Define ou atualiza a propriedade `propriedade `position``. |
+| `setPositionX(float)` | `void` | Define ou atualiza a propriedade `propriedade `position x``. |
+| `setPositionY(float)` | `void` | Define ou atualiza a propriedade `propriedade `position y``. |
+| `setPositionZ(float)` | `void` | Define ou atualiza a propriedade `propriedade `position z``. |
+| `setRotation(float, float, float)` | `void` | Define ou atualiza a propriedade `propriedade `rotation``. |
+| `setRotation(float, float, float, float)` | `void` | Define ou atualiza a propriedade `propriedade `rotation``. |
+| `setScale(float, float, float)` | `void` | Define ou atualiza a propriedade `propriedade `scale``. |
+| `setScale(float)` | `void` | Define ou atualiza a propriedade `propriedade `scale``. |
+| `getGlobalPosition(Vector3)` | `Vector3` | Retorna a propriedade `propriedade `global position atual``. |
+| `getGlobalRotation(Quaternion)` | `Quaternion` | Retorna a propriedade `propriedade `global rotation atual``. |
+| `getGlobalScale(Vector3)` | `Vector3` | Retorna a propriedade `propriedade `global scale atual``. |
+| `translate(float, float, float)` | `void` | Transforma ou move the object de acordo. |
+| `move(float, float, float)` | `void` | Transforma ou move the object de acordo. |
+| `rotate(float, float, float)` | `void` | Transforma ou move the object de acordo. |
+| `translateInSeconds(float, float, float)` | `void` | Transforma ou move in seconds de acordo. |
+| `moveInSeconds(float, float, float)` | `void` | Transforma ou move in seconds de acordo. |
+| `rotateInSeconds(float, float, float)` | `void` | Transforma ou move in seconds de acordo. |
+| `translateInSeconds(int, int, int)` | `void` | Executa `translateInSeconds` e retorna quando a chamada do motor termina. |
+| `translateInSeconds(int, int, float)` | `void` | Executa `translateInSeconds` e retorna quando a chamada do motor termina. |
+| `translateInSeconds(int, float, int)` | `void` | Executa `translateInSeconds` e retorna quando a chamada do motor termina. |
+| `translateInSeconds(int, float, float)` | `void` | Executa `translateInSeconds` e retorna quando a chamada do motor termina. |
+| `translateInSeconds(float, int, int)` | `void` | Executa `translateInSeconds` e retorna quando a chamada do motor termina. |
+| `translateInSeconds(float, int, float)` | `void` | Executa `translateInSeconds` e retorna quando a chamada do motor termina. |
+| `translateInSeconds(float, float, int)` | `void` | Executa `translateInSeconds` e retorna quando a chamada do motor termina. |
+| `moveInSeconds(int, int, int)` | `void` | Executa `moveInSeconds` e retorna quando a chamada do motor termina. |
+| `moveInSeconds(int, int, float)` | `void` | Executa `moveInSeconds` e retorna quando a chamada do motor termina. |
+| `moveInSeconds(int, float, int)` | `void` | Executa `moveInSeconds` e retorna quando a chamada do motor termina. |
+| `moveInSeconds(int, float, float)` | `void` | Executa `moveInSeconds` e retorna quando a chamada do motor termina. |
+| `moveInSeconds(float, int, int)` | `void` | Executa `moveInSeconds` e retorna quando a chamada do motor termina. |
+| `moveInSeconds(float, int, float)` | `void` | Executa `moveInSeconds` e retorna quando a chamada do motor termina. |
+| `moveInSeconds(float, float, int)` | `void` | Executa `moveInSeconds` e retorna quando a chamada do motor termina. |
+| `rotateInSeconds(int, int, int)` | `void` | Executa `rotateInSeconds` e retorna quando a chamada do motor termina. |
+| `rotateInSeconds(int, int, float)` | `void` | Executa `rotateInSeconds` e retorna quando a chamada do motor termina. |
+| `rotateInSeconds(int, float, int)` | `void` | Executa `rotateInSeconds` e retorna quando a chamada do motor termina. |
+| `rotateInSeconds(int, float, float)` | `void` | Executa `rotateInSeconds` e retorna quando a chamada do motor termina. |
+| `rotateInSeconds(float, int, int)` | `void` | Executa `rotateInSeconds` e retorna quando a chamada do motor termina. |
+| `rotateInSeconds(float, int, float)` | `void` | Executa `rotateInSeconds` e retorna quando a chamada do motor termina. |
+| `rotateInSeconds(float, float, int)` | `void` | Executa `rotateInSeconds` e retorna quando a chamada do motor termina. |
+| `lookTo(SpatialObject)` | `void` | Executa `lookTo` e retorna quando a chamada do motor termina. |
+| `lookTo(Vector3)` | `void` | Executa a operação lookTo usando os parâmetros informados (position). |
+| `lookTo(float, float, float)` | `void` | Executa a operação lookTo usando os parâmetros informados (x, y, z). |
+| `lookTo(SpatialObject, boolean, boolean)` | `void` | Executa `lookTo` e retorna quando a chamada do motor termina. |
+| `lookTo(Vector3, boolean, boolean)` | `void` | Executa `lookTo` e retorna quando a chamada do motor termina. |
+| `lookTo(float, float, float, boolean, boolean)` | `void` | Executa `lookTo` e retorna quando a chamada do motor termina. |
+| `lookToIgnoreY(SpatialObject)` | `void` | Executa a operação lookToIgnoreY usando os parâmetros informados (object). |
+| `lookToIgnoreY(Vector3)` | `void` | Executa a operação lookToIgnoreY usando os parâmetros informados (position). |
+| `teleportTo(SpatialObject)` | `void` | Executa a operação teleportTo usando os parâmetros informados (object). |
+| `teleportTo(Vector3)` | `void` | Executa a operação teleportTo usando os parâmetros informados (position). |
+| `smoothLookTo(SpatialObject, float)` | `void` | Executa a operação smoothLookTo usando os parâmetros informados (other, lerpSpeed). |
+| `smoothLookTo(Vector3, float)` | `void` | Executa a operação smoothLookTo usando os parâmetros informados (other, lerpSpeed). |
+| `lerpLookTo(SpatialObject, float)` | `void` | Executa a operação lerpLookTo usando os parâmetros informados (other, lerpSpeed). |
+| `lerpLookTo(Vector3, float)` | `void` | Executa a operação lerpLookTo usando os parâmetros informados (other, lerpSpeed). |
+| `lerpLookToIgnoreY(SpatialObject, float)` | `void` | Executa a operação lerpLookToIgnoreY usando os parâmetros informados (other, lerpSpeed). |
+| `lerpLookToIgnoreY(Vector3, float)` | `void` | Executa a operação lerpLookToIgnoreY usando os parâmetros informados (other, lerpSpeed). |
+| `transformPoint(Vector3)` | `Vector3` | Executa a operação transformPoint usando os parâmetros informados (vector3). |
+| `transformPoint(Vector3, Vector3)` | `void` | Executa a operação transformPoint usando os parâmetros informados (vector3, out). |
+| `inverseTransformPoint(Vector3)` | `Vector3` | Executa a operação inverseTransformPoint usando os parâmetros informados (vector3). |
+| `inverseTransformPoint(Vector3, Vector3)` | `void` | Executa a operação inverseTransformPoint usando os parâmetros informados (vector3, out). |
+| `transformDirection(Vector3)` | `Vector3` | Executa a operação transformDirection usando os parâmetros informados (vector3). |
+| `transformDirection(Vector3, Vector3)` | `void` | Executa a operação transformDirection usando os parâmetros informados (vector3, out). |
+| `inverseTransformDirection(Vector3)` | `Vector3` | Executa a operação inverseTransformDirection usando os parâmetros informados (vector3). |
+| `inverseTransformDirection(Vector3, Vector3)` | `void` | Executa a operação inverseTransformDirection usando os parâmetros informados (vector3, out). |
+| `forward()` | `Vector3` | Executa a operação forward. |
+| `back()` | `Vector3` | Executa a operação back. |
+| `right()` | `Vector3` | Executa a operação right. |
+| `left()` | `Vector3` | Executa a operação left. |
+| `up()` | `Vector3` | Executa a operação up. |
+| `down()` | `Vector3` | Executa a operação down. |
+| `forward(Vector3)` | `Vector3` | Executa a operação forward usando os parâmetros informados (out). |
+| `back(Vector3)` | `Vector3` | Executa a operação back usando os parâmetros informados (out). |
+| `right(Vector3)` | `Vector3` | Executa a operação right usando os parâmetros informados (out). |
+| `left(Vector3)` | `Vector3` | Executa a operação left usando os parâmetros informados (out). |
+| `up(Vector3)` | `Vector3` | Executa a operação up usando os parâmetros informados (out). |
+| `down(Vector3)` | `Vector3` | Executa a operação down usando os parâmetros informados (out). |
+| `getState()` | `int` | Retorna a propriedade `propriedade `state atual``. |
+| `setState(int)` | `void` | Define ou atualiza a propriedade `propriedade `state``. |
+| `getGlobalMatrix(float[])` | [float][] | Retorna a propriedade `propriedade `global matrix atual``. |
+| `getLocalMatrix(float[])` | [float][] | Retorna a propriedade `propriedade `local matrix atual``. |
+| `mulGlobalVector3(Vector3)` | `Vector3` | Executa a operação mulGlobalVector3 usando os parâmetros informados (vector3). |
+| `mulLocalVector3(Vector3)` | `Vector3` | Executa a operação mulLocalVector3 usando os parâmetros informados (vector3). |
+| `recalculateMatrices()` | `void` | Executa a operação recalculateMatrices. |
+| `toJson()` | `String` | Executa a operação toJson. |
+| `exists()` | `boolean` | Executa a operação exists. |
+| `compareTag(String)` | `boolean` | Compara esta instância com outra para igualdade/ordem. |
+| `validate()` | `boolean` | Executa `validate` e retorna quando a chamada do motor termina. |
 
 ## Métodos Estáticos (2)
 
 | Signature | Returns | Description |
 | --- | --- | --- |
-| inspectorController() | [ClassInspectorEntry] | Executa `inspectorController` e retorna quando a chamada do motor termina. |
-| loadFile([ObjectFile]) | [SpatialObject] | Carrega file no objeto. |
+| `inspectorController()` | `ClassInspectorEntry` | Executa `inspectorController` e retorna quando a chamada do motor termina. |
+| `loadFile(ObjectFile)` | `SpatialObject` | Carrega file no objeto. |

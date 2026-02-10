@@ -1,7 +1,3 @@
-import Links from '../../../links.mdx';
-
-<Links />
-
 # VehiclePhysics
 
 Complete API reference for `VehiclePhysics`, including constructors, attributes, virtual attributes, and methods.
@@ -60,15 +56,15 @@ public class VehiclePhysics extends Component
 
 | Signature | Returns | Description |
 | --- | --- | --- |
-| setTorque([float], [int]) | [void] | Sets the torque for the specified wheel. |
-| setBrake([float], [int]) | [void] | Sets the brake force for the specified wheel. |
-| setSteer([float], [int]) | [void] | Sets the steering angle for the specified wheel (in degrees). |
-| setMaxSpeed([float]) | [void] | Sets the maximum speed the vehicle can reach (in KM/H). Used in the setSteerRelativeVelocity method as the maximum possible speed. |
-| getWheels() | [List]&[lt];[VehicleWheel]&[gt]; | Returns a list of all wheels on the vehicle. |
-| addForce([Vector3]) | [void] | Applies a force to the Rigidbody in the specified direction. |
-| addForce([float], [float], [float]) | [void] | Applies a force to the Rigidbody with the specified x, y and z values. |
-| addForce([Vector3], [Vector3]) | [void] | Applies a force to the Rigidbody at a specific relative position. |
-| addVelocity([Vector3]) | [void] | Adds velocity to the Rigidbody in the specified direction. |
-| addVelocity([float], [float], [float]) | [void] | Adds velocity to the Rigidbody with the specified x, y and z values. |
-| addVelocityBySecond([Vector3]) | [void] | Adds velocity per second to the Rigidbody in the specified direction. |
-| addVelocityBySecond([float], [float], [float]) | [void] | Adds velocity per second to the Rigidbody with the specified x, y and z values. |
+| `setTorque(float, int)` | `void` | Sets the torque for the specified wheel. |
+| `setBrake(float, int)` | `void` | Sets the brake force for the specified wheel. |
+| `setSteer(float, int)` | `void` | Sets the steering angle for the specified wheel (in degrees). |
+| `setMaxSpeed(float)` | `void` | Sets the maximum speed the vehicle can reach (in KM/H). Used in the setSteerRelativeVelocity method as the maximum possible speed. |
+| `getWheels()` | [List]&[lt];[VehicleWheel]&[gt]; | Returns a list of all wheels on the vehicle. |
+| `addForce(Vector3)` | `void` | Applies a force to the Rigidbody in the specified direction. |
+| `addForce(float, float, float)` | `void` | Applies a force to the Rigidbody with the specified x, y and z values. |
+| `addForce(Vector3, Vector3)` | `void` | Applies a force to the Rigidbody at a specific relative position. |
+| `addVelocity(Vector3)` | `void` | Adds velocity to the Rigidbody in the specified direction. |
+| `addVelocity(float, float, float)` | `void` | Adds velocity to the Rigidbody with the specified x, y and z values. |
+| `addVelocityBySecond(Vector3)` | `void` | Adds velocity per second to the Rigidbody in the specified direction. |
+| `addVelocityBySecond(float, float, float)` | `void` | Adds velocity per second to the Rigidbody with the specified x, y and z values. |

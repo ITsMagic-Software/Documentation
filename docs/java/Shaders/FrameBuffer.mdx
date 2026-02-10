@@ -1,7 +1,3 @@
-import Links from '../../links.mdx';
-
-<Links />
-
 # FrameBuffer
 
 Complete API reference for `FrameBuffer`, including constructors, attributes, virtual attributes, and methods.
@@ -51,12 +47,12 @@ public class FrameBuffer
 
 | Signature | Returns | Description |
 | --- | --- | --- |
-| resize([int], [int]) | [void] | Performs the resize operation using the provided parameters (width, height). |
-| resize([int], [int], [int]) | [void] | Performs the resize operation using the provided parameters (width, height, renderPercentage). |
-| getColorTexture([int]) | [Texture] | Returns the current color texture. |
-| getColorTextureArray() | [Texture][] | Returns the current color texture array. |
-| extractGPUImageToBtm([ExtractCallback]) | [void] | Executes `extractGPUImageToBtm` and returns after the underlying engine call finishes. |
-| saveGPUImageToFile([File]) | [void] | Executes `saveGPUImageToFile` and returns after the underlying engine call finishes. |
-| saveGPUImageToFile([File], [Runnable]) | [void] | Executes `saveGPUImageToFile` and returns after the underlying engine call finishes. |
-| destroy() | [void] | Executes `destroy` and returns after the underlying engine call finishes. |
-| validate() | [boolean] | Executes `validate` and returns after the underlying engine call finishes. |
+| `resize(int, int)` | `void` | Performs the resize operation using the provided parameters (width, height). |
+| `resize(int, int, int)` | `void` | Performs the resize operation using the provided parameters (width, height, renderPercentage). |
+| `getColorTexture(int)` | `Texture` | Returns the current color texture. |
+| `getColorTextureArray()` | [Texture][] | Returns the current color texture array. |
+| `extractGPUImageToBtm(ExtractCallback)` | `void` | Executes `extractGPUImageToBtm` and returns after the underlying engine call finishes. |
+| `saveGPUImageToFile(File)` | `void` | Executes `saveGPUImageToFile` and returns after the underlying engine call finishes. |
+| `saveGPUImageToFile(File, Runnable)` | `void` | Executes `saveGPUImageToFile` and returns after the underlying engine call finishes. |
+| `destroy()` | `void` | Executes `destroy` and returns after the underlying engine call finishes. |
+| `validate()` | `boolean` | Executes `validate` and returns after the underlying engine call finishes. |

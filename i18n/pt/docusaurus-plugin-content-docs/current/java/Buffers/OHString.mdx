@@ -1,7 +1,3 @@
-import Links from '../../links.mdx';
-
-<Links />
-
 # OHString
 
 Referência completa da API de `OHString`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -38,78 +34,78 @@ public class OHString
 
 | Signature | Returns | Description |
 | --- | --- | --- |
-| set([String]) | [void] | Define ou atualiza the value. |
-| set([OHString]) | [void] | Define ou atualiza the value. |
-| set([float]) | [void] | Define ou atualiza the value. |
-| set([int]) | [void] | Define ou atualiza the value. |
-| set([boolean]) | [void] | Define ou atualiza the value. |
-| set([double]) | [void] | Define ou atualiza the value. |
-| set([long]) | [void] | Define ou atualiza the value. |
-| set([short]) | [void] | Define ou atualiza the value. |
-| set([char]) | [void] | Define ou atualiza the value. |
-| set([char][], [int], [int]) | [void] | Define ou atualiza the value. |
-| concatLocal([String]) | [void] | Executa a operação concatLocal usando os parâmetros informados (str). |
-| concatLocal([OHString]) | [void] | Executa a operação concatLocal usando os parâmetros informados (str). |
-| concatLocalAtStart([String]) | [void] | Executa a operação concatLocalAtStart usando os parâmetros informados (str). |
-| concatLocalAtStart([OHString]) | [void] | Executa a operação concatLocalAtStart usando os parâmetros informados (str). |
-| concat([String]) | [OHString] | Executa a operação concat usando os parâmetros informados (str). |
-| concat([OHString]) | [OHString] | Executa a operação concat usando os parâmetros informados (str). |
-| concatAtStart([String]) | [OHString] | Executa a operação concatAtStart usando os parâmetros informados (str). |
-| concatAtStart([OHString]) | [OHString] | Executa a operação concatAtStart usando os parâmetros informados (str). |
-| subString([int]) | [OHString] | Executa a operação subString usando os parâmetros informados (startIdx). |
-| subString([int], [int]) | [OHString] | Executa a operação subString usando os parâmetros informados (startIdx, endIndex). |
-| subStringLocal([int]) | [void] | Executa a operação subStringLocal usando os parâmetros informados (startIdx). |
-| subStringLocal([int], [int]) | [void] | Executa a operação subStringLocal usando os parâmetros informados (startIdx, endIndex). |
-| trim() | [OHString] | Executa a operação trim. |
-| equals([String]) | [boolean] | Compara esta instância com outra para igualdade/ordem. |
-| equals([OHString]) | [boolean] | Compara esta instância com outra para igualdade/ordem. |
-| equalsIgnoreCase([String]) | [boolean] | Compara esta instância com outra para igualdade/ordem. |
-| equalsIgnoreCase([OHString]) | [boolean] | Compara esta instância com outra para igualdade/ordem. |
-| contains([String]) | [boolean] | Executa a operação contains usando os parâmetros informados (str). |
-| contains([OHString]) | [boolean] | Executa a operação contains usando os parâmetros informados (str). |
-| split([String]) | [OHString][] | Executa a operação split usando os parâmetros informados (str). |
-| split([OHString]) | [OHString][] | Executa a operação split usando os parâmetros informados (str). |
-| replace([String], [String]) | [OHString] | Executa a operação replace usando os parâmetros informados (str, replacement). |
-| replace([OHString], [OHString]) | [OHString] | Executa a operação replace usando os parâmetros informados (str, replacement). |
-| replaceLocal([String], [String]) | [void] | Executa a operação replaceLocal usando os parâmetros informados (str, replacement). |
-| replaceLocal([OHString], [OHString]) | [void] | Executa a operação replaceLocal usando os parâmetros informados (str, replacement). |
-| isEmpty() | [boolean] | Retorna se empty é verdadeiro. |
-| length() | [int] | Executa a operação length. |
-| toString() | [String] | Retorna a propriedade `representação em string`. |
-| copy() | [OHString] | Retorna uma cópia da instância de OHString. |
-| equals([Object]) | [boolean] | Compara esta instância com outra para igualdade/ordem. |
-| pointerEquals([Object]) | [boolean] | Executa a operação pointerEquals usando os parâmetros informados (otherObject). |
-| notEquals([Object]) | [boolean] | Executa a operação notEquals usando os parâmetros informados (otherObject). |
-| greaterThan([Object]) | [boolean] | Executa a operação greaterThan usando os parâmetros informados (otherObject). |
-| greaterThan([float]) | [boolean] | Executa a operação greaterThan usando os parâmetros informados (v). |
-| greaterThan([int]) | [boolean] | Executa a operação greaterThan usando os parâmetros informados (v). |
-| greaterThan([long]) | [boolean] | Executa a operação greaterThan usando os parâmetros informados (v). |
-| greaterThan([double]) | [boolean] | Executa a operação greaterThan usando os parâmetros informados (v). |
-| greaterOrEqualsThan([Object]) | [boolean] | Executa a operação greaterOrEqualsThan usando os parâmetros informados (otherObject). |
-| greaterOrEqualsThan([float]) | [boolean] | Executa a operação greaterOrEqualsThan usando os parâmetros informados (v). |
-| greaterOrEqualsThan([int]) | [boolean] | Executa a operação greaterOrEqualsThan usando os parâmetros informados (v). |
-| greaterOrEqualsThan([long]) | [boolean] | Executa a operação greaterOrEqualsThan usando os parâmetros informados (v). |
-| greaterOrEqualsThan([double]) | [boolean] | Executa a operação greaterOrEqualsThan usando os parâmetros informados (v). |
-| lessThan([Object]) | [boolean] | Executa a operação lessThan usando os parâmetros informados (otherObject). |
-| lessThan([float]) | [boolean] | Executa a operação lessThan usando os parâmetros informados (v). |
-| lessThan([int]) | [boolean] | Executa a operação lessThan usando os parâmetros informados (v). |
-| lessThan([long]) | [boolean] | Executa a operação lessThan usando os parâmetros informados (v). |
-| lessThan([double]) | [boolean] | Executa a operação lessThan usando os parâmetros informados (v). |
-| lessOrEqualsThan([Object]) | [boolean] | Executa a operação lessOrEqualsThan usando os parâmetros informados (otherObject). |
-| lessOrEqualsThan([float]) | [boolean] | Executa a operação lessOrEqualsThan usando os parâmetros informados (v). |
-| lessOrEqualsThan([int]) | [boolean] | Executa a operação lessOrEqualsThan usando os parâmetros informados (v). |
-| lessOrEqualsThan([long]) | [boolean] | Executa a operação lessOrEqualsThan usando os parâmetros informados (v). |
-| lessOrEqualsThan([double]) | [boolean] | Executa a operação lessOrEqualsThan usando os parâmetros informados (v). |
-| sum([Object]) | [T] | Executa a operação sum usando os parâmetros informados (otherObject). |
-| sumEqual([Object]) | [void] | Executa a operação sumEqual usando os parâmetros informados (otherObject). |
-| div([Object]) | [T] | Executa a operação div usando os parâmetros informados (otherObject). |
-| divEqual([Object]) | [void] | Executa a operação divEqual usando os parâmetros informados (otherObject). |
-| sub([Object]) | [T] | Executa a operação sub usando os parâmetros informados (otherObject). |
-| subEqual([Object]) | [void] | Executa a operação subEqual usando os parâmetros informados (otherObject). |
-| removeRemove() | [void] | Remove remove da coleção. |
+| `set(String)` | `void` | Define ou atualiza the value. |
+| `set(OHString)` | `void` | Define ou atualiza the value. |
+| `set(float)` | `void` | Define ou atualiza the value. |
+| `set(int)` | `void` | Define ou atualiza the value. |
+| `set(boolean)` | `void` | Define ou atualiza the value. |
+| `set(double)` | `void` | Define ou atualiza the value. |
+| `set(long)` | `void` | Define ou atualiza the value. |
+| `set(short)` | `void` | Define ou atualiza the value. |
+| `set(char)` | `void` | Define ou atualiza the value. |
+| `set(char[], int, int)` | `void` | Define ou atualiza the value. |
+| `concatLocal(String)` | `void` | Executa a operação concatLocal usando os parâmetros informados (str). |
+| `concatLocal(OHString)` | `void` | Executa a operação concatLocal usando os parâmetros informados (str). |
+| `concatLocalAtStart(String)` | `void` | Executa a operação concatLocalAtStart usando os parâmetros informados (str). |
+| `concatLocalAtStart(OHString)` | `void` | Executa a operação concatLocalAtStart usando os parâmetros informados (str). |
+| `concat(String)` | `OHString` | Executa a operação concat usando os parâmetros informados (str). |
+| `concat(OHString)` | `OHString` | Executa a operação concat usando os parâmetros informados (str). |
+| `concatAtStart(String)` | `OHString` | Executa a operação concatAtStart usando os parâmetros informados (str). |
+| `concatAtStart(OHString)` | `OHString` | Executa a operação concatAtStart usando os parâmetros informados (str). |
+| `subString(int)` | `OHString` | Executa a operação subString usando os parâmetros informados (startIdx). |
+| `subString(int, int)` | `OHString` | Executa a operação subString usando os parâmetros informados (startIdx, endIndex). |
+| `subStringLocal(int)` | `void` | Executa a operação subStringLocal usando os parâmetros informados (startIdx). |
+| `subStringLocal(int, int)` | `void` | Executa a operação subStringLocal usando os parâmetros informados (startIdx, endIndex). |
+| `trim()` | `OHString` | Executa a operação trim. |
+| `equals(String)` | `boolean` | Compara esta instância com outra para igualdade/ordem. |
+| `equals(OHString)` | `boolean` | Compara esta instância com outra para igualdade/ordem. |
+| `equalsIgnoreCase(String)` | `boolean` | Compara esta instância com outra para igualdade/ordem. |
+| `equalsIgnoreCase(OHString)` | `boolean` | Compara esta instância com outra para igualdade/ordem. |
+| `contains(String)` | `boolean` | Executa a operação contains usando os parâmetros informados (str). |
+| `contains(OHString)` | `boolean` | Executa a operação contains usando os parâmetros informados (str). |
+| `split(String)` | [OHString][] | Executa a operação split usando os parâmetros informados (str). |
+| `split(OHString)` | [OHString][] | Executa a operação split usando os parâmetros informados (str). |
+| `replace(String, String)` | `OHString` | Executa a operação replace usando os parâmetros informados (str, replacement). |
+| `replace(OHString, OHString)` | `OHString` | Executa a operação replace usando os parâmetros informados (str, replacement). |
+| `replaceLocal(String, String)` | `void` | Executa a operação replaceLocal usando os parâmetros informados (str, replacement). |
+| `replaceLocal(OHString, OHString)` | `void` | Executa a operação replaceLocal usando os parâmetros informados (str, replacement). |
+| `isEmpty()` | `boolean` | Retorna se empty é verdadeiro. |
+| `length()` | `int` | Executa a operação length. |
+| `toString()` | `String` | Retorna a propriedade `representação em string`. |
+| `copy()` | `OHString` | Retorna uma cópia da instância de OHString. |
+| `equals(Object)` | `boolean` | Compara esta instância com outra para igualdade/ordem. |
+| `pointerEquals(Object)` | `boolean` | Executa a operação pointerEquals usando os parâmetros informados (otherObject). |
+| `notEquals(Object)` | `boolean` | Executa a operação notEquals usando os parâmetros informados (otherObject). |
+| `greaterThan(Object)` | `boolean` | Executa a operação greaterThan usando os parâmetros informados (otherObject). |
+| `greaterThan(float)` | `boolean` | Executa a operação greaterThan usando os parâmetros informados (v). |
+| `greaterThan(int)` | `boolean` | Executa a operação greaterThan usando os parâmetros informados (v). |
+| `greaterThan(long)` | `boolean` | Executa a operação greaterThan usando os parâmetros informados (v). |
+| `greaterThan(double)` | `boolean` | Executa a operação greaterThan usando os parâmetros informados (v). |
+| `greaterOrEqualsThan(Object)` | `boolean` | Executa a operação greaterOrEqualsThan usando os parâmetros informados (otherObject). |
+| `greaterOrEqualsThan(float)` | `boolean` | Executa a operação greaterOrEqualsThan usando os parâmetros informados (v). |
+| `greaterOrEqualsThan(int)` | `boolean` | Executa a operação greaterOrEqualsThan usando os parâmetros informados (v). |
+| `greaterOrEqualsThan(long)` | `boolean` | Executa a operação greaterOrEqualsThan usando os parâmetros informados (v). |
+| `greaterOrEqualsThan(double)` | `boolean` | Executa a operação greaterOrEqualsThan usando os parâmetros informados (v). |
+| `lessThan(Object)` | `boolean` | Executa a operação lessThan usando os parâmetros informados (otherObject). |
+| `lessThan(float)` | `boolean` | Executa a operação lessThan usando os parâmetros informados (v). |
+| `lessThan(int)` | `boolean` | Executa a operação lessThan usando os parâmetros informados (v). |
+| `lessThan(long)` | `boolean` | Executa a operação lessThan usando os parâmetros informados (v). |
+| `lessThan(double)` | `boolean` | Executa a operação lessThan usando os parâmetros informados (v). |
+| `lessOrEqualsThan(Object)` | `boolean` | Executa a operação lessOrEqualsThan usando os parâmetros informados (otherObject). |
+| `lessOrEqualsThan(float)` | `boolean` | Executa a operação lessOrEqualsThan usando os parâmetros informados (v). |
+| `lessOrEqualsThan(int)` | `boolean` | Executa a operação lessOrEqualsThan usando os parâmetros informados (v). |
+| `lessOrEqualsThan(long)` | `boolean` | Executa a operação lessOrEqualsThan usando os parâmetros informados (v). |
+| `lessOrEqualsThan(double)` | `boolean` | Executa a operação lessOrEqualsThan usando os parâmetros informados (v). |
+| `sum(Object)` | `T` | Executa a operação sum usando os parâmetros informados (otherObject). |
+| `sumEqual(Object)` | `void` | Executa a operação sumEqual usando os parâmetros informados (otherObject). |
+| `div(Object)` | `T` | Executa a operação div usando os parâmetros informados (otherObject). |
+| `divEqual(Object)` | `void` | Executa a operação divEqual usando os parâmetros informados (otherObject). |
+| `sub(Object)` | `T` | Executa a operação sub usando os parâmetros informados (otherObject). |
+| `subEqual(Object)` | `void` | Executa a operação subEqual usando os parâmetros informados (otherObject). |
+| `removeRemove()` | `void` | Remove remove da coleção. |
 
 ## Métodos Estáticos (1)
 
 | Signature | Returns | Description |
 | --- | --- | --- |
-| isNull([Object]) | [boolean] | Retorna se null é verdadeiro. |
+| `isNull(Object)` | `boolean` | Retorna se null é verdadeiro. |

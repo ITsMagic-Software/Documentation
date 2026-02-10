@@ -1,7 +1,3 @@
-import Links from '../../links.mdx';
-
-<Links />
-
 # ViewPanel
 
 Complete API reference for `ViewPanel`, including constructors, attributes, virtual attributes, and methods.
@@ -29,18 +25,18 @@ public class ViewPanel extends EditorPanel
 
 | Signature | Returns | Description |
 | --- | --- | --- |
-| updateUI() | [void] | Sets or updates the ui. |
-| updateUIVisible() | [void] | Sets or updates the uivisible. |
-| minimizedUpdate() | [void] | Executes `minimizedUpdate` and returns after the underlying engine call finishes. |
-| onBindView() | [void] | Executes `onBindView` and returns after the underlying engine call finishes. |
-| onUnbindView() | [void] | Executes `onUnbindView` and returns after the underlying engine call finishes. |
-| onAttach() | [View] | Executes `onAttach` and returns after the underlying engine call finishes. |
-| onDetach() | [void] | Executes `onDetach` and returns after the underlying engine call finishes. |
+| `updateUI()` | `void` | Sets or updates the ui. |
+| `updateUIVisible()` | `void` | Sets or updates the uivisible. |
+| `minimizedUpdate()` | `void` | Executes `minimizedUpdate` and returns after the underlying engine call finishes. |
+| `onBindView()` | `void` | Executes `onBindView` and returns after the underlying engine call finishes. |
+| `onUnbindView()` | `void` | Executes `onUnbindView` and returns after the underlying engine call finishes. |
+| `onAttach()` | `View` | Executes `onAttach` and returns after the underlying engine call finishes. |
+| `onDetach()` | `void` | Executes `onDetach` and returns after the underlying engine call finishes. |
 
 ## Static Methods (3)
 
 | Signature | Returns | Description |
 | --- | --- | --- |
-| findViewByID([View], [String]) | &[lt];[T] [extends] [View]&[gt]; [T] | Performs the findViewByID operation using the provided parameters (view, id). |
-| toView([Object]) | [View] | Performs the toView operation using the provided parameters (o). |
-| getIdOf([View]) | [String] | Returns the current id of. |
+| `findViewByID(View, String)` | `<T extends View> T` | Performs the findViewByID operation using the provided parameters (view, id). |
+| `toView(Object)` | `View` | Performs the toView operation using the provided parameters (o). |
+| `getIdOf(View)` | `String` | Returns the current id of. |

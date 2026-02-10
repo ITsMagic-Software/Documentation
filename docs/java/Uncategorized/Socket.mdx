@@ -1,7 +1,3 @@
-import Links from '../../links.mdx';
-
-<Links />
-
 # Socket
 
 Complete API reference for `Socket`, including constructors, attributes, virtual attributes, and methods.
@@ -37,46 +33,46 @@ public class Socket extends Socket
 
 | Signature | Returns | Description |
 | --- | --- | --- |
-| connect([SocketAddress]) | [void] | Executes `connect` and returns after the underlying engine call finishes. |
-| connect([SocketAddress], [int]) | [void] | Executes `connect` and returns after the underlying engine call finishes. |
-| bind([SocketAddress]) | [void] | Executes `bind` and returns after the underlying engine call finishes. |
-| getInetAddress() | [InetAddress] | Returns the current inet address. |
-| getLocalAddress() | [InetAddress] | Returns the current local address. |
-| getPort() | [int] | Returns the current port. |
-| getLocalPort() | [int] | Returns the current local port. |
-| getRemoteSocketAddress() | [SocketAddress] | Returns the current remote socket address. |
-| getLocalSocketAddress() | [SocketAddress] | Returns the current local socket address. |
-| getChannel() | [SocketChannel] | Returns the current channel. |
-| getInputStream() | [InputStream] | Executes `getInputStream` and returns after the underlying engine call finishes. |
-| getOutputStream() | [OutputStream] | Executes `getOutputStream` and returns after the underlying engine call finishes. |
-| setTcpNoDelay([boolean]) | [void] | Executes `setTcpNoDelay` and returns after the underlying engine call finishes. |
-| getTcpNoDelay() | [boolean] | Executes `getTcpNoDelay` and returns after the underlying engine call finishes. |
-| setSoLinger([boolean], [int]) | [void] | Executes `setSoLinger` and returns after the underlying engine call finishes. |
-| getSoLinger() | [int] | Executes `getSoLinger` and returns after the underlying engine call finishes. |
-| sendUrgentData([int]) | [void] | Executes `sendUrgentData` and returns after the underlying engine call finishes. |
-| setOOBInline([boolean]) | [void] | Executes `setOOBInline` and returns after the underlying engine call finishes. |
-| getOOBInline() | [boolean] | Executes `getOOBInline` and returns after the underlying engine call finishes. |
-| setSoTimeout([int]) | [void] | Executes `setSoTimeout` and returns after the underlying engine call finishes. |
-| getSoTimeout() | [int] | Executes `getSoTimeout` and returns after the underlying engine call finishes. |
-| setSendBufferSize([int]) | [void] | Executes `setSendBufferSize` and returns after the underlying engine call finishes. |
-| getSendBufferSize() | [int] | Executes `getSendBufferSize` and returns after the underlying engine call finishes. |
-| setReceiveBufferSize([int]) | [void] | Executes `setReceiveBufferSize` and returns after the underlying engine call finishes. |
-| getReceiveBufferSize() | [int] | Executes `getReceiveBufferSize` and returns after the underlying engine call finishes. |
-| setKeepAlive([boolean]) | [void] | Executes `setKeepAlive` and returns after the underlying engine call finishes. |
-| getKeepAlive() | [boolean] | Executes `getKeepAlive` and returns after the underlying engine call finishes. |
-| setTrafficClass([int]) | [void] | Executes `setTrafficClass` and returns after the underlying engine call finishes. |
-| getTrafficClass() | [int] | Executes `getTrafficClass` and returns after the underlying engine call finishes. |
-| setReuseAddress([boolean]) | [void] | Executes `setReuseAddress` and returns after the underlying engine call finishes. |
-| getReuseAddress() | [boolean] | Executes `getReuseAddress` and returns after the underlying engine call finishes. |
-| close() | [void] | Executes `close` and returns after the underlying engine call finishes. |
-| shutdownInput() | [void] | Executes `shutdownInput` and returns after the underlying engine call finishes. |
-| shutdownOutput() | [void] | Executes `shutdownOutput` and returns after the underlying engine call finishes. |
-| toString() | [String] | Returns the string representation. |
-| isConnected() | [boolean] | Returns whether connected is true. |
-| isBound() | [boolean] | Returns whether bound is true. |
-| isClosed() | [boolean] | Returns whether closed is true. |
-| isInputShutdown() | [boolean] | Returns whether input shutdown is true. |
-| isOutputShutdown() | [boolean] | Returns whether output shutdown is true. |
-| setPerformancePreferences([int], [int], [int]) | [void] | Sets or updates the performance preferences. |
-| hashCode() | [int] | Returns whether code is true. |
-| equals([Object]) | [boolean] | Compares this instance with another for equality/order. |
+| `connect(SocketAddress)` | `void` | Executes `connect` and returns after the underlying engine call finishes. |
+| `connect(SocketAddress, int)` | `void` | Executes `connect` and returns after the underlying engine call finishes. |
+| `bind(SocketAddress)` | `void` | Executes `bind` and returns after the underlying engine call finishes. |
+| `getInetAddress()` | `InetAddress` | Returns the current inet address. |
+| `getLocalAddress()` | `InetAddress` | Returns the current local address. |
+| `getPort()` | `int` | Returns the current port. |
+| `getLocalPort()` | `int` | Returns the current local port. |
+| `getRemoteSocketAddress()` | `SocketAddress` | Returns the current remote socket address. |
+| `getLocalSocketAddress()` | `SocketAddress` | Returns the current local socket address. |
+| `getChannel()` | `SocketChannel` | Returns the current channel. |
+| `getInputStream()` | `InputStream` | Executes `getInputStream` and returns after the underlying engine call finishes. |
+| `getOutputStream()` | `OutputStream` | Executes `getOutputStream` and returns after the underlying engine call finishes. |
+| `setTcpNoDelay(boolean)` | `void` | Executes `setTcpNoDelay` and returns after the underlying engine call finishes. |
+| `getTcpNoDelay()` | `boolean` | Executes `getTcpNoDelay` and returns after the underlying engine call finishes. |
+| `setSoLinger(boolean, int)` | `void` | Executes `setSoLinger` and returns after the underlying engine call finishes. |
+| `getSoLinger()` | `int` | Executes `getSoLinger` and returns after the underlying engine call finishes. |
+| `sendUrgentData(int)` | `void` | Executes `sendUrgentData` and returns after the underlying engine call finishes. |
+| `setOOBInline(boolean)` | `void` | Executes `setOOBInline` and returns after the underlying engine call finishes. |
+| `getOOBInline()` | `boolean` | Executes `getOOBInline` and returns after the underlying engine call finishes. |
+| `setSoTimeout(int)` | `void` | Executes `setSoTimeout` and returns after the underlying engine call finishes. |
+| `getSoTimeout()` | `int` | Executes `getSoTimeout` and returns after the underlying engine call finishes. |
+| `setSendBufferSize(int)` | `void` | Executes `setSendBufferSize` and returns after the underlying engine call finishes. |
+| `getSendBufferSize()` | `int` | Executes `getSendBufferSize` and returns after the underlying engine call finishes. |
+| `setReceiveBufferSize(int)` | `void` | Executes `setReceiveBufferSize` and returns after the underlying engine call finishes. |
+| `getReceiveBufferSize()` | `int` | Executes `getReceiveBufferSize` and returns after the underlying engine call finishes. |
+| `setKeepAlive(boolean)` | `void` | Executes `setKeepAlive` and returns after the underlying engine call finishes. |
+| `getKeepAlive()` | `boolean` | Executes `getKeepAlive` and returns after the underlying engine call finishes. |
+| `setTrafficClass(int)` | `void` | Executes `setTrafficClass` and returns after the underlying engine call finishes. |
+| `getTrafficClass()` | `int` | Executes `getTrafficClass` and returns after the underlying engine call finishes. |
+| `setReuseAddress(boolean)` | `void` | Executes `setReuseAddress` and returns after the underlying engine call finishes. |
+| `getReuseAddress()` | `boolean` | Executes `getReuseAddress` and returns after the underlying engine call finishes. |
+| `close()` | `void` | Executes `close` and returns after the underlying engine call finishes. |
+| `shutdownInput()` | `void` | Executes `shutdownInput` and returns after the underlying engine call finishes. |
+| `shutdownOutput()` | `void` | Executes `shutdownOutput` and returns after the underlying engine call finishes. |
+| `toString()` | `String` | Returns the string representation. |
+| `isConnected()` | `boolean` | Returns whether connected is true. |
+| `isBound()` | `boolean` | Returns whether bound is true. |
+| `isClosed()` | `boolean` | Returns whether closed is true. |
+| `isInputShutdown()` | `boolean` | Returns whether input shutdown is true. |
+| `isOutputShutdown()` | `boolean` | Returns whether output shutdown is true. |
+| `setPerformancePreferences(int, int, int)` | `void` | Sets or updates the performance preferences. |
+| `hashCode()` | `int` | Returns whether code is true. |
+| `equals(Object)` | `boolean` | Compares this instance with another for equality/order. |

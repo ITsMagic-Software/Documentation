@@ -1,7 +1,3 @@
-import Links from '../../links.mdx';
-
-<Links />
-
 # Input
 
 Referência completa da API de `Input`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -22,26 +18,26 @@ public class Input
 
 | Signature | Returns | Description |
 | --- | --- | --- |
-| GamePad() | [GamePad] [gamePad] = [new] | Executa `GamePad` e retorna quando a chamada do motor termina. |
-| Keyboard() | [Keyboard] [keyboard] = [new] | Executa `Keyboard` e retorna quando a chamada do motor termina. |
-| Mouse() | [Mouse] [mouse] = [new] | Executa `Mouse` e retorna quando a chamada do motor termina. |
-| haveKey([String]) | [boolean] | Verifica se a key especificada existe. |
-| getKey([String]) | [Key] | Retorna a propriedade `key especificada`. |
-| registerKey([String]) | [Key] | Registra e Retorna a propriedade `key especificada`. |
-| registerKey([Key]) | [void] | Registra a key especificada. |
-| isKeyDown([String]) | [boolean] | Verifica se a Key especificada acabou de ser pressionada. Retorna verdadeiro apenas no primeiro quadro em que ela foi pressionada. |
-| isKeyPressed([String]) | [boolean] | Verifica se a Key especificada está sendo mantida pressionada. Retorna verdadeiro em todos os quadros enquanto ela permanecer pressionada. |
-| isKeyUp([String]) | [boolean] | Verifica se a Key especificada acabou de ser liberada. Retorna verdadeiro apenas no primeiro quadro após ela ser liberada. |
-| getTouch([int]) | [Touch] | Retorna a propriedade `propriedade `toque do ID especificado``. |
-| getTouchPosition([int]) | [Vector2] | Retorna a propriedade `posição do toque do ID especificado`. |
-| getTouchPosition([int], [Vector2]) | [Vector2] | Retorna a propriedade `posição do toque do ID especificado e a armazena no Vector2 fornecido`. |
-| isTouchDown([int]) | [boolean] | Verifica se o toque do ID especificado acabou de ser pressionado. Retorna verdadeiro apenas no primeiro quadro em que ele foi pressionado. |
-| isTouchPressed([int]) | [boolean] | Verifica se o toque do ID especificado está sendo mantido pressionado. Retorna verdadeiro em todos os quadros enquanto ele permanecer pressionado. |
-| isTouchUp([int]) | [boolean] | Verifica se o toque do ID especificado acabou de ser liberado. Retorna verdadeiro apenas no primeiro quadro após ele ser liberado. |
-| getAxis([String]) | [Axis] | Retorna a propriedade `propriedade `Axis associado ao nome especificado``. |
-| registerAxis([String]) | [Axis] | Registra e Retorna a propriedade `propriedade `Axis associado ao nome especificado``. Se o Axis não existir, ele será criado. |
-| getAxisValue([String]) | [Vector2] | Retorna a propriedade `propriedade `valor do Axis especificado``. |
-| getMaxSlide() | [Vector2] | Retorna a propriedade `propriedade `vetor de deslize do toque que mais se deslocou``. |
-| isKeyboardOpen() | [boolean] | Verifica se o teclado virtual está atualmente aberto. |
-| addKeyboardRequest([Component]) | [void] | Solicita a abertura do teclado virtual para o componente especificado. |
-| removeKeyboardRequest([Component]) | [void] | Remove a solicitação de teclado do componente especificado. |
+| `GamePad()` | [GamePad] [gamePad] = [new] | Executa `GamePad` e retorna quando a chamada do motor termina. |
+| `Keyboard()` | [Keyboard] [keyboard] = [new] | Executa `Keyboard` e retorna quando a chamada do motor termina. |
+| `Mouse()` | [Mouse] [mouse] = [new] | Executa `Mouse` e retorna quando a chamada do motor termina. |
+| `haveKey(String)` | `boolean` | Verifica se a key especificada existe. |
+| `getKey(String)` | `Key` | Retorna a propriedade `key especificada`. |
+| `registerKey(String)` | `Key` | Registra e Retorna a propriedade `key especificada`. |
+| `registerKey(Key)` | `void` | Registra a key especificada. |
+| `isKeyDown(String)` | `boolean` | Verifica se a Key especificada acabou de ser pressionada. Retorna verdadeiro apenas no primeiro quadro em que ela foi pressionada. |
+| `isKeyPressed(String)` | `boolean` | Verifica se a Key especificada está sendo mantida pressionada. Retorna verdadeiro em todos os quadros enquanto ela permanecer pressionada. |
+| `isKeyUp(String)` | `boolean` | Verifica se a Key especificada acabou de ser liberada. Retorna verdadeiro apenas no primeiro quadro após ela ser liberada. |
+| `getTouch(int)` | `Touch` | Retorna a propriedade `propriedade `toque do ID especificado``. |
+| `getTouchPosition(int)` | `Vector2` | Retorna a propriedade `posição do toque do ID especificado`. |
+| `getTouchPosition(int, Vector2)` | `Vector2` | Retorna a propriedade `posição do toque do ID especificado e a armazena no Vector2 fornecido`. |
+| `isTouchDown(int)` | `boolean` | Verifica se o toque do ID especificado acabou de ser pressionado. Retorna verdadeiro apenas no primeiro quadro em que ele foi pressionado. |
+| `isTouchPressed(int)` | `boolean` | Verifica se o toque do ID especificado está sendo mantido pressionado. Retorna verdadeiro em todos os quadros enquanto ele permanecer pressionado. |
+| `isTouchUp(int)` | `boolean` | Verifica se o toque do ID especificado acabou de ser liberado. Retorna verdadeiro apenas no primeiro quadro após ele ser liberado. |
+| `getAxis(String)` | `Axis` | Retorna a propriedade `propriedade `Axis associado ao nome especificado``. |
+| `registerAxis(String)` | `Axis` | Registra e Retorna a propriedade `propriedade `Axis associado ao nome especificado``. Se o Axis não existir, ele será criado. |
+| `getAxisValue(String)` | `Vector2` | Retorna a propriedade `propriedade `valor do Axis especificado``. |
+| `getMaxSlide()` | `Vector2` | Retorna a propriedade `propriedade `vetor de deslize do toque que mais se deslocou``. |
+| `isKeyboardOpen()` | `boolean` | Verifica se o teclado virtual está atualmente aberto. |
+| `addKeyboardRequest(Component)` | `void` | Solicita a abertura do teclado virtual para o componente especificado. |
+| `removeKeyboardRequest(Component)` | `void` | Remove a solicitação de teclado do componente especificado. |

@@ -1,7 +1,3 @@
-import Links from '../../links.mdx';
-
-<Links />
-
 # Laser
 
 Referência completa da API de `Laser`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -46,23 +42,23 @@ public class Laser
 
 | Signature | Returns | Description |
 | --- | --- | --- |
-| trace([JAVARuntime.Ray]) | [LaserHit] | Traça um laser usando o Ray especificado. |
-| trace([Vector3], [Vector3]) | [LaserHit] | Traça um laser a partir de uma posição e direção especificadas. |
-| trace([Vector3], [Vector3], [float]) | [LaserHit] | Traça um laser a partir de uma posição e direção especificadas, com uma distância máxima definida. |
-| trace([Vector3], [Vector3], [float], [PhysicsLayer]) | [LaserHit] | Traça um laser a partir de uma posição, direção e distância máxima especificada no PhysicsLayer indicado. |
-| trace([Vector3], [Vector3], [PhysicsLayer]) | [LaserHit] | Traça um laser a partir de uma posição e direção especificadas, no PhysicsLayer indicado. |
-| traceAll([JAVARuntime.Ray]) | [List]&[lt];[LaserHit]&[gt]; | Traça um laser usando o Ray especificado e retorna todas as colisões. |
-| traceAll([Vector3], [Vector3]) | [List]&[lt];[LaserHit]&[gt]; | Traça um laser a partir de uma posição e direção especificadas e retorna todas as colisões. |
-| traceAll([Vector3], [Vector3], [float]) | [List]&[lt];[LaserHit]&[gt]; | Traça um laser a partir de uma posição e direção especificadas, com uma distância máxima definida e retorna todas as colisões. |
-| traceAll([Vector3], [Vector3], [float], [PhysicsLayer]) | [List]&[lt];[LaserHit]&[gt]; | Traça um laser a partir de uma posição, direção e distância máxima especificada no PhysicsLayer indicado e retorna todas as colisões. |
-| traceAll([Vector3], [Vector3], [PhysicsLayer]) | [List]&[lt];[LaserHit]&[gt]; | Traça um laser a partir de uma posição e direção especificadas, no PhysicsLayer indicado e retorna todas as colisões. |
-| traceSphere([JAVARuntime.Ray], [float]) | [LaserHit] | Traça um teste esferico laser usando o Ray especificado. |
-| traceSphere([Vector3], [Vector3], [float]) | [LaserHit] | Traça um teste esferico laser a partir de uma posição e direção especificadas. |
-| traceSphere([Vector3], [Vector3], [float], [float]) | [LaserHit] | Traça um teste esferico laser a partir de uma posição e direção especificadas, com uma distância máxima definida. |
-| traceSphere([Vector3], [Vector3], [float], [PhysicsLayer], [float]) | [LaserHit] | Traça um teste esferico laser a partir de uma posição, direção e distância máxima especificada no PhysicsLayer indicado. |
-| traceSphere([Vector3], [Vector3], [PhysicsLayer], [float]) | [LaserHit] | Traça um teste esferico laser a partir de uma posição e direção especificadas, no PhysicsLayer indicado. |
-| traceSphereAll([JAVARuntime.Ray], [float]) | [List]&[lt];[LaserHit]&[gt]; | Traça um teste esferico laser usando o Ray especificado e retorna todas as colisões. |
-| traceSphereAll([Vector3], [Vector3], [float]) | [List]&[lt];[LaserHit]&[gt]; | Traça um teste esferico laser a partir de uma posição e direção especificadas e retorna todas as colisões. |
-| traceSphereAll([Vector3], [Vector3], [float], [float]) | [List]&[lt];[LaserHit]&[gt]; | Traça um teste esferico laser a partir de uma posição e direção especificadas, com uma distância máxima definida e retorna todas as colisões. |
-| traceSphereAll([Vector3], [Vector3], [float], [PhysicsLayer], [float]) | [List]&[lt];[LaserHit]&[gt]; | Traça um teste esferico laser a partir de uma posição, direção e distância máxima especificada no PhysicsLayer indicado e retorna todas as colisões. |
-| traceSphereAll([Vector3], [Vector3], [PhysicsLayer], [float]) | [List]&[lt];[LaserHit]&[gt]; | Traça um teste esferico laser a partir de uma posição e direção especificadas, no PhysicsLayer indicado e retorna todas as colisões. |
+| `trace(JAVARuntime.Ray)` | `LaserHit` | Traça um laser usando o Ray especificado. |
+| `trace(Vector3, Vector3)` | `LaserHit` | Traça um laser a partir de uma posição e direção especificadas. |
+| `trace(Vector3, Vector3, float)` | `LaserHit` | Traça um laser a partir de uma posição e direção especificadas, com uma distância máxima definida. |
+| `trace(Vector3, Vector3, float, PhysicsLayer)` | `LaserHit` | Traça um laser a partir de uma posição, direção e distância máxima especificada no PhysicsLayer indicado. |
+| `trace(Vector3, Vector3, PhysicsLayer)` | `LaserHit` | Traça um laser a partir de uma posição e direção especificadas, no PhysicsLayer indicado. |
+| `traceAll(JAVARuntime.Ray)` | [List]&[lt];[LaserHit]&[gt]; | Traça um laser usando o Ray especificado e retorna todas as colisões. |
+| `traceAll(Vector3, Vector3)` | [List]&[lt];[LaserHit]&[gt]; | Traça um laser a partir de uma posição e direção especificadas e retorna todas as colisões. |
+| `traceAll(Vector3, Vector3, float)` | [List]&[lt];[LaserHit]&[gt]; | Traça um laser a partir de uma posição e direção especificadas, com uma distância máxima definida e retorna todas as colisões. |
+| `traceAll(Vector3, Vector3, float, PhysicsLayer)` | [List]&[lt];[LaserHit]&[gt]; | Traça um laser a partir de uma posição, direção e distância máxima especificada no PhysicsLayer indicado e retorna todas as colisões. |
+| `traceAll(Vector3, Vector3, PhysicsLayer)` | [List]&[lt];[LaserHit]&[gt]; | Traça um laser a partir de uma posição e direção especificadas, no PhysicsLayer indicado e retorna todas as colisões. |
+| `traceSphere(JAVARuntime.Ray, float)` | `LaserHit` | Traça um teste esferico laser usando o Ray especificado. |
+| `traceSphere(Vector3, Vector3, float)` | `LaserHit` | Traça um teste esferico laser a partir de uma posição e direção especificadas. |
+| `traceSphere(Vector3, Vector3, float, float)` | `LaserHit` | Traça um teste esferico laser a partir de uma posição e direção especificadas, com uma distância máxima definida. |
+| `traceSphere(Vector3, Vector3, float, PhysicsLayer, float)` | `LaserHit` | Traça um teste esferico laser a partir de uma posição, direção e distância máxima especificada no PhysicsLayer indicado. |
+| `traceSphere(Vector3, Vector3, PhysicsLayer, float)` | `LaserHit` | Traça um teste esferico laser a partir de uma posição e direção especificadas, no PhysicsLayer indicado. |
+| `traceSphereAll(JAVARuntime.Ray, float)` | [List]&[lt];[LaserHit]&[gt]; | Traça um teste esferico laser usando o Ray especificado e retorna todas as colisões. |
+| `traceSphereAll(Vector3, Vector3, float)` | [List]&[lt];[LaserHit]&[gt]; | Traça um teste esferico laser a partir de uma posição e direção especificadas e retorna todas as colisões. |
+| `traceSphereAll(Vector3, Vector3, float, float)` | [List]&[lt];[LaserHit]&[gt]; | Traça um teste esferico laser a partir de uma posição e direção especificadas, com uma distância máxima definida e retorna todas as colisões. |
+| `traceSphereAll(Vector3, Vector3, float, PhysicsLayer, float)` | [List]&[lt];[LaserHit]&[gt]; | Traça um teste esferico laser a partir de uma posição, direção e distância máxima especificada no PhysicsLayer indicado e retorna todas as colisões. |
+| `traceSphereAll(Vector3, Vector3, PhysicsLayer, float)` | [List]&[lt];[LaserHit]&[gt]; | Traça um teste esferico laser a partir de uma posição e direção especificadas, no PhysicsLayer indicado e retorna todas as colisões. |

@@ -1,7 +1,3 @@
-import Links from '../../../links.mdx';
-
-<Links />
-
 # ObjectPool
 
 Complete API reference for `ObjectPool`, including constructors, attributes, virtual attributes, and methods.
@@ -34,14 +30,14 @@ public class ObjectPool extends Component
 
 | Signature | Returns | Description |
 | --- | --- | --- |
-| add([Vector3]) | [ObjectPool].[Object] | Adds an HPO at the specified position and returns its index. |
-| objectCount() | [int] | Returns the count of objects in the current HPOP. |
-| getObject([int]) | [ObjectPool].[Object] | Executes `getObject` and returns after the underlying engine call finishes. |
-| notifyObjectChanged([ObjectPool.[Object]]) | [void] | Updates the object. |
-| delete([[List]&lt;SearchResult&gt;]) | [void] | Deletes multiple HPOs based on the provided search results. |
-| delete([ObjectPool.[Object]]) | [void] | Deletes the HPO at the specified index. |
-| findInCircle([Vector3], [float]) | [List]&[lt];[SearchResult]&[gt]; | Finds and returns all objects within a specified circle defined by center and radius. |
-| findInSphere([Vector3], [float]) | [List]&[lt];[SearchResult]&[gt]; | Finds and returns all objects within a specified sphere defined by center and radius. |
-| findInSquare([Vector2], [Vector2]) | [List]&[lt];[SearchResult]&[gt]; | Finds and returns all objects within a rectangular area defined by two corners: min and max. |
-| componentClassMatch([Component], [Component]) | [boolean] | Executes `componentClassMatch` and returns after the underlying engine call finishes. |
-| getEngineComponent() | [Component] | Executes `getEngineComponent` and returns after the underlying engine call finishes. |
+| `add(Vector3)` | [ObjectPool].[Object] | Adds an HPO at the specified position and returns its index. |
+| `objectCount()` | `int` | Returns the count of objects in the current HPOP. |
+| `getObject(int)` | [ObjectPool].[Object] | Executes `getObject` and returns after the underlying engine call finishes. |
+| `notifyObjectChanged(ObjectPool.Object)` | `void` | Updates the object. |
+| `delete([List&lt;SearchResult&gt;])` | `void` | Deletes multiple HPOs based on the provided search results. |
+| `delete(ObjectPool.Object)` | `void` | Deletes the HPO at the specified index. |
+| `findInCircle(Vector3, float)` | [List]&[lt];[SearchResult]&[gt]; | Finds and returns all objects within a specified circle defined by center and radius. |
+| `findInSphere(Vector3, float)` | [List]&[lt];[SearchResult]&[gt]; | Finds and returns all objects within a specified sphere defined by center and radius. |
+| `findInSquare(Vector2, Vector2)` | [List]&[lt];[SearchResult]&[gt]; | Finds and returns all objects within a rectangular area defined by two corners: min and max. |
+| `componentClassMatch(Component, Component)` | `boolean` | Executes `componentClassMatch` and returns after the underlying engine call finishes. |
+| `getEngineComponent()` | `Component` | Executes `getEngineComponent` and returns after the underlying engine call finishes. |

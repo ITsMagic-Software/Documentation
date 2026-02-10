@@ -1,7 +1,3 @@
-import Links from '../../links.mdx';
-
-<Links />
-
 # Gizmo
 
 Complete API reference for `Gizmo`, including constructors, attributes, virtual attributes, and methods.
@@ -22,36 +18,36 @@ public class Gizmo
 
 | Signature | Returns | Description |
 | --- | --- | --- |
-| drawPoint([Vector3], [float]) | [void] | Renders the object to the current context. |
-| drawPoint([Vector3], [float], [Color]) | [void] | Renders the object to the current context. |
-| drawSphere([Vector3], [float]) | [void] | Renders the object to the current context. |
-| drawSphere([Vector3], [float], [Color]) | [void] | Renders the object to the current context. |
-| drawSphere([Vector3], [Vector3], [Color]) | [void] | Renders the object to the current context. |
-| drawQuad([Vector3], [float], [Texture]) | [void] | Renders the object to the current context. |
-| drawQuad([Vector3], [Vector3], [Texture]) | [void] | Renders the object to the current context. |
-| drawQuad([Vector3], [Vector3], [Texture], [Color]) | [void] | Renders the object to the current context. |
-| drawTransparentQuad([Vector3], [Vector3], [Texture]) | [void] | Executes `drawTransparentQuad` and returns after the underlying engine call finishes. |
-| drawTransparentQuad([Vector3], [Vector3], [Texture], [boolean]) | [void] | Executes `drawTransparentQuad` and returns after the underlying engine call finishes. |
-| drawTransparentQuad([Vector3], [Vector3], [Texture], [Color]) | [void] | Executes `drawTransparentQuad` and returns after the underlying engine call finishes. |
-| drawTransparentQuad([Vector3], [Vector3], [Texture], [Color], [boolean]) | [void] | Executes `drawTransparentQuad` and returns after the underlying engine call finishes. |
-| drawCube([Vector3], [float]) | [void] | Renders the object to the current context. |
-| drawCube([Vector3], [float], [Color]) | [void] | Renders the object to the current context. |
-| drawCube([Vector3], [Vector3]) | [void] | Renders the object to the current context. |
-| drawCube([Vector3], [Vector3], [Color]) | [void] | Renders the object to the current context. |
-| drawCube([Vector3], [Vector3], [Color], [Texture]) | [void] | Executes `drawCube` and returns after the underlying engine call finishes. |
-| drawCube([Vector3], [float], [Texture]) | [void] | Executes `drawCube` and returns after the underlying engine call finishes. |
-| drawTransparentCube([Vector3], [Vector3], [Color]) | [void] | Executes `drawTransparentCube` and returns after the underlying engine call finishes. |
-| drawVertex([Vertex], [Vector3]) | [void] | Renders the object to the current context. |
-| drawVertex([Vertex], [Vector3], [Color]) | [void] | Renders the object to the current context. |
-| drawVertex([Vertex], [Vector3], [Quaternion]) | [void] | Renders the object to the current context. |
-| drawVertex([Vertex], [Vector3], [Vector3]) | [void] | Renders the object to the current context. |
-| drawVertex([Vertex], [Vector3], [Quaternion], [Vector3]) | [void] | Renders the object to the current context. |
-| drawVertex([Vertex], [Vector3], [Quaternion], [Vector3], [Color]) | [void] | Renders the object to the current context. |
-| drawWireframeVertex([Vertex], [Vector3], [Quaternion], [Vector3]) | [void] | Executes `drawWireframeVertex` and returns after the underlying engine call finishes. |
-| drawWireframeVertex([Vertex], [Vector3], [Quaternion], [Vector3], [Color]) | [void] | Executes `drawWireframeVertex` and returns after the underlying engine call finishes. |
-| drawWireframeVertex([Vertex], [Vector3], [Quaternion], [Vector3], [Color], [Texture]) | [void] | Executes `drawWireframeVertex` and returns after the underlying engine call finishes. |
-| drawVertex([GizmoElement]) | [void] | Renders the object to the current context. |
-| drawGizmo([GizmoElement]) | [void] | Renders the object to the current context. |
-| drawElement([GizmoElement]) | [void] | Renders the object to the current context. |
-| draw([GizmoElement]) | [void] | Renders the object to the current context. |
-| drawEngine([GizmoElement]) | [void] | Executes `drawEngine` and returns after the underlying engine call finishes. |
+| `drawPoint(Vector3, float)` | `void` | Renders the object to the current context. |
+| `drawPoint(Vector3, float, Color)` | `void` | Renders the object to the current context. |
+| `drawSphere(Vector3, float)` | `void` | Renders the object to the current context. |
+| `drawSphere(Vector3, float, Color)` | `void` | Renders the object to the current context. |
+| `drawSphere(Vector3, Vector3, Color)` | `void` | Renders the object to the current context. |
+| `drawQuad(Vector3, float, Texture)` | `void` | Renders the object to the current context. |
+| `drawQuad(Vector3, Vector3, Texture)` | `void` | Renders the object to the current context. |
+| `drawQuad(Vector3, Vector3, Texture, Color)` | `void` | Renders the object to the current context. |
+| `drawTransparentQuad(Vector3, Vector3, Texture)` | `void` | Executes `drawTransparentQuad` and returns after the underlying engine call finishes. |
+| `drawTransparentQuad(Vector3, Vector3, Texture, boolean)` | `void` | Executes `drawTransparentQuad` and returns after the underlying engine call finishes. |
+| `drawTransparentQuad(Vector3, Vector3, Texture, Color)` | `void` | Executes `drawTransparentQuad` and returns after the underlying engine call finishes. |
+| `drawTransparentQuad(Vector3, Vector3, Texture, Color, boolean)` | `void` | Executes `drawTransparentQuad` and returns after the underlying engine call finishes. |
+| `drawCube(Vector3, float)` | `void` | Renders the object to the current context. |
+| `drawCube(Vector3, float, Color)` | `void` | Renders the object to the current context. |
+| `drawCube(Vector3, Vector3)` | `void` | Renders the object to the current context. |
+| `drawCube(Vector3, Vector3, Color)` | `void` | Renders the object to the current context. |
+| `drawCube(Vector3, Vector3, Color, Texture)` | `void` | Executes `drawCube` and returns after the underlying engine call finishes. |
+| `drawCube(Vector3, float, Texture)` | `void` | Executes `drawCube` and returns after the underlying engine call finishes. |
+| `drawTransparentCube(Vector3, Vector3, Color)` | `void` | Executes `drawTransparentCube` and returns after the underlying engine call finishes. |
+| `drawVertex(Vertex, Vector3)` | `void` | Renders the object to the current context. |
+| `drawVertex(Vertex, Vector3, Color)` | `void` | Renders the object to the current context. |
+| `drawVertex(Vertex, Vector3, Quaternion)` | `void` | Renders the object to the current context. |
+| `drawVertex(Vertex, Vector3, Vector3)` | `void` | Renders the object to the current context. |
+| `drawVertex(Vertex, Vector3, Quaternion, Vector3)` | `void` | Renders the object to the current context. |
+| `drawVertex(Vertex, Vector3, Quaternion, Vector3, Color)` | `void` | Renders the object to the current context. |
+| `drawWireframeVertex(Vertex, Vector3, Quaternion, Vector3)` | `void` | Executes `drawWireframeVertex` and returns after the underlying engine call finishes. |
+| `drawWireframeVertex(Vertex, Vector3, Quaternion, Vector3, Color)` | `void` | Executes `drawWireframeVertex` and returns after the underlying engine call finishes. |
+| `drawWireframeVertex(Vertex, Vector3, Quaternion, Vector3, Color, Texture)` | `void` | Executes `drawWireframeVertex` and returns after the underlying engine call finishes. |
+| `drawVertex(GizmoElement)` | `void` | Renders the object to the current context. |
+| `drawGizmo(GizmoElement)` | `void` | Renders the object to the current context. |
+| `drawElement(GizmoElement)` | `void` | Renders the object to the current context. |
+| `draw(GizmoElement)` | `void` | Renders the object to the current context. |
+| `drawEngine(GizmoElement)` | `void` | Executes `drawEngine` and returns after the underlying engine call finishes. |

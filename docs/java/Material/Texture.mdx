@@ -1,7 +1,3 @@
-import Links from '../../links.mdx';
-
-<Links />
-
 # Texture
 
 Complete API reference for `Texture`, including constructors, attributes, virtual attributes, and methods.
@@ -50,55 +46,55 @@ public class Texture
 
 | Signature | Returns | Description |
 | --- | --- | --- |
-| exportToFile([JAVARuntime.[File]]) | [void] | Performs the exportToFile operation using the provided parameters (file). |
-| exportToFile([JAVARuntime.[File]], [int]) | [void] | Performs the exportToFile operation using the provided parameters (file, quality). |
-| exportToFile([JAVARuntime.[File]], [int], [ExportFormat]) | [void] | Executes `exportToFile` and returns after the underlying engine call finishes. |
-| apply() | [void] | Executes `apply` and returns after the underlying engine call finishes. |
-| getPixel([int], [int]) | [Color] | Returns the current pixel. |
-| getPixel([Vector2]) | [Color] | Returns the current pixel. |
-| setPixel([int], [int], [Color]) | [void] | Sets or updates the pixel. |
-| setPixel([Vector2], [Color]) | [void] | Sets or updates the pixel. |
-| get([int], [int]) | [Color] | Returns the current value. |
-| get([int], [int], [Color]) | [Color] | Returns the current value. |
-| getFloatRed([int], [int]) | [float] | Returns the current float red. |
-| getFloatGreen([int], [int]) | [float] | Returns the current float green. |
-| getFloatBlue([int], [int]) | [float] | Returns the current float blue. |
-| getFloatAlpha([int], [int]) | [float] | Returns the current float alpha. |
-| getIntRed([int], [int]) | [int] | Returns the current int red. |
-| getIntGreen([int], [int]) | [int] | Returns the current int green. |
-| getIntBlue([int], [int]) | [int] | Returns the current int blue. |
-| getIntAlpha([int], [int]) | [int] | Returns the current int alpha. |
-| set([int], [int], [Color]) | [void] | Sets or updates the the value. |
-| set([int], [int], [float], [float], [float], [float]) | [void] | Sets or updates the the value. |
-| set([int], [int], [float], [float], [float]) | [void] | Sets or updates the the value. |
-| setR([int], [int], [float]) | [void] | Sets or updates the r. |
-| setG([int], [int], [float]) | [void] | Sets or updates the g. |
-| setB([int], [int], [float]) | [void] | Sets or updates the b. |
-| setA([int], [int], [float]) | [void] | Sets or updates the a. |
-| set([int], [int], [int], [int], [int], [int]) | [void] | Sets or updates the the value. |
-| set([int], [int], [int], [int], [int]) | [void] | Sets or updates the the value. |
-| setR([int], [int], [int]) | [void] | Sets or updates the r. |
-| setG([int], [int], [int]) | [void] | Sets or updates the g. |
-| setB([int], [int], [int]) | [void] | Sets or updates the b. |
-| setA([int], [int], [int]) | [void] | Sets or updates the a. |
-| copyPixels([Texture]) | [void] | Returns a copy of this Texture instance. |
-| extractGPUImageToBtm([ExtractCallback]) | [void] | Executes `extractGPUImageToBtm` and returns after the underlying engine call finishes. |
-| saveGPUImageToFile([File]) | [void] | Executes `saveGPUImageToFile` and returns after the underlying engine call finishes. |
-| saveGPUImageToFile([File], [Runnable]) | [void] | Executes `saveGPUImageToFile` and returns after the underlying engine call finishes. |
+| `exportToFile(JAVARuntime.File)` | `void` | Performs the exportToFile operation using the provided parameters (file). |
+| `exportToFile(JAVARuntime.File, int)` | `void` | Performs the exportToFile operation using the provided parameters (file, quality). |
+| `exportToFile(JAVARuntime.File, int, ExportFormat)` | `void` | Executes `exportToFile` and returns after the underlying engine call finishes. |
+| `apply()` | `void` | Executes `apply` and returns after the underlying engine call finishes. |
+| `getPixel(int, int)` | `Color` | Returns the current pixel. |
+| `getPixel(Vector2)` | `Color` | Returns the current pixel. |
+| `setPixel(int, int, Color)` | `void` | Sets or updates the pixel. |
+| `setPixel(Vector2, Color)` | `void` | Sets or updates the pixel. |
+| `get(int, int)` | `Color` | Returns the current value. |
+| `get(int, int, Color)` | `Color` | Returns the current value. |
+| `getFloatRed(int, int)` | `float` | Returns the current float red. |
+| `getFloatGreen(int, int)` | `float` | Returns the current float green. |
+| `getFloatBlue(int, int)` | `float` | Returns the current float blue. |
+| `getFloatAlpha(int, int)` | `float` | Returns the current float alpha. |
+| `getIntRed(int, int)` | `int` | Returns the current int red. |
+| `getIntGreen(int, int)` | `int` | Returns the current int green. |
+| `getIntBlue(int, int)` | `int` | Returns the current int blue. |
+| `getIntAlpha(int, int)` | `int` | Returns the current int alpha. |
+| `set(int, int, Color)` | `void` | Sets or updates the the value. |
+| `set(int, int, float, float, float, float)` | `void` | Sets or updates the the value. |
+| `set(int, int, float, float, float)` | `void` | Sets or updates the the value. |
+| `setR(int, int, float)` | `void` | Sets or updates the r. |
+| `setG(int, int, float)` | `void` | Sets or updates the g. |
+| `setB(int, int, float)` | `void` | Sets or updates the b. |
+| `setA(int, int, float)` | `void` | Sets or updates the a. |
+| `set(int, int, int, int, int, int)` | `void` | Sets or updates the the value. |
+| `set(int, int, int, int, int)` | `void` | Sets or updates the the value. |
+| `setR(int, int, int)` | `void` | Sets or updates the r. |
+| `setG(int, int, int)` | `void` | Sets or updates the g. |
+| `setB(int, int, int)` | `void` | Sets or updates the b. |
+| `setA(int, int, int)` | `void` | Sets or updates the a. |
+| `copyPixels(Texture)` | `void` | Returns a copy of this Texture instance. |
+| `extractGPUImageToBtm(ExtractCallback)` | `void` | Executes `extractGPUImageToBtm` and returns after the underlying engine call finishes. |
+| `saveGPUImageToFile(File)` | `void` | Executes `saveGPUImageToFile` and returns after the underlying engine call finishes. |
+| `saveGPUImageToFile(File, Runnable)` | `void` | Executes `saveGPUImageToFile` and returns after the underlying engine call finishes. |
 
 ## Static Methods (12)
 
 | Signature | Returns | Description |
 | --- | --- | --- |
-| genericInterface() | [GenericClassInspectorEntry] | Executes `genericInterface` and returns after the underlying engine call finishes. |
-| inspectorController() | [ClassInspectorEntry] | Executes `inspectorController` and returns after the underlying engine call finishes. |
-| loadFile([TextureFile]) | [Texture] | Loads file into the object. |
-| loadFile([JAVARuntime.[File]]) | [Texture] | Loads file into the object. |
-| loadInputStream([InputStream]) | [Texture] | Loads input stream into the object. |
-| loadURL([String]) | [Texture] | Executes `loadURL` and returns after the underlying engine call finishes. |
-| newDepth([int], [int]) | [Texture] | Creates a new depth. |
-| white() | [Texture] | Executes `white` and returns after the underlying engine call finishes. |
-| empty() | [Texture] | Executes `empty` and returns after the underlying engine call finishes. |
-| black() | [Texture] | Executes `black` and returns after the underlying engine call finishes. |
-| isRenderable([Texture]) | [boolean] | Returns whether renderable is true. |
-| isRenderable([TextureInstance]) | [boolean] | Returns whether renderable is true. |
+| `genericInterface()` | `GenericClassInspectorEntry` | Executes `genericInterface` and returns after the underlying engine call finishes. |
+| `inspectorController()` | `ClassInspectorEntry` | Executes `inspectorController` and returns after the underlying engine call finishes. |
+| `loadFile(TextureFile)` | `Texture` | Loads file into the object. |
+| `loadFile(JAVARuntime.File)` | `Texture` | Loads file into the object. |
+| `loadInputStream(InputStream)` | `Texture` | Loads input stream into the object. |
+| `loadURL(String)` | `Texture` | Executes `loadURL` and returns after the underlying engine call finishes. |
+| `newDepth(int, int)` | `Texture` | Creates a new depth. |
+| `white()` | `Texture` | Executes `white` and returns after the underlying engine call finishes. |
+| `empty()` | `Texture` | Executes `empty` and returns after the underlying engine call finishes. |
+| `black()` | `Texture` | Executes `black` and returns after the underlying engine call finishes. |
+| `isRenderable(Texture)` | `boolean` | Returns whether renderable is true. |
+| `isRenderable(TextureInstance)` | `boolean` | Returns whether renderable is true. |

@@ -1,7 +1,3 @@
-import Links from '../../links.mdx';
-
-<Links />
-
 # SpatialObject
 
 Complete API reference for `SpatialObject`, including constructors, attributes, virtual attributes, and methods.
@@ -66,153 +62,153 @@ public class SpatialObject
 
 | Signature | Returns | Description |
 | --- | --- | --- |
-| setNameOH([JAVARuntime.OHString]) | [void] | Sets or updates the name oh. |
-| compareName([String]) | [boolean] | Compares this instance with another for equality/order. |
-| duplicate() | [SpatialObject] | Executes `duplicate` and returns after the underlying engine call finishes. |
-| destroy() | [void] | Executes `destroy` and returns after the underlying engine call finishes. |
-| sendEvent([String]) | [void] | Executes `sendEvent` and returns after the underlying engine call finishes. |
-| sendEvent([String], [int]) | [void] | Executes `sendEvent` and returns after the underlying engine call finishes. |
-| sendEvent([String], [float]) | [void] | Executes `sendEvent` and returns after the underlying engine call finishes. |
-| sendEvent([String], [String]) | [void] | Executes `sendEvent` and returns after the underlying engine call finishes. |
-| sendEvent([String], [boolean]) | [void] | Executes `sendEvent` and returns after the underlying engine call finishes. |
-| sendEvent([String], [[Object]...]) | [void] | Executes `sendEvent` and returns after the underlying engine call finishes. |
-| sendEventToHierarchy([String]) | [void] | Executes `sendEventToHierarchy` and returns after the underlying engine call finishes. |
-| sendEventToHierarchy([String], [int]) | [void] | Executes `sendEventToHierarchy` and returns after the underlying engine call finishes. |
-| sendEventToHierarchy([String], [float]) | [void] | Executes `sendEventToHierarchy` and returns after the underlying engine call finishes. |
-| sendEventToHierarchy([String], [String]) | [void] | Executes `sendEventToHierarchy` and returns after the underlying engine call finishes. |
-| sendEventToHierarchy([String], [boolean]) | [void] | Executes `sendEventToHierarchy` and returns after the underlying engine call finishes. |
-| sendEventToHierarchy([String], [[Object]...]) | [void] | Executes `sendEventToHierarchy` and returns after the underlying engine call finishes. |
-| callFunction([String]) | [void] | Performs the callFunction operation using the provided parameters (name). |
-| callFunction([String], [int]) | [void] | Performs the callFunction operation using the provided parameters (name, args). |
-| callFunction([String], [float]) | [void] | Performs the callFunction operation using the provided parameters (name, args). |
-| callFunction([String], [String]) | [void] | Performs the callFunction operation using the provided parameters (name, args). |
-| callFunction([String], [boolean]) | [void] | Performs the callFunction operation using the provided parameters (name, args). |
-| callFunction([String], [[Object]...]) | [void] | Performs the callFunction operation using the provided parameters (name, args). |
-| instantiate([ObjectFile]) | [SpatialObject] | Performs the instantiate operation using the provided parameters (pFile). |
-| instantiate([ObjectFile], [Vector3]) | [SpatialObject] | Performs the instantiate operation using the provided parameters (pFile, position). |
-| instantiate([ObjectFile], [Vector3], [Quaternion]) | [SpatialObject] | Performs the instantiate operation using the provided parameters (pFile, position, rotation). |
-| instantiate([ObjectFile], [Vector3], [Quaternion], [Vector3]) | [SpatialObject] | Performs the instantiate operation using the provided parameters (pFile, position, rotation, scale). |
-| instantiateHasChild([ObjectFile]) | [SpatialObject] | Performs the instantiateHasChild operation using the provided parameters (pFile). |
-| instantiateHasChild([ObjectFile], [SpatialObject]) | [SpatialObject] | Performs the instantiateHasChild operation using the provided parameters (pFile, parent). |
-| instantiateAsChild([ObjectFile]) | [SpatialObject] | Performs the instantiateAsChild operation using the provided parameters (pFile). |
-| instantiateAsChild([ObjectFile], [SpatialObject]) | [SpatialObject] | Performs the instantiateAsChild operation using the provided parameters (pFile, parent). |
-| findComponent([String]) | &[lt];[T] [extends] [Component]&[gt]; [T] | Performs the findComponent operation using the provided parameters (tittle). |
-| findComponents([String]) | [List]&[lt];[Component]&[gt]; | Performs the findComponents operation using the provided parameters (tittle). |
-| findComponent([Class]) | &[lt];[T] [extends] [Component]&[gt]; [T] | Performs the findComponent operation using the provided parameters (classReference). |
-| findComponents([Class]) | [List]&[lt];[Component]&[gt]; | Performs the findComponents operation using the provided parameters (classReference). |
-| findComponentInChildren([String]) | &[lt];[T] [extends] [Component]&[gt]; [T] | Performs the findComponentInChildren operation using the provided parameters (tittle). |
-| findComponentInChildren([Class]) | &[lt];[T] [extends] [Component]&[gt]; [T] | Performs the findComponentInChildren operation using the provided parameters (classReference). |
-| findComponentInParent([String]) | &[lt];[T] [extends] [Component]&[gt]; [T] | Executes `findComponentInParent` and returns after the underlying engine call finishes. |
-| findComponentInParent([Class]) | &[lt];[T] [extends] [Component]&[gt]; [T] | Executes `findComponentInParent` and returns after the underlying engine call finishes. |
-| removeComponent([Component]) | [void] | Removes component from the collection. |
-| addComponent([Component]) | [void] | Adds component to the collection. |
-| addComponent([Component], [Class]) | [void] | Adds component to the collection. |
-| addComponent([Component]) | [void] | Adds component to the collection. |
-| removeParent() | [void] | Removes parent from the collection. |
-| findChildObject([String]) | [SpatialObject] | Performs the findChildObject operation using the provided parameters (name). |
-| findChildObject([JAVARuntime.OHString]) | [SpatialObject] | Performs the findChildObject operation using the provided parameters (name). |
-| getChildAt([int]) | [SpatialObject] | Returns the current child at. |
-| getChildIndex([SpatialObject]) | [int] | Returns the current child index. |
-| swapChildrenPosition([SpatialObject], [SpatialObject]) | [void] | Performs the swapChildrenPosition operation using the provided parameters (a, b). |
-| componentCount() | [int] | Executes `componentCount` and returns after the underlying engine call finishes. |
-| getComponentAt([int]) | [Component] | Returns the current component at. |
-| getComponentsAt([int]) | [Component] | Returns the current components at. |
-| componentAt([int]) | [Component] | Performs the componentAt operation using the provided parameters (idx). |
-| distance([SpatialObject]) | [float] | Performs the distance operation using the provided parameters (other). |
-| distance([Transform]) | [float] | Performs the distance operation using the provided parameters (other). |
-| distance([Vector3]) | [float] | Performs the distance operation using the provided parameters (other). |
-| sqrtDistance([SpatialObject]) | [float] | Performs the sqrtDistance operation using the provided parameters (other). |
-| sqrtDistance([Transform]) | [float] | Performs the sqrtDistance operation using the provided parameters (other). |
-| sqrtDistance([Vector3]) | [float] | Performs the sqrtDistance operation using the provided parameters (other). |
-| setPosition([float], [float], [float]) | [void] | Sets or updates the position. |
-| setPositionX([float]) | [void] | Sets or updates the position x. |
-| setPositionY([float]) | [void] | Sets or updates the position y. |
-| setPositionZ([float]) | [void] | Sets or updates the position z. |
-| setRotation([float], [float], [float]) | [void] | Sets or updates the rotation. |
-| setRotation([float], [float], [float], [float]) | [void] | Sets or updates the rotation. |
-| setScale([float], [float], [float]) | [void] | Sets or updates the scale. |
-| setScale([float]) | [void] | Sets or updates the scale. |
-| getGlobalPosition([Vector3]) | [Vector3] | Returns the current global position. |
-| getGlobalRotation([Quaternion]) | [Quaternion] | Returns the current global rotation. |
-| getGlobalScale([Vector3]) | [Vector3] | Returns the current global scale. |
-| translate([float], [float], [float]) | [void] | Transforms or moves the object accordingly. |
-| move([float], [float], [float]) | [void] | Transforms or moves the object accordingly. |
-| rotate([float], [float], [float]) | [void] | Transforms or moves the object accordingly. |
-| translateInSeconds([float], [float], [float]) | [void] | Transforms or moves in seconds accordingly. |
-| moveInSeconds([float], [float], [float]) | [void] | Transforms or moves in seconds accordingly. |
-| rotateInSeconds([float], [float], [float]) | [void] | Transforms or moves in seconds accordingly. |
-| translateInSeconds([int], [int], [int]) | [void] | Executes `translateInSeconds` and returns after the underlying engine call finishes. |
-| translateInSeconds([int], [int], [float]) | [void] | Executes `translateInSeconds` and returns after the underlying engine call finishes. |
-| translateInSeconds([int], [float], [int]) | [void] | Executes `translateInSeconds` and returns after the underlying engine call finishes. |
-| translateInSeconds([int], [float], [float]) | [void] | Executes `translateInSeconds` and returns after the underlying engine call finishes. |
-| translateInSeconds([float], [int], [int]) | [void] | Executes `translateInSeconds` and returns after the underlying engine call finishes. |
-| translateInSeconds([float], [int], [float]) | [void] | Executes `translateInSeconds` and returns after the underlying engine call finishes. |
-| translateInSeconds([float], [float], [int]) | [void] | Executes `translateInSeconds` and returns after the underlying engine call finishes. |
-| moveInSeconds([int], [int], [int]) | [void] | Executes `moveInSeconds` and returns after the underlying engine call finishes. |
-| moveInSeconds([int], [int], [float]) | [void] | Executes `moveInSeconds` and returns after the underlying engine call finishes. |
-| moveInSeconds([int], [float], [int]) | [void] | Executes `moveInSeconds` and returns after the underlying engine call finishes. |
-| moveInSeconds([int], [float], [float]) | [void] | Executes `moveInSeconds` and returns after the underlying engine call finishes. |
-| moveInSeconds([float], [int], [int]) | [void] | Executes `moveInSeconds` and returns after the underlying engine call finishes. |
-| moveInSeconds([float], [int], [float]) | [void] | Executes `moveInSeconds` and returns after the underlying engine call finishes. |
-| moveInSeconds([float], [float], [int]) | [void] | Executes `moveInSeconds` and returns after the underlying engine call finishes. |
-| rotateInSeconds([int], [int], [int]) | [void] | Executes `rotateInSeconds` and returns after the underlying engine call finishes. |
-| rotateInSeconds([int], [int], [float]) | [void] | Executes `rotateInSeconds` and returns after the underlying engine call finishes. |
-| rotateInSeconds([int], [float], [int]) | [void] | Executes `rotateInSeconds` and returns after the underlying engine call finishes. |
-| rotateInSeconds([int], [float], [float]) | [void] | Executes `rotateInSeconds` and returns after the underlying engine call finishes. |
-| rotateInSeconds([float], [int], [int]) | [void] | Executes `rotateInSeconds` and returns after the underlying engine call finishes. |
-| rotateInSeconds([float], [int], [float]) | [void] | Executes `rotateInSeconds` and returns after the underlying engine call finishes. |
-| rotateInSeconds([float], [float], [int]) | [void] | Executes `rotateInSeconds` and returns after the underlying engine call finishes. |
-| lookTo([SpatialObject]) | [void] | Executes `lookTo` and returns after the underlying engine call finishes. |
-| lookTo([Vector3]) | [void] | Performs the lookTo operation using the provided parameters (position). |
-| lookTo([float], [float], [float]) | [void] | Performs the lookTo operation using the provided parameters (x, y, z). |
-| lookTo([SpatialObject], [boolean], [boolean]) | [void] | Executes `lookTo` and returns after the underlying engine call finishes. |
-| lookTo([Vector3], [boolean], [boolean]) | [void] | Executes `lookTo` and returns after the underlying engine call finishes. |
-| lookTo([float], [float], [float], [boolean], [boolean]) | [void] | Executes `lookTo` and returns after the underlying engine call finishes. |
-| lookToIgnoreY([SpatialObject]) | [void] | Performs the lookToIgnoreY operation using the provided parameters (object). |
-| lookToIgnoreY([Vector3]) | [void] | Performs the lookToIgnoreY operation using the provided parameters (position). |
-| teleportTo([SpatialObject]) | [void] | Performs the teleportTo operation using the provided parameters (object). |
-| teleportTo([Vector3]) | [void] | Performs the teleportTo operation using the provided parameters (position). |
-| smoothLookTo([SpatialObject], [float]) | [void] | Performs the smoothLookTo operation using the provided parameters (other, lerpSpeed). |
-| smoothLookTo([Vector3], [float]) | [void] | Performs the smoothLookTo operation using the provided parameters (other, lerpSpeed). |
-| lerpLookTo([SpatialObject], [float]) | [void] | Performs the lerpLookTo operation using the provided parameters (other, lerpSpeed). |
-| lerpLookTo([Vector3], [float]) | [void] | Performs the lerpLookTo operation using the provided parameters (other, lerpSpeed). |
-| lerpLookToIgnoreY([SpatialObject], [float]) | [void] | Performs the lerpLookToIgnoreY operation using the provided parameters (other, lerpSpeed). |
-| lerpLookToIgnoreY([Vector3], [float]) | [void] | Performs the lerpLookToIgnoreY operation using the provided parameters (other, lerpSpeed). |
-| transformPoint([Vector3]) | [Vector3] | Performs the transformPoint operation using the provided parameters (vector3). |
-| transformPoint([Vector3], [Vector3]) | [void] | Performs the transformPoint operation using the provided parameters (vector3, out). |
-| inverseTransformPoint([Vector3]) | [Vector3] | Performs the inverseTransformPoint operation using the provided parameters (vector3). |
-| inverseTransformPoint([Vector3], [Vector3]) | [void] | Performs the inverseTransformPoint operation using the provided parameters (vector3, out). |
-| transformDirection([Vector3]) | [Vector3] | Performs the transformDirection operation using the provided parameters (vector3). |
-| transformDirection([Vector3], [Vector3]) | [void] | Performs the transformDirection operation using the provided parameters (vector3, out). |
-| inverseTransformDirection([Vector3]) | [Vector3] | Performs the inverseTransformDirection operation using the provided parameters (vector3). |
-| inverseTransformDirection([Vector3], [Vector3]) | [void] | Performs the inverseTransformDirection operation using the provided parameters (vector3, out). |
-| forward() | [Vector3] | Executes `forward` and returns after the underlying engine call finishes. |
-| back() | [Vector3] | Executes `back` and returns after the underlying engine call finishes. |
-| right() | [Vector3] | Executes `right` and returns after the underlying engine call finishes. |
-| left() | [Vector3] | Executes `left` and returns after the underlying engine call finishes. |
-| up() | [Vector3] | Executes `up` and returns after the underlying engine call finishes. |
-| down() | [Vector3] | Executes `down` and returns after the underlying engine call finishes. |
-| forward([Vector3]) | [Vector3] | Performs the forward operation using the provided parameters (out). |
-| back([Vector3]) | [Vector3] | Performs the back operation using the provided parameters (out). |
-| right([Vector3]) | [Vector3] | Performs the right operation using the provided parameters (out). |
-| left([Vector3]) | [Vector3] | Performs the left operation using the provided parameters (out). |
-| up([Vector3]) | [Vector3] | Performs the up operation using the provided parameters (out). |
-| down([Vector3]) | [Vector3] | Performs the down operation using the provided parameters (out). |
-| getState() | [int] | Returns the current state. |
-| setState([int]) | [void] | Sets or updates the state. |
-| getGlobalMatrix([float][]) | [float][] | Returns the current global matrix. |
-| getLocalMatrix([float][]) | [float][] | Returns the current local matrix. |
-| mulGlobalVector3([Vector3]) | [Vector3] | Performs the mulGlobalVector3 operation using the provided parameters (vector3). |
-| mulLocalVector3([Vector3]) | [Vector3] | Performs the mulLocalVector3 operation using the provided parameters (vector3). |
-| recalculateMatrices() | [void] | Executes `recalculateMatrices` and returns after the underlying engine call finishes. |
-| toJson() | [String] | Executes `toJson` and returns after the underlying engine call finishes. |
-| exists() | [boolean] | Executes `exists` and returns after the underlying engine call finishes. |
-| compareTag([String]) | [boolean] | Compares this instance with another for equality/order. |
-| validate() | [boolean] | Executes `validate` and returns after the underlying engine call finishes. |
+| `setNameOH(JAVARuntime.OHString)` | `void` | Sets or updates the name oh. |
+| `compareName(String)` | `boolean` | Compares this instance with another for equality/order. |
+| `duplicate()` | `SpatialObject` | Executes `duplicate` and returns after the underlying engine call finishes. |
+| `destroy()` | `void` | Executes `destroy` and returns after the underlying engine call finishes. |
+| `sendEvent(String)` | `void` | Executes `sendEvent` and returns after the underlying engine call finishes. |
+| `sendEvent(String, int)` | `void` | Executes `sendEvent` and returns after the underlying engine call finishes. |
+| `sendEvent(String, float)` | `void` | Executes `sendEvent` and returns after the underlying engine call finishes. |
+| `sendEvent(String, String)` | `void` | Executes `sendEvent` and returns after the underlying engine call finishes. |
+| `sendEvent(String, boolean)` | `void` | Executes `sendEvent` and returns after the underlying engine call finishes. |
+| `sendEvent(String, Object...)` | `void` | Executes `sendEvent` and returns after the underlying engine call finishes. |
+| `sendEventToHierarchy(String)` | `void` | Executes `sendEventToHierarchy` and returns after the underlying engine call finishes. |
+| `sendEventToHierarchy(String, int)` | `void` | Executes `sendEventToHierarchy` and returns after the underlying engine call finishes. |
+| `sendEventToHierarchy(String, float)` | `void` | Executes `sendEventToHierarchy` and returns after the underlying engine call finishes. |
+| `sendEventToHierarchy(String, String)` | `void` | Executes `sendEventToHierarchy` and returns after the underlying engine call finishes. |
+| `sendEventToHierarchy(String, boolean)` | `void` | Executes `sendEventToHierarchy` and returns after the underlying engine call finishes. |
+| `sendEventToHierarchy(String, Object...)` | `void` | Executes `sendEventToHierarchy` and returns after the underlying engine call finishes. |
+| `callFunction(String)` | `void` | Performs the callFunction operation using the provided parameters (name). |
+| `callFunction(String, int)` | `void` | Performs the callFunction operation using the provided parameters (name, args). |
+| `callFunction(String, float)` | `void` | Performs the callFunction operation using the provided parameters (name, args). |
+| `callFunction(String, String)` | `void` | Performs the callFunction operation using the provided parameters (name, args). |
+| `callFunction(String, boolean)` | `void` | Performs the callFunction operation using the provided parameters (name, args). |
+| `callFunction(String, Object...)` | `void` | Performs the callFunction operation using the provided parameters (name, args). |
+| `instantiate(ObjectFile)` | `SpatialObject` | Performs the instantiate operation using the provided parameters (pFile). |
+| `instantiate(ObjectFile, Vector3)` | `SpatialObject` | Performs the instantiate operation using the provided parameters (pFile, position). |
+| `instantiate(ObjectFile, Vector3, Quaternion)` | `SpatialObject` | Performs the instantiate operation using the provided parameters (pFile, position, rotation). |
+| `instantiate(ObjectFile, Vector3, Quaternion, Vector3)` | `SpatialObject` | Performs the instantiate operation using the provided parameters (pFile, position, rotation, scale). |
+| `instantiateHasChild(ObjectFile)` | `SpatialObject` | Performs the instantiateHasChild operation using the provided parameters (pFile). |
+| `instantiateHasChild(ObjectFile, SpatialObject)` | `SpatialObject` | Performs the instantiateHasChild operation using the provided parameters (pFile, parent). |
+| `instantiateAsChild(ObjectFile)` | `SpatialObject` | Performs the instantiateAsChild operation using the provided parameters (pFile). |
+| `instantiateAsChild(ObjectFile, SpatialObject)` | `SpatialObject` | Performs the instantiateAsChild operation using the provided parameters (pFile, parent). |
+| `findComponent(String)` | `<T extends Component> T` | Performs the findComponent operation using the provided parameters (tittle). |
+| `findComponents(String)` | [List]&[lt];[Component]&[gt]; | Performs the findComponents operation using the provided parameters (tittle). |
+| `findComponent(Class)` | `<T extends Component> T` | Performs the findComponent operation using the provided parameters (classReference). |
+| `findComponents(Class)` | [List]&[lt];[Component]&[gt]; | Performs the findComponents operation using the provided parameters (classReference). |
+| `findComponentInChildren(String)` | `<T extends Component> T` | Performs the findComponentInChildren operation using the provided parameters (tittle). |
+| `findComponentInChildren(Class)` | `<T extends Component> T` | Performs the findComponentInChildren operation using the provided parameters (classReference). |
+| `findComponentInParent(String)` | `<T extends Component> T` | Executes `findComponentInParent` and returns after the underlying engine call finishes. |
+| `findComponentInParent(Class)` | `<T extends Component> T` | Executes `findComponentInParent` and returns after the underlying engine call finishes. |
+| `removeComponent(Component)` | `void` | Removes component from the collection. |
+| `addComponent(Component)` | `void` | Adds component to the collection. |
+| `addComponent(Component, Class)` | `void` | Adds component to the collection. |
+| `addComponent(Component)` | `void` | Adds component to the collection. |
+| `removeParent()` | `void` | Removes parent from the collection. |
+| `findChildObject(String)` | `SpatialObject` | Performs the findChildObject operation using the provided parameters (name). |
+| `findChildObject(JAVARuntime.OHString)` | `SpatialObject` | Performs the findChildObject operation using the provided parameters (name). |
+| `getChildAt(int)` | `SpatialObject` | Returns the current child at. |
+| `getChildIndex(SpatialObject)` | `int` | Returns the current child index. |
+| `swapChildrenPosition(SpatialObject, SpatialObject)` | `void` | Performs the swapChildrenPosition operation using the provided parameters (a, b). |
+| `componentCount()` | `int` | Executes `componentCount` and returns after the underlying engine call finishes. |
+| `getComponentAt(int)` | `Component` | Returns the current component at. |
+| `getComponentsAt(int)` | `Component` | Returns the current components at. |
+| `componentAt(int)` | `Component` | Performs the componentAt operation using the provided parameters (idx). |
+| `distance(SpatialObject)` | `float` | Performs the distance operation using the provided parameters (other). |
+| `distance(Transform)` | `float` | Performs the distance operation using the provided parameters (other). |
+| `distance(Vector3)` | `float` | Performs the distance operation using the provided parameters (other). |
+| `sqrtDistance(SpatialObject)` | `float` | Performs the sqrtDistance operation using the provided parameters (other). |
+| `sqrtDistance(Transform)` | `float` | Performs the sqrtDistance operation using the provided parameters (other). |
+| `sqrtDistance(Vector3)` | `float` | Performs the sqrtDistance operation using the provided parameters (other). |
+| `setPosition(float, float, float)` | `void` | Sets or updates the position. |
+| `setPositionX(float)` | `void` | Sets or updates the position x. |
+| `setPositionY(float)` | `void` | Sets or updates the position y. |
+| `setPositionZ(float)` | `void` | Sets or updates the position z. |
+| `setRotation(float, float, float)` | `void` | Sets or updates the rotation. |
+| `setRotation(float, float, float, float)` | `void` | Sets or updates the rotation. |
+| `setScale(float, float, float)` | `void` | Sets or updates the scale. |
+| `setScale(float)` | `void` | Sets or updates the scale. |
+| `getGlobalPosition(Vector3)` | `Vector3` | Returns the current global position. |
+| `getGlobalRotation(Quaternion)` | `Quaternion` | Returns the current global rotation. |
+| `getGlobalScale(Vector3)` | `Vector3` | Returns the current global scale. |
+| `translate(float, float, float)` | `void` | Transforms or moves the object accordingly. |
+| `move(float, float, float)` | `void` | Transforms or moves the object accordingly. |
+| `rotate(float, float, float)` | `void` | Transforms or moves the object accordingly. |
+| `translateInSeconds(float, float, float)` | `void` | Transforms or moves in seconds accordingly. |
+| `moveInSeconds(float, float, float)` | `void` | Transforms or moves in seconds accordingly. |
+| `rotateInSeconds(float, float, float)` | `void` | Transforms or moves in seconds accordingly. |
+| `translateInSeconds(int, int, int)` | `void` | Executes `translateInSeconds` and returns after the underlying engine call finishes. |
+| `translateInSeconds(int, int, float)` | `void` | Executes `translateInSeconds` and returns after the underlying engine call finishes. |
+| `translateInSeconds(int, float, int)` | `void` | Executes `translateInSeconds` and returns after the underlying engine call finishes. |
+| `translateInSeconds(int, float, float)` | `void` | Executes `translateInSeconds` and returns after the underlying engine call finishes. |
+| `translateInSeconds(float, int, int)` | `void` | Executes `translateInSeconds` and returns after the underlying engine call finishes. |
+| `translateInSeconds(float, int, float)` | `void` | Executes `translateInSeconds` and returns after the underlying engine call finishes. |
+| `translateInSeconds(float, float, int)` | `void` | Executes `translateInSeconds` and returns after the underlying engine call finishes. |
+| `moveInSeconds(int, int, int)` | `void` | Executes `moveInSeconds` and returns after the underlying engine call finishes. |
+| `moveInSeconds(int, int, float)` | `void` | Executes `moveInSeconds` and returns after the underlying engine call finishes. |
+| `moveInSeconds(int, float, int)` | `void` | Executes `moveInSeconds` and returns after the underlying engine call finishes. |
+| `moveInSeconds(int, float, float)` | `void` | Executes `moveInSeconds` and returns after the underlying engine call finishes. |
+| `moveInSeconds(float, int, int)` | `void` | Executes `moveInSeconds` and returns after the underlying engine call finishes. |
+| `moveInSeconds(float, int, float)` | `void` | Executes `moveInSeconds` and returns after the underlying engine call finishes. |
+| `moveInSeconds(float, float, int)` | `void` | Executes `moveInSeconds` and returns after the underlying engine call finishes. |
+| `rotateInSeconds(int, int, int)` | `void` | Executes `rotateInSeconds` and returns after the underlying engine call finishes. |
+| `rotateInSeconds(int, int, float)` | `void` | Executes `rotateInSeconds` and returns after the underlying engine call finishes. |
+| `rotateInSeconds(int, float, int)` | `void` | Executes `rotateInSeconds` and returns after the underlying engine call finishes. |
+| `rotateInSeconds(int, float, float)` | `void` | Executes `rotateInSeconds` and returns after the underlying engine call finishes. |
+| `rotateInSeconds(float, int, int)` | `void` | Executes `rotateInSeconds` and returns after the underlying engine call finishes. |
+| `rotateInSeconds(float, int, float)` | `void` | Executes `rotateInSeconds` and returns after the underlying engine call finishes. |
+| `rotateInSeconds(float, float, int)` | `void` | Executes `rotateInSeconds` and returns after the underlying engine call finishes. |
+| `lookTo(SpatialObject)` | `void` | Executes `lookTo` and returns after the underlying engine call finishes. |
+| `lookTo(Vector3)` | `void` | Performs the lookTo operation using the provided parameters (position). |
+| `lookTo(float, float, float)` | `void` | Performs the lookTo operation using the provided parameters (x, y, z). |
+| `lookTo(SpatialObject, boolean, boolean)` | `void` | Executes `lookTo` and returns after the underlying engine call finishes. |
+| `lookTo(Vector3, boolean, boolean)` | `void` | Executes `lookTo` and returns after the underlying engine call finishes. |
+| `lookTo(float, float, float, boolean, boolean)` | `void` | Executes `lookTo` and returns after the underlying engine call finishes. |
+| `lookToIgnoreY(SpatialObject)` | `void` | Performs the lookToIgnoreY operation using the provided parameters (object). |
+| `lookToIgnoreY(Vector3)` | `void` | Performs the lookToIgnoreY operation using the provided parameters (position). |
+| `teleportTo(SpatialObject)` | `void` | Performs the teleportTo operation using the provided parameters (object). |
+| `teleportTo(Vector3)` | `void` | Performs the teleportTo operation using the provided parameters (position). |
+| `smoothLookTo(SpatialObject, float)` | `void` | Performs the smoothLookTo operation using the provided parameters (other, lerpSpeed). |
+| `smoothLookTo(Vector3, float)` | `void` | Performs the smoothLookTo operation using the provided parameters (other, lerpSpeed). |
+| `lerpLookTo(SpatialObject, float)` | `void` | Performs the lerpLookTo operation using the provided parameters (other, lerpSpeed). |
+| `lerpLookTo(Vector3, float)` | `void` | Performs the lerpLookTo operation using the provided parameters (other, lerpSpeed). |
+| `lerpLookToIgnoreY(SpatialObject, float)` | `void` | Performs the lerpLookToIgnoreY operation using the provided parameters (other, lerpSpeed). |
+| `lerpLookToIgnoreY(Vector3, float)` | `void` | Performs the lerpLookToIgnoreY operation using the provided parameters (other, lerpSpeed). |
+| `transformPoint(Vector3)` | `Vector3` | Performs the transformPoint operation using the provided parameters (vector3). |
+| `transformPoint(Vector3, Vector3)` | `void` | Performs the transformPoint operation using the provided parameters (vector3, out). |
+| `inverseTransformPoint(Vector3)` | `Vector3` | Performs the inverseTransformPoint operation using the provided parameters (vector3). |
+| `inverseTransformPoint(Vector3, Vector3)` | `void` | Performs the inverseTransformPoint operation using the provided parameters (vector3, out). |
+| `transformDirection(Vector3)` | `Vector3` | Performs the transformDirection operation using the provided parameters (vector3). |
+| `transformDirection(Vector3, Vector3)` | `void` | Performs the transformDirection operation using the provided parameters (vector3, out). |
+| `inverseTransformDirection(Vector3)` | `Vector3` | Performs the inverseTransformDirection operation using the provided parameters (vector3). |
+| `inverseTransformDirection(Vector3, Vector3)` | `void` | Performs the inverseTransformDirection operation using the provided parameters (vector3, out). |
+| `forward()` | `Vector3` | Executes `forward` and returns after the underlying engine call finishes. |
+| `back()` | `Vector3` | Executes `back` and returns after the underlying engine call finishes. |
+| `right()` | `Vector3` | Executes `right` and returns after the underlying engine call finishes. |
+| `left()` | `Vector3` | Executes `left` and returns after the underlying engine call finishes. |
+| `up()` | `Vector3` | Executes `up` and returns after the underlying engine call finishes. |
+| `down()` | `Vector3` | Executes `down` and returns after the underlying engine call finishes. |
+| `forward(Vector3)` | `Vector3` | Performs the forward operation using the provided parameters (out). |
+| `back(Vector3)` | `Vector3` | Performs the back operation using the provided parameters (out). |
+| `right(Vector3)` | `Vector3` | Performs the right operation using the provided parameters (out). |
+| `left(Vector3)` | `Vector3` | Performs the left operation using the provided parameters (out). |
+| `up(Vector3)` | `Vector3` | Performs the up operation using the provided parameters (out). |
+| `down(Vector3)` | `Vector3` | Performs the down operation using the provided parameters (out). |
+| `getState()` | `int` | Returns the current state. |
+| `setState(int)` | `void` | Sets or updates the state. |
+| `getGlobalMatrix(float[])` | [float][] | Returns the current global matrix. |
+| `getLocalMatrix(float[])` | [float][] | Returns the current local matrix. |
+| `mulGlobalVector3(Vector3)` | `Vector3` | Performs the mulGlobalVector3 operation using the provided parameters (vector3). |
+| `mulLocalVector3(Vector3)` | `Vector3` | Performs the mulLocalVector3 operation using the provided parameters (vector3). |
+| `recalculateMatrices()` | `void` | Executes `recalculateMatrices` and returns after the underlying engine call finishes. |
+| `toJson()` | `String` | Executes `toJson` and returns after the underlying engine call finishes. |
+| `exists()` | `boolean` | Executes `exists` and returns after the underlying engine call finishes. |
+| `compareTag(String)` | `boolean` | Compares this instance with another for equality/order. |
+| `validate()` | `boolean` | Executes `validate` and returns after the underlying engine call finishes. |
 
 ## Static Methods (2)
 
 | Signature | Returns | Description |
 | --- | --- | --- |
-| inspectorController() | [ClassInspectorEntry] | Executes `inspectorController` and returns after the underlying engine call finishes. |
-| loadFile([ObjectFile]) | [SpatialObject] | Loads file into the object. |
+| `inspectorController()` | `ClassInspectorEntry` | Executes `inspectorController` and returns after the underlying engine call finishes. |
+| `loadFile(ObjectFile)` | `SpatialObject` | Loads file into the object. |

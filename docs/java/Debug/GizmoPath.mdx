@@ -1,7 +1,3 @@
-import Links from '../../links.mdx';
-
-<Links />
-
 # GizmoPath
 
 Complete API reference for `GizmoPath`, including constructors, attributes, virtual attributes, and methods.
@@ -47,15 +43,15 @@ public class GizmoPath extends GizmoElement
 
 | Signature | Returns | Description |
 | --- | --- | --- |
-| setPosition([float], [float], [float]) | [void] | Sets or updates the position. |
-| setRotation([float], [float], [float]) | [void] | Sets or updates the rotation. |
-| setRotation([float], [float], [float], [float]) | [void] | Sets or updates the rotation. |
-| setScale([float], [float], [float]) | [void] | Sets or updates the scale. |
-| clear() | [void] | Clears or resets the object's state. |
-| addLine([Vector3], [Vector3]) | [GizmoPath] | Adds line to the collection. |
-| addLineUnsafe([Vector3], [Vector3]) | [GizmoPath] | Adds line unsafe to the collection. |
-| addPath([[List]&lt;Vector2&gt;]) | [GizmoPath] | Adds path to the collection. |
-| apply() | [void] | Executes `apply` and returns after the underlying engine call finishes. |
-| destroy() | [void] | Executes `destroy` and returns after the underlying engine call finishes. |
-| getVertex() | [Vertex] | Returns the current vertex. |
-| getRenderMode() | [RenderMode] | Returns the current render mode. |
+| `setPosition(float, float, float)` | `void` | Sets or updates the position. |
+| `setRotation(float, float, float)` | `void` | Sets or updates the rotation. |
+| `setRotation(float, float, float, float)` | `void` | Sets or updates the rotation. |
+| `setScale(float, float, float)` | `void` | Sets or updates the scale. |
+| `clear()` | `void` | Clears or resets the object's state. |
+| `addLine(Vector3, Vector3)` | `GizmoPath` | Adds line to the collection. |
+| `addLineUnsafe(Vector3, Vector3)` | `GizmoPath` | Adds line unsafe to the collection. |
+| `addPath([List&lt;Vector2&gt;])` | `GizmoPath` | Adds path to the collection. |
+| `apply()` | `void` | Executes `apply` and returns after the underlying engine call finishes. |
+| `destroy()` | `void` | Executes `destroy` and returns after the underlying engine call finishes. |
+| `getVertex()` | `Vertex` | Returns the current vertex. |
+| `getRenderMode()` | `RenderMode` | Returns the current render mode. |

@@ -1,7 +1,3 @@
-import Links from '../../links.mdx';
-
-<Links />
-
 # AList
 
 Complete API reference for `AList`, including constructors, attributes, virtual attributes, and methods.
@@ -29,36 +25,36 @@ public class AList
 
 | Signature | Returns | Description |
 | --- | --- | --- |
-| size() | [int] | Returns the list size (number of elements). |
-| isEmpty() | [boolean] | Returns whether the list is empty. |
-| contains([Object]) | [boolean] | Returns whether the list contains the element. |
-| iterator() | [Iterator]&[lt];[T]&[gt]; | Returns an iterator over the elements in the list. |
-| toArray() | [Object][] | Returns an array with all elements in the list. |
-| toArray([E[]]) | [E][] | Returns an array with all elements in the list, using the provided array. |
-| add([T]) | [boolean] | Add the element to the list. |
-| remove([Object]) | [boolean] | Removes the element from the list. |
-| addAll([Collection&lt;? extends T&gt;]) | [boolean] | Adds all the elements from the collection to the list. |
-| addAll([int], [Collection&lt;? extends T&gt;]) | [boolean] | Adds all the elements from the collection to the list at the specified index. |
-| clear() | [void] | Removes all elements from the list. |
-| equals([Object]) | [boolean] | Compares whether the list is equal to the specified object. |
-| hashCode() | [int] | Returns the hash code of the list. |
-| get([int]) | [T] | Returns the element at the specified index. |
-| set([int], [T]) | [T] | Sets the element at the index to the provided value. |
-| add([int], [T]) | [void] | Adds the element at the specified index. |
-| remove([int]) | [T] | Removes the element at the specified index. |
-| indexOf([Object]) | [int] | Returns the index of the first occurrence of the specified element. |
-| lastIndexOf([Object]) | [int] | Returns the index of the last occurrence of the specified element. |
-| listIterator() | [ListIterator]&[lt];[T]&[gt]; | Returns a list iterator over the elements in the list. |
-| listIterator([int]) | [ListIterator]&[lt];[T]&[gt]; | Returns a list iterator over the elements in the list, starting at the specified index. |
-| subList([int], [int]) | [List]&[lt];[T]&[gt]; | Returns a list of elements between specified indices. |
-| retainAll([Collection&lt;?&gt;]) | [boolean] | Retains only the elements in the list that are contained in the specified collection. |
-| removeAll([Collection&lt;?&gt;]) | [boolean] | Removes from the list all elements that have the same value from the specified collection. |
-| containsAll([Collection&lt;?&gt;]) | [boolean] | Checks if the list contains all elements of the specified collection. |
-| forEach([Consumer&lt;? super T&gt;]) | [void] | Executes the given action for each element in the list. |
-| replaceAll([UnaryOperator&lt;T&gt;]) | [void] | Replaces each element with the result of applying the operator. |
-| sort([Comparator&lt;? super T&gt;]) | [void] | Sorts the list using the provided comparator. |
-| removeIf([Predicate&lt;? super T&gt;]) | [boolean] | Removes all elements that satisfy the given predicate. |
-| spliterator() | [Spliterator]&[lt];[T]&[gt]; | Returns a spliterator over the elements in the list. |
-| stream() | [Stream]&[lt];[T]&[gt]; | Returns a sequential stream of the list. |
-| parallelStream() | [Stream]&[lt];[T]&[gt]; | Returns a possibly parallel stream of the list. |
-| getInternalList() | [List]&[lt];[T]&[gt]; | Returns the internal list (for advanced use). |
+| `size()` | `int` | Returns the list size (number of elements). |
+| `isEmpty()` | `boolean` | Returns whether the list is empty. |
+| `contains(Object)` | `boolean` | Returns whether the list contains the element. |
+| `iterator()` | [Iterator]&[lt];[T]&[gt]; | Returns an iterator over the elements in the list. |
+| `toArray()` | [Object][] | Returns an array with all elements in the list. |
+| `toArray([E[]])` | [E][] | Returns an array with all elements in the list, using the provided array. |
+| `add(T)` | `boolean` | Add the element to the list. |
+| `remove(Object)` | `boolean` | Removes the element from the list. |
+| `addAll([Collection&lt;? extends T&gt;])` | `boolean` | Adds all the elements from the collection to the list. |
+| `addAll(int, [Collection&lt;? extends T&gt;])` | `boolean` | Adds all the elements from the collection to the list at the specified index. |
+| `clear()` | `void` | Removes all elements from the list. |
+| `equals(Object)` | `boolean` | Compares whether the list is equal to the specified object. |
+| `hashCode()` | `int` | Returns the hash code of the list. |
+| `get(int)` | `T` | Returns the element at the specified index. |
+| `set(int, T)` | `T` | Sets the element at the index to the provided value. |
+| `add(int, T)` | `void` | Adds the element at the specified index. |
+| `remove(int)` | `T` | Removes the element at the specified index. |
+| `indexOf(Object)` | `int` | Returns the index of the first occurrence of the specified element. |
+| `lastIndexOf(Object)` | `int` | Returns the index of the last occurrence of the specified element. |
+| `listIterator()` | [ListIterator]&[lt];[T]&[gt]; | Returns a list iterator over the elements in the list. |
+| `listIterator(int)` | [ListIterator]&[lt];[T]&[gt]; | Returns a list iterator over the elements in the list, starting at the specified index. |
+| `subList(int, int)` | [List]&[lt];[T]&[gt]; | Returns a list of elements between specified indices. |
+| `retainAll([Collection&lt;?&gt;])` | `boolean` | Retains only the elements in the list that are contained in the specified collection. |
+| `removeAll([Collection&lt;?&gt;])` | `boolean` | Removes from the list all elements that have the same value from the specified collection. |
+| `containsAll([Collection&lt;?&gt;])` | `boolean` | Checks if the list contains all elements of the specified collection. |
+| `forEach([Consumer&lt;? super T&gt;])` | `void` | Executes the given action for each element in the list. |
+| `replaceAll([UnaryOperator&lt;T&gt;])` | `void` | Replaces each element with the result of applying the operator. |
+| `sort([Comparator&lt;? super T&gt;])` | `void` | Sorts the list using the provided comparator. |
+| `removeIf([Predicate&lt;? super T&gt;])` | `boolean` | Removes all elements that satisfy the given predicate. |
+| `spliterator()` | [Spliterator]&[lt];[T]&[gt]; | Returns a spliterator over the elements in the list. |
+| `stream()` | [Stream]&[lt];[T]&[gt]; | Returns a sequential stream of the list. |
+| `parallelStream()` | [Stream]&[lt];[T]&[gt]; | Returns a possibly parallel stream of the list. |
+| `getInternalList()` | [List]&[lt];[T]&[gt]; | Returns the internal list (for advanced use). |

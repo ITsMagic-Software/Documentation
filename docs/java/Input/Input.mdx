@@ -1,7 +1,3 @@
-import Links from '../../links.mdx';
-
-<Links />
-
 # Input
 
 Complete API reference for `Input`, including constructors, attributes, virtual attributes, and methods.
@@ -22,26 +18,26 @@ public class Input
 
 | Signature | Returns | Description |
 | --- | --- | --- |
-| GamePad() | [GamePad] [gamePad] = [new] | Executes `GamePad` and returns after the underlying engine call finishes. |
-| Keyboard() | [Keyboard] [keyboard] = [new] | Executes `Keyboard` and returns after the underlying engine call finishes. |
-| Mouse() | [Mouse] [mouse] = [new] | Executes `Mouse` and returns after the underlying engine call finishes. |
-| haveKey([String]) | [boolean] | Checks if the specified key exists. |
-| getKey([String]) | [Key] | Returns the specified key. |
-| registerKey([String]) | [Key] | Registers and returns the specified key. |
-| registerKey([Key]) | [void] | Registers the specified key. |
-| isKeyDown([String]) | [boolean] | Checks whether the specified Key was just pressed. This returns true only on the first frame it was pressed. |
-| isKeyPressed([String]) | [boolean] | Checks whether the specified Key is currently being held down. This returns true on every frame while it remains pressed. |
-| isKeyUp([String]) | [boolean] | Checks whether the specified Key was just released. This returns true only on the first frame after it was released. |
-| getTouch([int]) | [Touch] | Returns the touch of the specified ID. |
-| getTouchPosition([int]) | [Vector2] | Returns the position of the touch of the specified ID. |
-| getTouchPosition([int], [Vector2]) | [Vector2] | Returns the position of the touch of the specified ID and stores it in the provided Vector2. |
-| isTouchDown([int]) | [boolean] | Checks whether the touch of the specified ID was just pressed. This returns true only on the first frame it was pressed. |
-| isTouchPressed([int]) | [boolean] | Checks whether the touch of the specified ID is currently being held down. This returns true on every frame while it remains pressed. |
-| isTouchUp([int]) | [boolean] | Checks whether the touch of the specified ID was just released. This returns true only on the first frame after it was released. |
-| getAxis([String]) | [Axis] | Returns the Axis associated with the specified name. |
-| registerAxis([String]) | [Axis] | Registers and returns the Axis associated with the specified name. If the Axis does not exist, it will be created. |
-| getAxisValue([String]) | [Vector2] | Returns the value of the specified Axis. |
-| getMaxSlide() | [Vector2] | Returns the slide vector of the touch that moved the farthest. |
-| isKeyboardOpen() | [boolean] | Checks if the virtual keyboard is currently open. |
-| addKeyboardRequest([Component]) | [void] | Requests the opening of the virtual keyboard for the specified component. |
-| removeKeyboardRequest([Component]) | [void] | Removes the keyboard request from the specified component. |
+| `GamePad()` | [GamePad] [gamePad] = [new] | Executes `GamePad` and returns after the underlying engine call finishes. |
+| `Keyboard()` | [Keyboard] [keyboard] = [new] | Executes `Keyboard` and returns after the underlying engine call finishes. |
+| `Mouse()` | [Mouse] [mouse] = [new] | Executes `Mouse` and returns after the underlying engine call finishes. |
+| `haveKey(String)` | `boolean` | Checks if the specified key exists. |
+| `getKey(String)` | `Key` | Returns the specified key. |
+| `registerKey(String)` | `Key` | Registers and returns the specified key. |
+| `registerKey(Key)` | `void` | Registers the specified key. |
+| `isKeyDown(String)` | `boolean` | Checks whether the specified Key was just pressed. This returns true only on the first frame it was pressed. |
+| `isKeyPressed(String)` | `boolean` | Checks whether the specified Key is currently being held down. This returns true on every frame while it remains pressed. |
+| `isKeyUp(String)` | `boolean` | Checks whether the specified Key was just released. This returns true only on the first frame after it was released. |
+| `getTouch(int)` | `Touch` | Returns the touch of the specified ID. |
+| `getTouchPosition(int)` | `Vector2` | Returns the position of the touch of the specified ID. |
+| `getTouchPosition(int, Vector2)` | `Vector2` | Returns the position of the touch of the specified ID and stores it in the provided Vector2. |
+| `isTouchDown(int)` | `boolean` | Checks whether the touch of the specified ID was just pressed. This returns true only on the first frame it was pressed. |
+| `isTouchPressed(int)` | `boolean` | Checks whether the touch of the specified ID is currently being held down. This returns true on every frame while it remains pressed. |
+| `isTouchUp(int)` | `boolean` | Checks whether the touch of the specified ID was just released. This returns true only on the first frame after it was released. |
+| `getAxis(String)` | `Axis` | Returns the Axis associated with the specified name. |
+| `registerAxis(String)` | `Axis` | Registers and returns the Axis associated with the specified name. If the Axis does not exist, it will be created. |
+| `getAxisValue(String)` | `Vector2` | Returns the value of the specified Axis. |
+| `getMaxSlide()` | `Vector2` | Returns the slide vector of the touch that moved the farthest. |
+| `isKeyboardOpen()` | `boolean` | Checks if the virtual keyboard is currently open. |
+| `addKeyboardRequest(Component)` | `void` | Requests the opening of the virtual keyboard for the specified component. |
+| `removeKeyboardRequest(Component)` | `void` | Removes the keyboard request from the specified component. |

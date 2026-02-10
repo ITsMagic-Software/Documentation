@@ -1,7 +1,3 @@
-import Links from '../../links.mdx';
-
-<Links />
-
 # TextScriptingExtension
 
 Referência completa da API de `TextScriptingExtension`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -22,22 +18,22 @@ public class TextScriptingExtension extends ScriptingExtension
 
 | Signature | Returns | Description |
 | --- | --- | --- |
-| getScriptingInterface() | [ScriptingInterface] | Executa `getScriptingInterface` e retorna quando a chamada do motor termina. |
-| getText() | [String] | Retorna a propriedade `propriedade `text atual``. |
-| setText([String]) | [void] | Define ou atualiza a propriedade `propriedade `text``. |
-| setTheme([TextScriptingTheme]) | [void] | Define ou atualiza theme. |
-| setProvider([TextScriptingProvider]) | [void] | Define ou atualiza a propriedade `propriedade `provider``. |
-| setStyler([TextScriptingStyler]) | [void] | Define ou atualiza a propriedade `propriedade `styler``. |
-| getTipForLine([int]) | [LineTip] | Retorna a propriedade `propriedade `tip for line atual``. |
-| getTipTextForLine([int]) | [String] | Retorna a propriedade `propriedade `tip text for line atual``. |
-| replaceScript([File]) | [void] | Executa a operação replaceScript usando os parâmetros informados (newScript). |
-| openScript([File]) | [void] | Executa a operação openScript usando os parâmetros informados (script). |
-| onClose() | [void] | Executa a operação onClose. |
-| init() | [void] | Inicializa o estado interno do objeto. |
-| unload() | [void] | Executa a operação unload. |
-| saveScript() | [boolean] | Salva script do objeto. |
-| hasScript() | [boolean] | Retorna se script é verdadeiro. |
-| supportFile([File]) | [boolean] | Executa a operação supportFile usando os parâmetros informados (file). |
-| beforeTextChanged([CharSequence], [int], [int], [int]) | [void] | Executa a operação beforeTextChanged usando os parâmetros informados (charSequence, start, before, count). |
-| onTextChanged([CharSequence], [int], [int], [int]) | [void] | Executa a operação onTextChanged usando os parâmetros informados (charSequence, start, before, count). |
-| afterTextChanged([Editable]) | [void] | Executa a operação afterTextChanged usando os parâmetros informados (editable). |
+| `getScriptingInterface()` | `ScriptingInterface` | Executa `getScriptingInterface` e retorna quando a chamada do motor termina. |
+| `getText()` | `String` | Retorna a propriedade `propriedade `text atual``. |
+| `setText(String)` | `void` | Define ou atualiza a propriedade `propriedade `text``. |
+| `setTheme(TextScriptingTheme)` | `void` | Define ou atualiza theme. |
+| `setProvider(TextScriptingProvider)` | `void` | Define ou atualiza a propriedade `propriedade `provider``. |
+| `setStyler(TextScriptingStyler)` | `void` | Define ou atualiza a propriedade `propriedade `styler``. |
+| `getTipForLine(int)` | `LineTip` | Retorna a propriedade `propriedade `tip for line atual``. |
+| `getTipTextForLine(int)` | `String` | Retorna a propriedade `propriedade `tip text for line atual``. |
+| `replaceScript(File)` | `void` | Executa a operação replaceScript usando os parâmetros informados (newScript). |
+| `openScript(File)` | `void` | Executa a operação openScript usando os parâmetros informados (script). |
+| `onClose()` | `void` | Executa a operação onClose. |
+| `init()` | `void` | Inicializa o estado interno do objeto. |
+| `unload()` | `void` | Executa a operação unload. |
+| `saveScript()` | `boolean` | Salva script do objeto. |
+| `hasScript()` | `boolean` | Retorna se script é verdadeiro. |
+| `supportFile(File)` | `boolean` | Executa a operação supportFile usando os parâmetros informados (file). |
+| `beforeTextChanged(CharSequence, int, int, int)` | `void` | Executa a operação beforeTextChanged usando os parâmetros informados (charSequence, start, before, count). |
+| `onTextChanged(CharSequence, int, int, int)` | `void` | Executa a operação onTextChanged usando os parâmetros informados (charSequence, start, before, count). |
+| `afterTextChanged(Editable)` | `void` | Executa a operação afterTextChanged usando os parâmetros informados (editable). |

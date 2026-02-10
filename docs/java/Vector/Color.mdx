@@ -1,7 +1,3 @@
-import Links from '../../links.mdx';
-
-<Links />
-
 # Color
 
 Complete API reference for `Color`, including constructors, attributes, virtual attributes, and methods.
@@ -40,122 +36,122 @@ public class Color
 
 | Signature | Returns | Description |
 | --- | --- | --- |
-| set([Color]) | [void] | Sets the Color of this instance to the specified Color. |
-| getInt() | [int] | Returns the int value of the Color. |
-| setInt([int]) | [void] | Sets the Color to the Color of the specified int value. |
-| fromHexString([String]) | [void] | Sets the Color to the Color of the specified hex code. |
-| fromHex([String]) | [void] | Sets the Color to the Color of the specified hex code. |
-| getHexString() | [String] | Returns the hexadecimal code of the Color. |
-| toHex() | [String] | Returns the hexadecimal code of the Color. |
-| getIntAlpha() | [int] | Returns the int value of the opacity (alpha channel) of the Color (0-255). |
-| setIntAlpha([int]) | [void] | Sets the int value of the opacity (alpha channel) of the Color (0-255). |
-| getIntRed() | [int] | Returns the int value of the red channel of the color (0-255). |
-| setIntRed([int]) | [void] | Sets the int value of the red channel of the color (0-255). |
-| getIntGreen() | [int] | Returns the int value of the green channel of the color (0-255). |
-| setIntGreen([int]) | [void] | Sets the int value of the green channel of the color (0-255). |
-| getIntBlue() | [int] | Returns the int value of the blue channel of the color (0-255). |
-| setIntBlue([int]) | [void] | Sets the int value of the blue channel of the color (0-255). |
-| setInts([int], [int], [int], [int]) | [void] | Sets the int values of the ARGB channels (alpha, red, green, and blue) to the specified values, respectively. |
-| setInts([int], [int], [int]) | [void] | Sets the int values of the RGB channels (red, green, and blue) to the specified values, respectively. |
-| getFloatAlpha() | [float] | Returns the float value of the opacity (alpha channel) of the Color (0.0f - 1.0f). |
-| setFloatAlpha([float]) | [void] | Sets the float value of the opacity (alpha channel) of the Color (0.0f - 1.0f). |
-| getFloatRed() | [float] | Returns the float value of the red channel of the color (0.0f - 1.0f). |
-| setFloatRed([float]) | [void] | Sets the float value of the red channel of the color (0.0f - 1.0f). |
-| getFloatGreen() | [float] | Returns the float value of the green channel of the color (0.0f - 1.0f). |
-| setFloatGreen([float]) | [void] | Sets the float value of the green channel of the color (0.0f - 1.0f). |
-| getFloatBlue() | [float] | Returns the float value of the blue channel of the color (0.0f - 1.0f). |
-| setFloatBlue([float]) | [void] | Sets the float value of the blue channel of the color (0.0f - 1.0f). |
-| setFloats([float], [float], [float], [float]) | [void] | Sets the float values of the ARGB channels (alpha, red, green, and blue) to the specified values, respectively. |
-| setFloats([float], [float], [float]) | [void] | Sets the float values of the RGB channels (red, green, and blue) to the specified values, respectively. |
-| sum([Color]) | [Color] | Adds the current Color to the specified Color and returns a new Color. |
-| sum([Vector3]) | [Color] | Adds the current Color to the specified Vector3 and returns a new Color. |
-| sum([Vector2]) | [Color] | Adds the current Color to the specified Vector2 and returns a new Color. |
-| sub([Color]) | [Color] | Subtracts the specified Color from the current Color and returns a new Color. |
-| sub([Vector3]) | [Color] | Subtracts the specified Vector3 from the current Color and returns a new Color. |
-| sub([Vector2]) | [Color] | Subtracts the specified Vector2 from the current Color and returns a new Color. |
-| mul([Color]) | [Color] | Multiplies the current Color by the specified Color and returns a new Color. |
-| mul([Vector3]) | [Color] | Multiplies the current Color by the specified Vector3 and returns a new Color. |
-| mul([Vector2]) | [Color] | Multiplies the current Color by the specified Vector2 and returns a new Color. |
-| div([Color]) | [Color] | Divides the current Color by the specified Color and returns a new Color. |
-| div([Vector3]) | [Color] | Divides the current Color by the specified Vector3 and returns a new Color. |
-| div([Vector2]) | [Color] | Divides the current Color by the specified Vector2 and returns a new Color. |
-| sumLocal([Color]) | [void] | Adds the current Color to the specified Color and modifies the current Color. |
-| sumLocal([Vector3]) | [void] | Adds the current Color to the specified Vector3 and modifies the current Color. |
-| sumLocal([Vector2]) | [void] | Adds the current Color to the specified Vector2 and modifies the current Color. |
-| subLocal([Color]) | [void] | Subtracts the specified Color from the current Color and modifies the current Color. |
-| subLocal([Vector3]) | [void] | Subtracts the specified Vector3 from the current Color and modifies the current Color. |
-| subLocal([Vector2]) | [void] | Subtracts the specified Vector2 from the current Color and modifies the current Color. |
-| mulLocal([Color]) | [void] | Multiplies the current Color by the specified Color and modifies the current Color. |
-| mulLocal([Vector3]) | [void] | Multiplies the current Color by the specified Vector3 and modifies the current Color. |
-| mulLocal([Vector2]) | [void] | Multiplies the current Color by the specified Vector2 and modifies the current Color. |
-| divLocal([Color]) | [void] | Divides the current Color by the specified Color and modifies the current Color. |
-| divLocal([Vector3]) | [void] | Divides the current Color by the specified Vector3 and modifies the current Color. |
-| divLocal([Vector2]) | [void] | Divides the current Color by the specified Vector2 and modifies the current Color. |
-| lerp([Color], [float]) | [void] | Interpolates/smoothes between the current Color and the specified Color based on the provided speed/interval and modifies the current Color. |
-| lerp([float], [float], [float], [float], [float]) | [void] | Interpolates/smoothes between the current Color and the specified ARGB (alpha, red, green, and blue) values based on the provided speed/interval and modifies the current Color. |
-| lerp([float], [float]) | [void] | Interpolates/smoothes between the current Color and the specified value based on the provided speed/interval and modifies the current Color. |
-| lerpOut([Color], [float]) | [Color] | Interpolates/smoothes between the current Color and the specified Color based on the provided speed/interval and returns a new Color. |
-| lerpOut([float], [float], [float], [float], [float]) | [Color] | Interpolates/smoothes between the current Color and the specified ARGB (alpha, red, green, and blue) values based on the provided speed/interval and returns a new Color. |
-| lerpOut([float], [float]) | [Color] | Interpolates/smoothes between the current Color and the specified value based on the provided speed/interval and returns a new Color. |
-| lerpInSeconds([Color], [float]) | [void] | Interpolates/smoothes between the current Color and the specified Color based on the provided speed/interval in one second and modifies the current Color. |
-| lerpInSeconds([float], [float], [float], [float], [float]) | [void] | Interpolates/smoothes between the current Color and the specified ARGB (alpha, red, green, and blue) values based on the provided speed/interval in one second and modifies the current Color. |
-| lerpInSeconds([float], [float]) | [void] | Interpolates/smoothes between the current Color and the specified value based on the provided speed/interval in one second and modifies the current Color. |
-| lerpOutInSeconds([Color], [float]) | [Color] | Interpolates/smoothes between the current Color and the specified Color based on the provided speed/interval in one second and returns a new Color. |
-| lerpOutInSeconds([float], [float], [float], [float], [float]) | [Color] | Interpolates/smoothes between the current Color and the specified ARGB (alpha, red, green, and blue) values based on the provided speed/interval in one second and returns a new Color. |
-| lerpOutInSeconds([float], [float]) | [Color] | Interpolates/smoothes between the current Color and the specified value based on the provided speed/interval in one second and returns a new Color. |
-| blend([Color], [float]) | [void] | Blends between the current Color and the specified Color based on the provided percentage (0-1) and modifies the current Color. |
-| blend([float], [float], [float], [float], [float]) | [void] | Blends between the current Color and the specified ARGB (alpha, red, green, and blue) values based on the provided percentage (0-1) and modifies the current Color. |
-| blend([float], [float]) | [void] | Blends between the current Color and the specified value based on the provided percentage (0-1) and modifies the current Color. |
-| blendOut([Color], [float]) | [Color] | Blends between the current Color and the specified Color based on the provided percentage (0-1) and returns a new Color. |
-| blendOut([float], [float], [float], [float], [float]) | [Color] | Blends between the current Color and the specified ARGB (alpha, red, green, and blue) values based on the provided percentage (0-1) and returns a new Color. |
-| blendOut([float], [float]) | [Color] | Blends between the current Color and the specified value based on the provided percentage (0-1) and returns a new Color. |
-| toString() | [String] | Returns a String of the int ARGB values (alpha, red, green, and blue) of the Color. |
-| copy() | [Color] | Returns a copy of the current Color instance. |
-| equals([Object]) | [boolean] | Returns true if the specified Color is equal to the current Color. |
-| pointerEquals([Object]) | [boolean] | Returns true if the instance of the specified Color is equal to the instance of the current Color. |
-| notEquals([Object]) | [boolean] | Returns true if the specified Color is different from the current Color. |
-| greaterThan([Object]) | [boolean] | Returns true if the current Color has greater values than the specified Color. |
-| greaterThan([float]) | [boolean] | Returns true if the current Color has greater values than the specified value. |
-| greaterThan([int]) | [boolean] | Returns true if the current Color has greater values than the specified value. |
-| greaterThan([long]) | [boolean] | Returns true if the current Color has greater values than the specified value. |
-| greaterThan([double]) | [boolean] | Returns true if the current Color has greater values than the specified value. |
-| greaterOrEqualsThan([Object]) | [boolean] | Returns true if the current Color has greater than or equal values to the specified Color. |
-| greaterOrEqualsThan([float]) | [boolean] | Returns true if the current Color has greater than or equal values to the specified value. |
-| greaterOrEqualsThan([int]) | [boolean] | Returns true if the current Color has greater than or equal values to the specified value. |
-| greaterOrEqualsThan([long]) | [boolean] | Returns true if the current Color has greater than or equal values to the specified value. |
-| greaterOrEqualsThan([double]) | [boolean] | Returns true if the current Color has greater than or equal values to the specified value. |
-| lessThan([Object]) | [boolean] | Returns true if the current Color has less values than the specified Color. |
-| lessThan([float]) | [boolean] | Returns true if the current Color has less values than the specified value. |
-| lessThan([int]) | [boolean] | Returns true if the current Color has less values than the specified value. |
-| lessThan([long]) | [boolean] | Returns true if the current Color has less values than the specified value. |
-| lessThan([double]) | [boolean] | Returns true if the current Color has less values than the specified value. |
-| lessOrEqualsThan([Object]) | [boolean] | Returns true if the current Color has less than or equal values to the specified Color. |
-| lessOrEqualsThan([float]) | [boolean] | Returns true if the current Color has less than or equal values to the specified value. |
-| lessOrEqualsThan([int]) | [boolean] | Returns true if the current Color has less than or equal values to the specified value. |
-| lessOrEqualsThan([long]) | [boolean] | Returns true if the current Color has less than or equal values to the specified value. |
-| lessOrEqualsThan([double]) | [boolean] | Returns true if the current Color has less than or equal values to the specified value. |
-| sum([Object]) | [T] | Adds 2 colors and returns a new Color. |
-| sumEqual([Object]) | [void] | Adds 2 colors and modifies the current Color with the result. |
-| div([Object]) | [T] | Divides 2 colors and returns a new Color. |
-| divEqual([Object]) | [void] | Divides 2 colors and modifies the current Color with the result. |
-| mul([Object]) | [T] | Multiplies 2 colors and returns a new Color. |
-| mulEqual([Object]) | [void] | Multiplies 2 colors and modifies the current Color with the result. |
-| sub([Object]) | [T] | Subtracts 2 colors and returns a new Color. |
-| subEqual([Object]) | [void] | Subtracts 2 colors and modifies the current Color with the result. |
-| serializeToString() | [String] | Serializes the color to a String in the format '[R;G;B;A]'. |
-| deserializeLocal([String]) | [void] | Deserializes a String in the format '[R;G;B;A]' and sets the values to this color. |
+| `set(Color)` | `void` | Sets the Color of this instance to the specified Color. |
+| `getInt()` | `int` | Returns the int value of the Color. |
+| `setInt(int)` | `void` | Sets the Color to the Color of the specified int value. |
+| `fromHexString(String)` | `void` | Sets the Color to the Color of the specified hex code. |
+| `fromHex(String)` | `void` | Sets the Color to the Color of the specified hex code. |
+| `getHexString()` | `String` | Returns the hexadecimal code of the Color. |
+| `toHex()` | `String` | Returns the hexadecimal code of the Color. |
+| `getIntAlpha()` | `int` | Returns the int value of the opacity (alpha channel) of the Color (0-255). |
+| `setIntAlpha(int)` | `void` | Sets the int value of the opacity (alpha channel) of the Color (0-255). |
+| `getIntRed()` | `int` | Returns the int value of the red channel of the color (0-255). |
+| `setIntRed(int)` | `void` | Sets the int value of the red channel of the color (0-255). |
+| `getIntGreen()` | `int` | Returns the int value of the green channel of the color (0-255). |
+| `setIntGreen(int)` | `void` | Sets the int value of the green channel of the color (0-255). |
+| `getIntBlue()` | `int` | Returns the int value of the blue channel of the color (0-255). |
+| `setIntBlue(int)` | `void` | Sets the int value of the blue channel of the color (0-255). |
+| `setInts(int, int, int, int)` | `void` | Sets the int values of the ARGB channels (alpha, red, green, and blue) to the specified values, respectively. |
+| `setInts(int, int, int)` | `void` | Sets the int values of the RGB channels (red, green, and blue) to the specified values, respectively. |
+| `getFloatAlpha()` | `float` | Returns the float value of the opacity (alpha channel) of the Color (0.0f - 1.0f). |
+| `setFloatAlpha(float)` | `void` | Sets the float value of the opacity (alpha channel) of the Color (0.0f - 1.0f). |
+| `getFloatRed()` | `float` | Returns the float value of the red channel of the color (0.0f - 1.0f). |
+| `setFloatRed(float)` | `void` | Sets the float value of the red channel of the color (0.0f - 1.0f). |
+| `getFloatGreen()` | `float` | Returns the float value of the green channel of the color (0.0f - 1.0f). |
+| `setFloatGreen(float)` | `void` | Sets the float value of the green channel of the color (0.0f - 1.0f). |
+| `getFloatBlue()` | `float` | Returns the float value of the blue channel of the color (0.0f - 1.0f). |
+| `setFloatBlue(float)` | `void` | Sets the float value of the blue channel of the color (0.0f - 1.0f). |
+| `setFloats(float, float, float, float)` | `void` | Sets the float values of the ARGB channels (alpha, red, green, and blue) to the specified values, respectively. |
+| `setFloats(float, float, float)` | `void` | Sets the float values of the RGB channels (red, green, and blue) to the specified values, respectively. |
+| `sum(Color)` | `Color` | Adds the current Color to the specified Color and returns a new Color. |
+| `sum(Vector3)` | `Color` | Adds the current Color to the specified Vector3 and returns a new Color. |
+| `sum(Vector2)` | `Color` | Adds the current Color to the specified Vector2 and returns a new Color. |
+| `sub(Color)` | `Color` | Subtracts the specified Color from the current Color and returns a new Color. |
+| `sub(Vector3)` | `Color` | Subtracts the specified Vector3 from the current Color and returns a new Color. |
+| `sub(Vector2)` | `Color` | Subtracts the specified Vector2 from the current Color and returns a new Color. |
+| `mul(Color)` | `Color` | Multiplies the current Color by the specified Color and returns a new Color. |
+| `mul(Vector3)` | `Color` | Multiplies the current Color by the specified Vector3 and returns a new Color. |
+| `mul(Vector2)` | `Color` | Multiplies the current Color by the specified Vector2 and returns a new Color. |
+| `div(Color)` | `Color` | Divides the current Color by the specified Color and returns a new Color. |
+| `div(Vector3)` | `Color` | Divides the current Color by the specified Vector3 and returns a new Color. |
+| `div(Vector2)` | `Color` | Divides the current Color by the specified Vector2 and returns a new Color. |
+| `sumLocal(Color)` | `void` | Adds the current Color to the specified Color and modifies the current Color. |
+| `sumLocal(Vector3)` | `void` | Adds the current Color to the specified Vector3 and modifies the current Color. |
+| `sumLocal(Vector2)` | `void` | Adds the current Color to the specified Vector2 and modifies the current Color. |
+| `subLocal(Color)` | `void` | Subtracts the specified Color from the current Color and modifies the current Color. |
+| `subLocal(Vector3)` | `void` | Subtracts the specified Vector3 from the current Color and modifies the current Color. |
+| `subLocal(Vector2)` | `void` | Subtracts the specified Vector2 from the current Color and modifies the current Color. |
+| `mulLocal(Color)` | `void` | Multiplies the current Color by the specified Color and modifies the current Color. |
+| `mulLocal(Vector3)` | `void` | Multiplies the current Color by the specified Vector3 and modifies the current Color. |
+| `mulLocal(Vector2)` | `void` | Multiplies the current Color by the specified Vector2 and modifies the current Color. |
+| `divLocal(Color)` | `void` | Divides the current Color by the specified Color and modifies the current Color. |
+| `divLocal(Vector3)` | `void` | Divides the current Color by the specified Vector3 and modifies the current Color. |
+| `divLocal(Vector2)` | `void` | Divides the current Color by the specified Vector2 and modifies the current Color. |
+| `lerp(Color, float)` | `void` | Interpolates/smoothes between the current Color and the specified Color based on the provided speed/interval and modifies the current Color. |
+| `lerp(float, float, float, float, float)` | `void` | Interpolates/smoothes between the current Color and the specified ARGB (alpha, red, green, and blue) values based on the provided speed/interval and modifies the current Color. |
+| `lerp(float, float)` | `void` | Interpolates/smoothes between the current Color and the specified value based on the provided speed/interval and modifies the current Color. |
+| `lerpOut(Color, float)` | `Color` | Interpolates/smoothes between the current Color and the specified Color based on the provided speed/interval and returns a new Color. |
+| `lerpOut(float, float, float, float, float)` | `Color` | Interpolates/smoothes between the current Color and the specified ARGB (alpha, red, green, and blue) values based on the provided speed/interval and returns a new Color. |
+| `lerpOut(float, float)` | `Color` | Interpolates/smoothes between the current Color and the specified value based on the provided speed/interval and returns a new Color. |
+| `lerpInSeconds(Color, float)` | `void` | Interpolates/smoothes between the current Color and the specified Color based on the provided speed/interval in one second and modifies the current Color. |
+| `lerpInSeconds(float, float, float, float, float)` | `void` | Interpolates/smoothes between the current Color and the specified ARGB (alpha, red, green, and blue) values based on the provided speed/interval in one second and modifies the current Color. |
+| `lerpInSeconds(float, float)` | `void` | Interpolates/smoothes between the current Color and the specified value based on the provided speed/interval in one second and modifies the current Color. |
+| `lerpOutInSeconds(Color, float)` | `Color` | Interpolates/smoothes between the current Color and the specified Color based on the provided speed/interval in one second and returns a new Color. |
+| `lerpOutInSeconds(float, float, float, float, float)` | `Color` | Interpolates/smoothes between the current Color and the specified ARGB (alpha, red, green, and blue) values based on the provided speed/interval in one second and returns a new Color. |
+| `lerpOutInSeconds(float, float)` | `Color` | Interpolates/smoothes between the current Color and the specified value based on the provided speed/interval in one second and returns a new Color. |
+| `blend(Color, float)` | `void` | Blends between the current Color and the specified Color based on the provided percentage (0-1) and modifies the current Color. |
+| `blend(float, float, float, float, float)` | `void` | Blends between the current Color and the specified ARGB (alpha, red, green, and blue) values based on the provided percentage (0-1) and modifies the current Color. |
+| `blend(float, float)` | `void` | Blends between the current Color and the specified value based on the provided percentage (0-1) and modifies the current Color. |
+| `blendOut(Color, float)` | `Color` | Blends between the current Color and the specified Color based on the provided percentage (0-1) and returns a new Color. |
+| `blendOut(float, float, float, float, float)` | `Color` | Blends between the current Color and the specified ARGB (alpha, red, green, and blue) values based on the provided percentage (0-1) and returns a new Color. |
+| `blendOut(float, float)` | `Color` | Blends between the current Color and the specified value based on the provided percentage (0-1) and returns a new Color. |
+| `toString()` | `String` | Returns a String of the int ARGB values (alpha, red, green, and blue) of the Color. |
+| `copy()` | `Color` | Returns a copy of the current Color instance. |
+| `equals(Object)` | `boolean` | Returns true if the specified Color is equal to the current Color. |
+| `pointerEquals(Object)` | `boolean` | Returns true if the instance of the specified Color is equal to the instance of the current Color. |
+| `notEquals(Object)` | `boolean` | Returns true if the specified Color is different from the current Color. |
+| `greaterThan(Object)` | `boolean` | Returns true if the current Color has greater values than the specified Color. |
+| `greaterThan(float)` | `boolean` | Returns true if the current Color has greater values than the specified value. |
+| `greaterThan(int)` | `boolean` | Returns true if the current Color has greater values than the specified value. |
+| `greaterThan(long)` | `boolean` | Returns true if the current Color has greater values than the specified value. |
+| `greaterThan(double)` | `boolean` | Returns true if the current Color has greater values than the specified value. |
+| `greaterOrEqualsThan(Object)` | `boolean` | Returns true if the current Color has greater than or equal values to the specified Color. |
+| `greaterOrEqualsThan(float)` | `boolean` | Returns true if the current Color has greater than or equal values to the specified value. |
+| `greaterOrEqualsThan(int)` | `boolean` | Returns true if the current Color has greater than or equal values to the specified value. |
+| `greaterOrEqualsThan(long)` | `boolean` | Returns true if the current Color has greater than or equal values to the specified value. |
+| `greaterOrEqualsThan(double)` | `boolean` | Returns true if the current Color has greater than or equal values to the specified value. |
+| `lessThan(Object)` | `boolean` | Returns true if the current Color has less values than the specified Color. |
+| `lessThan(float)` | `boolean` | Returns true if the current Color has less values than the specified value. |
+| `lessThan(int)` | `boolean` | Returns true if the current Color has less values than the specified value. |
+| `lessThan(long)` | `boolean` | Returns true if the current Color has less values than the specified value. |
+| `lessThan(double)` | `boolean` | Returns true if the current Color has less values than the specified value. |
+| `lessOrEqualsThan(Object)` | `boolean` | Returns true if the current Color has less than or equal values to the specified Color. |
+| `lessOrEqualsThan(float)` | `boolean` | Returns true if the current Color has less than or equal values to the specified value. |
+| `lessOrEqualsThan(int)` | `boolean` | Returns true if the current Color has less than or equal values to the specified value. |
+| `lessOrEqualsThan(long)` | `boolean` | Returns true if the current Color has less than or equal values to the specified value. |
+| `lessOrEqualsThan(double)` | `boolean` | Returns true if the current Color has less than or equal values to the specified value. |
+| `sum(Object)` | `T` | Adds 2 colors and returns a new Color. |
+| `sumEqual(Object)` | `void` | Adds 2 colors and modifies the current Color with the result. |
+| `div(Object)` | `T` | Divides 2 colors and returns a new Color. |
+| `divEqual(Object)` | `void` | Divides 2 colors and modifies the current Color with the result. |
+| `mul(Object)` | `T` | Multiplies 2 colors and returns a new Color. |
+| `mulEqual(Object)` | `void` | Multiplies 2 colors and modifies the current Color with the result. |
+| `sub(Object)` | `T` | Subtracts 2 colors and returns a new Color. |
+| `subEqual(Object)` | `void` | Subtracts 2 colors and modifies the current Color with the result. |
+| `serializeToString()` | `String` | Serializes the color to a String in the format '[R;G;B;A]'. |
+| `deserializeLocal(String)` | `void` | Deserializes a String in the format '[R;G;B;A]' and sets the values to this color. |
 
 ## Static Methods (10)
 
 | Signature | Returns | Description |
 | --- | --- | --- |
-| genericInterface() | [GenericClassInspectorEntry] | Executes `genericInterface` and returns after the underlying engine call finishes. |
-| inspectorController() | [ClassInspectorEntry] | Executes `inspectorController` and returns after the underlying engine call finishes. |
-| RED() | [Color] | Returns the red Color (255, 255, 0, 0). |
-| WHITE() | [Color] | Returns the white Color (255, 255, 255, 255). |
-| BLACK() | [Color] | Returns the black Color (255, 0, 0, 0). |
-| GREEN() | [Color] | Returns the green Color (255, 0, 255, 0). |
-| BLUE() | [Color] | Returns the blue Color (255, 0, 0, 255). |
-| YELLOW() | [Color] | Returns the yellow Color (255, 241, 196, 15). |
-| PINK() | [Color] | Returns the red Color (255, 255, 0, 255). |
-| isNull([Object]) | [boolean] | Returns true if the specified Color is null. |
+| `genericInterface()` | `GenericClassInspectorEntry` | Executes `genericInterface` and returns after the underlying engine call finishes. |
+| `inspectorController()` | `ClassInspectorEntry` | Executes `inspectorController` and returns after the underlying engine call finishes. |
+| `RED()` | `Color` | Returns the red Color (255, 255, 0, 0). |
+| `WHITE()` | `Color` | Returns the white Color (255, 255, 255, 255). |
+| `BLACK()` | `Color` | Returns the black Color (255, 0, 0, 0). |
+| `GREEN()` | `Color` | Returns the green Color (255, 0, 255, 0). |
+| `BLUE()` | `Color` | Returns the blue Color (255, 0, 0, 255). |
+| `YELLOW()` | `Color` | Returns the yellow Color (255, 241, 196, 15). |
+| `PINK()` | `Color` | Returns the red Color (255, 255, 0, 255). |
+| `isNull(Object)` | `boolean` | Returns true if the specified Color is null. |

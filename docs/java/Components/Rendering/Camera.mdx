@@ -1,7 +1,3 @@
-import Links from '../../../links.mdx';
-
-<Links />
-
 # Camera
 
 Complete API reference for `Camera`, including constructors, attributes, virtual attributes, and methods.
@@ -77,35 +73,35 @@ public class Camera extends Component
 
 | Signature | Returns | Description |
 | --- | --- | --- |
-| getInternalFiltering() | [InternalFiltering] | Returns the internal filtering controller, used to check if the camera should render specific objects. Useful for custom rendering and shaders. |
-| worldToScreenCoordinates([Vector3]) | [Point2] | Converts a world position to screen coordinates. |
-| screenPointRay([int], [int]) | [RayDirection] | Returns a ray that originates from the camera and points toward the specified coordinates. |
-| screenPointRay([Point2]) | [RayDirection] | Returns a ray that originates from the camera and points toward the specified Point2. |
-| screenPointRay([float], [float]) | [RayDirection] | Returns a ray that originates from the camera and points toward the specified coordinates. |
-| screenPointRay([Vector2]) | [RayDirection] | Returns a ray that originates from the camera and points toward the specified Vector2. |
-| screenPointNormal([int], [int]) | [Vector3] | Returns the camera's normal vector at the position of the specified coordinates. |
-| screenPointNormal([Point2]) | [Vector3] | Returns the camera's normal vector at the position of the specified Point2. |
-| screenPointNormal([float], [float]) | [Vector3] | Returns the camera's normal vector at the position of the specified coordinates. |
-| screenPointNormal([Vector2]) | [Vector3] | Returns the camera's normal vector at the position of the specified Vector2. |
-| takeScreenShot([String], [String]) | [void] | Takes a screenshot and saves it to the specified folder and filename. |
-| takeScreenShot([String], [String], [boolean]) | [void] | Takes a screenshot and saves it to the specified folder and filename. If 'bypassFileChecking' is false, verifies if the location exists and is accessible before saving. |
-| takeScreenShot([File], [String]) | [void] | Takes a screenshot and saves it to the specified folder and filename. |
-| isVisible([ModelRenderer]) | [boolean] | Checks if a model is visible in the camera's view. |
-| isVisible([Vertex], [SpatialObject]) | [boolean] | Checks if a vertex is visible in a specified SpatialObject within the camera's view. |
-| isVisible([Vertex], [Transform]) | [boolean] | Checks if a vertex is visible at the position of a specified Transform in the camera's view. |
-| isVisible([Vertex], [float][]) | [boolean] | Checks if a vertex is visible in the specified render matrix within the camera's view. |
-| isSphereVisible([Vector3], [float]) | [boolean] | Checks if the position with the specified sphere radius is visible in the camera's view. |
-| isSphereVisible([float], [float], [float], [float]) | [boolean] | Checks if the position with the specified sphere radius is visible in the camera's view. |
-| isSphereVisible([Transform], [float]) | [boolean] | Checks if the position of the Transform with the specified sphere radius is visible in the camera's view. |
-| isCubeVisible([Vector3], [float]) | [boolean] | Checks if the position with the specified cube size is visible in the camera's view. |
-| isCubeVisible([float], [float], [float], [float]) | [boolean] | Checks if the position with the specified cube size is visible in the camera's view. |
-| isPointVisible([SpatialObject]) | [boolean] | Checks if the center of the specified object is visible in the camera's view. |
-| isPointVisible([Transform]) | [boolean] | Checks if the specified transform is visible in the camera's view. |
-| isPointVisible([Vector3]) | [boolean] | Checks if the specified position is visible in the camera's view. |
-| isPointVisible([float], [float], [float]) | [boolean] | Checks if the specified position is visible in the camera's view. |
-| getViewMatrix() | [float][] | Returns the camera's view matrix. |
-| getProjectionMatrix() | [float][] | Returns the camera's projection matrix. |
-| recalculateMatrices() | [void] | Recalculates the camera matrices. |
-| determineImageResolutionPercentage() | [int] | Define the percentage of the camera image resolution. |
-| componentClassMatch([Component], [Component]) | [boolean] | Executes `componentClassMatch` and returns after the underlying engine call finishes. |
-| getEngineComponent() | [Component] | Executes `getEngineComponent` and returns after the underlying engine call finishes. |
+| `getInternalFiltering()` | `InternalFiltering` | Returns the internal filtering controller, used to check if the camera should render specific objects. Useful for custom rendering and shaders. |
+| `worldToScreenCoordinates(Vector3)` | `Point2` | Converts a world position to screen coordinates. |
+| `screenPointRay(int, int)` | `RayDirection` | Returns a ray that originates from the camera and points toward the specified coordinates. |
+| `screenPointRay(Point2)` | `RayDirection` | Returns a ray that originates from the camera and points toward the specified Point2. |
+| `screenPointRay(float, float)` | `RayDirection` | Returns a ray that originates from the camera and points toward the specified coordinates. |
+| `screenPointRay(Vector2)` | `RayDirection` | Returns a ray that originates from the camera and points toward the specified Vector2. |
+| `screenPointNormal(int, int)` | `Vector3` | Returns the camera's normal vector at the position of the specified coordinates. |
+| `screenPointNormal(Point2)` | `Vector3` | Returns the camera's normal vector at the position of the specified Point2. |
+| `screenPointNormal(float, float)` | `Vector3` | Returns the camera's normal vector at the position of the specified coordinates. |
+| `screenPointNormal(Vector2)` | `Vector3` | Returns the camera's normal vector at the position of the specified Vector2. |
+| `takeScreenShot(String, String)` | `void` | Takes a screenshot and saves it to the specified folder and filename. |
+| `takeScreenShot(String, String, boolean)` | `void` | Takes a screenshot and saves it to the specified folder and filename. If 'bypassFileChecking' is false, verifies if the location exists and is accessible before saving. |
+| `takeScreenShot(File, String)` | `void` | Takes a screenshot and saves it to the specified folder and filename. |
+| `isVisible(ModelRenderer)` | `boolean` | Checks if a model is visible in the camera's view. |
+| `isVisible(Vertex, SpatialObject)` | `boolean` | Checks if a vertex is visible in a specified SpatialObject within the camera's view. |
+| `isVisible(Vertex, Transform)` | `boolean` | Checks if a vertex is visible at the position of a specified Transform in the camera's view. |
+| `isVisible(Vertex, float[])` | `boolean` | Checks if a vertex is visible in the specified render matrix within the camera's view. |
+| `isSphereVisible(Vector3, float)` | `boolean` | Checks if the position with the specified sphere radius is visible in the camera's view. |
+| `isSphereVisible(float, float, float, float)` | `boolean` | Checks if the position with the specified sphere radius is visible in the camera's view. |
+| `isSphereVisible(Transform, float)` | `boolean` | Checks if the position of the Transform with the specified sphere radius is visible in the camera's view. |
+| `isCubeVisible(Vector3, float)` | `boolean` | Checks if the position with the specified cube size is visible in the camera's view. |
+| `isCubeVisible(float, float, float, float)` | `boolean` | Checks if the position with the specified cube size is visible in the camera's view. |
+| `isPointVisible(SpatialObject)` | `boolean` | Checks if the center of the specified object is visible in the camera's view. |
+| `isPointVisible(Transform)` | `boolean` | Checks if the specified transform is visible in the camera's view. |
+| `isPointVisible(Vector3)` | `boolean` | Checks if the specified position is visible in the camera's view. |
+| `isPointVisible(float, float, float)` | `boolean` | Checks if the specified position is visible in the camera's view. |
+| `getViewMatrix()` | [float][] | Returns the camera's view matrix. |
+| `getProjectionMatrix()` | [float][] | Returns the camera's projection matrix. |
+| `recalculateMatrices()` | `void` | Recalculates the camera matrices. |
+| `determineImageResolutionPercentage()` | `int` | Define the percentage of the camera image resolution. |
+| `componentClassMatch(Component, Component)` | `boolean` | Executes `componentClassMatch` and returns after the underlying engine call finishes. |
+| `getEngineComponent()` | `Component` | Executes `getEngineComponent` and returns after the underlying engine call finishes. |

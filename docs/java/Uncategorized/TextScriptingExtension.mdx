@@ -1,7 +1,3 @@
-import Links from '../../links.mdx';
-
-<Links />
-
 # TextScriptingExtension
 
 Complete API reference for `TextScriptingExtension`, including constructors, attributes, virtual attributes, and methods.
@@ -22,22 +18,22 @@ public class TextScriptingExtension extends ScriptingExtension
 
 | Signature | Returns | Description |
 | --- | --- | --- |
-| getScriptingInterface() | [ScriptingInterface] | Executes `getScriptingInterface` and returns after the underlying engine call finishes. |
-| getText() | [String] | Returns the current text. |
-| setText([String]) | [void] | Sets or updates the text. |
-| setTheme([TextScriptingTheme]) | [void] | Sets or updates the theme. |
-| setProvider([TextScriptingProvider]) | [void] | Sets or updates the provider. |
-| setStyler([TextScriptingStyler]) | [void] | Sets or updates the styler. |
-| getTipForLine([int]) | [LineTip] | Returns the current tip for line. |
-| getTipTextForLine([int]) | [String] | Returns the current tip text for line. |
-| replaceScript([File]) | [void] | Performs the replaceScript operation using the provided parameters (newScript). |
-| openScript([File]) | [void] | Performs the openScript operation using the provided parameters (script). |
-| onClose() | [void] | Executes `onClose` and returns after the underlying engine call finishes. |
-| init() | [void] | Initializes the object's internal state. |
-| unload() | [void] | Executes `unload` and returns after the underlying engine call finishes. |
-| saveScript() | [boolean] | Saves script from the object. |
-| hasScript() | [boolean] | Returns whether script is true. |
-| supportFile([File]) | [boolean] | Performs the supportFile operation using the provided parameters (file). |
-| beforeTextChanged([CharSequence], [int], [int], [int]) | [void] | Performs the beforeTextChanged operation using the provided parameters (charSequence, start, before, count). |
-| onTextChanged([CharSequence], [int], [int], [int]) | [void] | Performs the onTextChanged operation using the provided parameters (charSequence, start, before, count). |
-| afterTextChanged([Editable]) | [void] | Performs the afterTextChanged operation using the provided parameters (editable). |
+| `getScriptingInterface()` | `ScriptingInterface` | Executes `getScriptingInterface` and returns after the underlying engine call finishes. |
+| `getText()` | `String` | Returns the current text. |
+| `setText(String)` | `void` | Sets or updates the text. |
+| `setTheme(TextScriptingTheme)` | `void` | Sets or updates the theme. |
+| `setProvider(TextScriptingProvider)` | `void` | Sets or updates the provider. |
+| `setStyler(TextScriptingStyler)` | `void` | Sets or updates the styler. |
+| `getTipForLine(int)` | `LineTip` | Returns the current tip for line. |
+| `getTipTextForLine(int)` | `String` | Returns the current tip text for line. |
+| `replaceScript(File)` | `void` | Performs the replaceScript operation using the provided parameters (newScript). |
+| `openScript(File)` | `void` | Performs the openScript operation using the provided parameters (script). |
+| `onClose()` | `void` | Executes `onClose` and returns after the underlying engine call finishes. |
+| `init()` | `void` | Initializes the object's internal state. |
+| `unload()` | `void` | Executes `unload` and returns after the underlying engine call finishes. |
+| `saveScript()` | `boolean` | Saves script from the object. |
+| `hasScript()` | `boolean` | Returns whether script is true. |
+| `supportFile(File)` | `boolean` | Performs the supportFile operation using the provided parameters (file). |
+| `beforeTextChanged(CharSequence, int, int, int)` | `void` | Performs the beforeTextChanged operation using the provided parameters (charSequence, start, before, count). |
+| `onTextChanged(CharSequence, int, int, int)` | `void` | Performs the onTextChanged operation using the provided parameters (charSequence, start, before, count). |
+| `afterTextChanged(Editable)` | `void` | Performs the afterTextChanged operation using the provided parameters (editable). |

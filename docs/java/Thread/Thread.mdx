@@ -1,7 +1,3 @@
-import Links from '../../links.mdx';
-
-<Links />
-
 # Thread
 
 Complete API reference for `Thread`, including constructors, attributes, virtual attributes, and methods.
@@ -35,42 +31,42 @@ public class Thread
 
 | Signature | Returns | Description |
 | --- | --- | --- |
-| start() | [void] | Executes `start` and returns after the underlying engine call finishes. |
-| run() | [void] | Executes `run` and returns after the underlying engine call finishes. |
-| isInterruptCalled() | [boolean] | Returns whether interrupt called is true. |
-| interrupt() | [void] | Executes `interrupt` and returns after the underlying engine call finishes. |
-| isInterrupted() | [boolean] | Returns whether interrupted is true. |
-| toString() | [String] | Returns the string representation. |
-| getContextClassLoader() | [ClassLoader] | Returns the current context class loader. |
-| setContextClassLoader([ClassLoader]) | [void] | Sets or updates the context class loader. |
-| getStackTrace() | [StackTraceElement][] | Returns the current stack trace. |
-| getId() | [long] | Returns the current id. |
-| getState() | [State] | Returns the current state. |
-| getUncaughtExceptionHandler() | [UncaughtExceptionHandler] | Returns the current uncaught exception handler. |
-| setUncaughtExceptionHandler([UncaughtExceptionHandler]) | [void] | Sets or updates the uncaught exception handler. |
-| join() | [void] | Executes `join` and returns after the underlying engine call finishes. |
-| join([long]) | [void] | Executes `join` and returns after the underlying engine call finishes. |
-| join([long], [int]) | [void] | Executes `join` and returns after the underlying engine call finishes. |
-| isAlive() | [boolean] | Returns whether alive is true. |
-| setPriority([int]) | [void] | Sets or updates the priority. |
-| getPriority() | [int] | Returns the current priority. |
-| setName([String]) | [void] | Sets or updates the name. |
-| getName() | [String] | Returns the current name. |
-| getThreadGroup() | [ThreadGroup] | Returns the current thread group. |
+| `start()` | `void` | Executes `start` and returns after the underlying engine call finishes. |
+| `run()` | `void` | Executes `run` and returns after the underlying engine call finishes. |
+| `isInterruptCalled()` | `boolean` | Returns whether interrupt called is true. |
+| `interrupt()` | `void` | Executes `interrupt` and returns after the underlying engine call finishes. |
+| `isInterrupted()` | `boolean` | Returns whether interrupted is true. |
+| `toString()` | `String` | Returns the string representation. |
+| `getContextClassLoader()` | `ClassLoader` | Returns the current context class loader. |
+| `setContextClassLoader(ClassLoader)` | `void` | Sets or updates the context class loader. |
+| `getStackTrace()` | [StackTraceElement][] | Returns the current stack trace. |
+| `getId()` | `long` | Returns the current id. |
+| `getState()` | `State` | Returns the current state. |
+| `getUncaughtExceptionHandler()` | `UncaughtExceptionHandler` | Returns the current uncaught exception handler. |
+| `setUncaughtExceptionHandler(UncaughtExceptionHandler)` | `void` | Sets or updates the uncaught exception handler. |
+| `join()` | `void` | Executes `join` and returns after the underlying engine call finishes. |
+| `join(long)` | `void` | Executes `join` and returns after the underlying engine call finishes. |
+| `join(long, int)` | `void` | Executes `join` and returns after the underlying engine call finishes. |
+| `isAlive()` | `boolean` | Returns whether alive is true. |
+| `setPriority(int)` | `void` | Sets or updates the priority. |
+| `getPriority()` | `int` | Returns the current priority. |
+| `setName(String)` | `void` | Sets or updates the name. |
+| `getName()` | `String` | Returns the current name. |
+| `getThreadGroup()` | `ThreadGroup` | Returns the current thread group. |
 
 ## Static Methods (12)
 
 | Signature | Returns | Description |
 | --- | --- | --- |
-| update() | [void] | Executes `update` and returns after the underlying engine call finishes. |
-| interruptAll() | [void] | Executes `interruptAll` and returns after the underlying engine call finishes. |
-| requestEngineThread() | [void] | Executes `requestEngineThread` and returns after the underlying engine call finishes. |
-| requestOpenglEngineThread() | [void] | Executes `requestOpenglEngineThread` and returns after the underlying engine call finishes. |
-| isEngineThread() | [boolean] | Executes `isEngineThread` and returns after the underlying engine call finishes. |
-| isOpenglEngineThread() | [boolean] | Executes `isOpenglEngineThread` and returns after the underlying engine call finishes. |
-| runOnEngine([Runnable]) | [void] | Performs the runOnEngine operation using the provided parameters (runnable). |
-| runOnEngine([float], [Runnable]) | [void] | Performs the runOnEngine operation using the provided parameters (delaySeconds, runnable). |
-| runOnUIThread([Runnable]) | [void] | Performs the runOnUIThread operation using the provided parameters (runnable). |
-| sleep([long]) | [void] | Performs the sleep operation using the provided parameters (milis). |
-| sleep([long], [int]) | [void] | Performs the sleep operation using the provided parameters (milis, nanos). |
-| dumpStack() | [void] | Executes `dumpStack` and returns after the underlying engine call finishes. |
+| `update()` | `void` | Executes `update` and returns after the underlying engine call finishes. |
+| `interruptAll()` | `void` | Executes `interruptAll` and returns after the underlying engine call finishes. |
+| `requestEngineThread()` | `void` | Executes `requestEngineThread` and returns after the underlying engine call finishes. |
+| `requestOpenglEngineThread()` | `void` | Executes `requestOpenglEngineThread` and returns after the underlying engine call finishes. |
+| `isEngineThread()` | `boolean` | Executes `isEngineThread` and returns after the underlying engine call finishes. |
+| `isOpenglEngineThread()` | `boolean` | Executes `isOpenglEngineThread` and returns after the underlying engine call finishes. |
+| `runOnEngine(Runnable)` | `void` | Performs the runOnEngine operation using the provided parameters (runnable). |
+| `runOnEngine(float, Runnable)` | `void` | Performs the runOnEngine operation using the provided parameters (delaySeconds, runnable). |
+| `runOnUIThread(Runnable)` | `void` | Performs the runOnUIThread operation using the provided parameters (runnable). |
+| `sleep(long)` | `void` | Performs the sleep operation using the provided parameters (milis). |
+| `sleep(long, int)` | `void` | Performs the sleep operation using the provided parameters (milis, nanos). |
+| `dumpStack()` | `void` | Executes `dumpStack` and returns after the underlying engine call finishes. |

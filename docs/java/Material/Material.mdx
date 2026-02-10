@@ -1,7 +1,3 @@
-import Links from '../../links.mdx';
-
-<Links />
-
 # Material
 
 Complete API reference for `Material`, including constructors, attributes, virtual attributes, and methods.
@@ -41,51 +37,51 @@ public class Material
 
 | Signature | Returns | Description |
 | --- | --- | --- |
-| getColor([String]) | [Color] | Returns the current color. |
-| findColor([String]) | [Color] | Performs the findColor operation using the provided parameters (entryName). |
-| setColor([String], [Color]) | [void] | Sets or updates the color. |
-| setDiffuse([Color]) | [void] | Sets or updates the diffuse. |
-| getVector2([String]) | [JAVARuntime].[Vector2] | Returns the current vector2. |
-| findVector2([String]) | [JAVARuntime].[Vector2] | Performs the findVector2 operation using the provided parameters (entryName). |
-| setVector2([String], [JAVARuntime.Vector2]) | [void] | Sets or updates the vector2. |
-| getBoolean([String]) | [boolean] | Returns the current boolean. |
-| findBoolean([String]) | [boolean] | Performs the findBoolean operation using the provided parameters (entryName). |
-| setBoolean([String], [boolean]) | [void] | Sets or updates the boolean. |
-| setReceiveLight([boolean]) | [void] | Sets or updates the receive light. |
-| getFloat([String]) | [float] | Returns the current float. |
-| findFloat([String]) | [float] | Performs the findFloat operation using the provided parameters (entryName). |
-| setFloat([String], [float]) | [void] | Sets or updates the float. |
-| setMinimalAlphaIntensity([float]) | [void] | Sets or updates the minimal alpha intensity. |
-| setHeightIntensity([float]) | [void] | Sets or updates the height intensity. |
-| setUvSize([float]) | [void] | Sets or updates the uv size. |
-| setAlphaCutout([float]) | [void] | Sets or updates the alpha cutout. |
-| setSpecular([float]) | [void] | Sets or updates the specular. |
-| getTexture([String]) | [Texture] | Returns the current texture. |
-| findTexture([String]) | [Texture] | Performs the findTexture operation using the provided parameters (entryName). |
-| setTexture([String], [Texture]) | [void] | Sets or updates the texture. |
-| setTextureFile([String], [TextureFile]) | [void] | Sets or updates the texture file. |
-| setAlbedo([Texture]) | [void] | Sets or updates the albedo. |
-| setAlbedo([TextureFile]) | [void] | Sets or updates the albedo. |
-| setNormalMap([Texture]) | [void] | Sets or updates the normal map. |
-| setNormalMap([TextureFile]) | [void] | Sets or updates the normal map. |
-| setRoughness([Texture]) | [void] | Sets or updates the roughness. |
-| setRoughness([TextureFile]) | [void] | Sets or updates the roughness. |
-| setMetallic([Texture]) | [void] | Sets or updates the metallic. |
-| setMetallic([TextureFile]) | [void] | Sets or updates the metallic. |
-| setAoMap([Texture]) | [void] | Sets or updates the ao map. |
-| setAoMap([TextureFile]) | [void] | Sets or updates the ao map. |
-| setHeightMap([Texture]) | [void] | Sets or updates the height map. |
-| setHeightMap([TextureFile]) | [void] | Sets or updates the height map. |
-| setEmissiveMap([Texture]) | [void] | Sets or updates the emissive map. |
-| setEmissiveMap([TextureFile]) | [void] | Sets or updates the emissive map. |
-| setAlphaMap([Texture]) | [void] | Sets or updates the alpha map. |
-| setAlphaMap([TextureFile]) | [void] | Sets or updates the alpha map. |
-| setMatcap([Matcap]) | [void] | Sets or updates the matcap. |
-| reloadEntries() | [void] | Executes `reloadEntries` and returns after the underlying engine call finishes. |
-| toJson() | [String] | Executes `toJson` and returns after the underlying engine call finishes. |
+| `getColor(String)` | `Color` | Returns the current color. |
+| `findColor(String)` | `Color` | Performs the findColor operation using the provided parameters (entryName). |
+| `setColor(String, Color)` | `void` | Sets or updates the color. |
+| `setDiffuse(Color)` | `void` | Sets or updates the diffuse. |
+| `getVector2(String)` | [JAVARuntime].[Vector2] | Returns the current vector2. |
+| `findVector2(String)` | [JAVARuntime].[Vector2] | Performs the findVector2 operation using the provided parameters (entryName). |
+| `setVector2(String, JAVARuntime.Vector2)` | `void` | Sets or updates the vector2. |
+| `getBoolean(String)` | `boolean` | Returns the current boolean. |
+| `findBoolean(String)` | `boolean` | Performs the findBoolean operation using the provided parameters (entryName). |
+| `setBoolean(String, boolean)` | `void` | Sets or updates the boolean. |
+| `setReceiveLight(boolean)` | `void` | Sets or updates the receive light. |
+| `getFloat(String)` | `float` | Returns the current float. |
+| `findFloat(String)` | `float` | Performs the findFloat operation using the provided parameters (entryName). |
+| `setFloat(String, float)` | `void` | Sets or updates the float. |
+| `setMinimalAlphaIntensity(float)` | `void` | Sets or updates the minimal alpha intensity. |
+| `setHeightIntensity(float)` | `void` | Sets or updates the height intensity. |
+| `setUvSize(float)` | `void` | Sets or updates the uv size. |
+| `setAlphaCutout(float)` | `void` | Sets or updates the alpha cutout. |
+| `setSpecular(float)` | `void` | Sets or updates the specular. |
+| `getTexture(String)` | `Texture` | Returns the current texture. |
+| `findTexture(String)` | `Texture` | Performs the findTexture operation using the provided parameters (entryName). |
+| `setTexture(String, Texture)` | `void` | Sets or updates the texture. |
+| `setTextureFile(String, TextureFile)` | `void` | Sets or updates the texture file. |
+| `setAlbedo(Texture)` | `void` | Sets or updates the albedo. |
+| `setAlbedo(TextureFile)` | `void` | Sets or updates the albedo. |
+| `setNormalMap(Texture)` | `void` | Sets or updates the normal map. |
+| `setNormalMap(TextureFile)` | `void` | Sets or updates the normal map. |
+| `setRoughness(Texture)` | `void` | Sets or updates the roughness. |
+| `setRoughness(TextureFile)` | `void` | Sets or updates the roughness. |
+| `setMetallic(Texture)` | `void` | Sets or updates the metallic. |
+| `setMetallic(TextureFile)` | `void` | Sets or updates the metallic. |
+| `setAoMap(Texture)` | `void` | Sets or updates the ao map. |
+| `setAoMap(TextureFile)` | `void` | Sets or updates the ao map. |
+| `setHeightMap(Texture)` | `void` | Sets or updates the height map. |
+| `setHeightMap(TextureFile)` | `void` | Sets or updates the height map. |
+| `setEmissiveMap(Texture)` | `void` | Sets or updates the emissive map. |
+| `setEmissiveMap(TextureFile)` | `void` | Sets or updates the emissive map. |
+| `setAlphaMap(Texture)` | `void` | Sets or updates the alpha map. |
+| `setAlphaMap(TextureFile)` | `void` | Sets or updates the alpha map. |
+| `setMatcap(Matcap)` | `void` | Sets or updates the matcap. |
+| `reloadEntries()` | `void` | Executes `reloadEntries` and returns after the underlying engine call finishes. |
+| `toJson()` | `String` | Executes `toJson` and returns after the underlying engine call finishes. |
 
 ## Static Methods (1)
 
 | Signature | Returns | Description |
 | --- | --- | --- |
-| loadFile([MaterialFile]) | [Material] | Loads file into the object. |
+| `loadFile(MaterialFile)` | `Material` | Loads file into the object. |

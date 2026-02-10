@@ -1,7 +1,3 @@
-import Links from '../../links.mdx';
-
-<Links />
-
 # VoxelGeneratorListenerV2
 
 Referência completa da API de `VoxelGeneratorListenerV2`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -22,12 +18,12 @@ public interface VoxelGeneratorListenerV2
 
 | Signature | Returns | Description |
 | --- | --- | --- |
-| getGroundHeight([int], [int]) | [int] | Executa `getGroundHeight` e retorna quando a chamada do motor termina. |
-| getBlockType([int], [int], [int], [int]) | [int] | Executa `getBlockType` e retorna quando a chamada do motor termina. |
-| storeChunk([OH3LevelIntArray], [int], [int]) | [void] | Executa `storeChunk` e retorna quando a chamada do motor termina. |
-| loadChunk([int], [int]) | [OH3LevelIntArray] | Executa `loadChunk` e retorna quando a chamada do motor termina. |
-| onChunkCreated([SpatialObject], [VoxelChunk]) | [void] | Executa `onChunkCreated` e retorna quando a chamada do motor termina. |
-| onChunkBuilt([SpatialObject], [VoxelChunk]) | [void] | Executa `onChunkBuilt` e retorna quando a chamada do motor termina. |
-| drawFace([int], [int], [int], [Point3]) | [boolean] | Executa `drawFace` e retorna quando a chamada do motor termina. |
-| getTextureIndex([int], [int], [int]) | [int] | Executa `getTextureIndex` e retorna quando a chamada do motor termina. |
-| onFaceBuilt([SpatialObject], [VoxelChunk], [int], [int], [int], [Point3], [int], [int], [int], [int]) | [void] | Executa `onFaceBuilt` e retorna quando a chamada do motor termina. |
+| `getGroundHeight(int, int)` | `int` | Executa `getGroundHeight` e retorna quando a chamada do motor termina. |
+| `getBlockType(int, int, int, int)` | `int` | Executa `getBlockType` e retorna quando a chamada do motor termina. |
+| `storeChunk(OH3LevelIntArray, int, int)` | `void` | Executa `storeChunk` e retorna quando a chamada do motor termina. |
+| `loadChunk(int, int)` | `OH3LevelIntArray` | Executa `loadChunk` e retorna quando a chamada do motor termina. |
+| `onChunkCreated(SpatialObject, VoxelChunk)` | `void` | Executa `onChunkCreated` e retorna quando a chamada do motor termina. |
+| `onChunkBuilt(SpatialObject, VoxelChunk)` | `void` | Executa `onChunkBuilt` e retorna quando a chamada do motor termina. |
+| `drawFace(int, int, int, Point3)` | `boolean` | Executa `drawFace` e retorna quando a chamada do motor termina. |
+| `getTextureIndex(int, int, int)` | `int` | Executa `getTextureIndex` e retorna quando a chamada do motor termina. |
+| `onFaceBuilt(SpatialObject, VoxelChunk, int, int, int, Point3, int, int, int, int)` | `void` | Executa `onFaceBuilt` e retorna quando a chamada do motor termina. |

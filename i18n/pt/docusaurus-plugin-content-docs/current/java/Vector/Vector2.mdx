@@ -1,7 +1,3 @@
-import Links from '../../links.mdx';
-
-<Links />
-
 # Vector2
 
 Referência completa da API de `Vector2`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -47,122 +43,122 @@ public class Vector2
 
 | Signature | Returns | Description |
 | --- | --- | --- |
-| mul([Vector2]) | [Vector2] | Multiplica este Vector2 pelo Vector2 especificado e retorna um novo Vector2. |
-| mul([float], [float]) | [Vector2] | Multiplica este Vector2 pelos valores X e Y especificados e retorna um novo Vector2. |
-| mul([float]) | [Vector2] | Multiplica este Vector2 pelo valor especificado e retorna um novo Vector2. |
-| mulLocal([Vector3]) | [void] | Multiplica este Vector2 pelo Vector3 especificado (usando apenas os componentes X e Y) e atualiza este Vector2. |
-| mulLocal([Vector2]) | [void] | Multiplica este Vector2 pelo Vector2 especificado e atualiza este Vector2. |
-| mulLocal([float], [float]) | [void] | Multiplica este Vector2 pelos valores X e Y especificados e atualiza este Vector2. |
-| mulLocal([float]) | [void] | Multiplica este Vector2 pelo valor especificado e atualiza este Vector2. |
-| multiply([Vector2]) | [Vector2] | Multiplica este Vector2 pelo Vector2 especificado e retorna um novo Vector2. |
-| multiply([float], [float]) | [Vector2] | Multiplica este Vector2 pelos valores X e Y especificados e retorna um novo Vector2. |
-| multiply([float]) | [Vector2] | Multiplica este Vector2 pelo valor especificado e retorna um novo Vector2. |
-| div([Vector2]) | [Vector2] | Divide este Vector2 pelo Vector2 especificado e retorna um novo Vector2. |
-| div([float], [float]) | [Vector2] | Divide este Vector2 pelos valores X e Y especificados e retorna um novo Vector2. |
-| div([float]) | [Vector2] | Divide este Vector2 pelo valor especificado e retorna um novo Vector2. |
-| divLocal([Vector3]) | [void] | Divide este Vector2 pelo Vector3 especificado (usando apenas os componentes X e Y) e atualiza este Vector2. |
-| divLocal([Vector2]) | [void] | Divide este Vector2 pelo Vector2 especificado e atualiza este Vector2. |
-| divLocal([float], [float]) | [void] | Divide este Vector2 pelos valores X e Y especificados e atualiza este Vector2. |
-| divLocal([float]) | [void] | Divide este Vector2 pelo valor especificado e atualiza este Vector2. |
-| divide([Vector2]) | [Vector2] | Divide este Vector2 pelo Vector2 especificado e retorna um novo Vector2. |
-| divide([float], [float]) | [Vector2] | Divide este Vector2 pelos valores X e Y especificados e retorna um novo Vector2. |
-| divide([float]) | [Vector2] | Divide este Vector2 pelo valor especificado e retorna um novo Vector2. |
-| sum([Vector2]) | [Vector2] | Soma o Vector2 especificado a este Vector2 e retorna um novo Vector2. |
-| sum([float], [float]) | [Vector2] | Soma os valores X e Y especificados a este Vector2 e retorna um novo Vector2. |
-| sum([float]) | [Vector2] | Soma o valor especificado a este Vector2 e retorna um novo Vector2. |
-| sumLocal([Vector3]) | [void] | Soma o Vector3 especificado (usando apenas os componentes X e Y) a este Vector2 e atualiza este Vector2. |
-| sumLocal([Vector2]) | [void] | Soma o Vector2 especificado a este Vector2 e atualiza este Vector2. |
-| sumLocal([float], [float]) | [void] | Soma os valores X e Y especificados a este Vector2 e atualiza este Vector2. |
-| sumLocal([float]) | [void] | Soma o valor especificado a este Vector2 e atualiza este Vector2. |
-| add([Vector2]) | [Vector2] | Soma o Vector2 especificado a este Vector2 e retorna um novo Vector2. |
-| add([float], [float]) | [Vector2] | Soma os valores X e Y especificados a este Vector2 e retorna um novo Vector2. |
-| add([float]) | [Vector2] | Soma o valor especificado a este Vector2 e retorna um novo Vector2. |
-| sub([Vector2]) | [Vector2] | Subtrai o Vector2 especificado deste Vector2 e retorna um novo Vector2. |
-| sub([float], [float]) | [Vector2] | Subtrai os valores X e Y especificados deste Vector2 e retorna um novo Vector2. |
-| sub([float]) | [Vector2] | Subtrai o valor especificado deste Vector2 e retorna um novo Vector2. |
-| subLocal([Vector3]) | [void] | Subtrai o Vector3 especificado (usando apenas os componentes X e Y) deste Vector2 e atualiza este Vector2. |
-| subLocal([Vector2]) | [void] | Subtrai o Vector2 especificado deste Vector2 e atualiza este Vector2. |
-| subLocal([float], [float]) | [void] | Subtrai os valores X e Y especificados deste Vector2 e atualiza este Vector2. |
-| subLocal([float]) | [void] | Subtrai o valor especificado deste Vector2 e atualiza este Vector2. |
-| subtract([Vector2]) | [Vector2] | Subtrai o Vector2 especificado deste Vector2 e retorna um novo Vector2. |
-| subtract([float], [float]) | [Vector2] | Subtrai os valores X e Y especificados deste Vector2 e retorna um novo Vector2. |
-| subtract([float]) | [Vector2] | Subtrai o valor especificado deste Vector2 e retorna um novo Vector2. |
-| equals([Vector2]) | [boolean] | Verifica se este Vector2 é igual ao Vector2 especificado. |
-| equals([float], [float]) | [boolean] | Verifica se este Vector2 é igual aos valores X e Y especificados. |
-| equals([float]) | [boolean] | Verifica se todos os componentes este Vector2 é igual ao valor especificado. |
-| set([Vector2]) | [void] | Define os componentes deste Vector2 para o Vector2 especificado. |
-| set([float], [float]) | [void] | Define os componentes deste Vector2 para os valores X e Y especificados. |
-| set([float]) | [void] | Define todos os componentes deste Vector2 para o valor especificado. |
-| lerp([Vector2], [float]) | [void] | Faz uma interpolação/suavização entre este Vector2 e o Vector2 especificado com base na velocidade/intervalo fornecido e atualiza este Vector2. |
-| lerp([float], [float], [float]) | [void] | Faz uma interpolação/suavização entre este Vector2 e os valores X e Y especificados com base na velocidade/intervalo fornecido e atualiza este Vector2. |
-| lerp([float], [float]) | [void] | Faz uma interpolação/suavização entre este Vector2 e o valor especificado com base na velocidade/intervalo fornecido e atualiza este Vector2. |
-| lerpInSeconds([Vector2], [float]) | [void] | Faz uma interpolação/suavização entre este Vector2 e o Vector2 especificado com base na velocidade/intervalo fornecido em um segundo e atualiza este Vector2. |
-| lerpInSeconds([float], [float], [float]) | [void] | Faz uma interpolação/suavização entre este Vector2 e os valores X e Y especificados com base na velocidade/intervalo fornecido em um segundo e atualiza este Vector2. |
-| lerpInSeconds([float], [float]) | [void] | Faz uma interpolação/suavização entre este Vector2 e o valor especificado com base na velocidade/intervalo fornecido em um segundo e atualiza este Vector2. |
-| blend([Vector2], [float]) | [Vector2] | Faz uma mistura entre este Vector2 e o Vector2 especificado com base no fator de mistura fornecido (0 a 1) e atualiza este Vector2. |
-| blend([float], [float], [float]) | [Vector2] | Faz uma mistura entre este Vector2 e os valores X e Y especificados com base no fator de mistura fornecido (0 a 1) e atualiza este Vector2. |
-| blend([float], [float]) | [Vector2] | Faz uma mistura entre este Vector2 e o valor especificado com base no fator de mistura fornecido (0 a 1) e atualiza este Vector2. |
-| blendLocal([Vector2], [float]) | [void] | Faz uma mistura entre este Vector2 e o Vector2 especificado com base no fator de mistura fornecido (0 a 1) e atualiza este Vector2. |
-| blendLocal([float], [float], [float]) | [void] | Faz uma mistura entre este Vector2 e os valores X e Y especificados com base no fator de mistura fornecido (0 a 1) e atualiza este Vector2. |
-| blendLocal([float], [float]) | [void] | Faz uma mistura entre este Vector2 e o valor especificado com base no fator de mistura fornecido (0 a 1) e atualiza este Vector2. |
-| normalize() | [Vector2] | Retorna uma cópia normalizada deste Vector2 (comprimento igual a 1). |
-| normalizeLocal() | [void] | Normaliza este Vector2 (define seu comprimento para 1). |
-| rotateLocal([float]) | [void] | Rotaciona este Vector2 pelo ângulo especificado (em graus) e atualiza este Vector2. |
-| length() | [float] | Retorna a propriedade `propriedade `comprimento (magnitude) deste Vector2``. |
-| sqrLength() | [float] | Retorna a propriedade `propriedade `comprimento ao quadrado deste Vector2``. Mais rápido que length() pois não usa raiz quadrada; útil para comparar distâncias. |
-| distance([Vector2]) | [float] | Retorna a propriedade `distância entre este Vector2 e o Vector2 especificado`. |
-| sqrDistance([Vector2]) | [float] | Retorna a propriedade `distância ao quadrado entre este Vector2 e o Vector2 especificado`. Mais rápido que distance() pois não usa raiz quadrada; útil para comparar distâncias. |
-| dot([Vector2]) | [float] | Retorna a propriedade `propriedade `produto escalar deste Vector2 e do Vector2 especificado``. |
-| dot([float], [float]) | [float] | Retorna a propriedade `propriedade `produto escalar deste Vector2 e dos valores X e Y especificados``. |
-| dot([float]) | [float] | Retorna a propriedade `propriedade `produto escalar deste Vector2 com o valor especificado, usado para ambos os componentes``. |
-| cross([Vector2]) | [Vector3] | Retorna a propriedade `propriedade `produto vetorial deste Vector2 e do Vector2 especificado como um Vector3``. |
-| cross([float], [float]) | [Vector3] | Retorna a propriedade `propriedade `produto vetorial deste Vector2 e dos valores X e Y especificados como um Vector3``. |
-| copy() | [Vector2] | Retorna uma cópia deste Vector2. |
-| toString() | [String] | Retorna uma representação em String deste Vector2. |
-| toString([int]) | [String] | Retorna uma representação em String deste Vector2 com o número especificado de casas decimais. |
-| equals([Object]) | [boolean] | Verifica se este Vector2 é igual ao objeto especificado. |
-| pointerEquals([Object]) | [boolean] | Verifica se este Vector2 é a mesma instância do objeto especificado. |
-| notEquals([Object]) | [boolean] | Verifica se este Vector2 não é igual ao objeto especificado. |
-| greaterThan([Object]) | [boolean] | Verifica se este Vector2 é maior que o objeto especificado (pela magnitude). |
-| greaterThan([float]) | [boolean] | Verifica se este Vector2 é maior que o valor especificado (pela magnitude). |
-| greaterThan([int]) | [boolean] | Verifica se este Vector2 é maior que o valor especificado (pela magnitude). |
-| greaterThan([long]) | [boolean] | Verifica se este Vector2 é maior que o valor especificado (pela magnitude). |
-| greaterThan([double]) | [boolean] | Verifica se este Vector2 é maior que o valor especificado (pela magnitude). |
-| greaterOrEqualsThan([Object]) | [boolean] | Verifica se este Vector2 é maior ou igual ao objeto especificado (pela magnitude). |
-| greaterOrEqualsThan([float]) | [boolean] | Verifica se este Vector2 é maior ou igual ao valor especificado (pela magnitude). |
-| greaterOrEqualsThan([int]) | [boolean] | Verifica se este Vector2 é maior ou igual ao valor especificado (pela magnitude). |
-| greaterOrEqualsThan([long]) | [boolean] | Verifica se este Vector2 é maior ou igual ao valor especificado (pela magnitude). |
-| greaterOrEqualsThan([double]) | [boolean] | Verifica se este Vector2 é maior ou igual ao valor especificado (pela magnitude). |
-| lessThan([Object]) | [boolean] | Verifica se este Vector2 é menor que o objeto especificado (pela magnitude). |
-| lessThan([float]) | [boolean] | Verifica se este Vector2 é menor que o valor especificado (pela magnitude). |
-| lessThan([int]) | [boolean] | Verifica se este Vector2 é menor que o valor especificado (pela magnitude). |
-| lessThan([long]) | [boolean] | Verifica se este Vector2 é menor que o valor especificado (pela magnitude). |
-| lessThan([double]) | [boolean] | Verifica se este Vector2 é menor que o valor especificado (pela magnitude). |
-| lessOrEqualsThan([Object]) | [boolean] | Verifica se este Vector2 é menor ou igual ao objeto especificado (pela magnitude). |
-| lessOrEqualsThan([float]) | [boolean] | Verifica se este Vector2 é menor ou igual ao valor especificado (pela magnitude). |
-| lessOrEqualsThan([int]) | [boolean] | Verifica se este Vector2 é menor ou igual ao valor especificado (pela magnitude). |
-| lessOrEqualsThan([long]) | [boolean] | Verifica se este Vector2 é menor ou igual ao valor especificado (pela magnitude). |
-| lessOrEqualsThan([double]) | [boolean] | Verifica se este Vector2 é menor ou igual ao valor especificado (pela magnitude). |
-| sum([Object]) | [T] | Retorna a propriedade `soma deste Vector2 e do objeto especificado`. |
-| sumEqual([Object]) | [void] | Soma o objeto especificado a este Vector2. |
-| div([Object]) | [T] | Retorna a propriedade `divisão deste Vector2 pelo objeto especificado`. |
-| divEqual([Object]) | [void] | Divide este Vector2 pelo objeto especificado. |
-| mul([Object]) | [T] | Retorna a propriedade `multiplicação deste Vector2 pelo objeto especificado`. |
-| mulEqual([Object]) | [void] | Multiplica este Vector2 pelo objeto especificado. |
-| sub([Object]) | [T] | Retorna a propriedade `subtração deste Vector2 e do objeto especificado`. |
-| subEqual([Object]) | [void] | Subtrai o objeto especificado deste Vector2. |
-| addAdd() | [void] | Incrementa este Vector2 em 1. |
-| removeRemove() | [void] | Decrementa este Vector2 em 1. |
-| serializeToString() | [String] | Retorna uma representação em String deste Vector2 no formato '[X;Y]'. |
-| deserializeLocal([String]) | [void] | Desserializa uma String no formato '[X;Y]' e define os valores neste Vector2. |
+| `mul(Vector2)` | `Vector2` | Multiplica este Vector2 pelo Vector2 especificado e retorna um novo Vector2. |
+| `mul(float, float)` | `Vector2` | Multiplica este Vector2 pelos valores X e Y especificados e retorna um novo Vector2. |
+| `mul(float)` | `Vector2` | Multiplica este Vector2 pelo valor especificado e retorna um novo Vector2. |
+| `mulLocal(Vector3)` | `void` | Multiplica este Vector2 pelo Vector3 especificado (usando apenas os componentes X e Y) e atualiza este Vector2. |
+| `mulLocal(Vector2)` | `void` | Multiplica este Vector2 pelo Vector2 especificado e atualiza este Vector2. |
+| `mulLocal(float, float)` | `void` | Multiplica este Vector2 pelos valores X e Y especificados e atualiza este Vector2. |
+| `mulLocal(float)` | `void` | Multiplica este Vector2 pelo valor especificado e atualiza este Vector2. |
+| `multiply(Vector2)` | `Vector2` | Multiplica este Vector2 pelo Vector2 especificado e retorna um novo Vector2. |
+| `multiply(float, float)` | `Vector2` | Multiplica este Vector2 pelos valores X e Y especificados e retorna um novo Vector2. |
+| `multiply(float)` | `Vector2` | Multiplica este Vector2 pelo valor especificado e retorna um novo Vector2. |
+| `div(Vector2)` | `Vector2` | Divide este Vector2 pelo Vector2 especificado e retorna um novo Vector2. |
+| `div(float, float)` | `Vector2` | Divide este Vector2 pelos valores X e Y especificados e retorna um novo Vector2. |
+| `div(float)` | `Vector2` | Divide este Vector2 pelo valor especificado e retorna um novo Vector2. |
+| `divLocal(Vector3)` | `void` | Divide este Vector2 pelo Vector3 especificado (usando apenas os componentes X e Y) e atualiza este Vector2. |
+| `divLocal(Vector2)` | `void` | Divide este Vector2 pelo Vector2 especificado e atualiza este Vector2. |
+| `divLocal(float, float)` | `void` | Divide este Vector2 pelos valores X e Y especificados e atualiza este Vector2. |
+| `divLocal(float)` | `void` | Divide este Vector2 pelo valor especificado e atualiza este Vector2. |
+| `divide(Vector2)` | `Vector2` | Divide este Vector2 pelo Vector2 especificado e retorna um novo Vector2. |
+| `divide(float, float)` | `Vector2` | Divide este Vector2 pelos valores X e Y especificados e retorna um novo Vector2. |
+| `divide(float)` | `Vector2` | Divide este Vector2 pelo valor especificado e retorna um novo Vector2. |
+| `sum(Vector2)` | `Vector2` | Soma o Vector2 especificado a este Vector2 e retorna um novo Vector2. |
+| `sum(float, float)` | `Vector2` | Soma os valores X e Y especificados a este Vector2 e retorna um novo Vector2. |
+| `sum(float)` | `Vector2` | Soma o valor especificado a este Vector2 e retorna um novo Vector2. |
+| `sumLocal(Vector3)` | `void` | Soma o Vector3 especificado (usando apenas os componentes X e Y) a este Vector2 e atualiza este Vector2. |
+| `sumLocal(Vector2)` | `void` | Soma o Vector2 especificado a este Vector2 e atualiza este Vector2. |
+| `sumLocal(float, float)` | `void` | Soma os valores X e Y especificados a este Vector2 e atualiza este Vector2. |
+| `sumLocal(float)` | `void` | Soma o valor especificado a este Vector2 e atualiza este Vector2. |
+| `add(Vector2)` | `Vector2` | Soma o Vector2 especificado a este Vector2 e retorna um novo Vector2. |
+| `add(float, float)` | `Vector2` | Soma os valores X e Y especificados a este Vector2 e retorna um novo Vector2. |
+| `add(float)` | `Vector2` | Soma o valor especificado a este Vector2 e retorna um novo Vector2. |
+| `sub(Vector2)` | `Vector2` | Subtrai o Vector2 especificado deste Vector2 e retorna um novo Vector2. |
+| `sub(float, float)` | `Vector2` | Subtrai os valores X e Y especificados deste Vector2 e retorna um novo Vector2. |
+| `sub(float)` | `Vector2` | Subtrai o valor especificado deste Vector2 e retorna um novo Vector2. |
+| `subLocal(Vector3)` | `void` | Subtrai o Vector3 especificado (usando apenas os componentes X e Y) deste Vector2 e atualiza este Vector2. |
+| `subLocal(Vector2)` | `void` | Subtrai o Vector2 especificado deste Vector2 e atualiza este Vector2. |
+| `subLocal(float, float)` | `void` | Subtrai os valores X e Y especificados deste Vector2 e atualiza este Vector2. |
+| `subLocal(float)` | `void` | Subtrai o valor especificado deste Vector2 e atualiza este Vector2. |
+| `subtract(Vector2)` | `Vector2` | Subtrai o Vector2 especificado deste Vector2 e retorna um novo Vector2. |
+| `subtract(float, float)` | `Vector2` | Subtrai os valores X e Y especificados deste Vector2 e retorna um novo Vector2. |
+| `subtract(float)` | `Vector2` | Subtrai o valor especificado deste Vector2 e retorna um novo Vector2. |
+| `equals(Vector2)` | `boolean` | Verifica se este Vector2 é igual ao Vector2 especificado. |
+| `equals(float, float)` | `boolean` | Verifica se este Vector2 é igual aos valores X e Y especificados. |
+| `equals(float)` | `boolean` | Verifica se todos os componentes este Vector2 é igual ao valor especificado. |
+| `set(Vector2)` | `void` | Define os componentes deste Vector2 para o Vector2 especificado. |
+| `set(float, float)` | `void` | Define os componentes deste Vector2 para os valores X e Y especificados. |
+| `set(float)` | `void` | Define todos os componentes deste Vector2 para o valor especificado. |
+| `lerp(Vector2, float)` | `void` | Faz uma interpolação/suavização entre este Vector2 e o Vector2 especificado com base na velocidade/intervalo fornecido e atualiza este Vector2. |
+| `lerp(float, float, float)` | `void` | Faz uma interpolação/suavização entre este Vector2 e os valores X e Y especificados com base na velocidade/intervalo fornecido e atualiza este Vector2. |
+| `lerp(float, float)` | `void` | Faz uma interpolação/suavização entre este Vector2 e o valor especificado com base na velocidade/intervalo fornecido e atualiza este Vector2. |
+| `lerpInSeconds(Vector2, float)` | `void` | Faz uma interpolação/suavização entre este Vector2 e o Vector2 especificado com base na velocidade/intervalo fornecido em um segundo e atualiza este Vector2. |
+| `lerpInSeconds(float, float, float)` | `void` | Faz uma interpolação/suavização entre este Vector2 e os valores X e Y especificados com base na velocidade/intervalo fornecido em um segundo e atualiza este Vector2. |
+| `lerpInSeconds(float, float)` | `void` | Faz uma interpolação/suavização entre este Vector2 e o valor especificado com base na velocidade/intervalo fornecido em um segundo e atualiza este Vector2. |
+| `blend(Vector2, float)` | `Vector2` | Faz uma mistura entre este Vector2 e o Vector2 especificado com base no fator de mistura fornecido (0 a 1) e atualiza este Vector2. |
+| `blend(float, float, float)` | `Vector2` | Faz uma mistura entre este Vector2 e os valores X e Y especificados com base no fator de mistura fornecido (0 a 1) e atualiza este Vector2. |
+| `blend(float, float)` | `Vector2` | Faz uma mistura entre este Vector2 e o valor especificado com base no fator de mistura fornecido (0 a 1) e atualiza este Vector2. |
+| `blendLocal(Vector2, float)` | `void` | Faz uma mistura entre este Vector2 e o Vector2 especificado com base no fator de mistura fornecido (0 a 1) e atualiza este Vector2. |
+| `blendLocal(float, float, float)` | `void` | Faz uma mistura entre este Vector2 e os valores X e Y especificados com base no fator de mistura fornecido (0 a 1) e atualiza este Vector2. |
+| `blendLocal(float, float)` | `void` | Faz uma mistura entre este Vector2 e o valor especificado com base no fator de mistura fornecido (0 a 1) e atualiza este Vector2. |
+| `normalize()` | `Vector2` | Retorna uma cópia normalizada deste Vector2 (comprimento igual a 1). |
+| `normalizeLocal()` | `void` | Normaliza este Vector2 (define seu comprimento para 1). |
+| `rotateLocal(float)` | `void` | Rotaciona este Vector2 pelo ângulo especificado (em graus) e atualiza este Vector2. |
+| `length()` | `float` | Retorna a propriedade `propriedade `comprimento (magnitude) deste Vector2``. |
+| `sqrLength()` | `float` | Retorna a propriedade `propriedade `comprimento ao quadrado deste Vector2``. Mais rápido que length() pois não usa raiz quadrada; útil para comparar distâncias. |
+| `distance(Vector2)` | `float` | Retorna a propriedade `distância entre este Vector2 e o Vector2 especificado`. |
+| `sqrDistance(Vector2)` | `float` | Retorna a propriedade `distância ao quadrado entre este Vector2 e o Vector2 especificado`. Mais rápido que distance() pois não usa raiz quadrada; útil para comparar distâncias. |
+| `dot(Vector2)` | `float` | Retorna a propriedade `propriedade `produto escalar deste Vector2 e do Vector2 especificado``. |
+| `dot(float, float)` | `float` | Retorna a propriedade `propriedade `produto escalar deste Vector2 e dos valores X e Y especificados``. |
+| `dot(float)` | `float` | Retorna a propriedade `propriedade `produto escalar deste Vector2 com o valor especificado, usado para ambos os componentes``. |
+| `cross(Vector2)` | `Vector3` | Retorna a propriedade `propriedade `produto vetorial deste Vector2 e do Vector2 especificado como um Vector3``. |
+| `cross(float, float)` | `Vector3` | Retorna a propriedade `propriedade `produto vetorial deste Vector2 e dos valores X e Y especificados como um Vector3``. |
+| `copy()` | `Vector2` | Retorna uma cópia deste Vector2. |
+| `toString()` | `String` | Retorna uma representação em String deste Vector2. |
+| `toString(int)` | `String` | Retorna uma representação em String deste Vector2 com o número especificado de casas decimais. |
+| `equals(Object)` | `boolean` | Verifica se este Vector2 é igual ao objeto especificado. |
+| `pointerEquals(Object)` | `boolean` | Verifica se este Vector2 é a mesma instância do objeto especificado. |
+| `notEquals(Object)` | `boolean` | Verifica se este Vector2 não é igual ao objeto especificado. |
+| `greaterThan(Object)` | `boolean` | Verifica se este Vector2 é maior que o objeto especificado (pela magnitude). |
+| `greaterThan(float)` | `boolean` | Verifica se este Vector2 é maior que o valor especificado (pela magnitude). |
+| `greaterThan(int)` | `boolean` | Verifica se este Vector2 é maior que o valor especificado (pela magnitude). |
+| `greaterThan(long)` | `boolean` | Verifica se este Vector2 é maior que o valor especificado (pela magnitude). |
+| `greaterThan(double)` | `boolean` | Verifica se este Vector2 é maior que o valor especificado (pela magnitude). |
+| `greaterOrEqualsThan(Object)` | `boolean` | Verifica se este Vector2 é maior ou igual ao objeto especificado (pela magnitude). |
+| `greaterOrEqualsThan(float)` | `boolean` | Verifica se este Vector2 é maior ou igual ao valor especificado (pela magnitude). |
+| `greaterOrEqualsThan(int)` | `boolean` | Verifica se este Vector2 é maior ou igual ao valor especificado (pela magnitude). |
+| `greaterOrEqualsThan(long)` | `boolean` | Verifica se este Vector2 é maior ou igual ao valor especificado (pela magnitude). |
+| `greaterOrEqualsThan(double)` | `boolean` | Verifica se este Vector2 é maior ou igual ao valor especificado (pela magnitude). |
+| `lessThan(Object)` | `boolean` | Verifica se este Vector2 é menor que o objeto especificado (pela magnitude). |
+| `lessThan(float)` | `boolean` | Verifica se este Vector2 é menor que o valor especificado (pela magnitude). |
+| `lessThan(int)` | `boolean` | Verifica se este Vector2 é menor que o valor especificado (pela magnitude). |
+| `lessThan(long)` | `boolean` | Verifica se este Vector2 é menor que o valor especificado (pela magnitude). |
+| `lessThan(double)` | `boolean` | Verifica se este Vector2 é menor que o valor especificado (pela magnitude). |
+| `lessOrEqualsThan(Object)` | `boolean` | Verifica se este Vector2 é menor ou igual ao objeto especificado (pela magnitude). |
+| `lessOrEqualsThan(float)` | `boolean` | Verifica se este Vector2 é menor ou igual ao valor especificado (pela magnitude). |
+| `lessOrEqualsThan(int)` | `boolean` | Verifica se este Vector2 é menor ou igual ao valor especificado (pela magnitude). |
+| `lessOrEqualsThan(long)` | `boolean` | Verifica se este Vector2 é menor ou igual ao valor especificado (pela magnitude). |
+| `lessOrEqualsThan(double)` | `boolean` | Verifica se este Vector2 é menor ou igual ao valor especificado (pela magnitude). |
+| `sum(Object)` | `T` | Retorna a propriedade `soma deste Vector2 e do objeto especificado`. |
+| `sumEqual(Object)` | `void` | Soma o objeto especificado a este Vector2. |
+| `div(Object)` | `T` | Retorna a propriedade `divisão deste Vector2 pelo objeto especificado`. |
+| `divEqual(Object)` | `void` | Divide este Vector2 pelo objeto especificado. |
+| `mul(Object)` | `T` | Retorna a propriedade `multiplicação deste Vector2 pelo objeto especificado`. |
+| `mulEqual(Object)` | `void` | Multiplica este Vector2 pelo objeto especificado. |
+| `sub(Object)` | `T` | Retorna a propriedade `subtração deste Vector2 e do objeto especificado`. |
+| `subEqual(Object)` | `void` | Subtrai o objeto especificado deste Vector2. |
+| `addAdd()` | `void` | Incrementa este Vector2 em 1. |
+| `removeRemove()` | `void` | Decrementa este Vector2 em 1. |
+| `serializeToString()` | `String` | Retorna uma representação em String deste Vector2 no formato '[X;Y]'. |
+| `deserializeLocal(String)` | `void` | Desserializa uma String no formato '[X;Y]' e define os valores neste Vector2. |
 
 ## Métodos Estáticos (6)
 
 | Signature | Returns | Description |
 | --- | --- | --- |
-| genericInterface() | [GenericClassInspectorEntry] | Executa `genericInterface` e retorna quando a chamada do motor termina. |
-| inspectorController() | [ClassInspectorEntry] | Executa `inspectorController` e retorna quando a chamada do motor termina. |
-| zero() | [Vector2] | Retorna um Vector2 com todos os componentes definidos como zero (0, 0). |
-| rotateAroundPivot([Vector2], [float]) | [Vector2] | Rotaciona o Vector2 especificado pelo ângulo fornecido (em graus) e Retorna a propriedade `propriedade `resultado``. |
-| rotateAroundPivot([Vector2], [Vector2], [float]) | [Vector2] | Rotaciona o Vector2 especificado ao redor do ponto de pivô fornecido pelo ângulo especificado (em graus) e Retorna a propriedade `propriedade `resultado``. |
-| isNull([Object]) | [boolean] | Verifica se o objeto especificado é nulo. |
+| `genericInterface()` | `GenericClassInspectorEntry` | Executa `genericInterface` e retorna quando a chamada do motor termina. |
+| `inspectorController()` | `ClassInspectorEntry` | Executa `inspectorController` e retorna quando a chamada do motor termina. |
+| `zero()` | `Vector2` | Retorna um Vector2 com todos os componentes definidos como zero (0, 0). |
+| `rotateAroundPivot(Vector2, float)` | `Vector2` | Rotaciona o Vector2 especificado pelo ângulo fornecido (em graus) e Retorna a propriedade `propriedade `resultado``. |
+| `rotateAroundPivot(Vector2, Vector2, float)` | `Vector2` | Rotaciona o Vector2 especificado ao redor do ponto de pivô fornecido pelo ângulo especificado (em graus) e Retorna a propriedade `propriedade `resultado``. |
+| `isNull(Object)` | `boolean` | Verifica se o objeto especificado é nulo. |

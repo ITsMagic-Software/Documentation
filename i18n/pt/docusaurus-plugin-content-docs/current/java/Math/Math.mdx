@@ -1,7 +1,3 @@
-import Links from '../../links.mdx';
-
-<Links />
-
 # Math
 
 Referência completa da API de `Math`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -33,71 +29,71 @@ public class Math
 | =([Float.SIZE /]) | [int] [BYTES_IN_FLOAT] | Executa a operação =. |
 | =([Integer.SIZE /]) | [int] [BYTES_IN_INT] | Executa a operação =. |
 | =([Short.SIZE /]) | [int] [BYTES_IN_SHORT] | Executa a operação =. |
-| bySecond() | [float] | Retorna a propriedade `propriedade `valor deste frame para alcançar 1 em um segundo (usando o deltaTime)``. |
-| bySecond([float]) | [float] | Retorna a propriedade `propriedade `valor deste frame para alcançar o valor especificado em um segundo (usando o deltaTime)``. |
-| sin([float]) | [float] | Retorna a propriedade `propriedade `seno do ângulo em graus``. |
-| cos([float]) | [float] | Retorna a propriedade `propriedade `cosseno do ângulo em graus``. |
-| tan([float]) | [float] | Retorna a propriedade `tangente do ângulo em graus`. |
-| asin([float]) | [float] | Retorna a propriedade `propriedade `arco seno do ângulo em graus``. |
-| acos([float]) | [float] | Retorna a propriedade `propriedade `arco cosseno do ângulo em graus``. |
-| atan([float]) | [float] | Retorna a propriedade `propriedade `arco tangente do ângulo em graus``. |
-| atan2([float], [float]) | [float] | Retorna a propriedade `propriedade `arco tangente de y/x em graus``. |
-| sinRad([float]) | [float] | Retorna a propriedade `propriedade `seno do ângulo em radianos``. |
-| cosRad([float]) | [float] | Retorna a propriedade `propriedade `cosseno do ângulo em radianos``. |
-| tanRad([float]) | [float] | Retorna a propriedade `tangente do ângulo em radianos`. |
-| atan2Rad([float], [float]) | [float] | Retorna a propriedade `propriedade `arco tangente de y/x em radianos``. |
-| asinRad([float]) | [float] | Retorna a propriedade `propriedade `arco seno do ângulo em radianos``. |
-| acosRad([float]) | [float] | Retorna a propriedade `propriedade `arco cosseno do ângulo em radianos``. |
-| atanRad([float]) | [float] | Retorna a propriedade `propriedade `arco tangente do ângulo em radianos``. |
-| sqrt([float]) | [float] | Retorna a propriedade `raiz quadrada do valor`. |
-| cbrt([float]) | [float] | Retorna a propriedade `raiz cúbica do valor`. |
-| pow([float], [float]) | [float] | Retorna a propriedade `propriedade `valor elevado à potência de b``. |
-| abs([float]) | [float] | Retorna a propriedade `propriedade `valor absoluto``. |
-| abs([int]) | [int] | Retorna a propriedade `propriedade `valor absoluto``. |
-| abs([double]) | [double] | Retorna a propriedade `propriedade `valor absoluto``. |
-| ceil([float]) | [float] | Retorna a propriedade `propriedade `menor inteiro maior ou igual ao valor``. |
-| floor([float]) | [float] | Retorna a propriedade `propriedade `maior inteiro menor ou igual ao valor``. |
-| round([float]) | [float] | Arredonda o valor para o inteiro mais próximo. |
-| exp([float]) | [float] | Retorna a propriedade `propriedade `número de Euler (e ≈ 2``.718) elevado à potência do valor informado. |
-| log([float]) | [float] | Retorna a propriedade `propriedade `logaritmo natural (base e) do valor``. |
-| log10([float]) | [float] | Retorna a propriedade `propriedade `logaritmo de base 10 do valor``. |
-| toRadians([float]) | [float] | Converte graus para radianos. |
-| toDegrees([float]) | [float] | Converte radianos para graus. |
-| dptopx([int]) | [int] | Converte o valor de dp (density-independent pixels) para px (pixels) com base na densidade da tela do dispositivo. |
-| deadzone([float], [float]) | [float] | Retorna 0 se o valor estiver dentro da zona morta, caso contrário Retorna a propriedade `propriedade `valor original``. |
-| isOnDeadzone([float], [float]) | [boolean] | Verifica se o valor está dentro da zona morta. Retorna true se estiver, false caso contrário. |
-| clamp([float], [float], [float]) | [float] | Restringe o valor entre min e max. |
-| clamp([float], [float]) | [float] | Restringe o valor para ser no mínimo o valor especificado. |
-| clampMin([float], [float]) | [float] | Restringe o valor para ser no mínimo o valor especificado. |
-| clamp01([float]) | [float] | Restringe o valor entre 0 e 1. |
-| max([float], [float]) | [float] | Retorna a propriedade `propriedade `maior valor``. |
-| max([[float]...]) | [float] | Retorna a propriedade `propriedade `maior valor``. |
-| max([int], [int]) | [int] | Retorna a propriedade `propriedade `maior valor``. |
-| max([[int]...]) | [int] | Retorna a propriedade `propriedade `maior valor``. |
-| max([double], [double]) | [double] | Retorna a propriedade `propriedade `maior valor``. |
-| max([[double]...]) | [double] | Retorna a propriedade `propriedade `maior valor``. |
-| max([long], [long]) | [long] | Retorna a propriedade `propriedade `maior valor``. |
-| max([[long]...]) | [long] | Retorna a propriedade `propriedade `maior valor``. |
-| min([float], [float]) | [float] | Retorna a propriedade `propriedade `menor valor``. |
-| min([[float]...]) | [float] | Retorna a propriedade `propriedade `menor valor``. |
-| min([int], [int]) | [int] | Retorna a propriedade `propriedade `menor valor``. |
-| min([[int]...]) | [int] | Retorna a propriedade `propriedade `menor valor``. |
-| min([double], [double]) | [double] | Retorna a propriedade `propriedade `menor valor``. |
-| min([[double]...]) | [double] | Retorna a propriedade `propriedade `menor valor``. |
-| min([long], [long]) | [long] | Retorna a propriedade `propriedade `menor valor``. |
-| min([[long]...]) | [long] | Retorna a propriedade `propriedade `menor valor``. |
-| blend([float], [float], [float]) | [float] | Mistura um valor em direção ao alvo usando o fator de mistura especificado (0..1). |
-| lerp([float], [float], [float]) | [float] | Interpola um valor até o alvo (value até target) com a velocidade especificada. |
-| lerpInSeconds([float], [float], [float]) | [float] | Interpola um valor até o alvo (value até target) com a velocidade especificada em um segundo. |
-| negative([boolean]) | [boolean] | Retorna a propriedade `propriedade `valor inverso``. |
-| negative([float]) | [float] | Retorna a propriedade `propriedade `valor negativo``. |
-| negative([int]) | [int] | Retorna a propriedade `propriedade `valor negativo``. |
-| inverseSQRT([float]) | [float] | Retorna a propriedade `raiz quadrada inversa do valor`. |
-| lerpAngle([float], [float], [float]) | [float] | Interpola entre dois ângulos (0-360) com o progresso especificado, mantendo o resultado nesse intervalo. |
-| lerpAngleInSeconds([float], [float], [float]) | [float] | Interpola entre dois ângulos (0-360) com o progresso especificado em um segundo, mantendo o resultado nesse intervalo. |
-| clampAngleTo360([float]) | [float] | Mantém o ângulo entre 0 e 360, mantendo os valores nesse intervalo. |
-| rangeConverter([float], [float], [float], [float], [float]) | [float] | Converte um valor do intervalo [oldMin, oldMax] para o intervalo [newMin, newMax]. |
-| fixNaN([float]) | [float] | Retorna 0 se o valor for NaN, caso contrário Retorna a propriedade `propriedade `valor especificado``. |
-| pitchDegrees([Vector3], [Vector3]) | [float] | Executa `pitchDegrees` e retorna quando a chamada do motor termina. |
-| normalizeDeg([float]) | [float] | Executa `normalizeDeg` e retorna quando a chamada do motor termina. |
-| deltaPitchDegrees([float], [Vector3], [Vector3]) | [float] | Executa `deltaPitchDegrees` e retorna quando a chamada do motor termina. |
+| `bySecond()` | `float` | Retorna a propriedade `propriedade `valor deste frame para alcançar 1 em um segundo (usando o deltaTime)``. |
+| `bySecond(float)` | `float` | Retorna a propriedade `propriedade `valor deste frame para alcançar o valor especificado em um segundo (usando o deltaTime)``. |
+| `sin(float)` | `float` | Retorna a propriedade `propriedade `seno do ângulo em graus``. |
+| `cos(float)` | `float` | Retorna a propriedade `propriedade `cosseno do ângulo em graus``. |
+| `tan(float)` | `float` | Retorna a propriedade `tangente do ângulo em graus`. |
+| `asin(float)` | `float` | Retorna a propriedade `propriedade `arco seno do ângulo em graus``. |
+| `acos(float)` | `float` | Retorna a propriedade `propriedade `arco cosseno do ângulo em graus``. |
+| `atan(float)` | `float` | Retorna a propriedade `propriedade `arco tangente do ângulo em graus``. |
+| `atan2(float, float)` | `float` | Retorna a propriedade `propriedade `arco tangente de y/x em graus``. |
+| `sinRad(float)` | `float` | Retorna a propriedade `propriedade `seno do ângulo em radianos``. |
+| `cosRad(float)` | `float` | Retorna a propriedade `propriedade `cosseno do ângulo em radianos``. |
+| `tanRad(float)` | `float` | Retorna a propriedade `tangente do ângulo em radianos`. |
+| `atan2Rad(float, float)` | `float` | Retorna a propriedade `propriedade `arco tangente de y/x em radianos``. |
+| `asinRad(float)` | `float` | Retorna a propriedade `propriedade `arco seno do ângulo em radianos``. |
+| `acosRad(float)` | `float` | Retorna a propriedade `propriedade `arco cosseno do ângulo em radianos``. |
+| `atanRad(float)` | `float` | Retorna a propriedade `propriedade `arco tangente do ângulo em radianos``. |
+| `sqrt(float)` | `float` | Retorna a propriedade `raiz quadrada do valor`. |
+| `cbrt(float)` | `float` | Retorna a propriedade `raiz cúbica do valor`. |
+| `pow(float, float)` | `float` | Retorna a propriedade `propriedade `valor elevado à potência de b``. |
+| `abs(float)` | `float` | Retorna a propriedade `propriedade `valor absoluto``. |
+| `abs(int)` | `int` | Retorna a propriedade `propriedade `valor absoluto``. |
+| `abs(double)` | `double` | Retorna a propriedade `propriedade `valor absoluto``. |
+| `ceil(float)` | `float` | Retorna a propriedade `propriedade `menor inteiro maior ou igual ao valor``. |
+| `floor(float)` | `float` | Retorna a propriedade `propriedade `maior inteiro menor ou igual ao valor``. |
+| `round(float)` | `float` | Arredonda o valor para o inteiro mais próximo. |
+| `exp(float)` | `float` | Retorna a propriedade `propriedade `número de Euler (e ≈ 2``.718) elevado à potência do valor informado. |
+| `log(float)` | `float` | Retorna a propriedade `propriedade `logaritmo natural (base e) do valor``. |
+| `log10(float)` | `float` | Retorna a propriedade `propriedade `logaritmo de base 10 do valor``. |
+| `toRadians(float)` | `float` | Converte graus para radianos. |
+| `toDegrees(float)` | `float` | Converte radianos para graus. |
+| `dptopx(int)` | `int` | Converte o valor de dp (density-independent pixels) para px (pixels) com base na densidade da tela do dispositivo. |
+| `deadzone(float, float)` | `float` | Retorna 0 se o valor estiver dentro da zona morta, caso contrário Retorna a propriedade `propriedade `valor original``. |
+| `isOnDeadzone(float, float)` | `boolean` | Verifica se o valor está dentro da zona morta. Retorna true se estiver, false caso contrário. |
+| `clamp(float, float, float)` | `float` | Restringe o valor entre min e max. |
+| `clamp(float, float)` | `float` | Restringe o valor para ser no mínimo o valor especificado. |
+| `clampMin(float, float)` | `float` | Restringe o valor para ser no mínimo o valor especificado. |
+| `clamp01(float)` | `float` | Restringe o valor entre 0 e 1. |
+| `max(float, float)` | `float` | Retorna a propriedade `propriedade `maior valor``. |
+| `max(float...)` | `float` | Retorna a propriedade `propriedade `maior valor``. |
+| `max(int, int)` | `int` | Retorna a propriedade `propriedade `maior valor``. |
+| `max(int...)` | `int` | Retorna a propriedade `propriedade `maior valor``. |
+| `max(double, double)` | `double` | Retorna a propriedade `propriedade `maior valor``. |
+| `max(double...)` | `double` | Retorna a propriedade `propriedade `maior valor``. |
+| `max(long, long)` | `long` | Retorna a propriedade `propriedade `maior valor``. |
+| `max(long...)` | `long` | Retorna a propriedade `propriedade `maior valor``. |
+| `min(float, float)` | `float` | Retorna a propriedade `propriedade `menor valor``. |
+| `min(float...)` | `float` | Retorna a propriedade `propriedade `menor valor``. |
+| `min(int, int)` | `int` | Retorna a propriedade `propriedade `menor valor``. |
+| `min(int...)` | `int` | Retorna a propriedade `propriedade `menor valor``. |
+| `min(double, double)` | `double` | Retorna a propriedade `propriedade `menor valor``. |
+| `min(double...)` | `double` | Retorna a propriedade `propriedade `menor valor``. |
+| `min(long, long)` | `long` | Retorna a propriedade `propriedade `menor valor``. |
+| `min(long...)` | `long` | Retorna a propriedade `propriedade `menor valor``. |
+| `blend(float, float, float)` | `float` | Mistura um valor em direção ao alvo usando o fator de mistura especificado (0..1). |
+| `lerp(float, float, float)` | `float` | Interpola um valor até o alvo (value até target) com a velocidade especificada. |
+| `lerpInSeconds(float, float, float)` | `float` | Interpola um valor até o alvo (value até target) com a velocidade especificada em um segundo. |
+| `negative(boolean)` | `boolean` | Retorna a propriedade `propriedade `valor inverso``. |
+| `negative(float)` | `float` | Retorna a propriedade `propriedade `valor negativo``. |
+| `negative(int)` | `int` | Retorna a propriedade `propriedade `valor negativo``. |
+| `inverseSQRT(float)` | `float` | Retorna a propriedade `raiz quadrada inversa do valor`. |
+| `lerpAngle(float, float, float)` | `float` | Interpola entre dois ângulos (0-360) com o progresso especificado, mantendo o resultado nesse intervalo. |
+| `lerpAngleInSeconds(float, float, float)` | `float` | Interpola entre dois ângulos (0-360) com o progresso especificado em um segundo, mantendo o resultado nesse intervalo. |
+| `clampAngleTo360(float)` | `float` | Mantém o ângulo entre 0 e 360, mantendo os valores nesse intervalo. |
+| `rangeConverter(float, float, float, float, float)` | `float` | Converte um valor do intervalo [oldMin, oldMax] para o intervalo [newMin, newMax]. |
+| `fixNaN(float)` | `float` | Retorna 0 se o valor for NaN, caso contrário Retorna a propriedade `propriedade `valor especificado``. |
+| `pitchDegrees(Vector3, Vector3)` | `float` | Executa `pitchDegrees` e retorna quando a chamada do motor termina. |
+| `normalizeDeg(float)` | `float` | Executa `normalizeDeg` e retorna quando a chamada do motor termina. |
+| `deltaPitchDegrees(float, Vector3, Vector3)` | `float` | Executa `deltaPitchDegrees` e retorna quando a chamada do motor termina. |

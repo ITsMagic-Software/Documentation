@@ -1,7 +1,3 @@
-import Links from '../../../links.mdx';
-
-<Links />
-
 # AnimationPlayer
 
 Complete API reference for `AnimationPlayer`, including constructors, attributes, virtual attributes, and methods.
@@ -35,14 +31,14 @@ public class AnimationPlayer extends Component
 
 | Signature | Returns | Description |
 | --- | --- | --- |
-| getAnimation([String]) | [Animation] | Returns the animation with the specified name. |
-| getAnimation([int]) | [Animation] | Returns the animation at the specified index. |
-| setAnimation([int], [Animation]) | [void] | Sets the animation at the specified index to the provided animation. |
-| getAnimationList() | [List]&[lt];[Animation]&[gt]; | Returns a list of all animations in the AnimationPlayer. |
-| addAnimation([Animation]) | [void] | Adds the specified Animation to the AnimationPlayer. |
-| addTransition([Animation], [float]) | [AnimationTransition] | Adds an animation transition between the current animation and the specified one (to) with a delay (delay). |
-| addTransition([Animation], [float], [Curve]) | [AnimationTransition] | Adds an animation transition between the current animation and the specified one (to) with a delay (delay) and an interpolation curve (curve). |
-| addTransition([Animation], [Animation], [float]) | [AnimationTransition] | Adds an animation transition between two animations (from and to) with a specified delay (delay). |
-| addTransition([Animation], [Animation], [float], [Curve]) | [AnimationTransition] | Adds an animation transition between two animations (from and to) with a specified delay (delay) and an interpolation curve (curve). |
-| componentClassMatch([Component], [Component]) | [boolean] | Executes `componentClassMatch` and returns after the underlying engine call finishes. |
-| getEngineComponent() | [Component] | Executes `getEngineComponent` and returns after the underlying engine call finishes. |
+| `getAnimation(String)` | `Animation` | Returns the animation with the specified name. |
+| `getAnimation(int)` | `Animation` | Returns the animation at the specified index. |
+| `setAnimation(int, Animation)` | `void` | Sets the animation at the specified index to the provided animation. |
+| `getAnimationList()` | [List]&[lt];[Animation]&[gt]; | Returns a list of all animations in the AnimationPlayer. |
+| `addAnimation(Animation)` | `void` | Adds the specified Animation to the AnimationPlayer. |
+| `addTransition(Animation, float)` | `AnimationTransition` | Adds an animation transition between the current animation and the specified one (to) with a delay (delay). |
+| `addTransition(Animation, float, Curve)` | `AnimationTransition` | Adds an animation transition between the current animation and the specified one (to) with a delay (delay) and an interpolation curve (curve). |
+| `addTransition(Animation, Animation, float)` | `AnimationTransition` | Adds an animation transition between two animations (from and to) with a specified delay (delay). |
+| `addTransition(Animation, Animation, float, Curve)` | `AnimationTransition` | Adds an animation transition between two animations (from and to) with a specified delay (delay) and an interpolation curve (curve). |
+| `componentClassMatch(Component, Component)` | `boolean` | Executes `componentClassMatch` and returns after the underlying engine call finishes. |
+| `getEngineComponent()` | `Component` | Executes `getEngineComponent` and returns after the underlying engine call finishes. |
