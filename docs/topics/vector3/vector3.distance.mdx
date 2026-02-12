@@ -1,31 +1,28 @@
-# Vector3.cross()
+# Vector3.distance()
 
 Instance method on `Vector3`.
 
 ## Description
 
-- Returns the cross product of this Vector3 and the specified Vector3. |
-- Returns the cross product of this Vector3 and the specified X, Y and Z values. |
+- Returns the distance between this Vector3 and the specified Vector3. |
 
 ## Method Signature
 
 ```java
-cross(Vector3)
-cross(float, float, float)
+distance(Vector3)
 ```
 
 ## Mathematical Definition
 
-`\mathbf{a}\times\mathbf{b}`
+`d(\mathbf{a},\mathbf{b})=||\mathbf{a}-\mathbf{b}||`
 
 ## Parameters
 
 - `Vector3`: 3D vector input.
-- `float`: scalar numeric input.
 
 ## Returns
 
-- `Vector3`: returned by overloads of this method.
+- `float`: returned by overloads of this method.
 
 ## Mutability
 
@@ -40,9 +37,9 @@ cross(float, float, float)
 ## Usage Example
 
 ```java
-Vector3 edgeA = p1.subtract(p0);
-Vector3 edgeB = p2.subtract(p0);
-Vector3 normal = edgeA.cross(edgeB).normalize();
+Vector3 a = new Vector3(10f, 2f, -5f);
+Vector3 b = new Vector3(1f, 0.5f, 3f);
+Vector3 result = a.distance(b);
 ```
 
 ## Mathematical Example

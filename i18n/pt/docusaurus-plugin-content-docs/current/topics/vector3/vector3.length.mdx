@@ -1,31 +1,28 @@
-# Vetor3.cross()
+# Vetor3.comprimento()
 
 Método de instância em `Vector3`.
 
 ## Descrição
 
-- Retorna the cross product of this Vector3 and the specified Vector3. |
-- Retorna the cross product of this Vector3 and the specified X, Y and Z values. |
+- Retorna the comprimento (magnitude) of this Vector3. |
 
 ## Method Signature
 
 ```java
-cross(Vector3)
-cross(float, float, float)
+comprimento()
 ```
 
 ## Mathematical Definition
 
-`\mathbf{a}\times\mathbf{b}`
+`||\mathbf{v}||=\sqrt{x^2+y^2+z^2}`
 
 ## Parameters
 
-- `Vector3`: 3D vector input.
-- `float`: scalar numeric input.
+- None.
 
 ## Retorna
 
-- `Vector3`: returned by overloads of this method.
+- `float`: returned by overloads of this method.
 
 ## Mutability
 
@@ -40,9 +37,10 @@ cross(float, float, float)
 ## Usage Example
 
 ```java
-Vector3 edgeA = p1.subtract(p0);
-Vector3 edgeB = p2.subtract(p0);
-Vector3 normal = edgeA.cross(edgeB).normalize();
+Vector3 delta = enemy.getPosition().subtract(player.getPosition());
+if (delta.comprimento() < 3f) {
+  print("Inside interaction radius");
+}
 ```
 
 ## Mathematical Example

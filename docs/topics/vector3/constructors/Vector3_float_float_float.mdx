@@ -1,0 +1,43 @@
+# Vector3.Vector3(float, float, float)
+
+Creates a vector from explicit float components.
+
+## Method Signature
+
+```java
+Vector3(float x, float y, float z)
+```
+
+## Description
+
+Most explicit constructor for world positions, directions, and scales.
+
+## Parameters
+
+- `x` (`float`): X component.
+- `y` (`float`): Y component.
+- `z` (`float`): Z component.
+
+## Returns
+
+- `Vector3`: new vector `(x, y, z)`.
+
+## Mutability
+
+- New instance creation only.
+
+## Edge Cases
+
+- `NaN`/`Infinity` stored directly.
+
+## Usage Example
+
+```java
+Vector3 spawn = new Vector3(10.5f, 1.25f, -8f);
+```
+
+## Mathematical Example
+
+`(2.2, -4.1, 9.0)` stays `(2.2, -4.1, 9.0)`.
+
+## Visualization

@@ -1,0 +1,58 @@
+# Vetor3.mulLocal()
+
+Método de instância em `Vector3`.
+
+## Descrição
+
+- Multiplies this Vector3 by the specified Vector3 and updates this Vector3. |
+- Multiplies this Vector3 by the specified Vector2 and updates this Vector3. |
+- Multiplies this Vector3 by the specified X, Y and Z values and updates this Vector3. |
+- Multiplies this Vector3 by the specified value and updates this Vector3. |
+
+## Method Signature
+
+```java
+mulLocal(Vector3)
+mulLocal(Vector2)
+mulLocal(float, float, float)
+mulLocal(float)
+```
+
+## Mathematical Definition
+
+`Component-wise or runtime-defined transformation based on overload.`
+
+## Parameters
+
+- `Vector3`: 3D vector input.
+- `Vector2`: 2D vector used for XY/XZ/YZ component operations.
+- `float`: scalar numeric input.
+
+## Retorna
+
+- `void`: returned by overloads of this method.
+
+## Mutability
+
+- Mutates o atual vector (in-place).
+
+## Edge Cases
+
+- Zero vectors can produce degenerate outputs for geometric methods.
+- `NaN` and `Infinity` inputs propagate according to IEEE-754 floating-point behavior.
+- Repeated operations may accumulate floating-point precision error.
+
+## Usage Example
+
+```java
+Vector3 a = new Vector3(1f, 2f, 3f);
+// Call the method according to your overload requirements.
+// Example:
+// a.mulLocal(...);
+```
+
+## Mathematical Example
+
+Example input/output depends on overload; for vector arithmetic operations this is typically computed per-component.
+
+## Visualization

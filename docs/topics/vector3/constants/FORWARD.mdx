@@ -1,0 +1,45 @@
+# Vector3.FORWARD
+
+Represents positive Z direction `(0, 0, 1)`.
+
+## Method Signature
+
+```java
+Vector3.forward()
+```
+
+## Description
+
+Default forward direction for many movement and camera systems.
+
+## Mathematical Definition
+
+`FORWARD = (0,0,1)`
+
+## Parameters
+
+- None.
+
+## Returns
+
+- `Vector3`: unit vector on +Z.
+
+## Mutability
+
+- Treat as constant/read-only.
+
+## Edge Cases
+
+- Some engines define forward as -Z; verify project convention.
+
+## Usage Example
+
+```java
+Vector3 thrust = Vector3.forward().multiply(acceleration);
+```
+
+## Mathematical Example
+
+`FORWARD.cross(RIGHT) = UP` (coordinate-system dependent)
+
+## Visualization

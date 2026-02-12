@@ -1,0 +1,56 @@
+# Vector3.rotateAroundPivot()
+
+Instance method on `Vector3`.
+
+## Description
+
+- Rotates this Vector3 around the specified pivot point using the given rotation angles (in degrees) and returns the resulting Vector3. |
+- Rotates this Vector3 around the specified pivot point using the given rotation Vector3 (in degrees) and returns the resulting Vector3. |
+- Rotates this Vector3 around the specified pivot point using the given Quaternion rotation and returns the resulting Vector3. |
+
+## Method Signature
+
+```java
+rotateAroundPivot(float, float, float, Vector3)
+rotateAroundPivot(Vector3, Vector3)
+rotateAroundPivot(Quaternion, Vector3)
+```
+
+## Mathematical Definition
+
+`Component-wise or runtime-defined transformation based on overload.`
+
+## Parameters
+
+- `float`: scalar numeric input.
+- `Vector3`: 3D vector input.
+- `Quaternion`: method input parameter.
+
+## Returns
+
+- `Vector3`: returned by overloads of this method.
+
+## Mutability
+
+- Does not modify the current vector unless explicitly using a `Local`/`Equal` variant.
+
+## Edge Cases
+
+- Zero vectors can produce degenerate outputs for geometric methods.
+- `NaN` and `Infinity` inputs propagate according to IEEE-754 floating-point behavior.
+- Repeated operations may accumulate floating-point precision error.
+
+## Usage Example
+
+```java
+Vector3 a = new Vector3(1f, 2f, 3f);
+// Call the method according to your overload requirements.
+// Example:
+// a.rotateAroundPivot(...);
+```
+
+## Mathematical Example
+
+Example input/output depends on overload; for vector arithmetic operations this is typically computed per-component.
+
+## Visualization

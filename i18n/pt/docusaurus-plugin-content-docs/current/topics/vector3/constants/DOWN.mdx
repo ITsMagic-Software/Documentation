@@ -1,0 +1,45 @@
+# Vetor3.DOWN
+
+Represents negative Y direction `(0, -1, 0)`.
+
+## Method Signature
+
+```java
+Vector3.down()
+```
+
+## Descrição
+
+Used for gravity direction, ground checks, and downward raycasts.
+
+## Mathematical Definition
+
+`DOWN = (0,-1,0)`
+
+## Parameters
+
+- None.
+
+## Retorna
+
+- `Vector3`: unit vector on -Y axis.
+
+## Mutability
+
+- Treat as read-only constant.
+
+## Edge Cases
+
+- Coordinate-system conventions may differ.
+
+## Usage Example
+
+```java
+Vector3 gravityStep = Vector3.down().multiply(9.81f * Time.deltaTime());
+```
+
+## Mathematical Example
+
+`UP.add(DOWN) = ZERO`
+
+## Visualization

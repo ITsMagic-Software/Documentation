@@ -1,31 +1,28 @@
-# Vector3.cross()
+# Vector3.sqrDistance()
 
 Instance method on `Vector3`.
 
 ## Description
 
-- Returns the cross product of this Vector3 and the specified Vector3. |
-- Returns the cross product of this Vector3 and the specified X, Y and Z values. |
+- Returns the squared distance between this Vector3 and the specified Vector3. Faster than distance() as it doesn't use a square root; useful for comparing distances. |
 
 ## Method Signature
 
 ```java
-cross(Vector3)
-cross(float, float, float)
+sqrDistance(Vector3)
 ```
 
 ## Mathematical Definition
 
-`\mathbf{a}\times\mathbf{b}`
+`Component-wise or runtime-defined transformation based on overload.`
 
 ## Parameters
 
 - `Vector3`: 3D vector input.
-- `float`: scalar numeric input.
 
 ## Returns
 
-- `Vector3`: returned by overloads of this method.
+- `float`: returned by overloads of this method.
 
 ## Mutability
 
@@ -40,9 +37,10 @@ cross(float, float, float)
 ## Usage Example
 
 ```java
-Vector3 edgeA = p1.subtract(p0);
-Vector3 edgeB = p2.subtract(p0);
-Vector3 normal = edgeA.cross(edgeB).normalize();
+Vector3 a = new Vector3(1f, 2f, 3f);
+// Call the method according to your overload requirements.
+// Example:
+// a.sqrDistance(...);
 ```
 
 ## Mathematical Example

@@ -1,0 +1,58 @@
+# Vector3.subLocal()
+
+Instance method on `Vector3`.
+
+## Description
+
+- Subtracts the specified Vector3 from this Vector3 and updates this Vector3. |
+- Subtracts the specified Vector2 from this Vector3 and updates this Vector3. |
+- Subtracts the specified X, Y and Z values from this Vector3 and updates this Vector3. |
+- Subtracts the specified value from this Vector3 and updates this Vector3. |
+
+## Method Signature
+
+```java
+subLocal(Vector3)
+subLocal(Vector2)
+subLocal(float, float, float)
+subLocal(float)
+```
+
+## Mathematical Definition
+
+`Component-wise or runtime-defined transformation based on overload.`
+
+## Parameters
+
+- `Vector3`: 3D vector input.
+- `Vector2`: 2D vector used for XY/XZ/YZ component operations.
+- `float`: scalar numeric input.
+
+## Returns
+
+- `void`: returned by overloads of this method.
+
+## Mutability
+
+- Mutates the current vector (in-place).
+
+## Edge Cases
+
+- Zero vectors can produce degenerate outputs for geometric methods.
+- `NaN` and `Infinity` inputs propagate according to IEEE-754 floating-point behavior.
+- Repeated operations may accumulate floating-point precision error.
+
+## Usage Example
+
+```java
+Vector3 a = new Vector3(1f, 2f, 3f);
+// Call the method according to your overload requirements.
+// Example:
+// a.subLocal(...);
+```
+
+## Mathematical Example
+
+Example input/output depends on overload; for vector arithmetic operations this is typically computed per-component.
+
+## Visualization

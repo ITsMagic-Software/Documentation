@@ -1,0 +1,62 @@
+# Vector3.lessThan()
+
+Instance method on `Vector3`.
+
+## Description
+
+- Checks if this Vector3 is less than the specified object (by magnitude). |
+- Checks if this Vector3 is less than the specified value (by magnitude). |
+- Checks if this Vector3 is less than the specified value (by magnitude). |
+- Checks if this Vector3 is less than the specified value (by magnitude). |
+- Checks if this Vector3 is less than the specified value (by magnitude). |
+
+## Method Signature
+
+```java
+lessThan(Object)
+lessThan(float)
+lessThan(int)
+lessThan(long)
+lessThan(double)
+```
+
+## Mathematical Definition
+
+`Component-wise or runtime-defined transformation based on overload.`
+
+## Parameters
+
+- `Object`: polymorphic operand; runtime resolves supported numeric/vector types.
+- `float`: scalar numeric input.
+- `int`: integer numeric input (converted as needed by the runtime).
+- `long`: integer numeric input (converted as needed by the runtime).
+- `double`: scalar numeric input.
+
+## Returns
+
+- `boolean`: returned by overloads of this method.
+
+## Mutability
+
+- Does not modify the current vector unless explicitly using a `Local`/`Equal` variant.
+
+## Edge Cases
+
+- Zero vectors can produce degenerate outputs for geometric methods.
+- `NaN` and `Infinity` inputs propagate according to IEEE-754 floating-point behavior.
+- Repeated operations may accumulate floating-point precision error.
+
+## Usage Example
+
+```java
+Vector3 a = new Vector3(1f, 2f, 3f);
+// Call the method according to your overload requirements.
+// Example:
+// a.lessThan(...);
+```
+
+## Mathematical Example
+
+Example input/output depends on overload; for vector arithmetic operations this is typically computed per-component.
+
+## Visualization

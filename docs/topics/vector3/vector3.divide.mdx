@@ -1,0 +1,54 @@
+# Vector3.divide()
+
+Instance method on `Vector3`.
+
+## Description
+
+- Divides this Vector3 by the specified Vector3 and returns a new Vector3. |
+- Divides this Vector3 by the specified X, Y and Z values and returns a new Vector3. |
+- Divides this Vector3 by the specified value and returns a new Vector3. |
+
+## Method Signature
+
+```java
+divide(Vector3)
+divide(float, float, float)
+divide(float)
+```
+
+## Mathematical Definition
+
+`\mathbf{r}=\mathbf{a}\oslash\mathbf{b}`
+
+## Parameters
+
+- `Vector3`: 3D vector input.
+- `float`: scalar numeric input.
+
+## Returns
+
+- `Vector3`: returned by overloads of this method.
+
+## Mutability
+
+- Does not modify the current vector unless explicitly using a `Local`/`Equal` variant.
+
+## Edge Cases
+
+- Division by zero can produce `Infinity` or `NaN`.
+- Very small denominators amplify floating-point noise.
+- Runtime-specific guarding/clamping may apply in engine internals.
+
+## Usage Example
+
+```java
+Vector3 a = new Vector3(10f, 2f, -5f);
+Vector3 b = new Vector3(1f, 0.5f, 3f);
+Vector3 result = a.divide(b);
+```
+
+## Mathematical Example
+
+Example input/output depends on overload; for vector arithmetic operations this is typically computed per-component.
+
+## Visualization

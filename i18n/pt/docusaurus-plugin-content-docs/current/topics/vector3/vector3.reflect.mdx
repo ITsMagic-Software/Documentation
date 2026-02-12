@@ -1,35 +1,34 @@
-# Vector3.cross()
+# Vetor3.reflect()
 
-Instance method on `Vector3`.
+Static utility on `Vector3`.
 
-## Description
+## Descrição
 
-- Returns the cross product of this Vector3 and the specified Vector3. |
-- Returns the cross product of this Vector3 and the specified X, Y and Z values. |
+- Reflects direction vector off a plane defined by the normal. |
+- Reflects direction vector off a plane defined by the normal and stores the result in the specified vector. |
 
 ## Method Signature
 
 ```java
-cross(Vector3)
-cross(float, float, float)
+reflect(Vector3, Vector3)
+reflect(Vector3, Vector3, Vector3)
 ```
 
 ## Mathematical Definition
 
-`\mathbf{a}\times\mathbf{b}`
+`Component-wise or runtime-defined transformation based on overload.`
 
 ## Parameters
 
 - `Vector3`: 3D vector input.
-- `float`: scalar numeric input.
 
-## Returns
+## Retorna
 
 - `Vector3`: returned by overloads of this method.
 
 ## Mutability
 
-- Does not modify the current vector unless explicitly using a `Local`/`Equal` variant.
+- Does not modify o atual vector unless explicitly using a `Local`/`Equal` variant.
 
 ## Edge Cases
 
@@ -40,9 +39,10 @@ cross(float, float, float)
 ## Usage Example
 
 ```java
-Vector3 edgeA = p1.subtract(p0);
-Vector3 edgeB = p2.subtract(p0);
-Vector3 normal = edgeA.cross(edgeB).normalize();
+Vector3 a = new Vector3(1f, 2f, 3f);
+// Call the method according to your overload requirements.
+// Example:
+// a.reflect(...);
 ```
 
 ## Mathematical Example

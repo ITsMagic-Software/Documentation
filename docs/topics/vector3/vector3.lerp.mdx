@@ -1,0 +1,54 @@
+# Vector3.lerp()
+
+Instance method on `Vector3`.
+
+## Description
+
+- Interpolates/smoothes between this Vector3 and the specified Vector3 based on the provided speed/interval and updates this Vector3. |
+- Interpolates/smoothes between this Vector3 and the specified X, Y and Z values based on the provided speed/interval and updates this Vector3. |
+- Interpolates/smoothes between this Vector3 and the specified value based on the provided speed/interval and updates this Vector3. |
+
+## Method Signature
+
+```java
+lerp(Vector3, float)
+lerp(float, float, float, float)
+lerp(float, float)
+```
+
+## Mathematical Definition
+
+`\mathrm{lerp}(a,b,t)=a+(b-a)t`
+
+## Parameters
+
+- `Vector3`: 3D vector input.
+- `float`: scalar numeric input.
+
+## Returns
+
+- `void`: returned by overloads of this method.
+
+## Mutability
+
+- Mutates the current vector (in-place).
+
+## Edge Cases
+
+- Zero vectors can produce degenerate outputs for geometric methods.
+- `NaN` and `Infinity` inputs propagate according to IEEE-754 floating-point behavior.
+- Repeated operations may accumulate floating-point precision error.
+
+## Usage Example
+
+```java
+Vector3 velocity = myRigidBody.getVelocity();
+velocity.lerp(new Vector3(0f, 0f, 10f), 0.1f);
+myRigidBody.setVelocity(velocity);
+```
+
+## Mathematical Example
+
+Example input/output depends on overload; for vector arithmetic operations this is typically computed per-component.
+
+## Visualization

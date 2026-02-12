@@ -1,0 +1,48 @@
+# Vector3.normalize()
+
+Instance method on `Vector3`.
+
+## Description
+
+- Returns a normalized copy of this Vector3 (length equals 1). |
+
+## Method Signature
+
+```java
+normalize()
+```
+
+## Mathematical Definition
+
+`\hat{v}=v/||v||`
+
+## Parameters
+
+- None.
+
+## Returns
+
+- `Vector3`: returned by overloads of this method.
+
+## Mutability
+
+- Does not modify the current vector unless explicitly using a `Local`/`Equal` variant.
+
+## Edge Cases
+
+- Normalizing a zero-length vector is mathematically undefined.
+- Implementations may return zero, unchanged value, or `NaN` components.
+- Very small magnitudes can create unstable normalized directions.
+
+## Usage Example
+
+```java
+Vector3 direction = target.getPosition().subtract(myTransform.getPosition()).normalize();
+myTransform.setPosition(myTransform.getPosition().add(direction.multiply(speed)));
+```
+
+## Mathematical Example
+
+Example input/output depends on overload; for vector arithmetic operations this is typically computed per-component.
+
+## Visualization

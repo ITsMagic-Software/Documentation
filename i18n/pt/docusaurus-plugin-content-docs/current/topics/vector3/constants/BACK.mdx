@@ -1,0 +1,45 @@
+# Vetor3.BACK
+
+Represents negative Z direction `(0, 0, -1)`.
+
+## Method Signature
+
+```java
+Vector3.back()
+```
+
+## Descrição
+
+Opposite of `FORWARD`; useful for reverse movement and backward ray checks.
+
+## Mathematical Definition
+
+`BACK = (0,0,-1)`
+
+## Parameters
+
+- None.
+
+## Retorna
+
+- `Vector3`: unit vector on -Z.
+
+## Mutability
+
+- Treat as read-only constant pattern.
+
+## Edge Cases
+
+- Coordinate conventions differ between projects.
+
+## Usage Example
+
+```java
+Vector3 retreat = Vector3.back().multiply(retreatDistance);
+```
+
+## Mathematical Example
+
+`FORWARD.add(BACK) = ZERO`
+
+## Visualization

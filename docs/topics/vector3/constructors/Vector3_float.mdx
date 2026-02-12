@@ -1,0 +1,41 @@
+# Vector3.Vector3(float)
+
+Creates a vector where all components receive the same float value.
+
+## Method Signature
+
+```java
+Vector3(float value)
+```
+
+## Description
+
+Initializes X, Y, and Z using one scalar.
+
+## Parameters
+
+- `value` (`float`): assigned to all components.
+
+## Returns
+
+- `Vector3`: new vector `(value, value, value)`.
+
+## Mutability
+
+- New instance creation only.
+
+## Edge Cases
+
+- `NaN`/`Infinity` becomes component state.
+
+## Usage Example
+
+```java
+Vector3 uniform = new Vector3(2f); // (2,2,2)
+```
+
+## Mathematical Example
+
+`value = 1.5` -> `(1.5, 1.5, 1.5)`.
+
+## Visualization

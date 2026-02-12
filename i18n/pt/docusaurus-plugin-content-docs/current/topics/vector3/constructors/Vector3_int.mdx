@@ -1,0 +1,41 @@
+# Vetor3.Vector3(int)
+
+Creates a vector where all components receive the same integer value.
+
+## Method Signature
+
+```java
+Vector3(int value)
+```
+
+## Descrição
+
+Useful for quick uniform vectors in integer-friendly setups.
+
+## Parameters
+
+- `value` (`int`): promoted to float components.
+
+## Retorna
+
+- `Vector3`: new vector `(value, value, value)`.
+
+## Mutability
+
+- New instance creation only.
+
+## Edge Cases
+
+- Large integers may lose precision when represented as float.
+
+## Usage Example
+
+```java
+Vector3 oneHundred = new Vector3(100);
+```
+
+## Mathematical Example
+
+`3 -> (3,3,3)`.
+
+## Visualization

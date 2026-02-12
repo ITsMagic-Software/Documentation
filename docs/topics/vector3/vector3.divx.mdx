@@ -1,0 +1,50 @@
+# Vector3.divX()
+
+Instance method on `Vector3`.
+
+## Description
+
+- Divides the X component of this Vector3 by the specified value. |
+
+## Method Signature
+
+```java
+divX(float)
+```
+
+## Mathematical Definition
+
+`Component-wise or runtime-defined transformation based on overload.`
+
+## Parameters
+
+- `float`: scalar numeric input.
+
+## Returns
+
+- `void`: returned by overloads of this method.
+
+## Mutability
+
+- Mutates the current vector (in-place).
+
+## Edge Cases
+
+- Division by zero can produce `Infinity` or `NaN`.
+- Very small denominators amplify floating-point noise.
+- Runtime-specific guarding/clamping may apply in engine internals.
+
+## Usage Example
+
+```java
+Vector3 a = new Vector3(1f, 2f, 3f);
+// Call the method according to your overload requirements.
+// Example:
+// a.divX(...);
+```
+
+## Mathematical Example
+
+Example input/output depends on overload; for vector arithmetic operations this is typically computed per-component.
+
+## Visualization

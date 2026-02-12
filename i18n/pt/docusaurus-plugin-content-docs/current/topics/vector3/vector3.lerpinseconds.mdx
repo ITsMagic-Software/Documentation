@@ -1,0 +1,55 @@
+# Vetor3.lerpInSeconds()
+
+Método de instância em `Vector3`.
+
+## Descrição
+
+- Interpolates/smoothes between this Vector3 and the specified Vector3 based on the provided speed/interval in one second and updates this Vector3. |
+- Interpolates/smoothes between this Vector3 and the specified X, Y and Z values based on the provided speed/interval in one second and updates this Vector3. |
+- Interpolates/smoothes between this Vector3 and the specified value based on the provided speed/interval in one second and updates this Vector3. |
+
+## Method Signature
+
+```java
+lerpInSeconds(Vector3, float)
+lerpInSeconds(float, float, float, float)
+lerpInSeconds(float, float)
+```
+
+## Mathematical Definition
+
+`Component-wise or runtime-defined transformation based on overload.`
+
+## Parameters
+
+- `Vector3`: 3D vector input.
+- `float`: scalar numeric input.
+
+## Retorna
+
+- `void`: returned by overloads of this method.
+
+## Mutability
+
+- Mutates o atual vector (in-place).
+
+## Edge Cases
+
+- Zero vectors can produce degenerate outputs for geometric methods.
+- `NaN` and `Infinity` inputs propagate according to IEEE-754 floating-point behavior.
+- Repeated operations may accumulate floating-point precision error.
+
+## Usage Example
+
+```java
+Vector3 a = new Vector3(1f, 2f, 3f);
+// Call the method according to your overload requirements.
+// Example:
+// a.lerpInSeconds(...);
+```
+
+## Mathematical Example
+
+Example input/output depends on overload; for vector arithmetic operations this is typically computed per-component.
+
+## Visualization

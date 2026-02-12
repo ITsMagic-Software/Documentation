@@ -1,0 +1,45 @@
+# Vector3.ZERO
+
+Represents the zero vector `(0, 0, 0)`.
+
+## Method Signature
+
+```java
+Vector3.zero()
+```
+
+## Description
+
+Use as canonical "no direction / no displacement" value.
+
+## Mathematical Definition
+
+`ZERO = (0,0,0)`
+
+## Parameters
+
+- None.
+
+## Returns
+
+- `Vector3`: zero-valued vector.
+
+## Mutability
+
+- Returned object should be treated as read-only unless you intentionally copy it.
+
+## Edge Cases
+
+- Normalizing `ZERO` is undefined in strict math.
+
+## Usage Example
+
+```java
+Vector3 velocity = Vector3.zero();
+```
+
+## Mathematical Example
+
+`(5, -2, 1) + ZERO = (5, -2, 1)`
+
+## Visualization

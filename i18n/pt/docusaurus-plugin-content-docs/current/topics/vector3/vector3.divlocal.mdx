@@ -1,0 +1,58 @@
+# Vetor3.divLocal()
+
+Método de instância em `Vector3`.
+
+## Descrição
+
+- Divides this Vector3 by the specified Vector3 and updates this Vector3. |
+- Divides this Vector3 by the specified Vector2 and updates this Vector3. |
+- Divides this Vector3 by the specified X, Y and Z values and updates this Vector3. |
+- Divides this Vector3 by the specified value and updates this Vector3. |
+
+## Method Signature
+
+```java
+divLocal(Vector3)
+divLocal(Vector2)
+divLocal(float, float, float)
+divLocal(float)
+```
+
+## Mathematical Definition
+
+`Component-wise or runtime-defined transformation based on overload.`
+
+## Parameters
+
+- `Vector3`: 3D vector input.
+- `Vector2`: 2D vector used for XY/XZ/YZ component operations.
+- `float`: scalar numeric input.
+
+## Retorna
+
+- `void`: returned by overloads of this method.
+
+## Mutability
+
+- Mutates o atual vector (in-place).
+
+## Edge Cases
+
+- Division by zero can produce `Infinity` or `NaN`.
+- Very small denominators amplify floating-point noise.
+- Runtime-specific guarding/clamping may apply in engine internals.
+
+## Usage Example
+
+```java
+Vector3 a = new Vector3(1f, 2f, 3f);
+// Call the method according to your overload requirements.
+// Example:
+// a.divLocal(...);
+```
+
+## Mathematical Example
+
+Example input/output depends on overload; for vector arithmetic operations this is typically computed per-component.
+
+## Visualization

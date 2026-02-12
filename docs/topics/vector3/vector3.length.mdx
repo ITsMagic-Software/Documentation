@@ -1,31 +1,28 @@
-# Vector3.cross()
+# Vector3.length()
 
 Instance method on `Vector3`.
 
 ## Description
 
-- Returns the cross product of this Vector3 and the specified Vector3. |
-- Returns the cross product of this Vector3 and the specified X, Y and Z values. |
+- Returns the length (magnitude) of this Vector3. |
 
 ## Method Signature
 
 ```java
-cross(Vector3)
-cross(float, float, float)
+length()
 ```
 
 ## Mathematical Definition
 
-`\mathbf{a}\times\mathbf{b}`
+`||\mathbf{v}||=\sqrt{x^2+y^2+z^2}`
 
 ## Parameters
 
-- `Vector3`: 3D vector input.
-- `float`: scalar numeric input.
+- None.
 
 ## Returns
 
-- `Vector3`: returned by overloads of this method.
+- `float`: returned by overloads of this method.
 
 ## Mutability
 
@@ -40,9 +37,10 @@ cross(float, float, float)
 ## Usage Example
 
 ```java
-Vector3 edgeA = p1.subtract(p0);
-Vector3 edgeB = p2.subtract(p0);
-Vector3 normal = edgeA.cross(edgeB).normalize();
+Vector3 delta = enemy.getPosition().subtract(player.getPosition());
+if (delta.length() < 3f) {
+  print("Inside interaction radius");
+}
 ```
 
 ## Mathematical Example

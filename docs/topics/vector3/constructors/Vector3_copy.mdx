@@ -1,0 +1,43 @@
+# Vector3.Vector3(Vector3)
+
+Creates a new `Vector3` by copying another vector.
+
+## Method Signature
+
+```java
+Vector3(Vector3 value)
+```
+
+## Description
+
+Copies all components from `value` into a new instance. Use this when you need a defensive copy before mutation.
+
+## Parameters
+
+- `value` (`Vector3`): source vector.
+
+## Returns
+
+- `Vector3`: new instance with identical component values.
+
+## Mutability
+
+- Does not modify the source vector.
+
+## Edge Cases
+
+- If `value` is null, constructor behavior depends on runtime validation.
+
+## Usage Example
+
+```java
+Vector3 original = new Vector3(3f, 4f, 5f);
+Vector3 copy = new Vector3(original);
+copy.lerp(new Vector3(0f, 0f, 0f), 0.5f);
+```
+
+## Mathematical Example
+
+Input `(3, 4, 5)` -> new instance `(3, 4, 5)`.
+
+## Visualization

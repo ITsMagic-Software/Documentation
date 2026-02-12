@@ -1,0 +1,55 @@
+# Vetor3.blendLocal()
+
+Método de instância em `Vector3`.
+
+## Descrição
+
+- Blends between this Vector3 and the specified Vector3 based on the provided blend factor (0 to 1) and updates this Vector3. |
+- Blends between this Vector3 and the specified X, Y and Z values based on the provided blend factor (0 to 1) and updates this Vector3. |
+- Blends between this Vector3 and the specified value based on the provided blend factor (0 to 1) and updates this Vector3. |
+
+## Method Signature
+
+```java
+blendLocal(Vector3, float)
+blendLocal(float, float, float, float)
+blendLocal(float, float)
+```
+
+## Mathematical Definition
+
+`Component-wise or runtime-defined transformation based on overload.`
+
+## Parameters
+
+- `Vector3`: 3D vector input.
+- `float`: scalar numeric input.
+
+## Retorna
+
+- `void`: returned by overloads of this method.
+
+## Mutability
+
+- Mutates o atual vector (in-place).
+
+## Edge Cases
+
+- Zero vectors can produce degenerate outputs for geometric methods.
+- `NaN` and `Infinity` inputs propagate according to IEEE-754 floating-point behavior.
+- Repeated operations may accumulate floating-point precision error.
+
+## Usage Example
+
+```java
+Vector3 a = new Vector3(1f, 2f, 3f);
+// Call the method according to your overload requirements.
+// Example:
+// a.blendLocal(...);
+```
+
+## Mathematical Example
+
+Example input/output depends on overload; for vector arithmetic operations this is typically computed per-component.
+
+## Visualization

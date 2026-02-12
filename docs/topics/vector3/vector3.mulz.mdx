@@ -1,35 +1,32 @@
-# Vector3.cross()
+# Vector3.mulZ()
 
 Instance method on `Vector3`.
 
 ## Description
 
-- Returns the cross product of this Vector3 and the specified Vector3. |
-- Returns the cross product of this Vector3 and the specified X, Y and Z values. |
+- Multiplies the Z component of this Vector3 by the specified value. |
 
 ## Method Signature
 
 ```java
-cross(Vector3)
-cross(float, float, float)
+mulZ(float)
 ```
 
 ## Mathematical Definition
 
-`\mathbf{a}\times\mathbf{b}`
+`Component-wise or runtime-defined transformation based on overload.`
 
 ## Parameters
 
-- `Vector3`: 3D vector input.
 - `float`: scalar numeric input.
 
 ## Returns
 
-- `Vector3`: returned by overloads of this method.
+- `void`: returned by overloads of this method.
 
 ## Mutability
 
-- Does not modify the current vector unless explicitly using a `Local`/`Equal` variant.
+- Mutates the current vector (in-place).
 
 ## Edge Cases
 
@@ -40,9 +37,10 @@ cross(float, float, float)
 ## Usage Example
 
 ```java
-Vector3 edgeA = p1.subtract(p0);
-Vector3 edgeB = p2.subtract(p0);
-Vector3 normal = edgeA.cross(edgeB).normalize();
+Vector3 a = new Vector3(1f, 2f, 3f);
+// Call the method according to your overload requirements.
+// Example:
+// a.mulZ(...);
 ```
 
 ## Mathematical Example

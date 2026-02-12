@@ -1,0 +1,50 @@
+# Vector3.normalizeLocal()
+
+Instance method on `Vector3`.
+
+## Description
+
+- Normalizes this Vector3 (sets its length to 1). |
+
+## Method Signature
+
+```java
+normalizeLocal()
+```
+
+## Mathematical Definition
+
+`Component-wise or runtime-defined transformation based on overload.`
+
+## Parameters
+
+- None.
+
+## Returns
+
+- `void`: returned by overloads of this method.
+
+## Mutability
+
+- Mutates the current vector (in-place).
+
+## Edge Cases
+
+- Normalizing a zero-length vector is mathematically undefined.
+- Implementations may return zero, unchanged value, or `NaN` components.
+- Very small magnitudes can create unstable normalized directions.
+
+## Usage Example
+
+```java
+Vector3 a = new Vector3(1f, 2f, 3f);
+// Call the method according to your overload requirements.
+// Example:
+// a.normalizeLocal(...);
+```
+
+## Mathematical Example
+
+Example input/output depends on overload; for vector arithmetic operations this is typically computed per-component.
+
+## Visualization

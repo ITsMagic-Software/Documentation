@@ -1,31 +1,37 @@
-# Vetor3.cross()
+# Vetor3.mul()
 
 Método de instância em `Vector3`.
 
 ## Descrição
 
-- Retorna the cross product of this Vector3 and the specified Vector3. |
-- Retorna the cross product of this Vector3 and the specified X, Y and Z values. |
+- Multiplies this Vector3 by the specified Vector3 and Retorna Um novo Vector3. |
+- Multiplies this Vector3 by the specified X, Y and Z values and Retorna Um novo Vector3. |
+- Multiplies this Vector3 by the specified value and Retorna Um novo Vector3. |
+- Retorna the multiplication of this Vector3 by the specified object. |
 
 ## Method Signature
 
 ```java
-cross(Vector3)
-cross(float, float, float)
+mul(Vector3)
+mul(float, float, float)
+mul(float)
+mul(Object)
 ```
 
 ## Mathematical Definition
 
-`\mathbf{a}\times\mathbf{b}`
+`\mathbf{r}=\mathbf{a}\odot\mathbf{b}`
 
 ## Parameters
 
 - `Vector3`: 3D vector input.
 - `float`: scalar numeric input.
+- `Object`: polymorphic operand; runtime resolves supported numeric/vector types.
 
 ## Retorna
 
 - `Vector3`: returned by overloads of this method.
+- `T`: returned by overloads of this method.
 
 ## Mutability
 
@@ -40,9 +46,9 @@ cross(float, float, float)
 ## Usage Example
 
 ```java
-Vector3 edgeA = p1.subtract(p0);
-Vector3 edgeB = p2.subtract(p0);
-Vector3 normal = edgeA.cross(edgeB).normalize();
+Vector3 a = new Vector3(10f, 2f, -5f);
+Vector3 b = new Vector3(1f, 0.5f, 3f);
+Vector3 result = a.mul(b);
 ```
 
 ## Mathematical Example

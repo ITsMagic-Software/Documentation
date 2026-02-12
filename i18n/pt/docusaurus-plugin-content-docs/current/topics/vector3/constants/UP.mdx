@@ -1,0 +1,45 @@
+# Vetor3.UP
+
+Represents positive Y direction `(0, 1, 0)`.
+
+## Method Signature
+
+```java
+Vector3.up() // or engine-equivalent constant provider
+```
+
+## Descrição
+
+Canonical world-up direction used for gravity inversion, camera rigs, and orientation.
+
+## Mathematical Definition
+
+`UP = (0,1,0)`
+
+## Parameters
+
+- None.
+
+## Retorna
+
+- `Vector3`: unit vector on +Y axis.
+
+## Mutability
+
+- Treat returned constant as read-only.
+
+## Edge Cases
+
+- If your world is Z-up, this may not be your gameplay "up".
+
+## Usage Example
+
+```java
+Vector3 jumpDirection = Vector3.up().multiply(jumpForce);
+```
+
+## Mathematical Example
+
+`UP.dot(FORWARD) = 0`
+
+## Visualization

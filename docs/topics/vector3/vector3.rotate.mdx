@@ -1,27 +1,30 @@
-# Vector3.cross()
+# Vector3.rotate()
 
 Instance method on `Vector3`.
 
 ## Description
 
-- Returns the cross product of this Vector3 and the specified Vector3. |
-- Returns the cross product of this Vector3 and the specified X, Y and Z values. |
+- Rotates this Vector3 by the specified angles (in degrees) and returns the resulting Vector3. |
+- Rotates this Vector3 by the specified rotation Vector3 (in degrees) and returns the resulting Vector3. |
+- Rotates this Vector3 by the specified Quaternion rotation and returns the resulting Vector3. |
 
 ## Method Signature
 
 ```java
-cross(Vector3)
-cross(float, float, float)
+rotate(float, float, float)
+rotate(Vector3)
+rotate(Quaternion)
 ```
 
 ## Mathematical Definition
 
-`\mathbf{a}\times\mathbf{b}`
+`Component-wise or runtime-defined transformation based on overload.`
 
 ## Parameters
 
-- `Vector3`: 3D vector input.
 - `float`: scalar numeric input.
+- `Vector3`: 3D vector input.
+- `Quaternion`: method input parameter.
 
 ## Returns
 
@@ -40,9 +43,10 @@ cross(float, float, float)
 ## Usage Example
 
 ```java
-Vector3 edgeA = p1.subtract(p0);
-Vector3 edgeB = p2.subtract(p0);
-Vector3 normal = edgeA.cross(edgeB).normalize();
+Vector3 a = new Vector3(1f, 2f, 3f);
+// Call the method according to your overload requirements.
+// Example:
+// a.rotate(...);
 ```
 
 ## Mathematical Example

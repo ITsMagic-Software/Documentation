@@ -1,35 +1,35 @@
-# Vetor3.cross()
+# Vetor3.setXY()
 
 Método de instância em `Vector3`.
 
 ## Descrição
 
-- Retorna the cross product of this Vector3 and the specified Vector3. |
-- Retorna the cross product of this Vector3 and the specified X, Y and Z values. |
+- Sets the X and Y components of this Vector3 with the values of the specified Vector2. |
+- Sets the X and Y components of this Vector3. |
 
 ## Method Signature
 
 ```java
-cross(Vector3)
-cross(float, float, float)
+setXY(Vector2)
+setXY(float, float)
 ```
 
 ## Mathematical Definition
 
-`\mathbf{a}\times\mathbf{b}`
+`Component-wise or runtime-defined transformation based on overload.`
 
 ## Parameters
 
-- `Vector3`: 3D vector input.
+- `Vector2`: 2D vector used for XY/XZ/YZ component operations.
 - `float`: scalar numeric input.
 
 ## Retorna
 
-- `Vector3`: returned by overloads of this method.
+- `void`: returned by overloads of this method.
 
 ## Mutability
 
-- Does not modify o atual vector unless explicitly using a `Local`/`Equal` variant.
+- Mutates o atual vector (in-place).
 
 ## Edge Cases
 
@@ -40,9 +40,10 @@ cross(float, float, float)
 ## Usage Example
 
 ```java
-Vector3 edgeA = p1.subtract(p0);
-Vector3 edgeB = p2.subtract(p0);
-Vector3 normal = edgeA.cross(edgeB).normalize();
+Vector3 a = new Vector3(1f, 2f, 3f);
+// Call the method according to your overload requirements.
+// Example:
+// a.setXY(...);
 ```
 
 ## Mathematical Example

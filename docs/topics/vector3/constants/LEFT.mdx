@@ -1,0 +1,45 @@
+# Vector3.LEFT
+
+Represents negative X direction `(-1, 0, 0)`.
+
+## Method Signature
+
+```java
+Vector3.left()
+```
+
+## Description
+
+Canonical left direction in right-handed coordinate setups.
+
+## Mathematical Definition
+
+`LEFT = (-1,0,0)`
+
+## Parameters
+
+- None.
+
+## Returns
+
+- `Vector3`: unit vector on -X.
+
+## Mutability
+
+- Treat as constant/read-only pattern.
+
+## Edge Cases
+
+- For local-space motion, combine with transform basis vectors instead of world constants.
+
+## Usage Example
+
+```java
+myTransform.setPosition(myTransform.getPosition().add(Vector3.left().multiply(speed)));
+```
+
+## Mathematical Example
+
+`RIGHT.add(LEFT) = ZERO`
+
+## Visualization

@@ -1,31 +1,37 @@
-# Vector3.cross()
+# Vector3.sum()
 
 Instance method on `Vector3`.
 
 ## Description
 
-- Returns the cross product of this Vector3 and the specified Vector3. |
-- Returns the cross product of this Vector3 and the specified X, Y and Z values. |
+- Adds the specified Vector3 to this Vector3 and returns a new Vector3. |
+- Adds the specified X, Y and Z values to this Vector3 and returns a new Vector3. |
+- Adds the specified value to this Vector3 and returns a new Vector3. |
+- Returns the sum of this Vector3 and the specified object. |
 
 ## Method Signature
 
 ```java
-cross(Vector3)
-cross(float, float, float)
+sum(Vector3)
+sum(float, float, float)
+sum(float)
+sum(Object)
 ```
 
 ## Mathematical Definition
 
-`\mathbf{a}\times\mathbf{b}`
+`\mathbf{r}=\mathbf{a}+\mathbf{b}`
 
 ## Parameters
 
 - `Vector3`: 3D vector input.
 - `float`: scalar numeric input.
+- `Object`: polymorphic operand; runtime resolves supported numeric/vector types.
 
 ## Returns
 
 - `Vector3`: returned by overloads of this method.
+- `T`: returned by overloads of this method.
 
 ## Mutability
 
@@ -40,9 +46,9 @@ cross(float, float, float)
 ## Usage Example
 
 ```java
-Vector3 edgeA = p1.subtract(p0);
-Vector3 edgeB = p2.subtract(p0);
-Vector3 normal = edgeA.cross(edgeB).normalize();
+Vector3 a = new Vector3(10f, 2f, -5f);
+Vector3 b = new Vector3(1f, 0.5f, 3f);
+Vector3 result = a.sum(b);
 ```
 
 ## Mathematical Example

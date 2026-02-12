@@ -1,22 +1,24 @@
-# Vector3.cross()
+# Vector3.multiply()
 
 Instance method on `Vector3`.
 
 ## Description
 
-- Returns the cross product of this Vector3 and the specified Vector3. |
-- Returns the cross product of this Vector3 and the specified X, Y and Z values. |
+- Multiplies this Vector3 by the specified Vector3 and returns a new Vector3. |
+- Multiplies this Vector3 by the specified X, Y and Z values and returns a new Vector3. |
+- Multiplies this Vector3 by the specified value and returns a new Vector3. |
 
 ## Method Signature
 
 ```java
-cross(Vector3)
-cross(float, float, float)
+multiply(Vector3)
+multiply(float, float, float)
+multiply(float)
 ```
 
 ## Mathematical Definition
 
-`\mathbf{a}\times\mathbf{b}`
+`\mathbf{r}=\mathbf{a}\odot\mathbf{b}`
 
 ## Parameters
 
@@ -40,9 +42,9 @@ cross(float, float, float)
 ## Usage Example
 
 ```java
-Vector3 edgeA = p1.subtract(p0);
-Vector3 edgeB = p2.subtract(p0);
-Vector3 normal = edgeA.cross(edgeB).normalize();
+Vector3 a = new Vector3(10f, 2f, -5f);
+Vector3 b = new Vector3(1f, 0.5f, 3f);
+Vector3 result = a.multiply(b);
 ```
 
 ## Mathematical Example

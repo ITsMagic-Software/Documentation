@@ -1,0 +1,43 @@
+# Vector3.Vector3(float, float, int)
+
+Creates a vector from mixed numeric types.
+
+## Method Signature
+
+```java
+Vector3(float x, float y, int z)
+```
+
+## Description
+
+Convenience overload that avoids manual casts in mixed-value call sites.
+
+## Parameters
+
+- `x` (`float`): X component.
+- `y` (`float`): Y component.
+- `z` (`int`): Z component.
+
+## Returns
+
+- `Vector3`: new vector `(x, y, z)`.
+
+## Mutability
+
+- New instance creation only.
+
+## Edge Cases
+
+- Integer component is converted to float.
+
+## Usage Example
+
+```java
+Vector3 v = new Vector3(1.5f, -2.75f, 4);
+```
+
+## Mathematical Example
+
+`(1.5, -2.75, 4)`.
+
+## Visualization

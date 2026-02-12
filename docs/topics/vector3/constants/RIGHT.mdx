@@ -1,0 +1,45 @@
+# Vector3.RIGHT
+
+Represents positive X direction `(1, 0, 0)`.
+
+## Method Signature
+
+```java
+Vector3.right()
+```
+
+## Description
+
+Canonical world-space right direction.
+
+## Mathematical Definition
+
+`RIGHT = (1,0,0)`
+
+## Parameters
+
+- None.
+
+## Returns
+
+- `Vector3`: unit vector on +X.
+
+## Mutability
+
+- Treat as read-only constant pattern.
+
+## Edge Cases
+
+- Local-space "right" may differ if object is rotated.
+
+## Usage Example
+
+```java
+Vector3 strafe = Vector3.right().multiply(inputX * speed);
+```
+
+## Mathematical Example
+
+`RIGHT.dot(FORWARD) = 0`
+
+## Visualization
