@@ -136,18 +136,18 @@ const config = {
           {
             title: 'More',
             items: [
-              /*{
-                label: 'Blog',
-                to: '/blog',
-              },*/
               {
-                label: 'Download',
+                label: 'ITsMagic 1.0',
                 href: 'https://play.google.com/store/apps/details?id=com.itsmagic.enginestable',
+              },
+              {
+                label: 'ITsMagic 2.0',
+                href: 'https://play.google.com/store/apps/details?id=com.itsmagic.engine2',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} ITsMagic Engine, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} ITsMagic Engine, Inc.`,
       },
       prism: {
         theme: prismThemes.github,

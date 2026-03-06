@@ -254,3 +254,33 @@ div[class*="codeBlockContainer"] button:hover {
   background: rgba(77, 181, 214, 0.25);
   border-color: var(--ifm-color-primary);
 }
+
+.footer {
+  background: var(--doc-surface-strong);
+  border-top: 1px solid var(--doc-border);
+  color: var(--doc-ink);
+}
+
+.footer__title {
+  color: var(--doc-ink);
+}
+
+.footer__item {
+  color: var(--doc-muted);
+}
+
+.footer__item:hover {
+  color: var(--ifm-color-primary-lighter);
+}
+
+.footer__link-item {
+  color: var(--doc-muted);
+}
+
+.footer__link-item:hover {
+  color: var(--ifm-color-primary-lighter);
+}
+
+.footer__copyright {
+  color: var(--doc-muted);
+}
