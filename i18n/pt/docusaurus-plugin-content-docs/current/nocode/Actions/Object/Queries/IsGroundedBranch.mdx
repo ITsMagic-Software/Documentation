@@ -1,0 +1,24 @@
+# Is Grounded
+
+**Menu:** `Actions/Object/Queries`
+
+## Funcao
+
+Verifica se o objeto alvo esta grounded e direciona a execucao por `On True` ou `On False`.
+
+## Entradas
+
+| Nome | Tipo | Padrao | Detalhes |
+| --- | --- | --- | --- |
+| `Object` | `GAME_OBJECT` | `Owner` | Objeto alvo que deve conter um `Characterbody`. |
+
+## Saidas
+
+| Nome | Tipo | Padrao | Detalhes |
+| --- | --- | --- | --- |
+| `On True` | `BRANCH` | - | Dispara quando o alvo estiver grounded. |
+| `On False` | `BRANCH` | - | Dispara quando o alvo nao estiver grounded. |
+
+## Observacoes
+
+- Se o objeto alvo nao tiver `Characterbody`, o node se comporta como `false`.

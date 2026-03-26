@@ -1,0 +1,24 @@
+# Is Grounded
+
+**Menu:** `Actions/Object/Queries`
+
+## Purpose
+
+Checks whether the target object is grounded and routes execution through `On True` or `On False`.
+
+## Inputs
+
+| Name | Type | Default | Details |
+| --- | --- | --- | --- |
+| `Object` | `GAME_OBJECT` | `Owner` | Target object that should contain a `Characterbody`. |
+
+## Outputs
+
+| Name | Type | Default | Details |
+| --- | --- | --- | --- |
+| `On True` | `BRANCH` | - | Fired when the target is grounded. |
+| `On False` | `BRANCH` | - | Fired when the target is not grounded. |
+
+## Notes
+
+- If the target object does not have a `Characterbody`, the node behaves as `false`.
