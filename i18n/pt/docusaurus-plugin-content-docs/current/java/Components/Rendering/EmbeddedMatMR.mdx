@@ -1,0 +1,157 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
+# EmbeddedMatMR
+
+Refer?ncia completa da API de `EmbeddedMatMR`, incluindo construtores, atributos, atributos virtuais e m?todos.
+
+**Pacote:** `JAVARuntime`
+
+**Categoria:** Rendering
+
+**Componente:** sim
+
+---
+
+```java
+public class EmbeddedMatMR extends Component
+```
+
+<ApiDoc
+  constructors={[
+    {
+      signature: "EmbeddedMatMR(EmbeddedMatMR)",
+      description: <>Cria uma nova inst?ncia de EmbeddedMatMR.</>,
+    },
+    {
+      signature: "EmbeddedMatMR()",
+      description: <>Cria uma nova inst?ncia de EmbeddedMatMR.</>,
+    },
+    {
+      signature: "EmbeddedMatMR(Vertex)",
+      description: <>Cria uma nova inst?ncia de EmbeddedMatMR.</>,
+    }
+  ]}
+  attributes={[
+    {
+      name: "456",
+      type: "int CUBE =",
+      description: <>Representa o valor de <code>456</code> armazenado nesta inst?ncia. Leia ou atribua para atualizar a propriedade.</>,
+    },
+    {
+      name: "457",
+      type: "int SPHERE =",
+      description: <>Representa o valor de <code>457</code> armazenado nesta inst?ncia. Leia ou atribua para atualizar a propriedade.</>,
+    },
+    {
+      name: "458",
+      type: "int CONE =",
+      description: <>Representa o valor de <code>458</code> armazenado nesta inst?ncia. Leia ou atribua para atualizar a propriedade.</>,
+    },
+    {
+      name: "459",
+      type: "int CYLINDER =",
+      description: <>Representa o valor de <code>459</code> armazenado nesta inst?ncia. Leia ou atribua para atualizar a propriedade.</>,
+    },
+    {
+      name: "460",
+      type: "int CIRCLE =",
+      description: <>Representa o valor de <code>460</code> armazenado nesta inst?ncia. Leia ou atribua para atualizar a propriedade.</>,
+    },
+    {
+      name: "461",
+      type: "int TORUS =",
+      description: <>Representa o valor de <code>461</code> armazenado nesta inst?ncia. Leia ou atribua para atualizar a propriedade.</>,
+    },
+    {
+      name: "462",
+      type: "int SQUARE =",
+      description: <>Representa o valor de <code>462</code> armazenado nesta inst?ncia. Leia ou atribua para atualizar a propriedade.</>,
+    },
+    {
+      name: "463",
+      type: "int SQUARE90 =",
+      description: <>Representa o valor de <code>463</code> armazenado nesta inst?ncia. Leia ou atribua para atualizar a propriedade.</>,
+    },
+    {
+      name: "component",
+      type: "EmbeddedMatMR",
+      description: <>Representa o valor de <code>component</code> armazenado nesta inst?ncia. Leia ou atribua para atualizar a propriedade.</>,
+    }
+  ]}
+  virtualAttributes={[
+    {
+      name: "castShadowEnabled",
+      type: "boolean",
+      access: "get/set",
+      description: <>Retorna se <code>cast shadow enabled</code> est? ativado.</>,
+    },
+    {
+      name: "enableOutline",
+      type: "boolean",
+      access: "get/set",
+      description: <>Retorna se <code>enable outline</code> est? ativado.</>,
+    },
+    {
+      name: "material",
+      type: "Material",
+      access: "get/set",
+      description: <>Retorna o valor atual de <code>material</code>.</>,
+    },
+    {
+      name: "outlineColor",
+      type: "Color",
+      access: "get/set",
+      description: <>Retorna o valor atual de <code>outline color</code>.</>,
+    },
+    {
+      name: "outlineScale",
+      type: "float",
+      access: "set",
+      description: <>Define ou atualiza o valor de <code>outline scale</code>.</>,
+    },
+    {
+      name: "renderMatrix",
+      type: "float[]",
+      access: "get/set",
+      description: <>Retorna o valor atual de <code>render matrix</code>.</>,
+    },
+    {
+      name: "vertex",
+      type: "Vertex",
+      access: "get/set",
+      description: <>Retorna o valor atual de <code>vertex</code>.</>,
+    }
+  ]}
+  methods={[
+    {
+      signature: "setModelFile(VertexFile)",
+      returns: "void",
+      description: <>Define ou atualiza o valor de <code>model file</code>.</>,
+    },
+    {
+      signature: "setMaterialFile(MaterialFile)",
+      returns: "void",
+      description: <>Define ou atualiza o valor de <code>material file</code>.</>,
+    },
+    {
+      signature: "attachPrimitive(int)",
+      returns: "void",
+      description: <>Executa <code>attachPrimitive</code> e retorna quando a chamada do motor termina.</>,
+    },
+    {
+      signature: "getOutlineScale()",
+      returns: "float",
+      description: <>Retorna o valor atual de <code>outline scale</code>.</>,
+    },
+    {
+      signature: "componentClassMatch(Component, Component)",
+      returns: "boolean",
+      description: <>Executa <code>componentClassMatch</code> e retorna quando a chamada do motor termina.</>,
+    },
+    {
+      signature: "getEngineComponent()",
+      returns: "Component",
+      description: <>Retorna o valor atual de <code>engine component</code>.</>,
+    }
+  ]}
+/>

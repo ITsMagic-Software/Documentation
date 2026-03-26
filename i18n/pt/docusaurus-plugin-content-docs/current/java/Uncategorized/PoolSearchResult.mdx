@@ -1,0 +1,53 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
+# PoolSearchResult
+
+Refer?ncia completa da API de `PoolSearchResult`, incluindo construtores, atributos, atributos virtuais e m?todos.
+
+**Pacote:** `JAVARuntime`
+
+**Categoria:** Uncategorized
+
+**Componente:** n?o
+
+---
+
+```java
+public class PoolSearchResult
+```
+
+<ApiDoc
+  constructors={[
+    {
+      signature: "PoolSearchResult(SearchResult)",
+      description: <>Cria uma nova inst?ncia de PoolSearchResult.</>,
+    }
+  ]}
+  attributes={[
+    {
+      name: "instance",
+      type: "SearchResult",
+      description: <>Representa o valor de <code>instance</code> armazenado nesta inst?ncia. Leia ou atribua para atualizar a propriedade.</>,
+    }
+  ]}
+  virtualAttributes={[
+    {
+      name: "distance",
+      type: "float",
+      access: "get",
+      description: <>Retorna a distância do resultado da busca do HPOP.</>,
+    },
+    {
+      name: "object",
+      type: "PooledObject",
+      access: "get",
+      description: <>Retorna o objeto do resultado da busca do HPOP.</>,
+    },
+    {
+      name: "squaredDistance",
+      type: "float",
+      access: "get",
+      description: <>Retorna a distância ao quadrado do resultado da busca do HPOP.</>,
+    }
+  ]}
+/>

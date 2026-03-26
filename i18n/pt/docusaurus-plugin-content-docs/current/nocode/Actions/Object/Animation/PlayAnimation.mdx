@@ -1,0 +1,22 @@
+# Play Animation
+
+**Menu:** `Actions/Object/Animation`
+
+## Funcao
+
+Reproduz todas as animacoes cujo nome corresponde a `Animation Name` em todos os componentes `AnimationPlayer` encontrados no objeto alvo.
+
+Quando `Loop` estiver ativo, as animacoes continuam em loop. Quando `Transition Delay` for maior que zero, o node faz o fade in do peso da animacao com o mesmo comportamento usado por `AnimationTrigger`.
+
+## Entradas
+
+| Nome | Tipo | Padrao | Detalhes |
+| --- | --- | --- | --- |
+| `Object` | `GAME_OBJECT` | `Owner` | Objeto alvo usado para procurar componentes `AnimationPlayer`. |
+| `Animation Name` | `TEXT` | - | Aceita nomes com ou sem a extensao `.anim`. |
+| `Loop` | `BOOLEAN` | `true` | Define se as animacoes encontradas usam `playInLoop()` ou `play()`. |
+| `Transition Delay` | `NUMBER` | `0.5` | Usa o mesmo comportamento de fade in do `AnimationTrigger`. |
+
+## Saidas
+
+Nenhuma.

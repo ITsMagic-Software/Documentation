@@ -1,0 +1,65 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
+# PooledObject
+
+Complete API reference for `PooledObject`, including constructors, attributes, virtual attributes, and methods.
+
+**Package:** `JAVARuntime`
+
+**Category:** Uncategorized
+
+**Component:** no
+
+---
+
+```java
+public class PooledObject
+```
+
+<ApiDoc
+  constructors={[
+    {
+      signature: "PooledObject(PooledObject)",
+      description: <>Creates a new instance of PooledObject.</>,
+    }
+  ]}
+  attributes={[
+    {
+      name: "instance",
+      type: "PooledObject",
+      description: <>Represents the <code>instance</code> value stored on this instance. Read or assign to update the property.</>,
+    }
+  ]}
+  methods={[
+    {
+      signature: "getPosition()",
+      returns: "Vector3",
+      description: <>Returns the position of the HPO at the specified index.</>,
+    },
+    {
+      signature: "setPosition(Vector3)",
+      returns: "void",
+      description: <>Changes the position of the HPO at the specified index.</>,
+    },
+    {
+      signature: "getRotation()",
+      returns: "Quaternion",
+      description: <>Returns the rotation of the HPO at the specified index.</>,
+    },
+    {
+      signature: "setRotation(Quaternion)",
+      returns: "void",
+      description: <>Changes the rotation of the HPO at the specified index.</>,
+    },
+    {
+      signature: "getScale()",
+      returns: "float",
+      description: <>Returns the scale of the HPO at the specified index.</>,
+    },
+    {
+      signature: "setScale(float)",
+      returns: "void",
+      description: <>Changes the scale of the HPO at the specified index.</>,
+    }
+  ]}
+/>

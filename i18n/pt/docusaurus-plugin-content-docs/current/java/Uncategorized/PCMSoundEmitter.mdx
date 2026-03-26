@@ -1,0 +1,140 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
+# PCMSoundEmitter
+
+Refer?ncia completa da API de `PCMSoundEmitter`, incluindo construtores, atributos, atributos virtuais e m?todos.
+
+**Pacote:** `JAVARuntime`
+
+**Categoria:** Uncategorized
+
+**Componente:** n?o
+
+---
+
+```java
+public class PCMSoundEmitter
+```
+
+<ApiDoc
+  constructors={[
+    {
+      signature: "PCMSoundEmitter(NativeSoundEmitter)",
+      description: <>Cria uma nova inst?ncia de PCMSoundEmitter.</>,
+    },
+    {
+      signature: "PCMSoundEmitter(NativeFloatBuffer)",
+      description: <>Cria uma nova inst?ncia de PCMSoundEmitter.</>,
+    },
+    {
+      signature: "PCMSoundEmitter(float[])",
+      description: <>Cria uma nova inst?ncia de PCMSoundEmitter.</>,
+    }
+  ]}
+  attributes={[
+    {
+      name: "instance",
+      type: "NativeSoundEmitter",
+      description: <>Representa o valor de <code>instance</code> armazenado nesta inst?ncia. Leia ou atribua para atualizar a propriedade.</>,
+    }
+  ]}
+  virtualAttributes={[
+    {
+      name: "leftVolume",
+      type: "float",
+      access: "get/set",
+      description: <>Retorna o valor atual de <code>left volume</code>.</>,
+    },
+    {
+      name: "pitch",
+      type: "float",
+      access: "get/set",
+      description: <>Retorna o valor atual de <code>pitch</code>.</>,
+    },
+    {
+      name: "rightVolume",
+      type: "float",
+      access: "get/set",
+      description: <>Retorna o valor atual de <code>right volume</code>.</>,
+    },
+    {
+      name: "speed",
+      type: "float",
+      access: "get/set",
+      description: <>Retorna o valor atual de <code>speed</code>.</>,
+    },
+    {
+      name: "volume",
+      type: "float",
+      access: "get/set",
+      description: <>Retorna o valor atual de <code>volume</code>.</>,
+    }
+  ]}
+  methods={[
+    {
+      signature: "setVolumes(float, float)",
+      returns: "void",
+      description: <>Define ou atualiza o valor de <code>volumes</code>.</>,
+    },
+    {
+      signature: "setVolumes(float, float, float)",
+      returns: "void",
+      description: <>Define ou atualiza o valor de <code>volumes</code>.</>,
+    },
+    {
+      signature: "getCurrentSecond()",
+      returns: "float",
+      description: <>Retorna o valor atual de <code>current second</code>.</>,
+    },
+    {
+      signature: "getTotalSeconds()",
+      returns: "float",
+      description: <>Retorna o valor atual de <code>total seconds</code>.</>,
+    },
+    {
+      signature: "seekToSecond(float)",
+      returns: "void",
+      description: <>Executa <code>seekToSecond</code> e retorna quando a chamada do motor termina.</>,
+    },
+    {
+      signature: "isLoop()",
+      returns: "boolean",
+      description: <>Retorna se <code>loop</code> est? ativado.</>,
+    },
+    {
+      signature: "setLoop(boolean)",
+      returns: "void",
+      description: <>Define ou atualiza o valor de <code>loop</code>.</>,
+    },
+    {
+      signature: "play()",
+      returns: "void",
+      description: <>Executa <code>play</code> e retorna quando a chamada do motor termina.</>,
+    },
+    {
+      signature: "pause()",
+      returns: "void",
+      description: <>Executa <code>pause</code> e retorna quando a chamada do motor termina.</>,
+    },
+    {
+      signature: "stop()",
+      returns: "void",
+      description: <>Executa <code>stop</code> e retorna quando a chamada do motor termina.</>,
+    },
+    {
+      signature: "isPaused()",
+      returns: "boolean",
+      description: <>Retorna se <code>paused</code> est? ativado.</>,
+    },
+    {
+      signature: "isPlaying()",
+      returns: "boolean",
+      description: <>Retorna se <code>playing</code> est? ativado.</>,
+    },
+    {
+      signature: "isStopped()",
+      returns: "boolean",
+      description: <>Retorna se <code>stopped</code> est? ativado.</>,
+    }
+  ]}
+/>

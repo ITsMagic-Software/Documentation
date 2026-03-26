@@ -1,0 +1,61 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
+# FastBloom
+
+Complete API reference for `FastBloom`, including constructors, attributes, virtual attributes, and methods.
+
+**Package:** `JAVARuntime`
+
+**Category:** Post processing
+
+**Component:** yes
+
+---
+
+```java
+public class FastBloom extends Component
+```
+
+<ApiDoc
+  constructors={[
+    {
+      signature: "FastBloom(FastBloom)",
+      description: <>Creates a new instance of FastBloom.</>,
+    },
+    {
+      signature: "FastBloom(Engine)",
+      description: <>Creates a new instance of FastBloom.</>,
+    },
+    {
+      signature: "FastBloom()",
+      description: <>Creates a new instance of FastBloom.</>,
+    }
+  ]}
+  attributes={[
+    {
+      name: "instance",
+      type: "FastBloom",
+      description: <>Represents the <code>instance</code> value stored on this instance. Read or assign to update the property.</>,
+    }
+  ]}
+  virtualAttributes={[
+    {
+      name: "blurSize",
+      type: "float",
+      access: "get/set",
+      description: <>Returns the current blur size.</>,
+    },
+    {
+      name: "intensity",
+      type: "float",
+      access: "get/set",
+      description: <>Returns the current intensity.</>,
+    },
+    {
+      name: "threshold",
+      type: "float",
+      access: "get/set",
+      description: <>Returns the current threshold.</>,
+    }
+  ]}
+/>

@@ -1,0 +1,21 @@
+# Stop Animation
+
+**Menu:** `Actions/Object/Animation`
+
+## Funcao
+
+Interrompe todas as animacoes cujo nome corresponde a `Animation Name` em todos os componentes `AnimationPlayer` encontrados no objeto alvo.
+
+Quando `Transition Delay` for maior que zero, o node faz o fade out do peso da animacao com o mesmo comportamento usado por `AnimationTrigger`.
+
+## Entradas
+
+| Nome | Tipo | Padrao | Detalhes |
+| --- | --- | --- | --- |
+| `Object` | `GAME_OBJECT` | `Owner` | Objeto alvo usado para procurar componentes `AnimationPlayer`. |
+| `Animation Name` | `TEXT` | - | Aceita nomes com ou sem a extensao `.anim`. |
+| `Transition Delay` | `NUMBER` | `0.5` | Usa o mesmo comportamento de fade out do `AnimationTrigger`. |
+
+## Saidas
+
+Nenhuma.

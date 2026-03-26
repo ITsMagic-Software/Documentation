@@ -1,0 +1,94 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
+# PoolComponent
+
+Complete API reference for `PoolComponent`, including constructors, attributes, virtual attributes, and methods.
+
+**Package:** `JAVARuntime`
+
+**Category:** ObjectPool
+
+**Component:** yes
+
+---
+
+```java
+public class PoolComponent extends Component
+```
+
+<ApiDoc
+  constructors={[
+    {
+      signature: "PoolComponent(BasePool)",
+      description: <>Creates a new instance of PoolComponent.</>,
+    },
+    {
+      signature: "PoolComponent()",
+      description: <>Creates a new instance of PoolComponent.</>,
+    }
+  ]}
+  attributes={[
+    {
+      name: "instance",
+      type: "BasePool",
+      description: <>Represents the <code>instance</code> value stored on this instance. Read or assign to update the property.</>,
+    }
+  ]}
+  methods={[
+    {
+      signature: "add(Vector3)",
+      returns: "PooledObject",
+      description: <>Adds an HPO at the specified position and returns its index.</>,
+    },
+    {
+      signature: "objectCount()",
+      returns: "int",
+      description: <>Returns the count of objects in the current HPOP.</>,
+    },
+    {
+      signature: "getObject(int)",
+      returns: "PooledObject",
+      description: <>Returns the current object.</>,
+    },
+    {
+      signature: "notifyObjectChanged(PooledObject)",
+      returns: "void",
+      description: <>Updates the object.</>,
+    },
+    {
+      signature: "delete(List<PoolSearchResult>)",
+      returns: "void",
+      description: <>Deletes multiple HPOs based on the provided search results.</>,
+    },
+    {
+      signature: "delete(PooledObject)",
+      returns: "void",
+      description: <>Deletes the HPO at the specified index.</>,
+    },
+    {
+      signature: "findInCircle(Vector3, float)",
+      returns: "List<PoolSearchResult>",
+      description: <>Finds and returns all objects within a specified circle defined by center and radius.</>,
+    },
+    {
+      signature: "findInSphere(Vector3, float)",
+      returns: "List<PoolSearchResult>",
+      description: <>Finds and returns all objects within a specified sphere defined by center and radius.</>,
+    },
+    {
+      signature: "findInSquare(Vector2, Vector2)",
+      returns: "List<PoolSearchResult>",
+      description: <>Finds and returns all objects within a rectangular area defined by two corners: min and max.</>,
+    },
+    {
+      signature: "componentClassMatch(Component, Component)",
+      returns: "boolean",
+      description: <>Executes <code>componentClassMatch</code> and returns after the underlying engine call finishes.</>,
+    },
+    {
+      signature: "getEngineComponent()",
+      returns: "Component",
+      description: <>Returns the current engine component.</>,
+    }
+  ]}
+/>

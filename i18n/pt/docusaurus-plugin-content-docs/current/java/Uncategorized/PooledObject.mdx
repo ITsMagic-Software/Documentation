@@ -1,0 +1,65 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
+# PooledObject
+
+Refer?ncia completa da API de `PooledObject`, incluindo construtores, atributos, atributos virtuais e m?todos.
+
+**Pacote:** `JAVARuntime`
+
+**Categoria:** Uncategorized
+
+**Componente:** n?o
+
+---
+
+```java
+public class PooledObject
+```
+
+<ApiDoc
+  constructors={[
+    {
+      signature: "PooledObject(PooledObject)",
+      description: <>Cria uma nova inst?ncia de PooledObject.</>,
+    }
+  ]}
+  attributes={[
+    {
+      name: "instance",
+      type: "PooledObject",
+      description: <>Representa o valor de <code>instance</code> armazenado nesta inst?ncia. Leia ou atribua para atualizar a propriedade.</>,
+    }
+  ]}
+  methods={[
+    {
+      signature: "getPosition()",
+      returns: "Vector3",
+      description: <>Retorna a posição do HPO no índice especificado.</>,
+    },
+    {
+      signature: "setPosition(Vector3)",
+      returns: "void",
+      description: <>Altera a posição do HPO no índice especificado.</>,
+    },
+    {
+      signature: "getRotation()",
+      returns: "Quaternion",
+      description: <>Retorna a rotação do HPO no índice especificado.</>,
+    },
+    {
+      signature: "setRotation(Quaternion)",
+      returns: "void",
+      description: <>Altera a rotação do HPO no índice especificado.</>,
+    },
+    {
+      signature: "getScale()",
+      returns: "float",
+      description: <>Retorna a escala do HPO no índice especificado.</>,
+    },
+    {
+      signature: "setScale(float)",
+      returns: "void",
+      description: <>Altera a escala do HPO no índice especificado.</>,
+    }
+  ]}
+/>

@@ -1,0 +1,224 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
+# UIStyle
+
+Refer?ncia completa da API de `UIStyle`, incluindo construtores, atributos, atributos virtuais e m?todos.
+
+**Pacote:** `JAVARuntime`
+
+**Categoria:** UI
+
+**Componente:** n?o
+
+---
+
+```java
+public class UIStyle
+```
+
+<ApiDoc
+  constructors={[
+    {
+      signature: "UIStyle(UIStyle)",
+      description: <>Cria uma nova inst?ncia de UIStyle.</>,
+    },
+    {
+      signature: "UIStyle(Engine)",
+      description: <>Cria uma nova inst?ncia de UIStyle.</>,
+    },
+    {
+      signature: "UIStyle()",
+      description: <>Cria uma nova inst?ncia de UIStyle.</>,
+    }
+  ]}
+  attributes={[
+    {
+      name: "instance",
+      type: "UIStyle",
+      description: <>Representa o valor de <code>instance</code> armazenado nesta inst?ncia. Leia ou atribua para atualizar a propriedade.</>,
+    }
+  ]}
+  virtualAttributes={[
+    {
+      name: "bottomLeftCorner",
+      type: "StyleCornerType",
+      access: "get/set",
+      description: <>Retorna o valor atual de <code>bottom left corner</code>.</>,
+    },
+    {
+      name: "bottomRightCorner",
+      type: "StyleCornerType",
+      access: "get/set",
+      description: <>Retorna o valor atual de <code>bottom right corner</code>.</>,
+    },
+    {
+      name: "color",
+      type: "Color",
+      access: "get/set",
+      description: <>Retorna o valor atual de <code>color</code>.</>,
+    },
+    {
+      name: "colorGradient",
+      type: "ColorGradient",
+      access: "get/set",
+      description: <>Retorna o valor atual de <code>color gradient</code>.</>,
+    },
+    {
+      name: "corner",
+      type: "float",
+      access: "get/set",
+      description: <>Retorna o valor atual de <code>corner</code>.</>,
+    },
+    {
+      name: "gradientAngle",
+      type: "float",
+      access: "get/set",
+      description: <>Retorna o valor atual de <code>gradient angle</code>.</>,
+    },
+    {
+      name: "gradientMode",
+      type: "StyleGradientMode",
+      access: "get/set",
+      description: <>Retorna o valor atual de <code>gradient mode</code>.</>,
+    },
+    {
+      name: "hole",
+      type: "float",
+      access: "get/set",
+      description: <>Retorna o valor atual de <code>hole</code>.</>,
+    },
+    {
+      name: "innerGlowColor",
+      type: "Color",
+      access: "get/set",
+      description: <>Retorna o valor atual de <code>inner glow color</code>.</>,
+    },
+    {
+      name: "innerGlowSize",
+      type: "float",
+      access: "get/set",
+      description: <>Retorna o valor atual de <code>inner glow size</code>.</>,
+    },
+    {
+      name: "innerGlowSmooth",
+      type: "float",
+      access: "get/set",
+      description: <>Retorna o valor atual de <code>inner glow smooth</code>.</>,
+    },
+    {
+      name: "innerShadowAngle",
+      type: "float",
+      access: "get/set",
+      description: <>Retorna o valor atual de <code>inner shadow angle</code>.</>,
+    },
+    {
+      name: "innerShadowColor",
+      type: "Color",
+      access: "get/set",
+      description: <>Retorna o valor atual de <code>inner shadow color</code>.</>,
+    },
+    {
+      name: "innerShadowSize",
+      type: "float",
+      access: "get/set",
+      description: <>Retorna o valor atual de <code>inner shadow size</code>.</>,
+    },
+    {
+      name: "innerShadowSmooth",
+      type: "float",
+      access: "get/set",
+      description: <>Retorna o valor atual de <code>inner shadow smooth</code>.</>,
+    },
+    {
+      name: "maskAngle",
+      type: "float",
+      access: "get/set",
+      description: <>Retorna o valor atual de <code>mask angle</code>.</>,
+    },
+    {
+      name: "maskMode",
+      type: "StyleMaskMode",
+      access: "get/set",
+      description: <>Retorna o valor atual de <code>mask mode</code>.</>,
+    },
+    {
+      name: "maskValue",
+      type: "float",
+      access: "get/set",
+      description: <>Retorna o valor atual de <code>mask value</code>.</>,
+    },
+    {
+      name: "outerGlowColor",
+      type: "Color",
+      access: "get/set",
+      description: <>Retorna o valor atual de <code>outer glow color</code>.</>,
+    },
+    {
+      name: "outerGlowSize",
+      type: "float",
+      access: "get/set",
+      description: <>Retorna o valor atual de <code>outer glow size</code>.</>,
+    },
+    {
+      name: "outerGlowSmooth",
+      type: "float",
+      access: "get/set",
+      description: <>Retorna o valor atual de <code>outer glow smooth</code>.</>,
+    },
+    {
+      name: "outerShadowAngle",
+      type: "float",
+      access: "get/set",
+      description: <>Retorna o valor atual de <code>outer shadow angle</code>.</>,
+    },
+    {
+      name: "outerShadowColor",
+      type: "Color",
+      access: "get/set",
+      description: <>Retorna o valor atual de <code>outer shadow color</code>.</>,
+    },
+    {
+      name: "outerShadowSize",
+      type: "float",
+      access: "get/set",
+      description: <>Retorna o valor atual de <code>outer shadow size</code>.</>,
+    },
+    {
+      name: "outerShadowSmooth",
+      type: "float",
+      access: "get/set",
+      description: <>Retorna o valor atual de <code>outer shadow smooth</code>.</>,
+    },
+    {
+      name: "stroke",
+      type: "float",
+      access: "get/set",
+      description: <>Retorna o valor atual de <code>stroke</code>.</>,
+    },
+    {
+      name: "strokeColor",
+      type: "Color",
+      access: "get/set",
+      description: <>Retorna o valor atual de <code>stroke color</code>.</>,
+    },
+    {
+      name: "topLeftCorner",
+      type: "StyleCornerType",
+      access: "get/set",
+      description: <>Retorna o valor atual de <code>top left corner</code>.</>,
+    },
+    {
+      name: "topRightCorner",
+      type: "StyleCornerType",
+      access: "get/set",
+      description: <>Retorna o valor atual de <code>top right corner</code>.</>,
+    }
+  ]}
+  methods={[
+    {
+      signature: "requestDraw()",
+      returns: "void",
+      description: <>Executa <code>requestDraw</code> e retorna quando a chamada do motor termina.</>,
+    }
+  ]}
+/>

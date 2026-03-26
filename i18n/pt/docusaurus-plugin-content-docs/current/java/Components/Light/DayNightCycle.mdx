@@ -1,0 +1,61 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
+# DayNightCycle
+
+Refer?ncia completa da API de `DayNightCycle`, incluindo construtores, atributos, atributos virtuais e m?todos.
+
+**Pacote:** `JAVARuntime`
+
+**Categoria:** Light
+
+**Componente:** sim
+
+---
+
+```java
+public class DayNightCycle extends Component
+```
+
+<ApiDoc
+  constructors={[
+    {
+      signature: "DayNightCycle(DayNightCycle)",
+      description: <>Cria uma nova inst?ncia de DayNightCycle.</>,
+    },
+    {
+      signature: "DayNightCycle(Engine)",
+      description: <>Cria uma nova inst?ncia de DayNightCycle.</>,
+    },
+    {
+      signature: "DayNightCycle()",
+      description: <>Cria uma nova inst?ncia de DayNightCycle.</>,
+    }
+  ]}
+  attributes={[
+    {
+      name: "instance",
+      type: "DayNightCycle",
+      description: <>Representa o valor de <code>instance</code> armazenado nesta inst?ncia. Leia ou atribua para atualizar a propriedade.</>,
+    }
+  ]}
+  virtualAttributes={[
+    {
+      name: "currentTimeOfDay",
+      type: "float",
+      access: "get/set",
+      description: <>Retorna o valor atual de <code>current time of day</code>.</>,
+    },
+    {
+      name: "longitude",
+      type: "float",
+      access: "get/set",
+      description: <>Retorna o valor atual de <code>longitude</code>.</>,
+    },
+    {
+      name: "speed",
+      type: "float",
+      access: "get/set",
+      description: <>Retorna o valor atual de <code>speed</code>.</>,
+    }
+  ]}
+/>

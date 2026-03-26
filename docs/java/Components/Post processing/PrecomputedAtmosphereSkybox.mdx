@@ -1,0 +1,247 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
+# PrecomputedAtmosphereSkybox
+
+Complete API reference for `PrecomputedAtmosphereSkybox`, including constructors, attributes, virtual attributes, and methods.
+
+**Package:** `JAVARuntime`
+
+**Category:** Post processing
+
+**Component:** yes
+
+---
+
+```java
+public class PrecomputedAtmosphereSkybox extends Component
+```
+
+<ApiDoc
+  constructors={[
+    {
+      signature: "PrecomputedAtmosphereSkybox(PrecomputedAtmosphereSkybox)",
+      description: <>Creates a new instance of PrecomputedAtmosphereSkybox.</>,
+    },
+    {
+      signature: "PrecomputedAtmosphereSkybox(Engine)",
+      description: <>Creates a new instance of PrecomputedAtmosphereSkybox.</>,
+    },
+    {
+      signature: "PrecomputedAtmosphereSkybox()",
+      description: <>Creates a new instance of PrecomputedAtmosphereSkybox.</>,
+    }
+  ]}
+  attributes={[
+    {
+      name: "instance",
+      type: "PrecomputedAtmosphereSkybox",
+      description: <>Represents the <code>instance</code> value stored on this instance. Read or assign to update the property.</>,
+    }
+  ]}
+  virtualAttributes={[
+    {
+      name: "ambientLight",
+      type: "boolean",
+      access: "get/set",
+      description: <>Returns whether ambient light is enabled.</>,
+    },
+    {
+      name: "ambientLightResolutionID",
+      type: "int",
+      access: "get/set",
+      description: <>Returns the current ambient light resolution id.</>,
+    },
+    {
+      name: "ambientLightSkyColorMultiplier",
+      type: "Color",
+      access: "get/set",
+      description: <>Returns the current ambient light sky color multiplier.</>,
+    },
+    {
+      name: "atmosphereThicknessKm",
+      type: "float",
+      access: "get/set",
+      description: <>Returns the current atmosphere thickness km.</>,
+    },
+    {
+      name: "autoHeight",
+      type: "boolean",
+      access: "get/set",
+      description: <>Returns whether auto height is enabled.</>,
+    },
+    {
+      name: "eyeHeightKm",
+      type: "float",
+      access: "get/set",
+      description: <>Returns the current eye height km.</>,
+    },
+    {
+      name: "groundRadiusKm",
+      type: "float",
+      access: "get/set",
+      description: <>Returns the current ground radius km.</>,
+    },
+    {
+      name: "lux",
+      type: "float",
+      access: "get/set",
+      description: <>Returns the current lux.</>,
+    },
+    {
+      name: "luxCurve",
+      type: "Curve",
+      access: "get/set",
+      description: <>Returns the current lux curve.</>,
+    },
+    {
+      name: "maxResolutionID",
+      type: "int",
+      access: "get/set",
+      description: <>Returns the current max resolution id.</>,
+    },
+    {
+      name: "mieG",
+      type: "float",
+      access: "get/set",
+      description: <>Returns the current mie g.</>,
+    },
+    {
+      name: "mieMaxHeightKm",
+      type: "float",
+      access: "get/set",
+      description: <>Returns the current mie max height km.</>,
+    },
+    {
+      name: "msContribution",
+      type: "float",
+      access: "get/set",
+      description: <>Returns the current ms contribution.</>,
+    },
+    {
+      name: "msDirSamples",
+      type: "int",
+      access: "get/set",
+      description: <>Returns the current ms dir samples.</>,
+    },
+    {
+      name: "msLutResolutionID",
+      type: "int",
+      access: "get/set",
+      description: <>Returns the current ms lut resolution id.</>,
+    },
+    {
+      name: "msOffsetSamplePhi",
+      type: "float",
+      access: "get/set",
+      description: <>Returns the current ms offset sample phi.</>,
+    },
+    {
+      name: "msOffsetSampleTheta",
+      type: "float",
+      access: "get/set",
+      description: <>Returns the current ms offset sample theta.</>,
+    },
+    {
+      name: "msOffsetSegmentT",
+      type: "float",
+      access: "get/set",
+      description: <>Returns the current ms offset segment t.</>,
+    },
+    {
+      name: "msRaymarchSteps",
+      type: "int",
+      access: "get/set",
+      description: <>Returns the current ms raymarch steps.</>,
+    },
+    {
+      name: "ozoneAbsorptionFalloffKm",
+      type: "float",
+      access: "get/set",
+      description: <>Returns the current ozone absorption falloff km.</>,
+    },
+    {
+      name: "ozonePeakAbsorptionHeightKm",
+      type: "float",
+      access: "get/set",
+      description: <>Returns the current ozone peak absorption height km.</>,
+    },
+    {
+      name: "rayleighMaxHeightKm",
+      type: "float",
+      access: "get/set",
+      description: <>Returns the current rayleigh max height km.</>,
+    },
+    {
+      name: "skyLuminanceColor",
+      type: "Color",
+      access: "get/set",
+      description: <>Returns the current sky luminance color.</>,
+    },
+    {
+      name: "skyLuminanceScale",
+      type: "float",
+      access: "get/set",
+      description: <>Returns the current sky luminance scale.</>,
+    },
+    {
+      name: "skyRaymarchSteps",
+      type: "int",
+      access: "get/set",
+      description: <>Returns the current sky raymarch steps.</>,
+    },
+    {
+      name: "skySaturation",
+      type: "float",
+      access: "get/set",
+      description: <>Returns the current sky saturation.</>,
+    },
+    {
+      name: "skyviewLutResolutionID",
+      type: "int",
+      access: "get/set",
+      description: <>Returns the current skyview lut resolution id.</>,
+    },
+    {
+      name: "skyviewMaxRaymarchDistMegaKm",
+      type: "float",
+      access: "get/set",
+      description: <>Returns the current skyview max raymarch dist mega km.</>,
+    },
+    {
+      name: "skyviewOffsetSegmentT",
+      type: "float",
+      access: "get/set",
+      description: <>Returns the current skyview offset segment t.</>,
+    },
+    {
+      name: "sunAngularDiameter",
+      type: "float",
+      access: "get/set",
+      description: <>Returns the current sun angular diameter.</>,
+    },
+    {
+      name: "sunDiskIntensity",
+      type: "float",
+      access: "get/set",
+      description: <>Returns the current sun disk intensity.</>,
+    },
+    {
+      name: "transmittanceLutResolutionID",
+      type: "int",
+      access: "get/set",
+      description: <>Returns the current transmittance lut resolution id.</>,
+    },
+    {
+      name: "transmittanceOffsetSegmentT",
+      type: "float",
+      access: "get/set",
+      description: <>Returns the current transmittance offset segment t.</>,
+    },
+    {
+      name: "transmittanceSteps",
+      type: "int",
+      access: "get/set",
+      description: <>Returns the current transmittance steps.</>,
+    }
+  ]}
+/>

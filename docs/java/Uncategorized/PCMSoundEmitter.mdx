@@ -1,0 +1,140 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
+# PCMSoundEmitter
+
+Complete API reference for `PCMSoundEmitter`, including constructors, attributes, virtual attributes, and methods.
+
+**Package:** `JAVARuntime`
+
+**Category:** Uncategorized
+
+**Component:** no
+
+---
+
+```java
+public class PCMSoundEmitter
+```
+
+<ApiDoc
+  constructors={[
+    {
+      signature: "PCMSoundEmitter(NativeSoundEmitter)",
+      description: <>Creates a new instance of PCMSoundEmitter.</>,
+    },
+    {
+      signature: "PCMSoundEmitter(NativeFloatBuffer)",
+      description: <>Creates a new instance of PCMSoundEmitter.</>,
+    },
+    {
+      signature: "PCMSoundEmitter(float[])",
+      description: <>Creates a new instance of PCMSoundEmitter.</>,
+    }
+  ]}
+  attributes={[
+    {
+      name: "instance",
+      type: "NativeSoundEmitter",
+      description: <>Represents the <code>instance</code> value stored on this instance. Read or assign to update the property.</>,
+    }
+  ]}
+  virtualAttributes={[
+    {
+      name: "leftVolume",
+      type: "float",
+      access: "get/set",
+      description: <>Returns the current left volume.</>,
+    },
+    {
+      name: "pitch",
+      type: "float",
+      access: "get/set",
+      description: <>Returns the current pitch.</>,
+    },
+    {
+      name: "rightVolume",
+      type: "float",
+      access: "get/set",
+      description: <>Returns the current right volume.</>,
+    },
+    {
+      name: "speed",
+      type: "float",
+      access: "get/set",
+      description: <>Returns the current speed.</>,
+    },
+    {
+      name: "volume",
+      type: "float",
+      access: "get/set",
+      description: <>Returns the current volume.</>,
+    }
+  ]}
+  methods={[
+    {
+      signature: "setVolumes(float, float)",
+      returns: "void",
+      description: <>Sets or updates the volumes.</>,
+    },
+    {
+      signature: "setVolumes(float, float, float)",
+      returns: "void",
+      description: <>Sets or updates the volumes.</>,
+    },
+    {
+      signature: "getCurrentSecond()",
+      returns: "float",
+      description: <>Returns the current current second.</>,
+    },
+    {
+      signature: "getTotalSeconds()",
+      returns: "float",
+      description: <>Returns the current total seconds.</>,
+    },
+    {
+      signature: "seekToSecond(float)",
+      returns: "void",
+      description: <>Executes <code>seekToSecond</code> and returns after the underlying engine call finishes.</>,
+    },
+    {
+      signature: "isLoop()",
+      returns: "boolean",
+      description: <>Returns whether loop is enabled.</>,
+    },
+    {
+      signature: "setLoop(boolean)",
+      returns: "void",
+      description: <>Sets or updates the loop.</>,
+    },
+    {
+      signature: "play()",
+      returns: "void",
+      description: <>Executes <code>play</code> and returns after the underlying engine call finishes.</>,
+    },
+    {
+      signature: "pause()",
+      returns: "void",
+      description: <>Executes <code>pause</code> and returns after the underlying engine call finishes.</>,
+    },
+    {
+      signature: "stop()",
+      returns: "void",
+      description: <>Executes <code>stop</code> and returns after the underlying engine call finishes.</>,
+    },
+    {
+      signature: "isPaused()",
+      returns: "boolean",
+      description: <>Returns whether paused is enabled.</>,
+    },
+    {
+      signature: "isPlaying()",
+      returns: "boolean",
+      description: <>Returns whether playing is enabled.</>,
+    },
+    {
+      signature: "isStopped()",
+      returns: "boolean",
+      description: <>Returns whether stopped is enabled.</>,
+    }
+  ]}
+/>

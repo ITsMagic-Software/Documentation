@@ -1,0 +1,61 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
+# FastBloom
+
+Refer?ncia completa da API de `FastBloom`, incluindo construtores, atributos, atributos virtuais e m?todos.
+
+**Pacote:** `JAVARuntime`
+
+**Categoria:** Post processing
+
+**Componente:** sim
+
+---
+
+```java
+public class FastBloom extends Component
+```
+
+<ApiDoc
+  constructors={[
+    {
+      signature: "FastBloom(FastBloom)",
+      description: <>Cria uma nova inst?ncia de FastBloom.</>,
+    },
+    {
+      signature: "FastBloom(Engine)",
+      description: <>Cria uma nova inst?ncia de FastBloom.</>,
+    },
+    {
+      signature: "FastBloom()",
+      description: <>Cria uma nova inst?ncia de FastBloom.</>,
+    }
+  ]}
+  attributes={[
+    {
+      name: "instance",
+      type: "FastBloom",
+      description: <>Representa o valor de <code>instance</code> armazenado nesta inst?ncia. Leia ou atribua para atualizar a propriedade.</>,
+    }
+  ]}
+  virtualAttributes={[
+    {
+      name: "blurSize",
+      type: "float",
+      access: "get/set",
+      description: <>Retorna o valor atual de <code>blur size</code>.</>,
+    },
+    {
+      name: "intensity",
+      type: "float",
+      access: "get/set",
+      description: <>Retorna o valor atual de <code>intensity</code>.</>,
+    },
+    {
+      name: "threshold",
+      type: "float",
+      access: "get/set",
+      description: <>Retorna o valor atual de <code>threshold</code>.</>,
+    }
+  ]}
+/>
