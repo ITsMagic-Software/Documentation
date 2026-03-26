@@ -4,18 +4,16 @@
 
 ## Purpose
 
-Plays every animation whose name matches `Animation Name` across all `AnimationPlayer` components found on the target object.
-
-When `Loop` is enabled, the matched animations keep looping. When `Transition Delay` is greater than zero, the node fades the animation weight in with the same behavior used by `AnimationTrigger`.
+Executes the `Play Animation` action inside the NoCode flow.
 
 ## Inputs
 
 | Name | Type | Default | Details |
 | --- | --- | --- | --- |
-| `Object` | `GAME_OBJECT` | `Owner` | Target object used to search for `AnimationPlayer` components. |
-| `Animation Name` | `TEXT` | - | Matches animation names with or without the `.anim` extension. |
-| `Loop` | `BOOLEAN` | `true` | Defines whether the matched animations use `playInLoop()` or `play()`. |
-| `Transition Delay` | `NUMBER` | `0.5` | Uses the same fade-in behavior as `AnimationTrigger`. |
+| `Object` | `GAME_OBJECT` | `Owner` | - |
+| `Animation Name` | `TEXT` | - | - |
+| `Loop` | `BOOLEAN` | `true` | - |
+| `Transition Delay` | `NUMBER` | `0.5` | - |
 
 ## Outputs
 

@@ -4,24 +4,22 @@
 
 ## Purpose
 
-Shows the same `InputDialog` used by `JAVARuntime` and keeps the flow blocked until the listener returns.
-
-When the dialog finishes, the node exits through `On Success` and exposes `Result` converted from the dialog text using the selected `Type`. When the dialog is cancelled, the node exits through `On Cancel`.
+Executes the `Input Dialog` action inside the NoCode flow.
 
 ## Inputs
 
 | Name | Type | Default | Details |
 | --- | --- | --- | --- |
-| `Title` | `TEXT` | `Input` | Dialog title. |
-| `Type` | `INPUT_DIALOG_TYPE` | `String` | Uses `String`, `Float`, or `Int` from `InputDialog.Type`. |
-| `Default Text` | `TEXT` | `type here` | Initial text shown inside the input field. |
-| `Cancel Button` | `TEXT` | `cancel` | Label for the cancel button. |
-| `Done Button` | `TEXT` | `done` | Label for the confirm button. |
+| `Title` | `TEXT` | `Input` | - |
+| `Type` | `INPUT_DIALOG_TYPE` | - | - |
+| `Default Text` | `TEXT` | `type here` | - |
+| `Cancel Button` | `TEXT` | `cancel` | - |
+| `Done Button` | `TEXT` | `done` | - |
 
 ## Outputs
 
 | Name | Type | Default | Details |
 | --- | --- | --- | --- |
-| `Result` | `DYNAMIC` | - | Returns `TEXT` when `Type` is `String`, otherwise returns `NUMBER`. |
-| `On Success` | `BRANCH` | - | Fired after `InputDialogListener.onFinish(...)`. |
-| `On Cancel` | `BRANCH` | - | Fired after `InputDialogListener.onCancel()`. |
+| `Result` | `DYNAMIC` | - | - |
+| `On Success` | `BRANCH` | - | - |
+| `On Cancel` | `BRANCH` | - | - |

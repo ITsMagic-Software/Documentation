@@ -1,0 +1,137 @@
+.showcase {
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  padding: clamp(2rem, 4vw, 3.75rem);
+  border: 1px solid rgba(106, 178, 206, 0.22);
+  border-radius: 28px;
+  background:
+    radial-gradient(circle at top center, rgba(106, 178, 206, 0.12), transparent 42%),
+    radial-gradient(circle at bottom left, rgba(44, 125, 160, 0.14), transparent 40%),
+    linear-gradient(180deg, rgba(13, 13, 13, 0.96) 0%, rgba(20, 20, 20, 0.98) 100%);
+  box-shadow: 0 28px 70px rgba(0, 0, 0, 0.35);
+}
+
+.showcase::before {
+  content: "";
+  position: absolute;
+  inset: auto -12% -30% auto;
+  width: 18rem;
+  height: 18rem;
+  border-radius: 999px;
+  background: radial-gradient(circle, rgba(106, 178, 206, 0.12) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.hero {
+  position: relative;
+  z-index: 1;
+  max-width: 48rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.eyebrow {
+  margin: 0 0 0.9rem;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: #8cc6dd;
+}
+
+.title {
+  margin: 0;
+  font-size: clamp(2.1rem, 4vw, 3.8rem);
+  line-height: 1.02;
+  color: #f7fbff;
+}
+
+.accent {
+  display: inline-block;
+  margin-left: 0.35rem;
+  font-style: italic;
+  color: #8fd8ff;
+}
+
+.subtitle {
+  max-width: 40rem;
+  margin: 1rem auto 0;
+  font-size: 1.02rem;
+  line-height: 1.75;
+  color: rgba(244, 247, 249, 0.76);
+}
+
+.stats {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: clamp(2rem, 4vw, 3rem);
+}
+
+.card {
+  min-height: 100%;
+  padding: 1.5rem;
+  border: 1px solid rgba(106, 178, 206, 0.16);
+  border-radius: 22px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.01));
+  text-align: center;
+}
+
+.value {
+  margin: 0;
+  font-family: var(--ifm-heading-font-family);
+  font-size: clamp(2.4rem, 5vw, 4rem);
+  font-weight: 600;
+  line-height: 1;
+  color: #82d6ff;
+}
+
+.label {
+  margin: 0.95rem 0 0;
+  font-size: 1.02rem;
+  font-weight: 600;
+  color: #f7fbff;
+}
+
+.description {
+  margin: 0.55rem 0 0;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: rgba(244, 247, 249, 0.66);
+}
+
+.footer {
+  position: relative;
+  z-index: 1;
+  margin: 1.75rem auto 0;
+  max-width: 38rem;
+  text-align: center;
+  font-size: 0.92rem;
+  line-height: 1.7;
+  color: rgba(244, 247, 249, 0.58);
+}
+
+@media (max-width: 996px) {
+  .stats {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .showcase {
+    padding: 1.5rem 1rem;
+    border-radius: 22px;
+  }
+
+  .card {
+    padding: 1.25rem 1rem;
+    border-radius: 18px;
+  }
+
+  .subtitle {
+    font-size: 0.96rem;
+  }
+}
