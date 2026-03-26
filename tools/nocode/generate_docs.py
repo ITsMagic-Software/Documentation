@@ -10,11 +10,13 @@ from pathlib import Path
 ROOT_CATEGORY = {
     "label": "NoCode",
     "position": 2,
+    "key": "nocode",
 }
 
 PT_ROOT_CATEGORY = {
     "label": "NoCode",
     "position": 2,
+    "key": "nocode",
 }
 
 
@@ -587,6 +589,31 @@ def write_category(path: Path, data: dict[str, object]) -> None:
     path.write_text("\n".join(lines) + "\n", encoding="utf-8")
 
 
+def sanitize_key_part(value: str) -> str:
+    cleaned = re.sub(r"[^a-zA-Z0-9]+", "-", value.strip().lower()).strip("-")
+    return cleaned or "category"
+
+
+def category_metadata(relative_parts: tuple[str, ...]) -> dict[str, object]:
+    return {
+        "label": relative_parts[-1],
+        "key": "nocode-" + "-".join(sanitize_key_part(part) for part in relative_parts),
+    }
+
+
+def ensure_category_chain(root: Path, relative_dir: Path, root_category: dict[str, object]) -> None:
+    root.mkdir(parents=True, exist_ok=True)
+    write_category(root / "_category_.json", root_category)
+
+    current = root
+    parts: list[str] = []
+    for part in relative_dir.parts:
+        parts.append(part)
+        current = current / part
+        current.mkdir(parents=True, exist_ok=True)
+        write_category(current / "_category_.json", category_metadata(tuple(parts)))
+
+
 def ensure_clean_directory(path: Path) -> None:
     if path.exists():
         shutil.rmtree(path)
@@ -607,10 +634,10 @@ def generate_docs(repo_root: Path, engine_root: Path) -> list[NodeDoc]:
     for node in nodes:
         resolve_slots(node, classes)
         relative_dir = Path(*node.menu.split("/"))
+        ensure_category_chain(docs_root, relative_dir, ROOT_CATEGORY)
+        ensure_category_chain(pt_root, relative_dir, PT_ROOT_CATEGORY)
         docs_dir = docs_root / relative_dir
         pt_dir = pt_root / relative_dir
-        docs_dir.mkdir(parents=True, exist_ok=True)
-        pt_dir.mkdir(parents=True, exist_ok=True)
         docs_path = docs_dir / f"{node.serialized_name}.mdx"
         pt_path = pt_dir / f"{node.serialized_name}.mdx"
         docs_path.write_text(render_page(node, "en"), encoding="utf-8")
