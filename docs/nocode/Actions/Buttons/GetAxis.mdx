@@ -1,0 +1,19 @@
+# Get Axis
+
+**Menu:** `Actions/Buttons`
+
+## Purpose
+
+Reads the current `Vector2` value of an input axis and exposes the result on the node outputs. If the axis does not exist or the name is empty, the node returns `float2(0, 0)`.
+
+## Inputs
+
+| Name | Type | Default | Details |
+| --- | --- | --- | --- |
+| `Axis Name` | `TEXT` | `axisname` | Name of the registered axis to read. |
+
+## Outputs
+
+| Name | Type | Default | Details |
+| --- | --- | --- | --- |
+| `Axis` | `FLOAT2` | - | Current axis value as a `Vector2`. |

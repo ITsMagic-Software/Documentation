@@ -1,0 +1,20 @@
+# On Axis
+
+**Menu:** `Events/Buttons`
+
+## Funcao
+
+Evento que dispara a cada frame enquanto o `Vector2` do axis de input for diferente de `0`. O vetor atual do axis fica disponivel na saida do node.
+
+## Entradas
+
+| Nome | Tipo | Padrao | Detalhes |
+| --- | --- | --- | --- |
+| `Axis Name` | `TEXT` | `axisname` | Nome do axis registrado que sera monitorado. |
+
+## Saidas
+
+| Nome | Tipo | Padrao | Detalhes |
+| --- | --- | --- | --- |
+| `Then` | `BRANCH` | - | Dispara enquanto o vetor do axis nao for zero. |
+| `Value` | `FLOAT2` | - | Valor atual do axis como um `Vector2`. |
