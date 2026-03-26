@@ -7,6 +7,7 @@ export default function EngineStatsShowcase({
   accent,
   subtitle,
   items,
+  links = [],
   footer,
 }) {
   return (
@@ -29,6 +30,22 @@ export default function EngineStatsShowcase({
           </article>
         ))}
       </div>
+
+      {links.length > 0 ? (
+        <div className={styles.links}>
+          {links.map((link) => (
+            <a
+              key={link.href}
+              className={styles.linkButton}
+              href={link.href}
+              target="_blank"
+              rel="noreferrer"
+            >
+              {link.label}
+            </a>
+          ))}
+        </div>
+      ) : null}
 
       {footer ? <p className={styles.footer}>{footer}</p> : null}
     </section>

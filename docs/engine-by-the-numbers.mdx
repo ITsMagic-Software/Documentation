@@ -1,6 +1,6 @@
 ---
 title: ITsMagic Engine 2.0 By The Numbers
-sidebar_label: By The Numbers
+sidebar_label: ITsMagic By The Numbers
 sidebar_position: 2
 hide_title: true
 hide_table_of_contents: true
@@ -13,12 +13,27 @@ import EngineStatsShowcase from '@site/src/components/EngineStatsShowcase';
   eyebrow="Scale Snapshot"
   title="Inside ITsMagic 2.0"
   accent="By The Numbers"
-  subtitle="A fast look at the documented runtime and the visual systems already ready to explore inside the engine."
+  subtitle="A fast look at the documented surface of ITsMagic and the scale of the engine, community, and downloads around it."
   items={[
     {
       value: '415',
-      label: 'Java Runtime Classes',
-      description: 'Documented API entries covering the engine runtime, utilities, UI, physics, audio, and more.',
+      label: 'Java API',
+      description: 'Documented runtime API entries covering engine systems, utilities, UI, physics, audio, and more.',
+    },
+    {
+      value: '3,573',
+      label: 'Internal Java Files',
+      description: 'Java files inside app/src powering editor features, runtime systems, tools, and engine behavior.',
+    },
+    {
+      value: '626',
+      label: 'Internal Cpp Files',
+      description: 'Native C/C++ source and header files inside app/src supporting rendering, low-level systems, and integrations.',
+    },
+    {
+      value: '530',
+      label: 'Internal XML Files',
+      description: 'XML files inside app/src covering layouts, resources, manifests, configuration, and Android integration.',
     },
     {
       value: '283',
@@ -30,6 +45,30 @@ import EngineStatsShowcase from '@site/src/components/EngineStatsShowcase';
       label: 'Material Graph Nodes',
       description: 'Shader and post-process nodes for colors, math, surfaces, space transforms, and rendering effects.',
     },
+    {
+      value: '1,075,660',
+      label: 'Downloads v1.0',
+      description: 'Install base accumulated by the original ITsMagic Engine release.',
+    },
+    {
+      value: '424',
+      label: 'Downloads v2.0',
+      description: 'Current installs for the new ITsMagic Engine 2.0 release.',
+    },
+    {
+      value: '485',
+      label: 'WhatsApp Community',
+      description: 'Members sharing builds, questions, feedback, and quick support in the main WhatsApp group.',
+    },
+    {
+      value: '5,987',
+      label: 'Discord Community',
+      description: 'Developers, players, and creators gathered in the official Discord server.',
+    },
   ]}
-  footer="These counts reflect the current documentation catalog and give a quick sense of the engine surface already mapped here."
+  links={[
+    { label: 'Join WhatsApp', href: 'https://chat.whatsapp.com/Ctgdap8YVRs07QfNaGvLLJ' },
+    { label: 'Join Discord', href: 'https://discord.gg/cjN7uUTUEr' },
+  ]}
+  footer="These counts combine the current documentation catalog with the broader project footprint and community reach around ITsMagic."
 />
