@@ -543,8 +543,6 @@ def render_page(node: NodeDoc, language: str) -> str:
     title = node.title
     description = describe_node(title, node.menu, language)
     menu_label = "**Menu:**" if language == "pt" else "**Menu:**"
-    input_flow_label = "**Fluxo de entrada superior:**" if language == "pt" else "**Top flow input:**"
-    output_flow_label = "**Fluxo de saida superior:**" if language == "pt" else "**Top flow output:**"
     function_heading = "## Funcao" if language == "pt" else "## Purpose"
     inputs_heading = "## Entradas" if language == "pt" else "## Inputs"
     outputs_heading = "## Saidas" if language == "pt" else "## Outputs"
@@ -554,10 +552,6 @@ def render_page(node: NodeDoc, language: str) -> str:
         f"# {title}",
         "",
         f"{menu_label} `{node.menu}`",
-        "",
-        f"{input_flow_label} {flow_label(node.top_flow_input, language)}",
-        "",
-        f"{output_flow_label} {flow_label(node.top_flow_output, language)}",
         "",
         function_heading,
         "",
