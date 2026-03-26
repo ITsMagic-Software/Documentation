@@ -1,0 +1,24 @@
+# Popup Dialog 2 Buttons
+
+**Menu:** `Actions/Input`
+
+## Funcao
+
+Exibe um `JAVARuntime.PopupDialog` com botoes de cancelamento e confirmacao e trava o flow ate um deles ser clicado.
+
+## Entradas
+
+| Nome | Tipo | Padrao | Detalhes |
+| --- | --- | --- | --- |
+| `Title` | `TEXT` | `Popup` | Titulo do dialog. |
+| `Message` | `TEXT` | - | Mensagem do dialog. |
+| `Type` | `POPUP_DIALOG_TYPE` | `SUCCESS` | Usa o enum mapeado para os estilos do `PopupDialog`. |
+| `Cancel Button` | `TEXT` | `cancel` | Rotulo usado no botao de cancelamento. |
+| `Confirm Button` | `TEXT` | `ok` | Rotulo usado no botao de confirmacao. |
+
+## Saidas
+
+| Nome | Tipo | Padrao | Detalhes |
+| --- | --- | --- | --- |
+| `On Cancel` | `BRANCH` | - | Disparado quando o botao de cancelamento e clicado. |
+| `On Confirm` | `BRANCH` | - | Disparado quando o botao de confirmacao e clicado. |

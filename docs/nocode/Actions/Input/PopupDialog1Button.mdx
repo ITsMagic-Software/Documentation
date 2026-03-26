@@ -1,0 +1,22 @@
+# Popup Dialog 1 Button
+
+**Menu:** `Actions/Input`
+
+## Purpose
+
+Shows a `JAVARuntime.PopupDialog` with one confirm button and keeps the flow blocked until the button is clicked.
+
+## Inputs
+
+| Name | Type | Default | Details |
+| --- | --- | --- | --- |
+| `Title` | `TEXT` | `Popup` | Dialog title. |
+| `Message` | `TEXT` | - | Dialog message. |
+| `Type` | `POPUP_DIALOG_TYPE` | `SUCCESS` | Uses the mapped enum for `PopupDialog` styles. |
+| `Confirm Button` | `TEXT` | `ok` | Label used by the confirm button. |
+
+## Outputs
+
+| Name | Type | Default | Details |
+| --- | --- | --- | --- |
+| `On Confirm` | `BRANCH` | - | Fired when the confirm button is clicked. |

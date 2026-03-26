@@ -1,0 +1,27 @@
+# Input Dialog
+
+**Menu:** `Actions/Input`
+
+## Funcao
+
+Exibe o mesmo `InputDialog` usado pelo `JAVARuntime` e trava o flow do node ate o listener retornar.
+
+Quando o dialog finaliza, o node sai por `On Success` e expoe `Result` convertido a partir do texto retornado conforme o `Type` selecionado. Quando o dialog e cancelado, o node sai por `On Cancel`.
+
+## Entradas
+
+| Nome | Tipo | Padrao | Detalhes |
+| --- | --- | --- | --- |
+| `Title` | `TEXT` | `Input` | Titulo do dialog. |
+| `Type` | `INPUT_DIALOG_TYPE` | `String` | Usa `String`, `Float` ou `Int` de `InputDialog.Type`. |
+| `Default Text` | `TEXT` | `type here` | Texto inicial mostrado no campo de entrada. |
+| `Cancel Button` | `TEXT` | `cancel` | Rotulo do botao de cancelar. |
+| `Done Button` | `TEXT` | `done` | Rotulo do botao de confirmar. |
+
+## Saidas
+
+| Nome | Tipo | Padrao | Detalhes |
+| --- | --- | --- | --- |
+| `Result` | `DYNAMIC` | - | Retorna `TEXT` quando `Type` e `String`, caso contrario retorna `NUMBER`. |
+| `On Success` | `BRANCH` | - | Disparado apos `InputDialogListener.onFinish(...)`. |
+| `On Cancel` | `BRANCH` | - | Disparado apos `InputDialogListener.onCancel()`. |
