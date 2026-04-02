@@ -42,6 +42,18 @@ public class SoundPlayer extends Component
       description: <>Virtual attribute exposed by <code>getDiameter</code>. Access it like a field to read or write the underlying value.</>
     },
     {
+      name: "destroyOnFinish",
+      type: "boolean",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>isDestroyOnFinish</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "effectiveLoop",
+      type: "boolean",
+      access: "get",
+      description: <>Virtual attribute exposed by <code>isEffectiveLoop</code>. Returns whether looping is still active after considering <code>destroyOnFinish</code>.</>
+    },
+    {
       name: "loadMode",
       type: "LoadMode",
       access: "get/set",
