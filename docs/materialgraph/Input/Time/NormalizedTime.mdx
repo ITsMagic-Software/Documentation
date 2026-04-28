@@ -1,0 +1,19 @@
+# Normalized Time
+
+**Menu:** `Input/Time`
+
+## Purpose
+
+Exposes a normalized time value in the `0..1` range. The node accumulates time in Java and sends the ready float to the shader.
+
+## Properties
+
+| Name | Type | Default | Details |
+| --- | --- | --- | --- |
+| `Speed` | `NUMBER` | `1.0` | Multiplies `deltaTime` before the normalized timer is advanced. |
+
+## Outputs
+
+| Name | Type | Default | Details |
+| --- | --- | --- | --- |
+| `Normalized Time` | `NUMBER` | `0..1` | Ready-to-use normalized time value. |
