@@ -1,0 +1,28 @@
+# Height Normal
+
+**Menu:** `Math/Vector`
+
+## Purpose
+
+Calculates the normalized normal of a triangle projected from three height values and a triangle width.
+
+The projected vertices are:
+
+- `A = (0, Height A, 0)`
+- `B = (Width, Height B, 0)`
+- `C = (0, Height C, Width)`
+
+## Inputs
+
+| Name | Type | Default | Details |
+| --- | --- | --- | --- |
+| `Height A` | `NUMBER` | - | Height of the first projected vertex. |
+| `Height B` | `NUMBER` | - | Height of the second projected vertex. |
+| `Height C` | `NUMBER` | - | Height of the third projected vertex. |
+| `Width` | `NUMBER` | - | Triangle width used in the projection. |
+
+## Outputs
+
+| Name | Type | Default | Details |
+| --- | --- | --- | --- |
+| `Out` | `FLOAT3` | - | Normalized triangle normal. |

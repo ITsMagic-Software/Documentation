@@ -1,0 +1,50 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
+# EnemyAI
+
+Complete API reference for `EnemyAI`, including constructors, attributes, virtual attributes, and methods.
+
+**Package:** `JAVARuntime`
+
+**Category:** AI
+
+**Component:** yes
+
+---
+
+```java
+public class EnemyAI extends Component
+```
+
+<ApiDoc
+  constructors={[
+    {
+      signature: "EnemyAI(EnemyAI)",
+      description: <>Executes <code>EnemyAI</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "EnemyAI(Engine)",
+      description: <>Executes <code>EnemyAI</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "EnemyAI()",
+      description: <>Creates a new instance of EnemyAI.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "instance",
+      type: "EnemyAI",
+      description: <>Represents the <code>instance</code> value stored on this instance. Read or assign to update the property.</>
+    }
+  ]}
+  virtualAttributes={[
+    {
+      name: "walkSpeed",
+      type: "float",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getWalkSpeed</code>. Access it like a field to read or write the underlying value.</>
+    }
+  ]}
+  methods={[]}
+/>

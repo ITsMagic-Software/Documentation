@@ -117,24 +117,22 @@ public class UIController extends Component
       access: "get/set",
       description: <>Virtual attribute exposed by <code>getResolutionPercentage</code>. Access it like a field to read or write the underlying value.</>
     },
-    {
-      name: "touchPos",
-      type: "Vector2",
-      access: "get",
-      description: <>Virtual attribute exposed by <code>getTouchPos</code>. Access it like a field to read or write the underlying value.</>
-    },
-    {
-      name: "virtualToucheAt",
-      type: "Touch",
-      access: "get",
-      description: <>Virtual attribute exposed by <code>getVirtualToucheAt</code>. Access it like a field to read or write the underlying value.</>
-    }
   ]}
   methods={[
     {
       signature: "emitVirtualTouch()",
       returns: "Touch",
       description: <>Executes <code>emitVirtualTouch</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "getTouchPos(Touch)",
+      returns: "Vector2",
+      description: <>Executes <code>getTouchPos</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "getVirtualToucheAt(int)",
+      returns: "Touch",
+      description: <>Executes <code>getVirtualToucheAt</code> and returns after the underlying engine call finishes.</>
     },
     {
       signature: "pxToDP(float)",

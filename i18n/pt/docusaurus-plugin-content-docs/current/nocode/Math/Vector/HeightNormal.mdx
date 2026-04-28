@@ -1,0 +1,28 @@
+# Height Normal
+
+**Menu:** `Math/Vector`
+
+## Funcao
+
+Calcula a normal normalizada de um triangulo projetado a partir de tres alturas e da largura do triangulo.
+
+Os vertices projetados sao:
+
+- `A = (0, Height A, 0)`
+- `B = (Width, Height B, 0)`
+- `C = (0, Height C, Width)`
+
+## Entradas
+
+| Nome | Tipo | Padrao | Detalhes |
+| --- | --- | --- | --- |
+| `Height A` | `NUMBER` | - | Altura do primeiro vertice projetado. |
+| `Height B` | `NUMBER` | - | Altura do segundo vertice projetado. |
+| `Height C` | `NUMBER` | - | Altura do terceiro vertice projetado. |
+| `Width` | `NUMBER` | - | Largura do triangulo usada na projecao. |
+
+## Saidas
+
+| Nome | Tipo | Padrao | Detalhes |
+| --- | --- | --- | --- |
+| `Out` | `FLOAT3` | - | Normal do triangulo normalizada. |

@@ -1,0 +1,30 @@
+# Wave
+
+**Menu:** `Noise`
+
+## Purpose
+
+Generates a wave procedural pattern with band or ring modes, optional distortion and selectable wave profiles.
+
+## Inputs
+
+| Name | Type | Default | Details |
+| --- | --- | --- | --- |
+| `Vector` | `FLOAT3` | - | Sampling position. |
+| `Scale` | `NUMBER` | - | Multiplies the sampling position. |
+| `Distortion` | `NUMBER` | - | Adds procedural distortion to the wave coordinate. |
+| `Detail` | `NUMBER` | - | Number of detail noise layers. |
+| `Detail Scale` | `NUMBER` | - | Scale for detail noise. |
+| `Detail Roughness` | `NUMBER` | - | Amplitude falloff for detail noise. |
+| `Phase Offset` | `NUMBER` | - | Offsets the wave phase. |
+
+## Outputs
+
+| Name | Type | Default | Details |
+| --- | --- | --- | --- |
+| `Color` | `FLOAT4` | - | Grayscale wave color. |
+| `Fac` | `NUMBER` | - | Wave factor. |
+
+## High Precision
+
+- Internal procedural math uses high-precision numeric operations to preserve stable results when coordinates are large or shared between vertex and fragment stages.

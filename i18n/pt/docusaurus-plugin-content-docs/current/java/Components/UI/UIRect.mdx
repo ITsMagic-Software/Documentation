@@ -101,8 +101,8 @@ public class UIRect extends Component
     },
     {
       name: "position",
-      type: "int",
-      access: "get/set",
+      type: "Point2",
+      access: "get",
       description: <>Atributo virtual exposto por <code>getPosition</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
     },
     {
@@ -119,8 +119,8 @@ public class UIRect extends Component
     },
     {
       name: "size",
-      type: "int",
-      access: "get/set",
+      type: "Point2",
+      access: "get",
       description: <>Atributo virtual exposto por <code>getSize</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
     },
     {
@@ -146,6 +146,16 @@ public class UIRect extends Component
       signature: "isAutoSW()",
       returns: "boolean",
       description: <>Retorna se auto sw é verdadeiro.</>
+    },
+    {
+      signature: "setPosition(int, int)",
+      returns: "void",
+      description: <>Executa <code>setPosition</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "setSize(int, int)",
+      returns: "void",
+      description: <>Executa <code>setSize</code> e retorna quando a chamada do motor termina.</>
     }
   ]}
 />

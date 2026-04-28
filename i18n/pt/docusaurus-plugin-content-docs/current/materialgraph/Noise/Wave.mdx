@@ -1,0 +1,30 @@
+# Wave
+
+**Menu:** `Noise`
+
+## Funcao
+
+Gera um padrao procedural de ondas com modos de faixas ou aneis, distorcao opcional e perfis de onda selecionaveis.
+
+## Entradas
+
+| Nome | Tipo | Default | Detalhes |
+| --- | --- | --- | --- |
+| `Vector` | `FLOAT3` | - | Posicao de amostragem. |
+| `Scale` | `NUMBER` | - | Multiplica a posicao de amostragem. |
+| `Distortion` | `NUMBER` | - | Adiciona distorcao procedural na coordenada da onda. |
+| `Detail` | `NUMBER` | - | Numero de camadas de noise de detalhe. |
+| `Detail Scale` | `NUMBER` | - | Escala do noise de detalhe. |
+| `Detail Roughness` | `NUMBER` | - | Queda de amplitude do noise de detalhe. |
+| `Phase Offset` | `NUMBER` | - | Desloca a fase da onda. |
+
+## Saidas
+
+| Nome | Tipo | Default | Detalhes |
+| --- | --- | --- | --- |
+| `Color` | `FLOAT4` | - | Cor em tons de cinza da onda. |
+| `Fac` | `NUMBER` | - | Fator da onda. |
+
+## Alta Precisao
+
+- Os calculos procedurais internos usam operacoes numericas de alta precisao para preservar resultados estaveis quando as coordenadas sao grandes ou compartilhadas entre as etapas de vertex e fragment.

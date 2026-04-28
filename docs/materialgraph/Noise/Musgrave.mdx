@@ -1,0 +1,29 @@
+# Musgrave
+
+**Menu:** `Noise`
+
+## Purpose
+
+Generates a Musgrave procedural noise pattern for terrain, masks and layered surface variation.
+
+## Inputs
+
+| Name | Type | Default | Details |
+| --- | --- | --- | --- |
+| `UV` | `FLOAT2` | - | Sampling coordinates. |
+| `Scale` | `NUMBER` | - | Multiplies the input coordinates. |
+| `Detail` | `NUMBER` | - | Number of noise layers. |
+| `Dimension` | `NUMBER` | - | Controls octave falloff. |
+| `Lacunarity` | `NUMBER` | - | Frequency multiplier per octave. |
+| `Offset` | `NUMBER` | - | Used by hybrid, ridged and terrain modes. |
+| `Gain` | `NUMBER` | - | Used by hybrid, ridged and terrain modes. |
+
+## Outputs
+
+| Name | Type | Default | Details |
+| --- | --- | --- | --- |
+| `Value` | `NUMBER` | - | Procedural noise value. |
+
+## High Precision
+
+- Internal procedural math uses high-precision numeric operations to preserve stable results when coordinates are large or shared between vertex and fragment stages.

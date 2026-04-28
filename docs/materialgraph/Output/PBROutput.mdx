@@ -11,6 +11,7 @@ Defines the final material output of the graph, including base color, emissive a
 | Name | Type | Default | Details |
 | --- | --- | --- | --- |
 | `Vertex Pos` | `FLOAT3` | - | Vertex stage. |
+| `Vertex Normal` | `FLOAT3` | - | Vertex stage. |
 | `Base Color` | `FLOAT4` | - | Fragment stage. |
 | `Emissive` | `FLOAT4` | - | Fragment stage. |
 | `Roughness` | `NUMBER` | - | Fragment stage. |
@@ -31,3 +32,4 @@ None.
 ## Notes
 
 - This is the final output node of the graph. In unlit or post-processing graphs the editor may show it simply as `Output`.
+- When `Vertex Pos` is connected, the displaced position is applied to the mesh, while the original world position is still passed to fragment nodes such as `World Position`.

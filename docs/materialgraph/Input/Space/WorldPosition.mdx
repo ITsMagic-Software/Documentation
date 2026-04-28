@@ -15,3 +15,7 @@ None.
 | Name | Type | Default | Details |
 | --- | --- | --- | --- |
 | `World Pos` | `FLOAT3` | - | - |
+
+## Notes
+
+- In fragment calculations, `World Pos` uses the original world position passed from the vertex stage. If the graph also writes `Vertex Pos`, this value stays aligned with the position used before vertex displacement.

@@ -40,12 +40,6 @@ public class UICustomPostProcessing extends Component
   ]}
   virtualAttributes={[
     {
-      name: "param",
-      type: "String",
-      access: "set",
-      description: <>Atributo virtual exposto por <code>setParam</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
-    },
-    {
       name: "shaderFile",
       type: "String",
       access: "get/set",
@@ -56,6 +50,33 @@ public class UICustomPostProcessing extends Component
       type: "float",
       access: "get/set",
       description: <>Atributo virtual exposto por <code>getTime</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "setParam(String, float)",
+      returns: "void",
+      description: <>Executa <code>setParam</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "setParam(String, Color)",
+      returns: "void",
+      description: <>Executa <code>setParam</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "setParam(String, Texture)",
+      returns: "void",
+      description: <>Executa <code>setParam</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "setParam(String, Object)",
+      returns: "void",
+      description: <>Executa <code>setParam</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "setParam(String, float[])",
+      returns: "void",
+      description: <>Executa <code>setParam</code> e retorna quando a chamada do motor termina.</>
     }
   ]}
 />

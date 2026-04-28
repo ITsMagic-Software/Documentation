@@ -62,6 +62,12 @@ public class Skybox extends Component
       type: "boolean",
       access: "set",
       description: <>Virtual attribute exposed by <code>setShowSun</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "cubemapFile",
+      type: "CubemapFile",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getCubemapFile</code>. Use a <code>CubemapFile</code> to read or replace the skybox project cubemap file.</>
     }
   ]}
   methods={[
@@ -69,6 +75,11 @@ public class Skybox extends Component
       signature: "isShowSun()",
       returns: "boolean",
       description: <>Executes <code>isShowSun</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "setCubemapFile(String)",
+      returns: "void",
+      description: <>Sets the cubemap from a raw project path string when you are not using a <code>CubemapFile</code> instance.</>
     }
   ]}
 />

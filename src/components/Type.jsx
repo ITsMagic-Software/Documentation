@@ -287,6 +287,7 @@ const types = {
   Skybox: "/docs/java/Components/Post processing/Skybox",
   SlideRotate: "/docs/java/Components/Prototyping/SlideRotate",
   SmoothCameraFollow: "/docs/java/Components/Prototyping/SmoothCameraFollow",
+  OrbitalCameraFollow: "/docs/java/Components/Prototyping/OrbitalCameraFollow",
   Socket: "/docs/java/Uncategorized/Socket",
   SoundData: "/docs/java/Uncategorized/SoundData",
   SoundDecoder: "/docs/java/Uncategorized/SoundDecoder",

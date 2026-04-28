@@ -11,6 +11,7 @@ Define a saida final do material no grafo, incluindo base color, emissive e resp
 | Nome | Tipo | Default | Detalhes |
 | --- | --- | --- | --- |
 | `Vertex Pos` | `FLOAT3` | - | Etapa de vertex. |
+| `Vertex Normal` | `FLOAT3` | - | Etapa de vertex. |
 | `Base Color` | `FLOAT4` | - | Etapa de fragment. |
 | `Emissive` | `FLOAT4` | - | Etapa de fragment. |
 | `Roughness` | `NUMBER` | - | Etapa de fragment. |
@@ -31,3 +32,4 @@ Nenhuma.
 ## Observacoes
 
 - Este e o node final de saida do grafo. Em grafos unlit ou de pos-processamento o editor pode mostra-lo apenas como `Output`.
+- Quando `Vertex Pos` esta conectado, a posicao deslocada e aplicada na malha, enquanto a posicao world original ainda e passada para nodes de fragment como `World Position`.

@@ -1,0 +1,49 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
+# TimedObjectDeactivator
+
+Referencia completa da API de `TimedObjectDeactivator`, incluindo construtores, atributos, atributos virtuais e metodos.
+
+**Pacote:** `JAVARuntime`
+
+**Categoria:** Prototyping
+
+**Componente:** sim
+
+---
+
+```java
+public class TimedObjectDeactivator extends Component
+```
+
+<ApiDoc
+  constructors={[
+    {
+      signature: "TimedObjectDeactivator(TimedObjectDeactivator)",
+      description: <>Executa <code>TimedObjectDeactivator</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "TimedObjectDeactivator(Engine)",
+      description: <>Executa <code>TimedObjectDeactivator</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "TimedObjectDeactivator()",
+      description: <>Cria uma nova instancia de TimedObjectDeactivator.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "instance",
+      type: "TimedObjectDeactivator",
+      description: <>Representa o valor de <code>instance</code> armazenado nesta instancia. Leia ou atribua para atualizar a propriedade.</>
+    }
+  ]}
+  virtualAttributes={[
+    {
+      name: "timer",
+      type: "float",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getTimer</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    }
+  ]}
+/>

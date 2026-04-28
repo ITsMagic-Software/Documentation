@@ -889,6 +889,9 @@ https://t.me/+EUX1R1X_jCgxMjgx
 [AmbientLight]:
 https://itsmagic.com.br/documentation/docs/Java/Components/Post%20processing/AmbientLight
 
+[CubemapFile]:
+https://itsmagic.com.br/documentation/docs/Java/Material/CubemapFile
+
 [AnimationFile]:
 https://itsmagic.com.br/documentation/docs/Java/Animations/AnimationFile
 
@@ -1113,6 +1116,9 @@ https://itsmagic.com.br/documentation/docs/Java/Components/TODO/Sharpen
 
 [ShortVector3Buffer]:
 https://itsmagic.com.br/documentation/docs/Java/Vector/ShortVector3Buffer
+
+[EnemyAI]:
+https://itsmagic.com.br/documentation/docs/Java/Components/AI/EnemyAI
 
 [SimpleEnemyAI]:
 https://itsmagic.com.br/documentation/docs/Java/Components/AI/SimpleEnemyAI

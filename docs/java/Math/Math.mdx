@@ -371,6 +371,16 @@ public class Math
       description: <>Converts a value from the range [oldMin, oldMax] to the range [newMin, newMax].</>
     },
     {
+      signature: "createSubdividedPlane(int)",
+      returns: "Vertex",
+      description: <>Creates a subdivided plane mesh and returns it as a <code>Vertex</code>.</>
+    },
+    {
+      signature: "createSubdividedPlane(int, Vector2)",
+      returns: "Vertex",
+      description: <>Creates a subdivided plane mesh with a fixed width of 1 unit, using a pivot in the [0..1] range for X and Y, where 0.5 centers the plane.</>
+    },
+    {
       signature: "fixNaN(float)",
       returns: "float",
       description: <>Returns 0 if the value is NaN, otherwise returns the specified value.</>

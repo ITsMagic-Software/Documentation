@@ -56,6 +56,19 @@ public class AmbientLight extends Component
       type: "int",
       access: "get/set",
       description: <>Virtual attribute exposed by <code>getMaxResolutionID</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "cubemapFile",
+      type: "CubemapFile",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getCubemapFile</code>. Use a <code>CubemapFile</code> to control the reflections cubemap file.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "setCubemapFile(String)",
+      returns: "void",
+      description: <>Sets the reflections cubemap from a raw project path string when you are not using a <code>CubemapFile</code> instance.</>
     }
   ]}
 />

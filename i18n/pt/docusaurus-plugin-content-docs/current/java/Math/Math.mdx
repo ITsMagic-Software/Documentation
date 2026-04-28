@@ -371,6 +371,16 @@ public class Math
       description: <>Converte um valor do intervalo [oldMin, oldMax] para o intervalo [newMin, newMax].</>
     },
     {
+      signature: "createSubdividedPlane(int)",
+      returns: "Vertex",
+      description: <>Cria um mesh de plano subdividido e o retorna como um <code>Vertex</code>.</>
+    },
+    {
+      signature: "createSubdividedPlane(int, Vector2)",
+      returns: "Vertex",
+      description: <>Cria um mesh de plano subdividido com largura fixa de 1 unidade, usando um pivot no intervalo [0..1] em X e Y, onde 0.5 centraliza o plano.</>
+    },
+    {
       signature: "fixNaN(float)",
       returns: "float",
       description: <>Retorna 0 se o valor for NaN, caso contrário Retorna a propriedade <code>propriedade </code>valor especificado``.</>
@@ -726,6 +736,16 @@ public class Math
       signature: "rangeConverter(float, float, float, float, float)",
       returns: "float",
       description: <>Converte um valor do intervalo [oldMin, oldMax] para o intervalo [newMin, newMax].</>
+    },
+    {
+      signature: "createSubdividedPlane(int)",
+      returns: "Vertex",
+      description: <>Cria um mesh de plano subdividido e o retorna como um <code>Vertex</code>.</>
+    },
+    {
+      signature: "createSubdividedPlane(int, Vector2)",
+      returns: "Vertex",
+      description: <>Cria um mesh de plano subdividido usando um pivot no intervalo [0..1] em X e Y, onde 0.5 centraliza o plano.</>
     },
     {
       signature: "fixNaN(float)",

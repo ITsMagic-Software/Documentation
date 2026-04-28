@@ -117,24 +117,22 @@ public class UIController extends Component
       access: "get/set",
       description: <>Atributo virtual exposto por <code>getResolutionPercentage</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
     },
-    {
-      name: "touchPos",
-      type: "Vector2",
-      access: "get",
-      description: <>Atributo virtual exposto por <code>getTouchPos</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
-    },
-    {
-      name: "virtualToucheAt",
-      type: "Touch",
-      access: "get",
-      description: <>Atributo virtual exposto por <code>getVirtualToucheAt</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
-    }
   ]}
   methods={[
     {
       signature: "emitVirtualTouch()",
       returns: "Touch",
       description: <>Executa <code>emitVirtualTouch</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "getTouchPos(Touch)",
+      returns: "Vector2",
+      description: <>Executa <code>getTouchPos</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "getVirtualToucheAt(int)",
+      returns: "Touch",
+      description: <>Executa <code>getVirtualToucheAt</code> e retorna quando a chamada do motor termina.</>
     },
     {
       signature: "pxToDP(float)",

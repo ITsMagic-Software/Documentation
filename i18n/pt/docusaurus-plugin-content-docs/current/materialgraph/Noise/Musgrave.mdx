@@ -1,0 +1,29 @@
+# Musgrave
+
+**Menu:** `Noise`
+
+## Funcao
+
+Gera um padrao procedural Musgrave para terreno, mascaras e variacao de superficie em camadas.
+
+## Entradas
+
+| Nome | Tipo | Default | Detalhes |
+| --- | --- | --- | --- |
+| `UV` | `FLOAT2` | - | Coordenadas de amostragem. |
+| `Scale` | `NUMBER` | - | Multiplica as coordenadas de entrada. |
+| `Detail` | `NUMBER` | - | Numero de camadas de noise. |
+| `Dimension` | `NUMBER` | - | Controla a queda por oitava. |
+| `Lacunarity` | `NUMBER` | - | Multiplicador de frequencia por oitava. |
+| `Offset` | `NUMBER` | - | Usado nos modos hybrid, ridged e terrain. |
+| `Gain` | `NUMBER` | - | Usado nos modos hybrid, ridged e terrain. |
+
+## Saidas
+
+| Nome | Tipo | Default | Detalhes |
+| --- | --- | --- | --- |
+| `Value` | `NUMBER` | - | Valor procedural de noise. |
+
+## Alta Precisao
+
+- Os calculos procedurais internos usam operacoes numericas de alta precisao para preservar resultados estaveis quando as coordenadas sao grandes ou compartilhadas entre as etapas de vertex e fragment.
