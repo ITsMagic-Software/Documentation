@@ -1,0 +1,88 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
+# SpeechRecognizer
+
+`SpeechRecognizer` captura o microfone do dispositivo usando o serviço de reconhecimento de fala do Android e converte áudio falado em texto. Ele é útil para comandos por voz, ditado, campos de busca, interações de acessibilidade e qualquer fluxo de jogo ou app que precise de entrada por fala.
+
+O componente começa a ouvir quando `enableRecognition` está habilitado. Durante a escuta, o Android pode enviar hipóteses parciais antes da transcrição final ficar pronta. `getPartialResults()` retorna texto temporário nos frames em que o Android informa uma hipótese parcial. `getResults()` retorna texto durante exatamente um frame da engine, e apenas quando o Android finaliza uma rodada de reconhecimento de fala. Nos frames sem novos dados de reconhecimento, os dois valores ficam vazios. Leia o componente a cada update e copie qualquer valor não vazio que precisar manter; caso contrário, um resultado final pode ser perdido depois que esse único frame passar.
+
+Defina `language` com uma tag de idioma BCP-47, como `pt-BR`, `en-US` ou `es-ES`. Se a tag for inválida, o componente registra o problema no Terminal e para o reconhecimento em vez de iniciar com um idioma desconhecido.
+
+**Pacote:** `JAVARuntime`
+
+**Categoria:** Sound
+
+**Componente:** sim
+
+---
+
+```java
+public class SpeechRecognizer extends Component
+```
+
+<ApiDoc
+  constructors={[
+    {
+      signature: "SpeechRecognizer()",
+      description: <>Cria uma nova instância de SpeechRecognizer.</>
+    }
+  ]}
+  virtualAttributes={[
+    {
+      name: "enableRecognition",
+      type: "boolean",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>isEnableRecognition</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "language",
+      type: "String",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getLanguage</code>. Use uma tag de idioma BCP-47, como <code>pt-BR</code>.</>
+    },
+    {
+      name: "partialResults",
+      type: "String",
+      access: "get",
+      description: <>Atributo virtual exposto por <code>getPartialResults</code>. Retorna texto temporário nos frames com novos dados parciais de fala; caso contrário, retorna uma string vazia.</>
+    },
+    {
+      name: "results",
+      type: "String",
+      access: "get",
+      description: <>Atributo virtual exposto por <code>getResults</code>. Retorna texto final durante exatamente um frame quando uma rodada de reconhecimento de fala termina; caso contrário, retorna uma string vazia.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "getPartialResults()",
+      returns: "String",
+      description: <>Retorna texto temporário nos frames com novos dados parciais de fala; caso contrário, retorna uma string vazia.</>
+    },
+    {
+      signature: "getResults()",
+      returns: "String",
+      description: <>Retorna texto final durante exatamente um frame quando uma rodada de reconhecimento de fala termina; caso contrário, retorna uma string vazia.</>
+    },
+    {
+      signature: "getLanguage()",
+      returns: "String",
+      description: <>Retorna a tag de idioma do reconhecimento de fala.</>
+    },
+    {
+      signature: "setLanguage(String)",
+      returns: "void",
+      description: <>Define a tag de idioma do reconhecimento de fala.</>
+    },
+    {
+      signature: "isEnableRecognition()",
+      returns: "boolean",
+      description: <>Retorna se o reconhecimento de fala está habilitado.</>
+    },
+    {
+      signature: "setEnableRecognition(boolean)",
+      returns: "void",
+      description: <>Define se o reconhecimento de fala está habilitado.</>
+    }
+  ]}
+/>

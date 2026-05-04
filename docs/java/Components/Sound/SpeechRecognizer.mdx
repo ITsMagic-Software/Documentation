@@ -1,0 +1,88 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
+# SpeechRecognizer
+
+`SpeechRecognizer` captures the device microphone through Android's speech recognition service and converts spoken audio into text. It is useful for voice commands, text dictation, search fields, accessibility interactions, and any gameplay or app flow that needs speech-driven input.
+
+The component starts listening when `enableRecognition` is enabled. While listening, Android may send partial hypotheses before the final transcription is ready. `getPartialResults()` returns temporary text on frames where Android reports a partial hypothesis. `getResults()` returns text for exactly one engine frame, and only when Android finishes a speech recognition pass. On frames with no new recognition data, both values are empty. Read the component every update and copy any non-empty value you need to keep; otherwise a final result can be missed after that one frame passes.
+
+Set `language` with a BCP-47 language tag such as `pt-BR`, `en-US`, or `es-ES`. If the tag is invalid, the component reports the issue in the Terminal and stops recognition instead of starting with an unknown language.
+
+**Package:** `JAVARuntime`
+
+**Category:** Sound
+
+**Component:** yes
+
+---
+
+```java
+public class SpeechRecognizer extends Component
+```
+
+<ApiDoc
+  constructors={[
+    {
+      signature: "SpeechRecognizer()",
+      description: <>Creates a new instance of SpeechRecognizer.</>
+    }
+  ]}
+  virtualAttributes={[
+    {
+      name: "enableRecognition",
+      type: "boolean",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>isEnableRecognition</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "language",
+      type: "String",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getLanguage</code>. Use a BCP-47 language tag such as <code>pt-BR</code>.</>
+    },
+    {
+      name: "partialResults",
+      type: "String",
+      access: "get",
+      description: <>Virtual attribute exposed by <code>getPartialResults</code>. Returns temporary recognition text on frames with new partial speech data; otherwise returns an empty string.</>
+    },
+    {
+      name: "results",
+      type: "String",
+      access: "get",
+      description: <>Virtual attribute exposed by <code>getResults</code>. Returns final recognition text for exactly one frame when a speech recognition pass completes; otherwise returns an empty string.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "getPartialResults()",
+      returns: "String",
+      description: <>Returns temporary recognition text on frames with new partial speech data; otherwise returns an empty string.</>
+    },
+    {
+      signature: "getResults()",
+      returns: "String",
+      description: <>Returns final recognition text for exactly one frame when a speech recognition pass completes; otherwise returns an empty string.</>
+    },
+    {
+      signature: "getLanguage()",
+      returns: "String",
+      description: <>Returns the speech recognition language tag.</>
+    },
+    {
+      signature: "setLanguage(String)",
+      returns: "void",
+      description: <>Sets the speech recognition language tag.</>
+    },
+    {
+      signature: "isEnableRecognition()",
+      returns: "boolean",
+      description: <>Returns whether speech recognition is enabled.</>
+    },
+    {
+      signature: "setEnableRecognition(boolean)",
+      returns: "void",
+      description: <>Sets whether speech recognition is enabled.</>
+    }
+  ]}
+/>

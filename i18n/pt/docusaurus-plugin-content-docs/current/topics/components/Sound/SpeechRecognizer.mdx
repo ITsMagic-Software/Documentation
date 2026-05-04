@@ -1,0 +1,82 @@
+# Usando SpeechRecognizer
+
+`SpeechRecognizer` transforma áudio falado em texto usando o serviço de reconhecimento de fala do Android. Adicione-o a um GameObject quando quiser comandos por voz, ditado ou qualquer interação que deva reagir ao que o jogador fala.
+
+O componente funciona como um fluxo de eventos por frame:
+
+- `partialResults` contém texto temporário nos frames em que o Android informa uma hipótese parcial enquanto o usuário ainda está falando.
+- `results` contém texto final durante exatamente um frame, e apenas quando o Android encerra uma rodada de reconhecimento.
+- Nos frames sem novos dados de reconhecimento, os dois valores ficam vazios.
+- Verifique o componente a cada update e copie valores não vazios para sua própria variável, texto de UI, parser de comandos ou log quando precisar mantê-los. Se você não ler `results` nesse frame de conclusão, o texto final não estará mais disponível no frame seguinte.
+
+## Configuração
+
+1. Adicione `SpeechRecognizer` a um GameObject.
+2. Defina `language` com uma tag BCP-47, como `pt-BR` ou `en-US`.
+3. Habilite `enableRecognition` quando quiser que o componente escute.
+4. Leia `partialResults` e `results` durante o update.
+
+No Android, o app precisa da permissão de microfone. Se a permissão ainda não tiver sido concedida, o componente pede a permissão quando o reconhecimento é habilitado.
+
+## Exemplo Com Atributos Virtuais
+
+Esta versão usa atributos virtuais, que são a forma mais curta de trabalhar com o componente em scripts.
+
+```java
+SpatialObject myObject = /* seu objeto */ null;
+SpeechRecognizer speech = myObject.findComponent(SpeechRecognizer.class);
+String lastFinalText = "";
+
+if (speech != null) {
+    speech.language = "pt-BR";
+    speech.enableRecognition = true;
+}
+
+// Execute esta parte a cada update.
+if (speech != null) {
+    String partialText = speech.partialResults;
+    if (partialText != null && !partialText.isEmpty()) {
+        Terminal.log("Fala parcial: " + partialText);
+    }
+
+    String finalText = speech.results;
+    if (finalText != null && !finalText.isEmpty()) {
+        lastFinalText = finalText;
+        Terminal.log("Fala final: " + lastFinalText);
+    }
+}
+```
+
+## Exemplo Com Métodos
+
+Use os métodos diretamente quando preferir chamadas explícitas ou quando quiser deixar claro o comportamento dos getters e setters.
+
+```java
+SpatialObject myObject = /* seu objeto */ null;
+SpeechRecognizer speech = myObject.findComponent(SpeechRecognizer.class);
+
+if (speech != null) {
+    speech.setLanguage("pt-BR");
+    speech.setEnableRecognition(true);
+}
+
+// Execute esta parte a cada update.
+if (speech != null && speech.isEnableRecognition()) {
+    String partialText = speech.getPartialResults();
+    if (partialText != null && !partialText.isEmpty()) {
+        Terminal.log("Fala parcial: " + partialText);
+    }
+
+    String finalText = speech.getResults();
+    if (finalText != null && !finalText.isEmpty()) {
+        Terminal.log("Fala final: " + finalText);
+    }
+}
+```
+
+## Observações
+
+- O texto parcial pode mudar enquanto o Android melhora a hipótese de reconhecimento.
+- O texto final aparece durante exatamente um frame quando o reconhecimento de fala termina e é o melhor valor para comandos que devem executar apenas uma vez.
+- Se `language` for inválido, o componente registra um erro no Terminal e desabilita o reconhecimento.
+- O reconhecimento de fala depende do serviço de reconhecimento Android disponível no dispositivo.
