@@ -1,0 +1,44 @@
+# UIBloom
+
+Post-processing bloom effect exposed by the Java runtime.
+
+## Create in the Editor
+
+1. Ensure there is a `UIController` in the scene.
+2. Create a GameObject and add `UIRect`.
+3. Add the `UIBloom` component.
+
+## How to Use
+
+1. Get the component with `myObject.findComponent(UIBloom.class)`.
+2. Read or write the component properties to control behavior.
+3. Test input or layout in Play mode.
+
+## Java Example
+
+```java
+SpatialObject myObject = /* your object */;
+UIBloom comp = myObject.findComponent(UIBloom.class);
+if (comp != null) {
+    // set the intensity value:
+    comp.intensity = 1f;
+    // read the intensity value:
+    float intensityValue = comp.intensity;
+
+    // set the threshold value:
+    comp.threshold = 1f;
+    // read the threshold value:
+    float thresholdValue = comp.threshold;
+
+    // set the blurRadius value:
+    comp.blurRadius = 1f;
+    // read the blurRadius value:
+    float blurRadiusValue = comp.blurRadius;
+
+    // set the quality value:
+    comp.quality = UIBloom.Quality.LOW;
+    // read the quality value:
+    Quality qualityValue = comp.quality;
+
+}
+```

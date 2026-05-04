@@ -1,0 +1,50 @@
+# UIWebView
+
+Embedded web view widget exposed by the Java runtime.
+
+## Create in the Editor
+
+1. Ensure there is a `UIController` in the scene.
+2. Create a GameObject and add `UIRect`.
+3. Add the `UIWebView` component.
+
+## How to Use
+
+1. Get the component with `myObject.findComponent(UIWebView.class)`.
+2. Read or write the component properties to control behavior.
+3. Test input or layout in Play mode.
+
+## Java Example
+
+```java
+SpatialObject myObject = /* your object */;
+UIWebView comp = myObject.findComponent(UIWebView.class);
+if (comp != null) {
+    Texture tex = /* load texture */ null;
+
+    // set the url value:
+    comp.url = "https://example.com";
+    // read the url value:
+    String urlValue = comp.url;
+
+    // set the fps value:
+    comp.fps = 30;
+    // read the fps value:
+    int fpsValue = comp.fps;
+
+    // set the enableVirtualKeyboard value:
+    comp.enableVirtualKeyboard = true;
+    // read the enableVirtualKeyboard value:
+    boolean enableVirtualKeyboardValue = comp.enableVirtualKeyboard;
+
+    // set the allowHibernate value:
+    comp.allowHibernate = false;
+    // read the allowHibernate value:
+    boolean allowHibernateValue = comp.allowHibernate;
+
+    // read the texture value:
+    Texture textureValue = comp.texture;
+    // read the loadedUrl value:
+    String loadedUrlValue = comp.loadedUrl;
+}
+```

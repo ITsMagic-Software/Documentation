@@ -1,0 +1,80 @@
+# UISlideBar
+
+Componente de slider exposto pelo runtime Java.
+
+## Criar no Editor
+
+1. Garanta que exista um `UIController` na cena.
+2. Crie um GameObject e adicione `UIRect`.
+3. Adicione o componente `UISlideBar`.
+
+## Como usar
+
+1. Obtenha o componente com `myObject.findComponent(UISlideBar.class)`.
+2. Leia ou altere os valores expostos a partir do Java.
+3. Teste o comportamento em Play mode.
+
+## Exemplo em Java
+
+```java
+SpatialObject myObject = /* seu objeto */;
+UISlideBar comp = myObject.findComponent(UISlideBar.class);
+if (comp != null) {
+    Texture tex = /* carregar textura */ null;
+    // define o valor de backgroundColor:
+    comp.backgroundColor = new Color(255, 255, 255, 255);
+    // l? o valor de backgroundColor:
+    Color backgroundColorValue = comp.backgroundColor;
+
+    // define o valor de backgroundTexture:
+    comp.backgroundTexture = tex;
+    // l? o valor de backgroundTexture:
+    Texture backgroundTextureValue = comp.backgroundTexture;
+
+    // define o valor de border:
+    comp.border = 1f;
+    // l? o valor de border:
+    float borderValue = comp.border;
+
+    // define o valor de handlerColor:
+    comp.handlerColor = new Color(255, 255, 255, 255);
+    // l? o valor de handlerColor:
+    Color handlerColorValue = comp.handlerColor;
+
+    // define o valor de handlerTexture:
+    comp.handlerTexture = tex;
+    // l? o valor de handlerTexture:
+    Texture handlerTextureValue = comp.handlerTexture;
+
+    // define o valor de jRPaddingBottom:
+    comp.jRPaddingBottom = 1;
+    // l? o valor de jRPaddingBottom:
+    int jRPaddingBottomValue = comp.jRPaddingBottom;
+
+    // define o valor de jRPaddingLeft:
+    comp.jRPaddingLeft = 1;
+    // l? o valor de jRPaddingLeft:
+    int jRPaddingLeftValue = comp.jRPaddingLeft;
+
+    // define o valor de jRPaddingRight:
+    comp.jRPaddingRight = 1;
+    // l? o valor de jRPaddingRight:
+    int jRPaddingRightValue = comp.jRPaddingRight;
+
+    // define o valor de jRPaddingTop:
+    comp.jRPaddingTop = 1;
+    // l? o valor de jRPaddingTop:
+    int jRPaddingTopValue = comp.jRPaddingTop;
+
+    // define o valor de orientation:
+    comp.orientation = UISlideBar.Orientation.Vertical;
+    // l? o valor de orientation:
+    UISlideBar.Orientation orientationValue = comp.orientation;
+
+    // define o valor de value:
+    comp.value = 1f;
+    // l? o valor de value:
+    float valueValue = comp.value;
+
+}
+```

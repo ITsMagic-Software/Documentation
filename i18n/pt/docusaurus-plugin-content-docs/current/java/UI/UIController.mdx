@@ -1,0 +1,144 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
+# UIController
+
+Referência completa da API de `UIController`, incluindo construtores, atributos, atributos virtuais e métodos.
+
+**Pacote:** `JAVARuntime`
+
+**Categoria:** UI
+
+**Componente:** sim
+
+---
+
+```java
+public class UIController extends Component
+```
+
+<ApiDoc
+  constructors={[
+    {
+      signature: "UIController()",
+      description: <>Cria uma nova inst?ncia de UIController.</>
+    }
+  ]}
+  attributes={[]}
+  virtualAttributes={[
+    {
+      name: "allowScreenTouch",
+      type: "boolean",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>isAllowScreenTouch</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "drawToScreen",
+      type: "boolean",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>isDrawToScreen</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "fixedResolutionPixelsHeight",
+      type: "int",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getFixedResolutionPixelsHeight</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "fixedResolutionPixelsWidth",
+      type: "int",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getFixedResolutionPixelsWidth</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "frameBuffer",
+      type: "FrameBuffer",
+      access: "get",
+      description: <>Atributo virtual exposto por <code>getFrameBuffer</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "frameBufferH",
+      type: "int",
+      access: "get",
+      description: <>Atributo virtual exposto por <code>getFrameBufferH</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "frameBufferW",
+      type: "int",
+      access: "get",
+      description: <>Atributo virtual exposto por <code>getFrameBufferW</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "freeResolutionPixels",
+      type: "int",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getFreeResolutionPixels</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "imageRatio",
+      type: "float",
+      access: "get",
+      description: <>Atributo virtual exposto por <code>getImageRatio</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "pxSize",
+      type: "float",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getPxSize</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "renderTextureFile",
+      type: "String",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getRenderTextureFile</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "resolutionMode",
+      type: "ResolutionMode",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getResolutionMode</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "resolutionPercentage",
+      type: "float",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getResolutionPercentage</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+  ]}
+  methods={[
+    {
+      signature: "emitVirtualTouch()",
+      returns: "Touch",
+      description: <>Executa <code>emitVirtualTouch</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "getTouchPos(Touch)",
+      returns: "Vector2",
+      description: <>Executa <code>getTouchPos</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "getVirtualToucheAt(int)",
+      returns: "Touch",
+      description: <>Executa <code>getVirtualToucheAt</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "pxToDP(float)",
+      returns: "float",
+      description: <>Executa <code>pxToDP</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "pxToDP(int)",
+      returns: "int",
+      description: <>Executa <code>pxToDP</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "releaseVirtualTouch(Touch)",
+      returns: "void",
+      description: <>Executa <code>releaseVirtualTouch</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "virtualTouchsCount()",
+      returns: "int",
+      description: <>Executa <code>virtualTouchsCount</code> e retorna quando a chamada do motor termina.</>
+    }
+  ]}
+/>

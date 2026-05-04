@@ -1,0 +1,79 @@
+# UIVHSFilter
+
+Post-processing VHS filter effect exposed by the Java runtime.
+
+## Create in the Editor
+
+1. Ensure there is a `UIController` in the scene.
+2. Create a GameObject and add `UIRect`.
+3. Add the `UIVHSFilter` component.
+
+## How to Use
+
+1. Get the component with `myObject.findComponent(UIVHSFilter.class)`.
+2. Read or write the component properties to control behavior.
+3. Test input or layout in Play mode.
+
+## Java Example
+
+```java
+SpatialObject myObject = /* your object */;
+UIVHSFilter comp = myObject.findComponent(UIVHSFilter.class);
+if (comp != null) {
+    // set the colorBleed value:
+    comp.colorBleed = 1f;
+    // read the colorBleed value:
+    float colorBleedValue = comp.colorBleed;
+
+    // set the desaturation value:
+    comp.desaturation = 1f;
+    // read the desaturation value:
+    float desaturationValue = comp.desaturation;
+
+    // set the distortion value:
+    comp.distortion = 1f;
+    // read the distortion value:
+    float distortionValue = comp.distortion;
+
+    // set the intensity value:
+    comp.intensity = 1f;
+    // read the intensity value:
+    float intensityValue = comp.intensity;
+
+    // set the noiseStrength value:
+    comp.noiseStrength = 1f;
+    // read the noiseStrength value:
+    float noiseStrengthValue = comp.noiseStrength;
+
+    // set the scanlineStrength value:
+    comp.scanlineStrength = 1f;
+    // read the scanlineStrength value:
+    float scanlineStrengthValue = comp.scanlineStrength;
+
+    // set the trackingBandHeight value:
+    comp.trackingBandHeight = 1f;
+    // read the trackingBandHeight value:
+    float trackingBandHeightValue = comp.trackingBandHeight;
+
+    // set the trackingNoise value:
+    comp.trackingNoise = 1f;
+    // read the trackingNoise value:
+    float trackingNoiseValue = comp.trackingNoise;
+
+    // set the trackingSpeed value:
+    comp.trackingSpeed = 1f;
+    // read the trackingSpeed value:
+    float trackingSpeedValue = comp.trackingSpeed;
+
+    // set the trackingStrength value:
+    comp.trackingStrength = 1f;
+    // read the trackingStrength value:
+    float trackingStrengthValue = comp.trackingStrength;
+
+    // set the time value:
+    comp.time = 1f;
+    // read the time value:
+    float timeValue = comp.time;
+
+}
+```

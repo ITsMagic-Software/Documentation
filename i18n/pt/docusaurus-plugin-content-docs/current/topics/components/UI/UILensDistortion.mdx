@@ -1,0 +1,44 @@
+# UILensDistortion
+
+Efeito de distor??o de lente exposto pelo runtime Java.
+
+## Criar no Editor
+
+1. Garanta que exista um `UIController` na cena.
+2. Crie um GameObject e adicione `UIRect`.
+3. Adicione o componente `UILensDistortion`.
+
+## Como usar
+
+1. Obtenha o componente com `myObject.findComponent(UILensDistortion.class)`.
+2. Leia ou altere os valores expostos a partir do Java.
+3. Teste o comportamento em Play mode.
+
+## Exemplo em Java
+
+```java
+SpatialObject myObject = /* seu objeto */;
+UILensDistortion comp = myObject.findComponent(UILensDistortion.class);
+if (comp != null) {
+    // define o valor de border:
+    comp.border = 1f;
+    // l? o valor de border:
+    float borderValue = comp.border;
+
+    // define o valor de center:
+    comp.center = new Vector2(1, 1);
+    // l? o valor de center:
+    Vector2 centerValue = comp.center;
+
+    // define o valor de intensity:
+    comp.intensity = 1f;
+    // l? o valor de intensity:
+    float intensityValue = comp.intensity;
+
+    // define o valor de mode:
+    comp.mode = UILensDistortion.Mode.Barrel;
+    // l? o valor de mode:
+    Mode modeValue = comp.mode;
+
+}
+```

@@ -1,0 +1,66 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
+# UIJoystick
+
+Referência completa da API de `UIJoystick`, incluindo construtores, atributos, atributos virtuais e métodos.
+
+**Pacote:** `JAVARuntime`
+
+**Categoria:** UI
+
+**Componente:** sim
+
+---
+
+```java
+public class UIJoystick extends Component
+```
+
+<ApiDoc
+  constructors={[
+    {
+      signature: "UIJoystick()",
+      description: <>Cria uma nova inst?ncia de UIJoystick.</>
+    }
+  ]}
+  attributes={[]}
+  virtualAttributes={[
+    {
+      name: "backgroundColor",
+      type: "Color",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getBackgroundColor</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "backgroundTexture",
+      type: "Texture",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getBackgroundTexture</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "handleSizePercentage",
+      type: "float",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getHandleSizePercentage</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "handlerColor",
+      type: "Color",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getHandlerColor</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "handlerTexture",
+      type: "Texture",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getHandlerTexture</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "getValue()",
+      returns: "Vector2",
+      description: <>Executa <code>getValue</code> e retorna quando a chamada do motor termina.</>
+    }
+  ]}
+/>

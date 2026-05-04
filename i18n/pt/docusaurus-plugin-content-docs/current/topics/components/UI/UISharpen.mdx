@@ -1,0 +1,39 @@
+# UISharpen
+
+Efeito de sharpen exposto pelo runtime Java.
+
+## Criar no Editor
+
+1. Garanta que exista um `UIController` na cena.
+2. Crie um GameObject e adicione `UIRect`.
+3. Adicione o componente `UISharpen`.
+
+## Como usar
+
+1. Obtenha o componente com `myObject.findComponent(UISharpen.class)`.
+2. Leia ou altere os valores expostos a partir do Java.
+3. Teste o comportamento em Play mode.
+
+## Exemplo em Java
+
+```java
+SpatialObject myObject = /* seu objeto */;
+UISharpen comp = myObject.findComponent(UISharpen.class);
+if (comp != null) {
+    // define o valor de intensity:
+    comp.intensity = 1f;
+    // l? o valor de intensity:
+    float intensityValue = comp.intensity;
+
+    // define o valor de sharpenStrength:
+    comp.sharpenStrength = 1f;
+    // l? o valor de sharpenStrength:
+    float sharpenStrengthValue = comp.sharpenStrength;
+
+    // define o valor de edgeThreshold:
+    comp.edgeThreshold = 1f;
+    // l? o valor de edgeThreshold:
+    float edgeThresholdValue = comp.edgeThreshold;
+
+}
+```

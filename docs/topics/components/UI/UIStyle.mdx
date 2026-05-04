@@ -1,0 +1,25 @@
+# UIStyle
+
+UIStyle stores the visual style values used by UI components.
+
+## How to Use
+
+1. Get the `UIStyle` instance from the component that exposes it.
+2. Read or update the style values from Java code.
+
+## Java Example
+
+```java
+UIStyle style = /* your style */ null;
+if (style != null) {
+    // set the color value:
+    style.color = new Color(255, 255, 255, 255);
+    // read the color value:
+    Color colorValue = style.color;
+
+    // set the corner value:
+    style.corner = 1f;
+    // read the corner value:
+    float cornerValue = style.corner;
+}
+```

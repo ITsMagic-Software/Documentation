@@ -1,0 +1,79 @@
+# UIVHSFilter
+
+Efeito de filtro VHS exposto pelo runtime Java.
+
+## Criar no Editor
+
+1. Garanta que exista um `UIController` na cena.
+2. Crie um GameObject e adicione `UIRect`.
+3. Adicione o componente `UIVHSFilter`.
+
+## Como usar
+
+1. Obtenha o componente com `myObject.findComponent(UIVHSFilter.class)`.
+2. Leia ou altere os valores expostos a partir do Java.
+3. Teste o comportamento em Play mode.
+
+## Exemplo em Java
+
+```java
+SpatialObject myObject = /* seu objeto */;
+UIVHSFilter comp = myObject.findComponent(UIVHSFilter.class);
+if (comp != null) {
+    // define o valor de colorBleed:
+    comp.colorBleed = 1f;
+    // l? o valor de colorBleed:
+    float colorBleedValue = comp.colorBleed;
+
+    // define o valor de desaturation:
+    comp.desaturation = 1f;
+    // l? o valor de desaturation:
+    float desaturationValue = comp.desaturation;
+
+    // define o valor de distortion:
+    comp.distortion = 1f;
+    // l? o valor de distortion:
+    float distortionValue = comp.distortion;
+
+    // define o valor de intensity:
+    comp.intensity = 1f;
+    // l? o valor de intensity:
+    float intensityValue = comp.intensity;
+
+    // define o valor de noiseStrength:
+    comp.noiseStrength = 1f;
+    // l? o valor de noiseStrength:
+    float noiseStrengthValue = comp.noiseStrength;
+
+    // define o valor de scanlineStrength:
+    comp.scanlineStrength = 1f;
+    // l? o valor de scanlineStrength:
+    float scanlineStrengthValue = comp.scanlineStrength;
+
+    // define o valor de trackingBandHeight:
+    comp.trackingBandHeight = 1f;
+    // l? o valor de trackingBandHeight:
+    float trackingBandHeightValue = comp.trackingBandHeight;
+
+    // define o valor de trackingNoise:
+    comp.trackingNoise = 1f;
+    // l? o valor de trackingNoise:
+    float trackingNoiseValue = comp.trackingNoise;
+
+    // define o valor de trackingSpeed:
+    comp.trackingSpeed = 1f;
+    // l? o valor de trackingSpeed:
+    float trackingSpeedValue = comp.trackingSpeed;
+
+    // define o valor de trackingStrength:
+    comp.trackingStrength = 1f;
+    // l? o valor de trackingStrength:
+    float trackingStrengthValue = comp.trackingStrength;
+
+    // define o valor de time:
+    comp.time = 1f;
+    // l? o valor de time:
+    float timeValue = comp.time;
+
+}
+```

@@ -1,0 +1,216 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
+# UIShape
+
+Complete API reference for `UIShape`, including constructors, attributes, virtual attributes, and methods.
+
+**Package:** `JAVARuntime`
+
+**Category:** UI
+
+**Component:** yes
+
+---
+
+```java
+public class UIShape extends Component
+```
+
+<ApiDoc
+  constructors={[
+    {
+      signature: "UIShape()",
+      description: <>Creates a new instance of UIShape.</>
+    }
+  ]}
+  attributes={[]}
+  virtualAttributes={[
+    {
+      name: "bottomLeftCorner",
+      type: "CornerType",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getBottomLeftCorner</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "bottomRightCorner",
+      type: "CornerType",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getBottomRightCorner</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "color",
+      type: "Color",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getColor</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "colorGradient",
+      type: "ColorGradient",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getColorGradient</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "corner",
+      type: "float",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getCorner</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "gradientAngle",
+      type: "float",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getGradientAngle</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "gradientMode",
+      type: "GradientMode",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getGradientMode</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "hole",
+      type: "float",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getHole</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "innerGlowColor",
+      type: "Color",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getInnerGlowColor</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "innerGlowSize",
+      type: "float",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getInnerGlowSize</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "innerGlowSmooth",
+      type: "float",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getInnerGlowSmooth</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "innerShadowAngle",
+      type: "float",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getInnerShadowAngle</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "innerShadowColor",
+      type: "Color",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getInnerShadowColor</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "innerShadowSize",
+      type: "float",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getInnerShadowSize</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "innerShadowSmooth",
+      type: "float",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getInnerShadowSmooth</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "maskAngle",
+      type: "float",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getMaskAngle</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "maskMode",
+      type: "MaskMode",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getMaskMode</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "maskValue",
+      type: "float",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getMaskValue</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "outerGlowColor",
+      type: "Color",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getOuterGlowColor</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "outerGlowSize",
+      type: "float",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getOuterGlowSize</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "outerGlowSmooth",
+      type: "float",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getOuterGlowSmooth</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "outerShadowAngle",
+      type: "float",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getOuterShadowAngle</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "outerShadowColor",
+      type: "Color",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getOuterShadowColor</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "outerShadowSize",
+      type: "float",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getOuterShadowSize</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "outerShadowSmooth",
+      type: "float",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getOuterShadowSmooth</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "quality",
+      type: "float",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getQuality</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "stroke",
+      type: "float",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getStroke</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "strokeColor",
+      type: "Color",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getStrokeColor</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "topLeftCorner",
+      type: "CornerType",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getTopLeftCorner</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "topRightCorner",
+      type: "CornerType",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getTopRightCorner</code>. Access it like a field to read or write the underlying value.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "requestDraw()",
+      returns: "void",
+      description: <>Executes <code>requestDraw</code> and returns after the underlying engine call finishes.</>
+    }
+  ]}
+/>

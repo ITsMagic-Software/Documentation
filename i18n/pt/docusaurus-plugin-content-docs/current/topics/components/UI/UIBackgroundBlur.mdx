@@ -1,0 +1,34 @@
+# UIBackgroundBlur
+
+Efeito de desfoque do fundo exposto pelo runtime Java.
+
+## Criar no Editor
+
+1. Garanta que exista um `UIController` na cena.
+2. Crie um GameObject e adicione `UIRect`.
+3. Adicione o componente `UIBackgroundBlur`.
+
+## Como usar
+
+1. Obtenha o componente com `myObject.findComponent(UIBackgroundBlur.class)`.
+2. Leia ou altere os valores expostos a partir do Java.
+3. Teste o comportamento em Play mode.
+
+## Exemplo em Java
+
+```java
+SpatialObject myObject = /* seu objeto */;
+UIBackgroundBlur comp = myObject.findComponent(UIBackgroundBlur.class);
+if (comp != null) {
+    // define o valor de blurRadius:
+    comp.blurRadius = 1f;
+    // l? o valor de blurRadius:
+    float blurRadiusValue = comp.blurRadius;
+
+    // define o valor de quality:
+    comp.quality = UIBackgroundBlur.Quality.LOW;
+    // l? o valor de quality:
+    UIBackgroundBlur.Quality qualityValue = comp.quality;
+
+}
+```

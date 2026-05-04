@@ -1,0 +1,29 @@
+# UIBarHandler
+
+UI bar handler component exposed by the Java runtime.
+
+## Create in the Editor
+
+1. Ensure there is a `UIController` in the scene.
+2. Create a GameObject and add `UIRect`.
+3. Add the `UIBarHandler` component.
+
+## How to Use
+
+1. Get the component with `myObject.findComponent(UIBarHandler.class)`.
+2. Read or write the component properties to control behavior.
+3. Test input or layout in Play mode.
+
+## Java Example
+
+```java
+SpatialObject myObject = /* your object */;
+UIBarHandler comp = myObject.findComponent(UIBarHandler.class);
+if (comp != null) {
+    // set the align value:
+    comp.align = UIBarHandler.Align.Center;
+    // read the align value:
+    UIBarHandler.Align alignValue = comp.align;
+
+}
+```

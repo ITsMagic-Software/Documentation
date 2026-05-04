@@ -1,0 +1,34 @@
+# UIGaussianBlur
+
+Post-processing Gaussian blur effect exposed by the Java runtime.
+
+## Create in the Editor
+
+1. Ensure there is a `UIController` in the scene.
+2. Create a GameObject and add `UIRect`.
+3. Add the `UIGaussianBlur` component.
+
+## How to Use
+
+1. Get the component with `myObject.findComponent(UIGaussianBlur.class)`.
+2. Read or write the component properties to control behavior.
+3. Test input or layout in Play mode.
+
+## Java Example
+
+```java
+SpatialObject myObject = /* your object */;
+UIGaussianBlur comp = myObject.findComponent(UIGaussianBlur.class);
+if (comp != null) {
+    // set the blurRadius value:
+    comp.blurRadius = 1f;
+    // read the blurRadius value:
+    float blurRadiusValue = comp.blurRadius;
+
+    // set the quality value:
+    comp.quality = UIGaussianBlur.Quality.LOW;
+    // read the quality value:
+    Quality qualityValue = comp.quality;
+
+}
+```

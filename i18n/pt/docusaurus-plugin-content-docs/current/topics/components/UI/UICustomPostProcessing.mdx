@@ -1,0 +1,39 @@
+# UICustomPostProcessing
+
+Hook de p?s-processamento customizado exposto pelo runtime Java.
+
+## Criar no Editor
+
+1. Garanta que exista um `UIController` na cena.
+2. Crie um GameObject e adicione `UIRect`.
+3. Adicione o componente `UICustomPostProcessing`.
+
+## Como usar
+
+1. Obtenha o componente com `myObject.findComponent(UICustomPostProcessing.class)`.
+2. Leia ou altere os valores expostos a partir do Java.
+3. Teste o comportamento em Play mode.
+
+## Exemplo em Java
+
+```java
+SpatialObject myObject = /* seu objeto */;
+UICustomPostProcessing comp = myObject.findComponent(UICustomPostProcessing.class);
+if (comp != null) {
+    // define o valor de shaderFile:
+    comp.shaderFile = "value";
+    // l? o valor de shaderFile:
+    String shaderFileValue = comp.shaderFile;
+
+    // define o valor de param:
+    comp.param = value;
+    // l? o valor de param:
+    float[] paramValue = comp.param;
+
+    // define o valor de time:
+    comp.time = 1f;
+    // l? o valor de time:
+    float timeValue = comp.time;
+
+}
+```

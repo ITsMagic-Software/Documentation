@@ -1,0 +1,39 @@
+# UIContrastBrightnessSaturation
+
+Componente de ajuste de cor exposto pelo runtime Java.
+
+## Criar no Editor
+
+1. Garanta que exista um `UIController` na cena.
+2. Crie um GameObject e adicione `UIRect`.
+3. Adicione o componente `UIContrastBrightnessSaturation`.
+
+## Como usar
+
+1. Obtenha o componente com `myObject.findComponent(UIContrastBrightnessSaturation.class)`.
+2. Leia ou altere os valores expostos a partir do Java.
+3. Teste o comportamento em Play mode.
+
+## Exemplo em Java
+
+```java
+SpatialObject myObject = /* seu objeto */;
+UIContrastBrightnessSaturation comp = myObject.findComponent(UIContrastBrightnessSaturation.class);
+if (comp != null) {
+    // define o valor de brightness:
+    comp.brightness = 1f;
+    // l? o valor de brightness:
+    float brightnessValue = comp.brightness;
+
+    // define o valor de contrast:
+    comp.contrast = 1f;
+    // l? o valor de contrast:
+    float contrastValue = comp.contrast;
+
+    // define o valor de saturation:
+    comp.saturation = 1f;
+    // l? o valor de saturation:
+    float saturationValue = comp.saturation;
+
+}
+```

@@ -1,0 +1,49 @@
+# UIPostTransform
+
+Post-processing transform component exposed by the Java runtime.
+
+## Create in the Editor
+
+1. Ensure there is a `UIController` in the scene.
+2. Create a GameObject and add `UIRect`.
+3. Add the `UIPostTransform` component.
+
+## How to Use
+
+1. Get the component with `myObject.findComponent(UIPostTransform.class)`.
+2. Read or write the component properties to control behavior.
+3. Test input or layout in Play mode.
+
+## Java Example
+
+```java
+SpatialObject myObject = /* your object */;
+UIPostTransform comp = myObject.findComponent(UIPostTransform.class);
+if (comp != null) {
+    // set the position value:
+    comp.position = new Vector2(1, 1);
+    // read the position value:
+    Vector2 positionValue = comp.position;
+
+    // set the pivot value:
+    comp.pivot = new Vector2(1, 1);
+    // read the pivot value:
+    Vector2 pivotValue = comp.pivot;
+
+    // set the scale value:
+    comp.scale = new Vector2(1, 1);
+    // read the scale value:
+    Vector2 scaleValue = comp.scale;
+
+    // set the rotation value:
+    comp.rotation = new Vector3(1, 1, 1);
+    // read the rotation value:
+    Vector3 rotationValue = comp.rotation;
+
+    // set the fOV value:
+    comp.fOV = 1f;
+    // read the fOV value:
+    float fOVValue = comp.fOV;
+
+}
+```

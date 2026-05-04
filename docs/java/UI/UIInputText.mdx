@@ -1,0 +1,60 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
+# UIInputText
+
+Complete API reference for `UIInputText`, including constructors, attributes, virtual attributes, and methods.
+
+**Package:** `JAVARuntime`
+
+**Category:** UI
+
+**Component:** yes
+
+---
+
+```java
+public class UIInputText extends Component
+```
+
+<ApiDoc
+  constructors={[
+    {
+      signature: "UIInputText()",
+      description: <>Creates a new instance of UIInputText.</>
+    }
+  ]}
+  attributes={[]}
+  virtualAttributes={[
+    {
+      name: "color",
+      type: "Color",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getColor</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "editing",
+      type: "boolean",
+      access: "set",
+      description: <>Virtual attribute exposed by <code>setEditing</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "text",
+      type: "String",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getText</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "textSize",
+      type: "float",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getTextSize</code>. Access it like a field to read or write the underlying value.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "isEditing()",
+      returns: "boolean",
+      description: <>Executes <code>isEditing</code> and returns after the underlying engine call finishes.</>
+    }
+  ]}
+/>

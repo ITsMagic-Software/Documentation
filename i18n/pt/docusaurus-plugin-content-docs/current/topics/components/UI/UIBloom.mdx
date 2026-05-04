@@ -1,0 +1,44 @@
+# UIBloom
+
+Efeito de bloom exposto pelo runtime Java.
+
+## Criar no Editor
+
+1. Garanta que exista um `UIController` na cena.
+2. Crie um GameObject e adicione `UIRect`.
+3. Adicione o componente `UIBloom`.
+
+## Como usar
+
+1. Obtenha o componente com `myObject.findComponent(UIBloom.class)`.
+2. Leia ou altere os valores expostos a partir do Java.
+3. Teste o comportamento em Play mode.
+
+## Exemplo em Java
+
+```java
+SpatialObject myObject = /* seu objeto */;
+UIBloom comp = myObject.findComponent(UIBloom.class);
+if (comp != null) {
+    // define o valor de intensity:
+    comp.intensity = 1f;
+    // l? o valor de intensity:
+    float intensityValue = comp.intensity;
+
+    // define o valor de threshold:
+    comp.threshold = 1f;
+    // l? o valor de threshold:
+    float thresholdValue = comp.threshold;
+
+    // define o valor de blurRadius:
+    comp.blurRadius = 1f;
+    // l? o valor de blurRadius:
+    float blurRadiusValue = comp.blurRadius;
+
+    // define o valor de quality:
+    comp.quality = UIBloom.Quality.LOW;
+    // l? o valor de quality:
+    Quality qualityValue = comp.quality;
+
+}
+```

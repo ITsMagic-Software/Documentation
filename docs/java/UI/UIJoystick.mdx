@@ -1,0 +1,66 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
+# UIJoystick
+
+Complete API reference for `UIJoystick`, including constructors, attributes, virtual attributes, and methods.
+
+**Package:** `JAVARuntime`
+
+**Category:** UI
+
+**Component:** yes
+
+---
+
+```java
+public class UIJoystick extends Component
+```
+
+<ApiDoc
+  constructors={[
+    {
+      signature: "UIJoystick()",
+      description: <>Creates a new instance of UIJoystick.</>
+    }
+  ]}
+  attributes={[]}
+  virtualAttributes={[
+    {
+      name: "backgroundColor",
+      type: "Color",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getBackgroundColor</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "backgroundTexture",
+      type: "Texture",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getBackgroundTexture</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "handleSizePercentage",
+      type: "float",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getHandleSizePercentage</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "handlerColor",
+      type: "Color",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getHandlerColor</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "handlerTexture",
+      type: "Texture",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getHandlerTexture</code>. Access it like a field to read or write the underlying value.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "getValue()",
+      returns: "Vector2",
+      description: <>Executes <code>getValue</code> and returns after the underlying engine call finishes.</>
+    }
+  ]}
+/>

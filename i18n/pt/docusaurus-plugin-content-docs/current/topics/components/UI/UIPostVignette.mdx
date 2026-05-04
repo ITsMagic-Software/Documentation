@@ -1,0 +1,44 @@
+# UIPostVignette
+
+Efeito de vinheta exposto pelo runtime Java.
+
+## Criar no Editor
+
+1. Garanta que exista um `UIController` na cena.
+2. Crie um GameObject e adicione `UIRect`.
+3. Adicione o componente `UIPostVignette`.
+
+## Como usar
+
+1. Obtenha o componente com `myObject.findComponent(UIPostVignette.class)`.
+2. Leia ou altere os valores expostos a partir do Java.
+3. Teste o comportamento em Play mode.
+
+## Exemplo em Java
+
+```java
+SpatialObject myObject = /* seu objeto */;
+UIPostVignette comp = myObject.findComponent(UIPostVignette.class);
+if (comp != null) {
+    // define o valor de color:
+    comp.color = new Color(255, 255, 255, 255);
+    // l? o valor de color:
+    Color colorValue = comp.color;
+
+    // define o valor de feather:
+    comp.feather = 1f;
+    // l? o valor de feather:
+    float featherValue = comp.feather;
+
+    // define o valor de midPoint:
+    comp.midPoint = 1f;
+    // l? o valor de midPoint:
+    float midPointValue = comp.midPoint;
+
+    // define o valor de roundness:
+    comp.roundness = 1f;
+    // l? o valor de roundness:
+    float roundnessValue = comp.roundness;
+
+}
+```

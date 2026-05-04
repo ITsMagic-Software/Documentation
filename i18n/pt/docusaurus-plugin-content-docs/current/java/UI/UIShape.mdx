@@ -1,0 +1,216 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
+# UIShape
+
+Referência completa da API de `UIShape`, incluindo construtores, atributos, atributos virtuais e métodos.
+
+**Pacote:** `JAVARuntime`
+
+**Categoria:** UI
+
+**Componente:** sim
+
+---
+
+```java
+public class UIShape extends Component
+```
+
+<ApiDoc
+  constructors={[
+    {
+      signature: "UIShape()",
+      description: <>Cria uma nova inst?ncia de UIShape.</>
+    }
+  ]}
+  attributes={[]}
+  virtualAttributes={[
+    {
+      name: "bottomLeftCorner",
+      type: "CornerType",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getBottomLeftCorner</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "bottomRightCorner",
+      type: "CornerType",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getBottomRightCorner</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "color",
+      type: "Color",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getColor</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "colorGradient",
+      type: "ColorGradient",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getColorGradient</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "corner",
+      type: "float",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getCorner</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "gradientAngle",
+      type: "float",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getGradientAngle</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "gradientMode",
+      type: "GradientMode",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getGradientMode</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "hole",
+      type: "float",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getHole</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "innerGlowColor",
+      type: "Color",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getInnerGlowColor</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "innerGlowSize",
+      type: "float",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getInnerGlowSize</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "innerGlowSmooth",
+      type: "float",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getInnerGlowSmooth</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "innerShadowAngle",
+      type: "float",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getInnerShadowAngle</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "innerShadowColor",
+      type: "Color",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getInnerShadowColor</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "innerShadowSize",
+      type: "float",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getInnerShadowSize</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "innerShadowSmooth",
+      type: "float",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getInnerShadowSmooth</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "maskAngle",
+      type: "float",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getMaskAngle</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "maskMode",
+      type: "MaskMode",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getMaskMode</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "maskValue",
+      type: "float",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getMaskValue</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "outerGlowColor",
+      type: "Color",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getOuterGlowColor</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "outerGlowSize",
+      type: "float",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getOuterGlowSize</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "outerGlowSmooth",
+      type: "float",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getOuterGlowSmooth</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "outerShadowAngle",
+      type: "float",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getOuterShadowAngle</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "outerShadowColor",
+      type: "Color",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getOuterShadowColor</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "outerShadowSize",
+      type: "float",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getOuterShadowSize</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "outerShadowSmooth",
+      type: "float",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getOuterShadowSmooth</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "quality",
+      type: "float",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getQuality</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "stroke",
+      type: "float",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getStroke</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "strokeColor",
+      type: "Color",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getStrokeColor</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "topLeftCorner",
+      type: "CornerType",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getTopLeftCorner</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "topRightCorner",
+      type: "CornerType",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getTopRightCorner</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "requestDraw()",
+      returns: "void",
+      description: <>Executa <code>requestDraw</code> e retorna quando a chamada do motor termina.</>
+    }
+  ]}
+/>

@@ -1,0 +1,34 @@
+# UIChromaticAberration
+
+Efeito de aberra??o crom?tica exposto pelo runtime Java.
+
+## Criar no Editor
+
+1. Garanta que exista um `UIController` na cena.
+2. Crie um GameObject e adicione `UIRect`.
+3. Adicione o componente `UIChromaticAberration`.
+
+## Como usar
+
+1. Obtenha o componente com `myObject.findComponent(UIChromaticAberration.class)`.
+2. Leia ou altere os valores expostos a partir do Java.
+3. Teste o comportamento em Play mode.
+
+## Exemplo em Java
+
+```java
+SpatialObject myObject = /* seu objeto */;
+UIChromaticAberration comp = myObject.findComponent(UIChromaticAberration.class);
+if (comp != null) {
+    // define o valor de falloff:
+    comp.falloff = 1f;
+    // l? o valor de falloff:
+    float falloffValue = comp.falloff;
+
+    // define o valor de strength:
+    comp.strength = 1f;
+    // l? o valor de strength:
+    float strengthValue = comp.strength;
+
+}
+```

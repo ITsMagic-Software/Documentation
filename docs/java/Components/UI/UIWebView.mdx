@@ -1,0 +1,79 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
+# UIWebView
+
+Complete API reference for `UIWebView`, including constructors, attributes, virtual attributes, and methods.
+
+**Package:** `JAVARuntime`
+
+**Category:** UI
+
+**Component:** yes
+
+---
+
+```java
+public class UIWebView extends Component
+```
+
+<ApiDoc
+  constructors={[
+    {
+      signature: "UIWebView(UIWebView)",
+      description: <>Executes <code>UIWebView</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "UIWebView(Engine)",
+      description: <>Executes <code>UIWebView</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "UIWebView()",
+      description: <>Executes <code>UIWebView</code> and returns after the underlying engine call finishes.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "instance",
+      type: "UIWebView",
+      description: <>Represents the <code>instance</code> value stored on this instance. Read or assign to update the property.</>
+    }
+  ]}
+  virtualAttributes={[
+    {
+      name: "url",
+      type: "String",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getUrl</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "fps",
+      type: "int",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getFps</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "enableVirtualKeyboard",
+      type: "boolean",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>isEnableVirtualKeyboard</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "allowHibernate",
+      type: "boolean",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>isAllowHibernate</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "texture",
+      type: "Texture",
+      access: "get",
+      description: <>Virtual attribute exposed by <code>getTexture</code>. Access it like a field to read the underlying value.</>
+    },
+    {
+      name: "loadedUrl",
+      type: "String",
+      access: "get",
+      description: <>Virtual attribute exposed by <code>getLoadedUrl</code>. Access it like a field to read the underlying value.</>
+    }
+  ]}
+/>

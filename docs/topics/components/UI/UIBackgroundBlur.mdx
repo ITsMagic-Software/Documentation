@@ -1,0 +1,34 @@
+# UIBackgroundBlur
+
+Post-processing background blur effect exposed by the Java runtime.
+
+## Create in the Editor
+
+1. Ensure there is a `UIController` in the scene.
+2. Create a GameObject and add `UIRect`.
+3. Add the `UIBackgroundBlur` component.
+
+## How to Use
+
+1. Get the component with `myObject.findComponent(UIBackgroundBlur.class)`.
+2. Read or write the component properties to control behavior.
+3. Test input or layout in Play mode.
+
+## Java Example
+
+```java
+SpatialObject myObject = /* your object */;
+UIBackgroundBlur comp = myObject.findComponent(UIBackgroundBlur.class);
+if (comp != null) {
+    // set the blurRadius value:
+    comp.blurRadius = 1f;
+    // read the blurRadius value:
+    float blurRadiusValue = comp.blurRadius;
+
+    // set the quality value:
+    comp.quality = UIBackgroundBlur.Quality.LOW;
+    // read the quality value:
+    UIBackgroundBlur.Quality qualityValue = comp.quality;
+
+}
+```

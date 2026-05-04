@@ -1,0 +1,144 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
+# UIController
+
+Complete API reference for `UIController`, including constructors, attributes, virtual attributes, and methods.
+
+**Package:** `JAVARuntime`
+
+**Category:** UI
+
+**Component:** yes
+
+---
+
+```java
+public class UIController extends Component
+```
+
+<ApiDoc
+  constructors={[
+    {
+      signature: "UIController()",
+      description: <>Creates a new instance of UIController.</>
+    }
+  ]}
+  attributes={[]}
+  virtualAttributes={[
+    {
+      name: "allowScreenTouch",
+      type: "boolean",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>isAllowScreenTouch</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "drawToScreen",
+      type: "boolean",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>isDrawToScreen</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "fixedResolutionPixelsHeight",
+      type: "int",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getFixedResolutionPixelsHeight</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "fixedResolutionPixelsWidth",
+      type: "int",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getFixedResolutionPixelsWidth</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "frameBuffer",
+      type: "FrameBuffer",
+      access: "get",
+      description: <>Virtual attribute exposed by <code>getFrameBuffer</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "frameBufferH",
+      type: "int",
+      access: "get",
+      description: <>Virtual attribute exposed by <code>getFrameBufferH</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "frameBufferW",
+      type: "int",
+      access: "get",
+      description: <>Virtual attribute exposed by <code>getFrameBufferW</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "freeResolutionPixels",
+      type: "int",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getFreeResolutionPixels</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "imageRatio",
+      type: "float",
+      access: "get",
+      description: <>Virtual attribute exposed by <code>getImageRatio</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "pxSize",
+      type: "float",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getPxSize</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "renderTextureFile",
+      type: "String",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getRenderTextureFile</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "resolutionMode",
+      type: "ResolutionMode",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getResolutionMode</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "resolutionPercentage",
+      type: "float",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getResolutionPercentage</code>. Access it like a field to read or write the underlying value.</>
+    },
+  ]}
+  methods={[
+    {
+      signature: "emitVirtualTouch()",
+      returns: "Touch",
+      description: <>Executes <code>emitVirtualTouch</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "getTouchPos(Touch)",
+      returns: "Vector2",
+      description: <>Executes <code>getTouchPos</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "getVirtualToucheAt(int)",
+      returns: "Touch",
+      description: <>Executes <code>getVirtualToucheAt</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "pxToDP(float)",
+      returns: "float",
+      description: <>Executes <code>pxToDP</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "pxToDP(int)",
+      returns: "int",
+      description: <>Executes <code>pxToDP</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "releaseVirtualTouch(Touch)",
+      returns: "void",
+      description: <>Executes <code>releaseVirtualTouch</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "virtualTouchsCount()",
+      returns: "int",
+      description: <>Executes <code>virtualTouchsCount</code> and returns after the underlying engine call finishes.</>
+    }
+  ]}
+/>

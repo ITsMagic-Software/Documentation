@@ -1,0 +1,79 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
+# UIWebView
+
+Referência completa da API de `UIWebView`, incluindo construtores, atributos, atributos virtuais e métodos.
+
+**Pacote:** `JAVARuntime`
+
+**Categoria:** UI
+
+**Componente:** sim
+
+---
+
+```java
+public class UIWebView extends Component
+```
+
+<ApiDoc
+  constructors={[
+    {
+      signature: "UIWebView(UIWebView)",
+      description: <>Executa <code>UIWebView</code> e retorna depois que a chamada interna da engine termina.</>
+    },
+    {
+      signature: "UIWebView(Engine)",
+      description: <>Executa <code>UIWebView</code> e retorna depois que a chamada interna da engine termina.</>
+    },
+    {
+      signature: "UIWebView()",
+      description: <>Executa <code>UIWebView</code> e retorna depois que a chamada interna da engine termina.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "instance",
+      type: "UIWebView",
+      description: <>Representa o valor <code>instance</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    }
+  ]}
+  virtualAttributes={[
+    {
+      name: "url",
+      type: "String",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getUrl</code>. Acesse como um campo para ler ou escrever o valor interno.</>
+    },
+    {
+      name: "fps",
+      type: "int",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getFps</code>. Acesse como um campo para ler ou escrever o valor interno.</>
+    },
+    {
+      name: "enableVirtualKeyboard",
+      type: "boolean",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>isEnableVirtualKeyboard</code>. Acesse como um campo para ler ou escrever o valor interno.</>
+    },
+    {
+      name: "allowHibernate",
+      type: "boolean",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>isAllowHibernate</code>. Acesse como um campo para ler ou escrever o valor interno.</>
+    },
+    {
+      name: "texture",
+      type: "Texture",
+      access: "get",
+      description: <>Atributo virtual exposto por <code>getTexture</code>. Acesse como um campo para ler o valor interno.</>
+    },
+    {
+      name: "loadedUrl",
+      type: "String",
+      access: "get",
+      description: <>Atributo virtual exposto por <code>getLoadedUrl</code>. Acesse como um campo para ler o valor interno.</>
+    }
+  ]}
+/>

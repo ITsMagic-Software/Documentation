@@ -1,0 +1,52 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
+# UITouchTrigger
+
+Referência completa da API de `UITouchTrigger`, incluindo construtores, atributos, atributos virtuais e métodos.
+
+**Pacote:** `JAVARuntime`
+
+**Categoria:** UI
+
+**Componente:** sim
+
+---
+
+```java
+public class UITouchTrigger extends Component
+```
+
+<ApiDoc
+  constructors={[
+    {
+      signature: "UITouchTrigger()",
+      description: <>Cria uma nova inst?ncia de UITouchTrigger.</>
+    }
+  ]}
+  attributes={[]}
+  virtualAttributes={[
+    {
+      name: "selectedTouch",
+      type: "Touch",
+      access: "get",
+      description: <>Atributo virtual exposto por <code>getSelectedTouch</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "isDown()",
+      returns: "boolean",
+      description: <>Retorna se down é verdadeiro.</>
+    },
+    {
+      signature: "isPressed()",
+      returns: "boolean",
+      description: <>Retorna se pressed é verdadeiro.</>
+    },
+    {
+      signature: "isUp()",
+      returns: "boolean",
+      description: <>Retorna se up é verdadeiro.</>
+    }
+  ]}
+/>
