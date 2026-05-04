@@ -1,0 +1,96 @@
+# Using MicrophoneReader
+
+`MicrophoneReader` captures raw microphone audio as PCM samples. Use it when you need audio data directly instead of recognized text: voice volume meters, waveform displays, pitch or beat analysis, custom recording pipelines, local voice effects, or sending captured samples to your own processing code.
+
+The component reads mono 16-bit PCM from the Android microphone. When `enableRecord` is enabled, the engine starts capturing audio and publishes the captured samples as frame data.
+
+The component works as a frame buffer:
+
+- `framePCM` is a `NativeShortBuffer` that stores the PCM samples available for the current frame.
+- `frameLength` is the number of valid samples in `framePCM` for the current frame.
+- `sampleRate` is the microphone sample rate currently used by the engine.
+- If no audio was captured for a frame, `frameLength` is `0`.
+- Read the component every update. The next frame replaces the current frame data.
+- Only read samples from index `0` to `frameLength - 1`. The buffer can have extra capacity, and old values outside `frameLength` are not part of the current frame.
+
+## Setup
+
+1. Add `MicrophoneReader` to a GameObject.
+2. Enable `enableRecord` when you want to capture microphone audio.
+3. During update, check `frameLength`.
+4. Read samples from `framePCM` or use `getFramePCMArray()` when you want a regular `short[]`.
+
+On Android, the app needs microphone permission. If permission has not been granted, the component asks for it when recording is enabled.
+
+## Example With Virtual Attributes
+
+This version uses virtual attributes and calculates the peak absolute sample value for the current frame.
+
+```java
+SpatialObject myObject = /* your object */ null;
+MicrophoneReader mic = myObject.findComponent(MicrophoneReader.class);
+
+if (mic != null) {
+    mic.enableRecord = true;
+}
+
+// Run this part every update.
+if (mic != null && mic.enableRecord) {
+    int length = mic.frameLength;
+    NativeShortBuffer pcm = mic.framePCM;
+
+    if (pcm != null && length > 0) {
+        int peak = 0;
+        for (int i = 0; i < length; i++) {
+            int value = Math.abs(pcm.get(i));
+            if (value > peak) {
+                peak = value;
+            }
+        }
+
+        Terminal.log("Microphone peak: " + peak + " at " + mic.sampleRate + " Hz");
+    }
+}
+```
+
+## Example With Methods
+
+Use methods directly when you prefer explicit calls or when you want a `short[]` copy of the current frame.
+
+```java
+SpatialObject myObject = /* your object */ null;
+MicrophoneReader mic = myObject.findComponent(MicrophoneReader.class);
+
+if (mic != null) {
+    mic.setEnableRecord(true);
+}
+
+// Run this part every update.
+if (mic != null && mic.isEnableRecord()) {
+    short[] samples = mic.getFramePCMArray();
+
+    if (samples.length > 0) {
+        long sum = 0;
+        for (int i = 0; i < samples.length; i++) {
+            sum += Math.abs(samples[i]);
+        }
+
+        long averageAmplitude = sum / samples.length;
+        Terminal.log("Average microphone amplitude: " + averageAmplitude);
+    }
+}
+```
+
+## Choosing `framePCM` or `getFramePCMArray()`
+
+Use `framePCM` when you want to avoid allocating a new Java array every frame. This is better for frequent audio analysis.
+
+Use `getFramePCMArray()` when convenience matters more than allocation cost. It returns a new array containing only the valid samples for the current frame.
+
+## Notes
+
+- `frameLength` counts samples, not bytes.
+- Samples are signed 16-bit PCM values, usually in the range `-32768` to `32767`.
+- The amount of samples per frame can vary depending on device timing and engine frame rate.
+- If recording is disabled, `frameLength` becomes `0` and no new microphone samples are published.
+- For speech-to-text, use `SpeechRecognizer` instead. `MicrophoneReader` provides raw audio, not words.

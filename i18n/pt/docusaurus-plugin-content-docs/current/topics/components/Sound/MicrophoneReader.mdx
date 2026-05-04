@@ -1,0 +1,96 @@
+# Usando MicrophoneReader
+
+`MicrophoneReader` captura áudio bruto do microfone como samples PCM. Use este componente quando precisar dos dados de áudio diretamente em vez de texto reconhecido: medidores de volume, visualização de waveform, análise de pitch ou batida, pipelines próprios de gravação, efeitos locais de voz ou envio dos samples capturados para seu próprio código de processamento.
+
+O componente lê PCM mono de 16 bits do microfone Android. Quando `enableRecord` está habilitado, a engine começa a capturar áudio e publica os samples capturados como dados de frame.
+
+O componente funciona como um buffer por frame:
+
+- `framePCM` é um `NativeShortBuffer` que armazena os samples PCM disponíveis no frame atual.
+- `frameLength` é a quantidade de samples válidos em `framePCM` no frame atual.
+- `sampleRate` é a taxa de amostragem do microfone usada atualmente pela engine.
+- Se nenhum áudio foi capturado em um frame, `frameLength` é `0`.
+- Leia o componente a cada update. O próximo frame substitui os dados do frame atual.
+- Leia apenas os samples do índice `0` até `frameLength - 1`. O buffer pode ter capacidade extra, e valores antigos fora de `frameLength` não fazem parte do frame atual.
+
+## Configuração
+
+1. Adicione `MicrophoneReader` a um GameObject.
+2. Habilite `enableRecord` quando quiser capturar áudio do microfone.
+3. Durante o update, verifique `frameLength`.
+4. Leia os samples por `framePCM` ou use `getFramePCMArray()` quando quiser um `short[]` comum.
+
+No Android, o app precisa da permissão de microfone. Se a permissão ainda não tiver sido concedida, o componente pede a permissão quando a gravação é habilitada.
+
+## Exemplo Com Atributos Virtuais
+
+Esta versão usa atributos virtuais e calcula o maior valor absoluto de sample no frame atual.
+
+```java
+SpatialObject myObject = /* seu objeto */ null;
+MicrophoneReader mic = myObject.findComponent(MicrophoneReader.class);
+
+if (mic != null) {
+    mic.enableRecord = true;
+}
+
+// Execute esta parte a cada update.
+if (mic != null && mic.enableRecord) {
+    int length = mic.frameLength;
+    NativeShortBuffer pcm = mic.framePCM;
+
+    if (pcm != null && length > 0) {
+        int peak = 0;
+        for (int i = 0; i < length; i++) {
+            int value = Math.abs(pcm.get(i));
+            if (value > peak) {
+                peak = value;
+            }
+        }
+
+        Terminal.log("Pico do microfone: " + peak + " em " + mic.sampleRate + " Hz");
+    }
+}
+```
+
+## Exemplo Com Métodos
+
+Use os métodos diretamente quando preferir chamadas explícitas ou quando quiser uma cópia `short[]` do frame atual.
+
+```java
+SpatialObject myObject = /* seu objeto */ null;
+MicrophoneReader mic = myObject.findComponent(MicrophoneReader.class);
+
+if (mic != null) {
+    mic.setEnableRecord(true);
+}
+
+// Execute esta parte a cada update.
+if (mic != null && mic.isEnableRecord()) {
+    short[] samples = mic.getFramePCMArray();
+
+    if (samples.length > 0) {
+        long sum = 0;
+        for (int i = 0; i < samples.length; i++) {
+            sum += Math.abs(samples[i]);
+        }
+
+        long averageAmplitude = sum / samples.length;
+        Terminal.log("Amplitude média do microfone: " + averageAmplitude);
+    }
+}
+```
+
+## Escolhendo `framePCM` ou `getFramePCMArray()`
+
+Use `framePCM` quando quiser evitar alocar um novo array Java a cada frame. Isso é melhor para análises de áudio frequentes.
+
+Use `getFramePCMArray()` quando a conveniência for mais importante que o custo de alocação. Ele retorna um novo array contendo apenas os samples válidos do frame atual.
+
+## Observações
+
+- `frameLength` conta samples, não bytes.
+- Os samples são valores PCM assinados de 16 bits, normalmente no intervalo de `-32768` a `32767`.
+- A quantidade de samples por frame pode variar dependendo do timing do dispositivo e da taxa de frames da engine.
+- Se a gravação estiver desabilitada, `frameLength` vira `0` e nenhum novo sample de microfone é publicado.
+- Para speech-to-text, use `SpeechRecognizer`. `MicrophoneReader` fornece áudio bruto, não palavras.
