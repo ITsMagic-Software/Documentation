@@ -52,9 +52,64 @@ public class UIInputText extends Component
   ]}
   methods={[
     {
+      signature: "getColor()",
+      returns: "Color",
+      description: <>Returns the current <code>color</code> value.</>,
+    },
+    {
+      signature: "getText()",
+      returns: "String",
+      description: <>Returns the current <code>text</code> value.</>,
+    },
+    {
+      signature: "getTextSize()",
+      returns: "float",
+      description: <>Returns the current <code>textSize</code> value.</>,
+    },
+    {
       signature: "isEditing()",
       returns: "boolean",
-      description: <>Executes <code>isEditing</code> and returns after the underlying engine call finishes.</>
+      description: <>Returns whether <code>editing</code> is true.</>,
+    },
+    {
+      signature: "isExtractUI()",
+      returns: "boolean",
+      description: <>Returns whether <code>extractUI</code> is true.</>,
+    },
+    {
+      signature: "getExtractUITitle()",
+      returns: "String",
+      description: <>Returns the current <code>extractUITitle</code> value.</>,
+    },
+    {
+      signature: "setColor(Color)",
+      returns: "void",
+      description: <>Sets <code>color</code>.</>,
+    },
+    {
+      signature: "setEditing(boolean)",
+      returns: "void",
+      description: <>Sets <code>editing</code>.</>,
+    },
+    {
+      signature: "setExtractUI(boolean)",
+      returns: "void",
+      description: <>Sets <code>extractUI</code>.</>,
+    },
+    {
+      signature: "setExtractUITitle(String)",
+      returns: "void",
+      description: <>Sets <code>extractUITitle</code>.</>,
+    },
+    {
+      signature: "setText(String)",
+      returns: "void",
+      description: <>Sets <code>text</code>.</>,
+    },
+    {
+      signature: "setTextSize(float)",
+      returns: "void",
+      description: <>Sets <code>textSize</code>.</>,
     }
   ]}
 />

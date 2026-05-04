@@ -17,128 +17,6 @@ public class WorldController
 ```
 
 <ApiDoc
-  methods={[
-    {
-      signature: "loadWorld(WorldFile)",
-      returns: "void",
-      description: <>Carrega world no objeto.</>
-    },
-    {
-      signature: "loadWorldAsync(WorldFile)",
-      returns: "void",
-      description: <>Carrega world async no objeto.</>
-    },
-    {
-      signature: "findObject(String)",
-      returns: "SpatialObject",
-      description: <>Executa a operação findObject usando os parâmetros informados (name).</>
-    },
-    {
-      signature: "getObjectList()",
-      returns: "List&lt;SpatialObject&gt;",
-      description: <>Retorna a propriedade <code>propriedade </code>object list atual``.</>
-    },
-    {
-      signature: "getObjectsCount()",
-      returns: "int",
-      description: <>Retorna a propriedade <code>propriedade </code>objects count atual``.</>
-    },
-    {
-      signature: "getObject(int)",
-      returns: "SpatialObject",
-      description: <>Retorna a propriedade <code>propriedade </code>object atual``.</>
-    },
-    {
-      signature: "findFirstComponent(Class)",
-      returns: "&lt;T extends JAVARuntime.Component&gt; T",
-      description: <>Executa a operação findFirstComponent usando os parâmetros informados (classReference).</>
-    },
-    {
-      signature: "findFirstActiveComponent(Class)",
-      returns: "&lt;T extends JAVARuntime.Component&gt; T",
-      description: <>Executa a operação findFirstActiveComponent usando os parâmetros informados (classReference).</>
-    },
-    {
-      signature: "listAllComponents(String)",
-      returns: "List&lt;JAVARuntime.Component&gt;",
-      description: <>Executa a operação listAllComponents usando os parâmetros informados (tittle).</>
-    },
-    {
-      signature: "listAllComponents(Class)",
-      returns: "List&lt;JAVARuntime.Component&gt;",
-      description: <>Executa a operação listAllComponents usando os parâmetros informados (classReference).</>
-    },
-    {
-      signature: "getLoadPercent()",
-      returns: "float",
-      description: <>Retorna a propriedade <code>propriedade </code>load percent atual``.</>
-    },
-    {
-      signature: "getLoadProgress()",
-      returns: "float",
-      description: <>Retorna a propriedade <code>propriedade </code>load progress atual``.</>
-    },
-    {
-      signature: "getLoadedCount()",
-      returns: "int",
-      description: <>Retorna a propriedade <code>propriedade </code>loaded count atual``.</>
-    },
-    {
-      signature: "getLoadTotal()",
-      returns: "int",
-      description: <>Retorna a propriedade <code>propriedade </code>load total atual``.</>
-    },
-    {
-      signature: "getLoadMessage()",
-      returns: "String",
-      description: <>Retorna a propriedade <code>propriedade </code>load message atual``.</>
-    },
-    {
-      signature: "isLoaded()",
-      returns: "boolean",
-      description: <>Retorna se loaded é verdadeiro.</>
-    },
-    {
-      signature: "isLoading()",
-      returns: "boolean",
-      description: <>Retorna se loading é verdadeiro.</>
-    },
-    {
-      signature: "getGraphicsSettings()",
-      returns: "GraphicsSettings",
-      description: <>Retorna a propriedade <code>propriedade </code>graphics settings atual``.</>
-    },
-    {
-      signature: "getPhysicsSettings()",
-      returns: "PhysicsSettings",
-      description: <>Retorna a propriedade <code>propriedade </code>physics settings atual``.</>
-    },
-    {
-      signature: "findObjectWithTag(String)",
-      returns: "SpatialObject",
-      description: <>Executa a operação findObjectWithTag usando os parâmetros informados (tagName).</>
-    },
-    {
-      signature: "findObjectsWithTag(String)",
-      returns: "List&lt;SpatialObject&gt;",
-      description: <>Executa a operação findObjectsWithTag usando os parâmetros informados (tagName).</>
-    },
-    {
-      signature: "findRandomObjectWithTag(String)",
-      returns: "SpatialObject",
-      description: <>Executa a operação findRandomObjectWithTag usando os parâmetros informados (tagName).</>
-    },
-    {
-      signature: "countObjectsWithTag(String)",
-      returns: "int",
-      description: <>Executa a operação countObjectsWithTag usando os parâmetros informados (tagName).</>
-    },
-    {
-      signature: "hasObjectsWithTag(String)",
-      returns: "boolean",
-      description: <>Retorna se objects with tag é verdadeiro.</>
-    }
-  ]}
   staticMethods={[
     {
       signature: "loadWorld(WorldFile)",
@@ -189,6 +67,36 @@ public class WorldController
       signature: "listAllComponents(Class)",
       returns: "List&lt;JAVARuntime.Component&gt;",
       description: <>Executa a operação listAllComponents usando os parâmetros informados (classReference).</>
+    },
+    {
+      signature: "sendEvent(String)",
+      returns: "Object",
+      description: <>Retorna o resultado de <code>sendEvent</code>.</>
+    },
+    {
+      signature: "sendEvent(String, int)",
+      returns: "Object",
+      description: <>Retorna o resultado de <code>sendEvent</code>.</>
+    },
+    {
+      signature: "sendEvent(String, float)",
+      returns: "Object",
+      description: <>Retorna o resultado de <code>sendEvent</code>.</>
+    },
+    {
+      signature: "sendEvent(String, String)",
+      returns: "Object",
+      description: <>Retorna o resultado de <code>sendEvent</code>.</>
+    },
+    {
+      signature: "sendEvent(String, boolean)",
+      returns: "Object",
+      description: <>Retorna o resultado de <code>sendEvent</code>.</>
+    },
+    {
+      signature: "sendEvent(String, Object...)",
+      returns: "Object",
+      description: <>Retorna o resultado de <code>sendEvent</code>.</>
     },
     {
       signature: "getLoadPercent()",

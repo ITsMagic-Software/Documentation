@@ -40,9 +40,29 @@ public class UIAxisEventListener extends Component
   ]}
   methods={[
     {
+      signature: "getAxisName()",
+      returns: "String",
+      description: <>Retorna o valor atual de <code>axisName</code>.</>,
+    },
+    {
+      signature: "getValue()",
+      returns: "Vector2",
+      description: <>Retorna o valor atual de <code>value</code>.</>,
+    },
+    {
+      signature: "setAxisName(String)",
+      returns: "void",
+      description: <>Define <code>axisName</code>.</>,
+    },
+    {
       signature: "setValue(float, float)",
       returns: "void",
-      description: <>Define ou atualiza a propriedade <code>propriedade </code>value``.</>
+      description: <>Define <code>value</code>.</>,
+    },
+    {
+      signature: "setValue(Vector2)",
+      returns: "void",
+      description: <>Define <code>value</code>.</>,
     }
   ]}
 />

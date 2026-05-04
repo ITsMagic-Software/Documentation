@@ -43,18 +43,6 @@ public class GameController
       description: <>Retorna a propriedade <code>propriedade </code>número máximo de frames por segundo permitido``.</>
     }
   ]}
-  methods={[
-    {
-      signature: "quit()",
-      returns: "void",
-      description: <>Encerra o jogo e fecha a aplicação (Somente no APK).</>
-    },
-    {
-      signature: "getState()",
-      returns: "State",
-      description: <>Retorna a propriedade <code>propriedade </code>estado atual do jogo (Parado, Pausado ou Rodando)``.</>
-    }
-  ]}
   staticMethods={[
     {
       signature: "quit()",
@@ -65,6 +53,36 @@ public class GameController
       signature: "getState()",
       returns: "State",
       description: <>Retorna a propriedade <code>propriedade </code>estado atual do jogo (Parado, Pausado ou Rodando)``.</>
+    },
+    {
+      signature: "isEnableFrameLimit()",
+      returns: "Object",
+      description: <>Retorna se <code>enableFrameLimit</code> est? ativado.</>
+    },
+    {
+      signature: "setEnableFrameLimit(boolean)",
+      returns: "Object",
+      description: <>Define <code>enableFrameLimit</code>.</>
+    },
+    {
+      signature: "getLimitFrames()",
+      returns: "Object",
+      description: <>Retorna o valor atual de <code>limitFrames</code>.</>
+    },
+    {
+      signature: "setLimitFrames(int)",
+      returns: "Object",
+      description: <>Define <code>limitFrames</code>.</>
+    },
+    {
+      signature: "getGraphicsMode()",
+      returns: "Object",
+      description: <>Retorna o valor atual de <code>graphicsMode</code>.</>
+    },
+    {
+      signature: "setGraphicsMode(GraphicsMode)",
+      returns: "Object",
+      description: <>Define <code>graphicsMode</code>.</>
     }
   ]}
 />

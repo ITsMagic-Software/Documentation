@@ -87,23 +87,6 @@ public class Time
       description: <>Retorna a propriedade <code>propriedade </code>tempo (em segundos) que passou entre o último frame e o atual sem escala de tempo (tempo real)``.</>
     }
   ]}
-  methods={[
-    {
-      signature: "deltaTime()",
-      returns: "float",
-      description: <>Retorna a propriedade <code>propriedade </code>tempo (em segundos) que passou entre o último frame e o atual``.</>
-    },
-    {
-      signature: "frameTime()",
-      returns: "float",
-      description: <>Retorna a propriedade <code>propriedade </code>tempo (em segundos) que passou entre o último frame e o atual``.</>
-    },
-    {
-      signature: "unscaledDeltaTime()",
-      returns: "float",
-      description: <>Retorna a propriedade <code>propriedade </code>tempo (em segundos) que passou entre o último frame e o atual sem escala de tempo (tempo real)``.</>
-    }
-  ]}
   staticMethods={[
     {
       signature: "deltaTime()",
@@ -111,14 +94,54 @@ public class Time
       description: <>Retorna a propriedade <code>propriedade </code>tempo (em segundos) que passou entre o último frame e o atual``.</>
     },
     {
+      signature: "getDeltaTime()",
+      returns: "Object",
+      description: <>Retorna o valor atual de <code>deltaTime</code>.</>
+    },
+    {
       signature: "frameTime()",
       returns: "float",
       description: <>Retorna a propriedade <code>propriedade </code>tempo (em segundos) que passou entre o último frame e o atual``.</>
     },
     {
+      signature: "getFrameTime()",
+      returns: "Object",
+      description: <>Retorna o valor atual de <code>frameTime</code>.</>
+    },
+    {
       signature: "unscaledDeltaTime()",
       returns: "float",
       description: <>Retorna a propriedade <code>propriedade </code>tempo (em segundos) que passou entre o último frame e o atual sem escala de tempo (tempo real)``.</>
+    },
+    {
+      signature: "getUnscaledDeltaTime()",
+      returns: "Object",
+      description: <>Retorna o valor atual de <code>unscaledDeltaTime</code>.</>
+    },
+    {
+      signature: "getUnscaledFrameTime()",
+      returns: "Object",
+      description: <>Retorna o valor atual de <code>unscaledFrameTime</code>.</>
+    },
+    {
+      signature: "getTimeSpeed()",
+      returns: "Object",
+      description: <>Retorna o valor atual de <code>timeSpeed</code>.</>
+    },
+    {
+      signature: "setTimeSpeed(float)",
+      returns: "Object",
+      description: <>Define <code>timeSpeed</code>.</>
+    },
+    {
+      signature: "getTimeScale()",
+      returns: "Object",
+      description: <>Retorna o valor atual de <code>timeScale</code>.</>
+    },
+    {
+      signature: "setTimeScale(float)",
+      returns: "Object",
+      description: <>Define <code>timeScale</code>.</>
     }
   ]}
 />

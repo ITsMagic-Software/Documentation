@@ -202,9 +202,299 @@ public class UIStyle
   ]}
   methods={[
     {
+      signature: "getBottomLeftCorner()",
+      returns: "StyleCornerType",
+      description: <>Returns the current <code>bottomLeftCorner</code> value.</>,
+    },
+    {
+      signature: "getBottomRightCorner()",
+      returns: "StyleCornerType",
+      description: <>Returns the current <code>bottomRightCorner</code> value.</>,
+    },
+    {
+      signature: "getColor()",
+      returns: "Color",
+      description: <>Returns the current <code>color</code> value.</>,
+    },
+    {
+      signature: "getColorGradient()",
+      returns: "ColorGradient",
+      description: <>Returns the current <code>colorGradient</code> value.</>,
+    },
+    {
+      signature: "getCorner()",
+      returns: "float",
+      description: <>Returns the current <code>corner</code> value.</>,
+    },
+    {
+      signature: "getGradientAngle()",
+      returns: "float",
+      description: <>Returns the current <code>gradientAngle</code> value.</>,
+    },
+    {
+      signature: "getGradientMode()",
+      returns: "StyleGradientMode",
+      description: <>Returns the current <code>gradientMode</code> value.</>,
+    },
+    {
+      signature: "getHole()",
+      returns: "float",
+      description: <>Returns the current <code>hole</code> value.</>,
+    },
+    {
+      signature: "getInnerGlowColor()",
+      returns: "Color",
+      description: <>Returns the current <code>innerGlowColor</code> value.</>,
+    },
+    {
+      signature: "getInnerGlowSize()",
+      returns: "float",
+      description: <>Returns the current <code>innerGlowSize</code> value.</>,
+    },
+    {
+      signature: "getInnerGlowSmooth()",
+      returns: "float",
+      description: <>Returns the current <code>innerGlowSmooth</code> value.</>,
+    },
+    {
+      signature: "getInnerShadowAngle()",
+      returns: "float",
+      description: <>Returns the current <code>innerShadowAngle</code> value.</>,
+    },
+    {
+      signature: "getInnerShadowColor()",
+      returns: "Color",
+      description: <>Returns the current <code>innerShadowColor</code> value.</>,
+    },
+    {
+      signature: "getInnerShadowSize()",
+      returns: "float",
+      description: <>Returns the current <code>innerShadowSize</code> value.</>,
+    },
+    {
+      signature: "getInnerShadowSmooth()",
+      returns: "float",
+      description: <>Returns the current <code>innerShadowSmooth</code> value.</>,
+    },
+    {
+      signature: "getMaskAngle()",
+      returns: "float",
+      description: <>Returns the current <code>maskAngle</code> value.</>,
+    },
+    {
+      signature: "getMaskMode()",
+      returns: "StyleMaskMode",
+      description: <>Returns the current <code>maskMode</code> value.</>,
+    },
+    {
+      signature: "getMaskValue()",
+      returns: "float",
+      description: <>Returns the current <code>maskValue</code> value.</>,
+    },
+    {
+      signature: "getOuterGlowColor()",
+      returns: "Color",
+      description: <>Returns the current <code>outerGlowColor</code> value.</>,
+    },
+    {
+      signature: "getOuterGlowSize()",
+      returns: "float",
+      description: <>Returns the current <code>outerGlowSize</code> value.</>,
+    },
+    {
+      signature: "getOuterGlowSmooth()",
+      returns: "float",
+      description: <>Returns the current <code>outerGlowSmooth</code> value.</>,
+    },
+    {
+      signature: "getOuterShadowAngle()",
+      returns: "float",
+      description: <>Returns the current <code>outerShadowAngle</code> value.</>,
+    },
+    {
+      signature: "getOuterShadowColor()",
+      returns: "Color",
+      description: <>Returns the current <code>outerShadowColor</code> value.</>,
+    },
+    {
+      signature: "getOuterShadowSize()",
+      returns: "float",
+      description: <>Returns the current <code>outerShadowSize</code> value.</>,
+    },
+    {
+      signature: "getOuterShadowSmooth()",
+      returns: "float",
+      description: <>Returns the current <code>outerShadowSmooth</code> value.</>,
+    },
+    {
+      signature: "getStroke()",
+      returns: "float",
+      description: <>Returns the current <code>stroke</code> value.</>,
+    },
+    {
+      signature: "getStrokeColor()",
+      returns: "Color",
+      description: <>Returns the current <code>strokeColor</code> value.</>,
+    },
+    {
+      signature: "getTopLeftCorner()",
+      returns: "StyleCornerType",
+      description: <>Returns the current <code>topLeftCorner</code> value.</>,
+    },
+    {
+      signature: "getTopRightCorner()",
+      returns: "StyleCornerType",
+      description: <>Returns the current <code>topRightCorner</code> value.</>,
+    },
+    {
       signature: "requestDraw()",
       returns: "void",
-      description: <>Executes <code>requestDraw</code> and returns after the underlying engine call finishes.</>,
+      description: <>Executes <code>requestDraw</code>.</>,
+    },
+    {
+      signature: "setBottomLeftCorner(StyleCornerType)",
+      returns: "void",
+      description: <>Sets <code>bottomLeftCorner</code>.</>,
+    },
+    {
+      signature: "setBottomRightCorner(StyleCornerType)",
+      returns: "void",
+      description: <>Sets <code>bottomRightCorner</code>.</>,
+    },
+    {
+      signature: "setColor(Color)",
+      returns: "void",
+      description: <>Sets <code>color</code>.</>,
+    },
+    {
+      signature: "setColorGradient(ColorGradient)",
+      returns: "void",
+      description: <>Sets <code>colorGradient</code>.</>,
+    },
+    {
+      signature: "setCorner(float)",
+      returns: "void",
+      description: <>Sets <code>corner</code>.</>,
+    },
+    {
+      signature: "setGradientAngle(float)",
+      returns: "void",
+      description: <>Sets <code>gradientAngle</code>.</>,
+    },
+    {
+      signature: "setGradientMode(StyleGradientMode)",
+      returns: "void",
+      description: <>Sets <code>gradientMode</code>.</>,
+    },
+    {
+      signature: "setHole(float)",
+      returns: "void",
+      description: <>Sets <code>hole</code>.</>,
+    },
+    {
+      signature: "setInnerGlowColor(Color)",
+      returns: "void",
+      description: <>Sets <code>innerGlowColor</code>.</>,
+    },
+    {
+      signature: "setInnerGlowSize(float)",
+      returns: "void",
+      description: <>Sets <code>innerGlowSize</code>.</>,
+    },
+    {
+      signature: "setInnerGlowSmooth(float)",
+      returns: "void",
+      description: <>Sets <code>innerGlowSmooth</code>.</>,
+    },
+    {
+      signature: "setInnerShadowAngle(float)",
+      returns: "void",
+      description: <>Sets <code>innerShadowAngle</code>.</>,
+    },
+    {
+      signature: "setInnerShadowColor(Color)",
+      returns: "void",
+      description: <>Sets <code>innerShadowColor</code>.</>,
+    },
+    {
+      signature: "setInnerShadowSize(float)",
+      returns: "void",
+      description: <>Sets <code>innerShadowSize</code>.</>,
+    },
+    {
+      signature: "setInnerShadowSmooth(float)",
+      returns: "void",
+      description: <>Sets <code>innerShadowSmooth</code>.</>,
+    },
+    {
+      signature: "setMaskAngle(float)",
+      returns: "void",
+      description: <>Sets <code>maskAngle</code>.</>,
+    },
+    {
+      signature: "setMaskMode(StyleMaskMode)",
+      returns: "void",
+      description: <>Sets <code>maskMode</code>.</>,
+    },
+    {
+      signature: "setMaskValue(float)",
+      returns: "void",
+      description: <>Sets <code>maskValue</code>.</>,
+    },
+    {
+      signature: "setOuterGlowColor(Color)",
+      returns: "void",
+      description: <>Sets <code>outerGlowColor</code>.</>,
+    },
+    {
+      signature: "setOuterGlowSize(float)",
+      returns: "void",
+      description: <>Sets <code>outerGlowSize</code>.</>,
+    },
+    {
+      signature: "setOuterGlowSmooth(float)",
+      returns: "void",
+      description: <>Sets <code>outerGlowSmooth</code>.</>,
+    },
+    {
+      signature: "setOuterShadowAngle(float)",
+      returns: "void",
+      description: <>Sets <code>outerShadowAngle</code>.</>,
+    },
+    {
+      signature: "setOuterShadowColor(Color)",
+      returns: "void",
+      description: <>Sets <code>outerShadowColor</code>.</>,
+    },
+    {
+      signature: "setOuterShadowSize(float)",
+      returns: "void",
+      description: <>Sets <code>outerShadowSize</code>.</>,
+    },
+    {
+      signature: "setOuterShadowSmooth(float)",
+      returns: "void",
+      description: <>Sets <code>outerShadowSmooth</code>.</>,
+    },
+    {
+      signature: "setStroke(float)",
+      returns: "void",
+      description: <>Sets <code>stroke</code>.</>,
+    },
+    {
+      signature: "setStrokeColor(Color)",
+      returns: "void",
+      description: <>Sets <code>strokeColor</code>.</>,
+    },
+    {
+      signature: "setTopLeftCorner(StyleCornerType)",
+      returns: "void",
+      description: <>Sets <code>topLeftCorner</code>.</>,
+    },
+    {
+      signature: "setTopRightCorner(StyleCornerType)",
+      returns: "void",
+      description: <>Sets <code>topRightCorner</code>.</>,
     }
   ]}
 />

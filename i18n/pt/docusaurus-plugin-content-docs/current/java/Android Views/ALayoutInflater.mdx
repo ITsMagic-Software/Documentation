@@ -19,24 +19,9 @@ public class ALayoutInflater
 <ApiDoc
   methods={[
     {
-      signature: "inflate(String)",
-      returns: "View",
-      description: <>Executa a operação inflate usando os parâmetros informados (inProjectPath).</>
-    },
-    {
       signature: "inflate(File)",
       returns: "View",
       description: <>Executa <code>inflate</code> e retorna quando a chamada do motor termina.</>
-    },
-    {
-      signature: "inflate(Resources.File)",
-      returns: "View",
-      description: <>Executa a operação inflate usando os parâmetros informados (file).</>
-    },
-    {
-      signature: "inflateXML(String)",
-      returns: "View",
-      description: <>Executa a operação inflateXML usando os parâmetros informados (xml).</>
     }
   ]}
   staticMethods={[
@@ -46,9 +31,9 @@ public class ALayoutInflater
       description: <>Executa a operação inflate usando os parâmetros informados (inProjectPath).</>
     },
     {
-      signature: "inflate(File)",
-      returns: "View",
-      description: <>Executa <code>inflate</code> e retorna quando a chamada do motor termina.</>
+      signature: "inflate(java.io.File)",
+      returns: "Object",
+      description: <>Retorna o resultado de <code>inflate</code>.</>
     },
     {
       signature: "inflate(Resources.File)",

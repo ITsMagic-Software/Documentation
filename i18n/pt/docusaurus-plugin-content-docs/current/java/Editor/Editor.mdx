@@ -17,93 +17,6 @@ public class Editor
 ```
 
 <ApiDoc
-  methods={[
-    {
-      signature: "isEditor()",
-      returns: "boolean",
-      description: <>Indica se está no editor, útil para lógica exclusiva do modo editor.</>
-    },
-    {
-      signature: "getSelectedObject()",
-      returns: "SpatialObject",
-      description: <>Retorna a propriedade <code>propriedade </code>objeto selecionado no editor``.</>
-    },
-    {
-      signature: "setSelectedObject(SpatialObject)",
-      returns: "void",
-      description: <>Define a propriedade <code>propriedade </code>objeto selecionado no editor``.</>
-    },
-    {
-      signature: "inflateAnchoredFloatingPanel(View, AnchorSide, EditorPanel)",
-      returns: "FloatingPanelArea",
-      description: <>Cria um painel flutuante ancorado à view especificada.</>
-    },
-    {
-      signature: "inflateAnchoredFloatingPanel(View, AnchorSide, EditorPanel, float, float)",
-      returns: "FloatingPanelArea",
-      description: <>Cria um painel flutuante ancorado à view especificada, com a largura e altura (0.0f - 1.0f).</>
-    },
-    {
-      signature: "inflateAnchoredFloatingPanelInDP(View, AnchorSide, EditorPanel, int, int)",
-      returns: "FloatingPanelArea",
-      description: <>Cria um painel flutuante ancorado à view especificada, com a largura e altura em dp.</>
-    },
-    {
-      signature: "inflateFloatingPanel(EditorPanel, float, float, float, float)",
-      returns: "FloatingPanelArea",
-      description: <>Cria um painel flutuante na posição especificada com a largura e altura (0.0f - 1.0f).</>
-    },
-    {
-      signature: "inflateFloatingPanel(EditorPanel, float, float)",
-      returns: "FloatingPanelArea",
-      description: <>Cria um painel flutuante centralizado com a largura e altura (0.0f - 1.0f).</>
-    },
-    {
-      signature: "inflateFloatingPanelInDP(EditorPanel, int, int, int, int)",
-      returns: "FloatingPanelArea",
-      description: <>Cria um painel flutuante na posição especificada com a largura e altura em dp.</>
-    },
-    {
-      signature: "inflateFloatingPanelInDP(EditorPanel, int, int)",
-      returns: "FloatingPanelArea",
-      description: <>Cria um painel flutuante centralizado com a largura e altura em dp.</>
-    },
-    {
-      signature: "dpToWidthPercentage(int)",
-      returns: "float",
-      description: <>Converte o valor em dp para porcentagem de largura (0.0f - 1.0f) com base no tamanho da tela.</>
-    },
-    {
-      signature: "dpToHeightPercentage(int)",
-      returns: "float",
-      description: <>Converte o valor em dp para porcentagem de altura (0.0f - 1.0f) com base no tamanho da tela.</>
-    },
-    {
-      signature: "pxToWidthPercentage(int)",
-      returns: "float",
-      description: <>Converte o valor em px para porcentagem de largura (0.0f - 1.0f) com base no tamanho da tela.</>
-    },
-    {
-      signature: "pxToHeightPercentage(int)",
-      returns: "float",
-      description: <>Converte o valor em px para porcentagem de altura (0.0f - 1.0f) com base no tamanho da tela.</>
-    },
-    {
-      signature: "findViewByID(View, String)",
-      returns: "<T extends View> T",
-      description: <>Procura uma view filha com o ID especificado dentro da hierarquia da view.</>
-    },
-    {
-      signature: "toView(Object)",
-      returns: "View",
-      description: <>Retorna a propriedade <code>propriedade </code>objeto fornecido convertido como uma View``.</>
-    },
-    {
-      signature: "getIdOf(View)",
-      returns: "String",
-      description: <>Retorna a propriedade <code>propriedade </code>ID da view (sem o prefixo)``.</>
-    }
-  ]}
   staticMethods={[
     {
       signature: "isEditor()",
@@ -189,6 +102,11 @@ public class Editor
       signature: "getIdOf(View)",
       returns: "String",
       description: <>Retorna a propriedade <code>propriedade </code>ID da view (sem o prefixo)``.</>
+    },
+    {
+      signature: "requestJavaRecompile()",
+      returns: "Object",
+      description: <>Retorna o resultado de <code>requestJavaRecompile</code>.</>
     }
   ]}
 />

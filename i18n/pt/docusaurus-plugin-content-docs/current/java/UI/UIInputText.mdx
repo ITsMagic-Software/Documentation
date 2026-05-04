@@ -52,9 +52,64 @@ public class UIInputText extends Component
   ]}
   methods={[
     {
+      signature: "getColor()",
+      returns: "Color",
+      description: <>Retorna o valor atual de <code>color</code>.</>,
+    },
+    {
+      signature: "getText()",
+      returns: "String",
+      description: <>Retorna o valor atual de <code>text</code>.</>,
+    },
+    {
+      signature: "getTextSize()",
+      returns: "float",
+      description: <>Retorna o valor atual de <code>textSize</code>.</>,
+    },
+    {
       signature: "isEditing()",
       returns: "boolean",
-      description: <>Executa <code>isEditing</code> e retorna quando a chamada do motor termina.</>
+      description: <>Retorna se <code>editing</code> est? ativado.</>,
+    },
+    {
+      signature: "isExtractUI()",
+      returns: "boolean",
+      description: <>Retorna se <code>extractUI</code> est? ativado.</>,
+    },
+    {
+      signature: "getExtractUITitle()",
+      returns: "String",
+      description: <>Retorna o valor atual de <code>extractUITitle</code>.</>,
+    },
+    {
+      signature: "setColor(Color)",
+      returns: "void",
+      description: <>Define <code>color</code>.</>,
+    },
+    {
+      signature: "setEditing(boolean)",
+      returns: "void",
+      description: <>Define <code>editing</code>.</>,
+    },
+    {
+      signature: "setExtractUI(boolean)",
+      returns: "void",
+      description: <>Define <code>extractUI</code>.</>,
+    },
+    {
+      signature: "setExtractUITitle(String)",
+      returns: "void",
+      description: <>Define <code>extractUITitle</code>.</>,
+    },
+    {
+      signature: "setText(String)",
+      returns: "void",
+      description: <>Define <code>text</code>.</>,
+    },
+    {
+      signature: "setTextSize(float)",
+      returns: "void",
+      description: <>Define <code>textSize</code>.</>,
     }
   ]}
 />

@@ -40,29 +40,49 @@ public class UICustomPostProcessing extends Component
   ]}
   methods={[
     {
+      signature: "getShaderFile()",
+      returns: "String",
+      description: <>Retorna o valor atual de <code>shaderFile</code>.</>,
+    },
+    {
       signature: "setParam(String, float)",
       returns: "void",
-      description: <>Executa <code>setParam</code> e retorna quando a chamada do motor termina.</>
+      description: <>Define <code>param</code>.</>,
     },
     {
       signature: "setParam(String, Color)",
       returns: "void",
-      description: <>Executa <code>setParam</code> e retorna quando a chamada do motor termina.</>
+      description: <>Define <code>param</code>.</>,
     },
     {
       signature: "setParam(String, Texture)",
       returns: "void",
-      description: <>Executa <code>setParam</code> e retorna quando a chamada do motor termina.</>
+      description: <>Define <code>param</code>.</>,
     },
     {
       signature: "setParam(String, Object)",
       returns: "void",
-      description: <>Executa <code>setParam</code> e retorna quando a chamada do motor termina.</>
+      description: <>Define <code>param</code>.</>,
     },
     {
       signature: "setParam(String, float[])",
       returns: "void",
-      description: <>Executa <code>setParam</code> e retorna quando a chamada do motor termina.</>
+      description: <>Define <code>param</code>.</>,
+    },
+    {
+      signature: "setShaderFile(String)",
+      returns: "void",
+      description: <>Define <code>shaderFile</code>.</>,
+    },
+    {
+      signature: "getTime()",
+      returns: "float",
+      description: <>Retorna o valor atual de <code>time</code>.</>,
+    },
+    {
+      signature: "setTime(float)",
+      returns: "void",
+      description: <>Define <code>time</code>.</>,
     }
   ]}
 />

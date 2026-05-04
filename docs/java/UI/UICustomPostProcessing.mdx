@@ -40,29 +40,49 @@ public class UICustomPostProcessing extends Component
   ]}
   methods={[
     {
+      signature: "getShaderFile()",
+      returns: "String",
+      description: <>Returns the current <code>shaderFile</code> value.</>,
+    },
+    {
       signature: "setParam(String, float)",
       returns: "void",
-      description: <>Executes <code>setParam</code> and returns after the underlying engine call finishes.</>
+      description: <>Sets <code>param</code>.</>,
     },
     {
       signature: "setParam(String, Color)",
       returns: "void",
-      description: <>Executes <code>setParam</code> and returns after the underlying engine call finishes.</>
+      description: <>Sets <code>param</code>.</>,
     },
     {
       signature: "setParam(String, Texture)",
       returns: "void",
-      description: <>Executes <code>setParam</code> and returns after the underlying engine call finishes.</>
+      description: <>Sets <code>param</code>.</>,
     },
     {
       signature: "setParam(String, Object)",
       returns: "void",
-      description: <>Executes <code>setParam</code> and returns after the underlying engine call finishes.</>
+      description: <>Sets <code>param</code>.</>,
     },
     {
       signature: "setParam(String, float[])",
       returns: "void",
-      description: <>Executes <code>setParam</code> and returns after the underlying engine call finishes.</>
+      description: <>Sets <code>param</code>.</>,
+    },
+    {
+      signature: "setShaderFile(String)",
+      returns: "void",
+      description: <>Sets <code>shaderFile</code>.</>,
+    },
+    {
+      signature: "getTime()",
+      returns: "float",
+      description: <>Returns the current <code>time</code> value.</>,
+    },
+    {
+      signature: "setTime(float)",
+      returns: "void",
+      description: <>Sets <code>time</code>.</>,
     }
   ]}
 />

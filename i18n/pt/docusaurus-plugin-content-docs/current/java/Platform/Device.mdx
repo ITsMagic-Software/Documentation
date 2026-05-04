@@ -17,58 +17,6 @@ public class Device
 ```
 
 <ApiDoc
-  methods={[
-    {
-      signature: "getBatteryPercentage()",
-      returns: "int",
-      description: <>Retorna a propriedade <code>porcentagem de bateria do dispositivo</code>.</>
-    },
-    {
-      signature: "availableProcessors()",
-      returns: "int",
-      description: <>Retorna a propriedade <code>propriedade </code>número de processadores disponíveis no dispositivo``.</>
-    },
-    {
-      signature: "openURL(String)",
-      returns: "void",
-      description: <>Abre a URL especificada no navegador padrão.</>
-    },
-    {
-      signature: "openLink(String)",
-      returns: "void",
-      description: <>Abre o link especificada no navegador padrão.</>
-    },
-    {
-      signature: "vibrateOneShot(long)",
-      returns: "void",
-      description: <>Faz o dispositivo vibrar pela duração especificada (em milissegundos).</>
-    },
-    {
-      signature: "vibratePattern(long[], int)",
-      returns: "void",
-      description: <>Faz o dispositivo vibrar seguindo as durações de tempo (em milissegundos) definidas no array, alternando entre vibração e pausa (iniciando com pausa). Após percorrer todo o array, a repetição começa no índice especificado (-1 para não repetir).</>
-    },
-    {
-      signature: "stopVibrate()",
-      returns: "void",
-      description: <>Para qualquer vibração em andamento no dispositivo.</>
-    },
-    {
-      signature: "setMouseVisible(boolean)",
-      returns: "void",
-      description: <>Define a propriedade <code>visibilidade do cursor do mouse no dispositivo</code>.</>
-    },
-    {
-      signature: "setClipboard(String)",
-      returns: "void",
-      description: <>Copia o texto fornecido para a área de transferência do dispositivo.</>
-    },
-    {
-      signature: "getClipboard()",
-      returns: "String",
-      description: <>Retorna a propriedade <code>propriedade </code>texto da área de transferência do dispositivo``.</>
-    }
-  ]}
   staticMethods={[
     {
       signature: "getBatteryPercentage()",
@@ -119,6 +67,16 @@ public class Device
       signature: "getClipboard()",
       returns: "String",
       description: <>Retorna a propriedade <code>propriedade </code>texto da área de transferência do dispositivo``.</>
+    },
+    {
+      signature: "getAndroidID()",
+      returns: "Object",
+      description: <>Retorna o valor atual de <code>androidID</code>.</>
+    },
+    {
+      signature: "getAudioSampleRate()",
+      returns: "Object",
+      description: <>Retorna o valor atual de <code>audioSampleRate</code>.</>
     }
   ]}
 />
