@@ -102,7 +102,7 @@ const config = {
             position: 'left'
           },*/
           {
-            href: 'https://play.google.com/store/apps/details?id=com.itsmagic.enginestable',
+            href: 'https://play.google.com/store/apps/details?id=com.itsmagic.engine2',
             label: 'Download',
             position: 'right',
           },
@@ -138,7 +138,7 @@ const config = {
             items: [
               {
                 label: 'ITsMagic 1.0',
-                href: 'https://play.google.com/store/apps/details?id=com.itsmagic.enginestable',
+                href: 'https://play.google.com/store/apps/details?id=com.itsmagic.engine2',
               },
               {
                 label: 'ITsMagic 2.0',

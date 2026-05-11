@@ -33,3 +33,4 @@ None.
 
 - This is the final output node of the graph. In unlit or post-processing graphs the editor may show it simply as `Output`.
 - When `Vertex Pos` is connected, the displaced position is applied to the mesh, while the original world position is still passed to fragment nodes such as `World Position`.
+- When `ShaderGraphSettings.isPostProcessing` is `false`, the graph uses the easy shader path (`easy_vertex.glsl` and `easy_frag.glsl`) and the inspector shows `Wind effect` so you can drive `gsp_windIntensity` from the node binder.
