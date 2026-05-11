@@ -102,7 +102,7 @@ const config = {
             position: 'left'
           },*/
           {
-            href: 'https://play.google.com/store/apps/details?id=com.itsmagic.engine2',
+            to: '/docs/topics/basic-and-pro',
             label: 'Download',
             position: 'right',
           },
@@ -137,11 +137,11 @@ const config = {
             title: 'More',
             items: [
               {
-                label: 'ITsMagic 1.0',
-                href: 'https://play.google.com/store/apps/details?id=com.itsmagic.engine2',
+                label: 'ITsMagic BASIC',
+                href: 'https://play.google.com/store/apps/details?id=com.itsmagic.enginestable',
               },
               {
-                label: 'ITsMagic 2.0',
+                label: 'ITsMagic PRO',
                 href: 'https://play.google.com/store/apps/details?id=com.itsmagic.engine2',
               },
             ],
