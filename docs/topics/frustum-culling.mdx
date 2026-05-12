@@ -1,0 +1,28 @@
+---
+title: Frustum Culling
+sidebar_label: Frustum Culling
+sidebar_position: 4
+description: How ITsMagic automatically hides objects outside the active camera frustum.
+---
+
+# Frustum Culling
+
+ITsMagic uses frustum culling, also known as FOV culling, automatically and all the time.
+
+This feature has been part of the engine since 2021 and does not expose a switch to disable it. In practice, there is no useful workflow where turning it off would improve the result.
+
+## Why you do not see it directly in the editor
+
+When you preview a game through the editor panel, the editor camera is the one rendering the scene. That camera has its own frustum culling, so it activates the objects it can see.
+
+Because of that, you do not observe the game camera's frustum culling directly during a normal editor preview.
+
+To force the editor viewport to behave like the game camera for culling purposes, ITsMagic would need a dedicated debug mode that does not exist yet.
+
+## Why it matters
+
+Frustum culling is one of the reasons ITsMagic can keep scene rendering fast.
+
+Without it, performance would drop sharply, and in heavy scenes the engine would run at least 4 times worse.
+
+![Frustum culling example](/img/frustum-culling/frustum-culling.gif)
