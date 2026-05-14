@@ -1,0 +1,18 @@
+# Jump
+
+**Menu:** `Actions/Object/Transform`
+
+## Funcao
+
+Aplica o salto no `Characterbody` definindo o `jumpForce` com o valor da entrada antes de pular. Se o alvo usar `Rigidbody` ou `VehiclePhysics`, aplica uma forca para cima. Se nao houver componente de fisica, move o `Transform` para cima.
+
+## Entradas
+
+| Nome | Tipo | Padrao | Detalhes |
+| --- | --- | --- | --- |
+| `Object` | `GAME_OBJECT` | `Owner` | - |
+| `Intensity` | `NUMBER` | `7.5` | Forca usada no pulo. |
+
+## Saidas
+
+Nenhuma.

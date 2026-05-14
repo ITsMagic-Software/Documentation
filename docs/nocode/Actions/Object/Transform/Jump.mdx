@@ -1,0 +1,18 @@
+# Jump
+
+**Menu:** `Actions/Object/Transform`
+
+## Purpose
+
+Applies a jump to `Characterbody` by setting its `jumpForce` from the input value before jumping. If the target uses `Rigidbody` or `VehiclePhysics`, applies an upward force. If no physics component is present, moves the `Transform` upward.
+
+## Inputs
+
+| Name | Type | Default | Details |
+| --- | --- | --- | --- |
+| `Object` | `GAME_OBJECT` | `Owner` | - |
+| `Intensity` | `NUMBER` | `7.5` | Jump strength used by the node. |
+
+## Outputs
+
+None.
