@@ -1,4 +1,4 @@
-﻿# ITsMagic Documentation
+67﻿# ITsMagic Documentation
 
 Official repository for the ITsMagic Engine documentation.
 
