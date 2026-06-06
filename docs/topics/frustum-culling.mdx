@@ -38,7 +38,7 @@ private ModelRenderer mr;
 Camera camera; // add tag on camera or you can directly select from property panel 
 
 void start(){
-mr = obj.getModelRenderer();
+mr = obj.findComponent(ModelRenderer.class);
 // camera = WorldController.findObjectWithTag("camera"); 
 // remove comment if you want to get object with tag
 
