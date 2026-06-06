@@ -26,3 +26,29 @@ Frustum culling is one of the reasons ITsMagic can keep scene rendering fast.
 Without it, performance would drop sharply, and in heavy scenes the engine would run at least 4 times worse.
 
 ![Frustum culling example](/img/frustum-culling/frustum-culling.gif)
+
+
+## Frustum Culling example code
+
+```java
+SpatialObject obj; // select from property panel or you can use myObject
+private ModelRendere mr;
+
+// you need to take reference of your game camera 
+Camera camera; // add tag on camera or you can directly select from property panel 
+
+void start(){
+mr = obj.getModelRenderer();
+// camera = WorldController.findObjectWithTag("camera"); 
+// remove comment if you want to get object with tag
+
+void repeat(){
+  if(camera == null) return;
+  if(!camera.isVisible(mr)){
+   mr.setEnable(false);
+  }else{
+  mr.setEnable(true);
+  }
+}
+
+```
