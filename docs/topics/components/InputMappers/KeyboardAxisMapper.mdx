@@ -1,0 +1,41 @@
+# KeyboardAxisMapper
+
+`KeyboardAxisMapper` maps two physical keyboard buttons to one `Input` axis. The gameplay code keeps reading the axis name, while the mapper turns the keyboard into a digital source that feeds that axis. One key pushes negative, the other pushes positive, and if neither is pressed the axis stays at `0`.
+
+This is useful when:
+
+- You need WASD-style movement but the gameplay code reads an axis instead of raw keys.
+- You want left/right or up/down keyboard controls to feed the same axis system used by joysticks.
+- You want to keep movement code generic so it works with keyboard, gamepad, or mouse mappings.
+
+## Typical scenario
+
+A character controller reads `Input.getAxisValue("MoveHorizontal")` or a similar axis value. You can map `A` and `D` to the horizontal axis so that the same movement code works with a keyboard or a gamepad.
+
+Common patterns:
+
+- `A` / `D` -> horizontal movement
+- `W` / `S` -> vertical movement
+- `Left` / `Right` arrows -> vehicle steering or character movement
+
+## Example
+
+```java
+SpatialObject player = /* your object */ null;
+
+KeyboardAxisMapper moveX = player.addComponent(KeyboardAxisMapper.class);
+moveX.negativeKeyboardKey = "A";
+moveX.positiveKeyboardKey = "D";
+moveX.axisType = AxisType.HORIZONTAL;
+moveX.outputAxis = "MoveHorizontal";
+
+KeyboardAxisMapper moveY = player.addComponent(KeyboardAxisMapper.class);
+moveY.negativeKeyboardKey = "S";
+moveY.positiveKeyboardKey = "W";
+moveY.axisType = AxisType.VERTICAL;
+moveY.outputAxis = "MoveVertical";
+```
+
+## When to prefer it
+
+Use `KeyboardAxisMapper` when a keyboard control should feed an `Input` axis with a negative side and a positive side.

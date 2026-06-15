@@ -1,0 +1,41 @@
+# GamePadMapper
+
+`GamePadMapper` maps a physical gamepad button to an `Input` key. The idea is to keep systems reading the same key names while the mapper connects the controller button to those names.
+
+This is useful when:
+
+- You want the controller to trigger the same actions as the keyboard, such as `Jump`, `Fire`, or `Pause`.
+- You are adding gamepad support to an existing project and do not want to refactor gameplay code.
+- You want to support multiple control schemes while keeping a single input vocabulary.
+
+## Typical scenario
+
+An action system already reads named inputs like `Confirm`, `Back`, and `Pause`. Instead of duplicating logic for the gamepad, map the controller buttons to those same names.
+
+For example:
+
+- South button -> `Jump`
+- East button -> `Cancel`
+- Start button -> `Pause`
+
+## Example
+
+```java
+SpatialObject controllerObject = /* your object */ null;
+
+GamePadMapper jump = controllerObject.addComponent(GamePadMapper.class);
+jump.gamepadButton = Button.SOUTH;
+jump.outputKey = "Jump";
+
+GamePadMapper pause = controllerObject.addComponent(GamePadMapper.class);
+pause.gamepadButton = Button.START;
+pause.outputKey = "Pause";
+
+if (Input.isKeyDown("Pause")) {
+    Terminal.log("Pause action triggered");
+}
+```
+
+## When to prefer it
+
+Use `GamePadMapper` when a controller button should act like an existing named `Input` key in the input system.

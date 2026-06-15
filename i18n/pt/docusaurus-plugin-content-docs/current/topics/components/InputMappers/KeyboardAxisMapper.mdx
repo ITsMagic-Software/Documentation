@@ -1,0 +1,41 @@
+# KeyboardAxisMapper
+
+`KeyboardAxisMapper` mapeia dois botões físicos do teclado em um eixo de `Input`. O código de gameplay continua lendo o nome do eixo, enquanto o mapper transforma o teclado em uma fonte digital que alimenta esse eixo. Uma tecla empurra para o lado negativo, a outra para o lado positivo e, se nenhuma estiver pressionada, o eixo fica em `0`.
+
+Isso é útil quando:
+
+- Você precisa de movimento no estilo WASD, mas o código de gameplay lê um eixo em vez de teclas cruas.
+- Você quer que controles de esquerda/direita ou cima/baixo alimentem o mesmo sistema de eixos usado por joysticks.
+- Você quer manter o código de movimento genérico para funcionar com teclado, gamepad ou mouse.
+
+## Cenário típico
+
+Um controlador de personagem lê `Input.getAxisValue("MoveHorizontal")` ou um valor de eixo parecido. Você pode mapear `A` e `D` para o eixo horizontal para que o mesmo código funcione com teclado ou gamepad.
+
+Padrões comuns:
+
+- `A` / `D` -> movimento horizontal
+- `W` / `S` -> movimento vertical
+- Setas `Left` / `Right` -> direção de veículo ou movimento de personagem
+
+## Exemplo
+
+```java
+SpatialObject player = /* seu objeto */ null;
+
+KeyboardAxisMapper moveX = player.addComponent(KeyboardAxisMapper.class);
+moveX.negativeKeyboardKey = "A";
+moveX.positiveKeyboardKey = "D";
+moveX.axisType = AxisType.HORIZONTAL;
+moveX.outputAxis = "MoveHorizontal";
+
+KeyboardAxisMapper moveY = player.addComponent(KeyboardAxisMapper.class);
+moveY.negativeKeyboardKey = "S";
+moveY.positiveKeyboardKey = "W";
+moveY.axisType = AxisType.VERTICAL;
+moveY.outputAxis = "MoveVertical";
+```
+
+## Quando preferir
+
+Use `KeyboardAxisMapper` quando um controle de teclado precisar alimentar um eixo de `Input` com lado negativo e positivo.

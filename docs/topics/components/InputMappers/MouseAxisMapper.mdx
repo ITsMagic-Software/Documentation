@@ -1,0 +1,31 @@
+# MouseAxisMapper
+
+`MouseAxisMapper` maps physical mouse movement to an `Input` axis. The rest of the game keeps reading the axis name, and this component connects mouse slide to that axis. Unlike keyboard or gamepad axis mappers, the mouse only has one sliding system, so this component only needs the target axis name.
+
+This is useful when:
+
+- You want mouse movement to drive camera look, aiming, or other gameplay controls that should read an `Input` axis.
+- You already have systems that read named axes and you want the mouse to feed them directly.
+- You need to reuse the same axis name across different input sources.
+
+## Typical scenario
+
+A third-person camera reads `Input.getAxisValue("LookX")` and `Input.getAxisValue("LookY")`. The mouse can feed those axes while the rest of the camera system stays the same.
+
+Another common use is driving a vehicle camera, aiming reticle, or free-look control where the same axis can feed gameplay logic.
+
+## Example
+
+```java
+SpatialObject cameraRig = /* your object */ null;
+
+MouseAxisMapper lookX = cameraRig.addComponent(MouseAxisMapper.class);
+lookX.outputAxis = "LookX";
+
+MouseAxisMapper lookY = cameraRig.addComponent(MouseAxisMapper.class);
+lookY.outputAxis = "LookY";
+```
+
+## When to prefer it
+
+Use `MouseAxisMapper` when mouse motion should feed an `Input` axis, especially for camera and pointer-driven controls.

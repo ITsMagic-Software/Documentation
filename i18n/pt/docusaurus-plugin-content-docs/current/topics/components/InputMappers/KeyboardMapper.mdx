@@ -1,0 +1,44 @@
+# KeyboardMapper
+
+`KeyboardMapper` mapeia um botão físico do teclado em uma key de `Input`. A ideia é manter os sistemas de gameplay lendo os mesmos nomes de input, enquanto o mapper liga o dispositivo físico a esses nomes.
+
+Isso é útil quando:
+
+- Um sistema de gameplay já usa `Input.isKeyDown("Jump")`, `Input.isKeyPressed("Fire")` ou nomes parecidos.
+- Você quer remapear controles sem mexer nos sistemas que consomem o input.
+- Você precisa de layouts diferentes de teclado alimentando os mesmos nomes de ação.
+
+## Cenário típico
+
+Você tem um sistema de movimento ou combate que espera keys nomeadas como `Jump`, `Shoot` e `Interact`. Em vez de alterar esse sistema, você mapeia os botões físicos do teclado para esses nomes.
+
+Por exemplo:
+
+- `Space` -> `Jump`
+- `Left Ctrl` -> `Shoot`
+- `E` -> `Interact`
+
+O sistema continua lendo as mesmas keys de input, então o código de gameplay não precisa mudar.
+
+## Exemplo
+
+```java
+SpatialObject player = /* seu objeto */ null;
+
+KeyboardMapper jump = player.addComponent(KeyboardMapper.class);
+jump.keyboardKey = "Space";
+jump.outputKey = "Jump";
+
+KeyboardMapper shoot = player.addComponent(KeyboardMapper.class);
+shoot.keyboardKey = "LeftCtrl";
+shoot.outputKey = "Shoot";
+
+// O código existente continua usando os mesmos nomes de input.
+if (Input.isKeyDown("Jump")) {
+    Terminal.log("Ação de pulo disparada");
+}
+```
+
+## Quando preferir
+
+Use `KeyboardMapper` quando o controle for um único botão e o sistema alvo precisar continuar lendo o mesmo nome de key em `Input`.

@@ -1,0 +1,41 @@
+# MouseMapper
+
+`MouseMapper` mapeia um botão físico do mouse em uma key de `Input`. A ideia é a mesma do teclado: os sistemas continuam lendo inputs nomeados, e o mapper faz a ligação entre o dispositivo físico e esses nomes.
+
+Isso é útil quando:
+
+- Um sistema de gameplay já escuta nomes de key do `Input` e não deve ser reescrito.
+- Você quer que cliques do mouse acionem ações como `Confirm`, `Cancel`, `Fire` ou `Select`.
+- Você precisa alternar entre teclado e mouse sem mudar o código consumidor.
+
+## Cenário típico
+
+Um sistema de gameplay espera uma ação chamada `Select`, enquanto outra parte do jogo espera `Fire`. Você pode mapear o botão esquerdo do mouse para um desses nomes e manter o resto do código intacto.
+
+Por exemplo:
+
+- Botão esquerdo -> `Select`
+- Botão direito -> `Cancel`
+- Botão do meio -> `OpenMenu`
+
+## Exemplo
+
+```java
+SpatialObject uiObject = /* seu objeto */ null;
+
+MouseMapper select = uiObject.addComponent(MouseMapper.class);
+select.mouseButton = Button.LEFT;
+select.outputKey = "Select";
+
+MouseMapper cancel = uiObject.addComponent(MouseMapper.class);
+cancel.mouseButton = Button.RIGHT;
+cancel.outputKey = "Cancel";
+
+if (Input.isKeyDown("Select")) {
+    Terminal.log("Seleção pelo mouse disparada");
+}
+```
+
+## Quando preferir
+
+Use `MouseMapper` para ações acionadas por clique que devem se comportar como uma key normal do sistema de `Input`.

@@ -1,0 +1,31 @@
+# MouseAxisMapper
+
+`MouseAxisMapper` mapeia o movimento físico do mouse em um eixo de `Input`. O restante do jogo continua lendo o nome do eixo, e esse componente liga o slide do mouse a esse eixo. Diferente dos mapeadores de teclado ou gamepad, o mouse só tem um sistema de slide, então esse componente só precisa do nome do eixo de destino.
+
+Isso é útil quando:
+
+- Você quer que o movimento do mouse controle câmera, mira ou outros controles de gameplay que leem um eixo de `Input`.
+- Você já tem sistemas que leem eixos nomeados e quer que o mouse alimente esses eixos diretamente.
+- Você precisa reutilizar o mesmo nome de eixo em diferentes fontes de input.
+
+## Cenário típico
+
+Uma câmera em terceira pessoa lê `Input.getAxisValue("LookX")` e `Input.getAxisValue("LookY")`. O mouse pode alimentar esses eixos enquanto o restante do sistema de câmera continua igual.
+
+Outro uso comum é controlar uma câmera de veículo, uma mira ou um free-look, onde o mesmo eixo alimenta a lógica de gameplay.
+
+## Exemplo
+
+```java
+SpatialObject cameraRig = /* seu objeto */ null;
+
+MouseAxisMapper lookX = cameraRig.addComponent(MouseAxisMapper.class);
+lookX.outputAxis = "LookX";
+
+MouseAxisMapper lookY = cameraRig.addComponent(MouseAxisMapper.class);
+lookY.outputAxis = "LookY";
+```
+
+## Quando preferir
+
+Use `MouseAxisMapper` quando o movimento do mouse precisar alimentar um eixo de `Input`, especialmente para câmera e controles baseados em ponteiro.

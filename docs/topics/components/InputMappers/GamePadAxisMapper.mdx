@@ -1,0 +1,33 @@
+# GamePadAxisMapper
+
+`GamePadAxisMapper` maps a physical gamepad axis to an `Input` axis. The gameplay systems keep reading the axis name, while this component converts the controller stick into that axis.
+
+This is useful when:
+
+- You need analog movement for walking, driving, aiming, or camera control.
+- You want left stick and right stick data to feed different named axes.
+- You want the same gameplay code to work with a controller, keyboard, or virtual joystick.
+
+## Typical scenario
+
+A character controller reads `MoveHorizontal` and `MoveVertical`, while a camera system reads `LookHorizontal` and `LookVertical`. You can map controller axes directly into those names and keep the controller logic separate from gameplay logic.
+
+## Example
+
+```java
+SpatialObject controllerObject = /* your object */ null;
+
+GamePadAxisMapper moveX = controllerObject.addComponent(GamePadAxisMapper.class);
+moveX.gamepadAxis = Axis.AXIS_X;
+moveX.axisType = AxisType.HORIZONTAL;
+moveX.outputAxis = "MoveHorizontal";
+
+GamePadAxisMapper moveY = controllerObject.addComponent(GamePadAxisMapper.class);
+moveY.gamepadAxis = Axis.AXIS_Y;
+moveY.axisType = AxisType.VERTICAL;
+moveY.outputAxis = "MoveVertical";
+```
+
+## When to prefer it
+
+Use `GamePadAxisMapper` when controller sticks should drive a signed `Input` axis and the rest of the game should only know the axis name.

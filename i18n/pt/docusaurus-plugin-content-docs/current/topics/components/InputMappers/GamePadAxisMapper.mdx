@@ -1,0 +1,33 @@
+# GamePadAxisMapper
+
+`GamePadAxisMapper` mapeia um eixo físico do gamepad em um eixo de `Input`. O gameplay continua lendo o nome do eixo, enquanto esse componente converte o analógico do controle para esse eixo.
+
+Isso é útil quando:
+
+- Você precisa de movimento analógico para andar, dirigir, mirar ou controlar a câmera.
+- Você quer que o analógico esquerdo e o analógico direito alimentem eixos nomeados diferentes.
+- Você quer que o mesmo código de gameplay funcione com controle, teclado ou joystick virtual.
+
+## Cenário típico
+
+Um controlador de personagem lê `MoveHorizontal` e `MoveVertical`, enquanto um sistema de câmera lê `LookHorizontal` e `LookVertical`. Você pode mapear os eixos do controle diretamente para esses nomes e manter a lógica do controle separada da lógica de gameplay.
+
+## Exemplo
+
+```java
+SpatialObject controllerObject = /* seu objeto */ null;
+
+GamePadAxisMapper moveX = controllerObject.addComponent(GamePadAxisMapper.class);
+moveX.gamepadAxis = Axis.AXIS_X;
+moveX.axisType = AxisType.HORIZONTAL;
+moveX.outputAxis = "MoveHorizontal";
+
+GamePadAxisMapper moveY = controllerObject.addComponent(GamePadAxisMapper.class);
+moveY.gamepadAxis = Axis.AXIS_Y;
+moveY.axisType = AxisType.VERTICAL;
+moveY.outputAxis = "MoveVertical";
+```
+
+## Quando preferir
+
+Use `GamePadAxisMapper` quando os analógicos do controle precisarem dirigir um eixo de `Input` com sinal, e o resto do jogo só precisar conhecer o nome desse eixo.
