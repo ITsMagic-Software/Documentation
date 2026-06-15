@@ -1,0 +1,47 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
+# GamePadMapper
+
+Referência completa da API de `GamePadMapper`, incluindo construtores, atributos e atributos virtuais.
+
+**Pacote:** `JAVARuntime`
+
+**Categoria:** Input Mappers
+
+**Componente:** sim
+
+---
+
+```java
+public class GamePadMapper extends Component
+```
+
+<ApiDoc
+  constructors={[
+    {
+      signature: "GamePadMapper()",
+      description: <>Cria uma nova instância de GamePadMapper.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "instance",
+      type: "GamePadMapper",
+      description: <>Representa o valor de <code>instance</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    }
+  ]}
+  virtualAttributes={[
+    {
+      name: "gamepadButton",
+      type: "Button",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getGamepadButton</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "outputKey",
+      type: "String",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getOutputKey</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    }
+  ]}
+/>

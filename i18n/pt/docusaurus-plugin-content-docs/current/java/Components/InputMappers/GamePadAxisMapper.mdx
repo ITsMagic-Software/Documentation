@@ -1,0 +1,53 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
+# GamePadAxisMapper
+
+Referência completa da API de `GamePadAxisMapper`, incluindo construtores, atributos e atributos virtuais.
+
+**Pacote:** `JAVARuntime`
+
+**Categoria:** Input Mappers
+
+**Componente:** sim
+
+---
+
+```java
+public class GamePadAxisMapper extends Component
+```
+
+<ApiDoc
+  constructors={[
+    {
+      signature: "GamePadAxisMapper()",
+      description: <>Cria uma nova instância de GamePadAxisMapper.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "instance",
+      type: "GamePadAxisMapper",
+      description: <>Representa o valor de <code>instance</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    }
+  ]}
+  virtualAttributes={[
+    {
+      name: "gamepadAxis",
+      type: "Axis",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getGamepadAxis</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "axisType",
+      type: "AxisType",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getAxisType</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "outputAxis",
+      type: "String",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getOutputAxis</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    }
+  ]}
+/>

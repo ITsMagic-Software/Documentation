@@ -1,0 +1,47 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
+# MouseMapper
+
+Complete API reference for `MouseMapper`, including constructors, attributes, and virtual attributes.
+
+**Package:** `JAVARuntime`
+
+**Category:** Input Mappers
+
+**Component:** yes
+
+---
+
+```java
+public class MouseMapper extends Component
+```
+
+<ApiDoc
+  constructors={[
+    {
+      signature: "MouseMapper()",
+      description: <>Creates a new instance of MouseMapper.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "instance",
+      type: "MouseMapper",
+      description: <>Represents the <code>instance</code> value stored on this instance. Read or assign to update the property.</>
+    }
+  ]}
+  virtualAttributes={[
+    {
+      name: "mouseButton",
+      type: "Button",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getMouseButton</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "outputKey",
+      type: "String",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getOutputKey</code>. Access it like a field to read or write the underlying value.</>
+    }
+  ]}
+/>
