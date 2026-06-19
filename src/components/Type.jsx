@@ -179,7 +179,7 @@ const types = {
   JsonSerializer: "/docs/java/Uncategorized/JsonSerializer",
   Key: "/docs/java/Input/Key",
   KeyboardButton: "/docs/java/Input/KeyboardButton",
-  KeyboardMapper: "/docs/java/Components/Input/KeyboardMapper",
+  KeyboardMapper: "/docs/java/Components/InputMappers/KeyboardMapper",
   Laser: "/docs/java/Laser/Laser",
   LaserHit: "/docs/java/Laser/LaserHit",
   LensDistortion: "/docs/java/Components/Post processing/LensDistortion",

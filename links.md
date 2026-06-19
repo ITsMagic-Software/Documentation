@@ -992,7 +992,7 @@ https://itsmagic.com.br/documentation/docs/Java/Uncategorized/InvokeListener
 https://itsmagic.com.br/documentation/docs/Java/Java/JClass
 
 [KeyboardMapper]:
-https://itsmagic.com.br/documentation/docs/Java/Components/Input/KeyboardMapper
+https://itsmagic.com.br/documentation/docs/Java/Components/InputMappers/KeyboardMapper
 
 [LOD]:
 https://itsmagic.com.br/documentation/docs/Java/Components/TODO/LOD
