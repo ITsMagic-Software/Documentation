@@ -1,0 +1,35 @@
+# Usando GalleryPicker
+
+`GalleryPicker` abre o seletor da galeria e retorna o nome da imagem selecionada junto com o arquivo da imagem.
+Use quando você precisar permitir que o usuário escolha uma imagem existente do dispositivo.
+
+## Fluxo básico
+
+1. Abra o seletor com `GalleryPicker.open(...)`.
+2. Leia os valores `imageName` e `imageFile` no `onSuccess`.
+3. Use o `File` retornado conforme a sua lógica.
+
+## Exemplo
+
+```java
+GalleryPicker.open(new GalleryPicker.Listener() {
+    public void onSuccess(String imageName, File imageFile) {
+        Terminal.log(imageName);
+        Terminal.log(imageFile.getAbsolutePath());
+    }
+
+    public void onCancel() {
+        Terminal.log("Seletor da galeria cancelado");
+    }
+
+    public void onError(String error) {
+        Terminal.log(error);
+    }
+});
+```
+
+## Observações
+
+- `onSuccess` recebe o nome da imagem e o arquivo selecionado.
+- `onCancel` executa quando o usuário fecha o seletor sem escolher uma imagem.
+- `onError` executa quando o seletor não consegue concluir a operação.

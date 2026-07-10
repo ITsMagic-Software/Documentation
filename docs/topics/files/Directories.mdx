@@ -1,0 +1,40 @@
+# Using Directories
+
+`Directories` provides the engine paths you use most often when working with files.
+The two main methods are `internal()` and `getProjectFolder()`.
+
+## Methods
+
+### `internal()`
+
+Returns the engine internal writable folder.
+
+- In the editor, it points to `project/internal`.
+- In the APK, it points to the app data folder.
+
+Use this path for files that belong to the game itself.
+
+### `getProjectFolder()`
+
+Returns the currently loaded project folder.
+
+- It only works in the editor.
+- In the APK, it returns the same value as `internal()`.
+
+Use this path only for systems that run exclusively in the editor and are not intended to run in the APK.
+
+## Example
+
+```java
+String internalPath = Directories.internal();
+String projectPath = Directories.getProjectFolder();
+
+File internalFile = new File(internalPath + "/cache/test.txt");
+File projectFile = new File(projectPath + "Files/test.txt");
+```
+
+## Practical notes
+
+- `internal()` should be used for files that belong to the game itself.
+- `getProjectFolder()` should only be used by systems that run exclusively in the editor and are not intended to run in the APK.
+- If a system may run in the APK, do not use `getProjectFolder()`, because it will break there.

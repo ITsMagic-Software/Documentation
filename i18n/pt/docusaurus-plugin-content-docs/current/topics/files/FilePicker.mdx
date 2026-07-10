@@ -1,0 +1,42 @@
+# Usando FilePicker para importar arquivos
+
+`FilePicker` abre o seletor nativo e retorna os itens selecionados como `FilePicker.DFile`.
+Depois que o usuário escolhe um arquivo, você pode importá-lo para um `JAVARuntime.File` gravável.
+
+## Fluxo básico
+
+1. Abra o seletor com `FilePicker.open(...)`.
+2. Leia o `DFile` selecionado no callback `onSuccess`.
+3. Crie o arquivo de destino usando `Directories.internal()`.
+4. Importe o arquivo com `DFile.importTo(destination)` ou `FilePicker.importFile(...)`.
+
+## Exemplo
+
+```java
+FilePicker.open(new FilePicker.Listener() {
+    public void onSuccess(List<FilePicker.DFile> files) {
+        if (files == null || files.isEmpty()) {
+            return;
+        }
+
+        FilePicker.DFile selected = files.get(0);
+        File destination = new File(Directories.internal() + "/imports/" + selected.getName());
+
+        selected.importTo(destination);
+    }
+
+    public void onCancel() {
+        Terminal.log("Seletor cancelado");
+    }
+
+    public void onError(String error) {
+        Terminal.log(error);
+    }
+});
+```
+
+## Observações
+
+- `Directories.internal()` retorna `project/internal` no editor e a pasta de dados do aplicativo no APK.
+- Crie a pasta de destino antes, se necessário.
+- Se você já tiver um `DFile`, pode chamar `importTo(destination)` diretamente.
