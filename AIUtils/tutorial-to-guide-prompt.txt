@@ -1,0 +1,165 @@
+PROMPT — TRANSFORMAR UM TUTORIAL BRUTO EM UM GUIDE DA ITSMAGIC ENGINE
+
+Você é responsável por transformar um tutorial bruto da ITsMagic Engine em um guide oficial, claro e fácil de seguir para usuários iniciantes.
+
+REPOSITÓRIO
+
+O repositório é uma documentação Docusaurus da ITsMagic Engine 2.0.
+
+Categorias principais da documentação:
+
+1. Guides
+2. Concepts
+3. API Reference (Java, Lua)
+4. Visual Scripting (NoCode)
+5. Material Graph
+6. Community
+
+O idioma principal dos arquivos em docs/ é inglês. A tradução em português fica em:
+
+i18n/pt/docusaurus-plugin-content-docs/current/
+
+LOCAL DOS ARQUIVOS BRUTOS DO TUTORIAL
+
+Analise todos os arquivos dentro do caminho abaixo, incluindo arquivos Markdown, TXT, imagens, vídeos e quaisquer outros arquivos relevantes:
+
+[COLE AQUI O CAMINHO ABSOLUTO DA PASTA DO TUTORIAL]
+
+Este é o único campo que precisa ser editado antes de enviar o prompt. Não peça ao usuário outros dados: extraia todas as informações necessárias dos arquivos encontrados nessa pasta.
+
+OBJETIVO
+
+Criar um novo guide dentro da categoria Guides para ensinar o conteúdo do tutorial a usuários que estão começando a usar o aplicativo ITsMagic.
+
+Antes de escrever, leia e analise todos os arquivos brutos do tutorial. Use as imagens como evidência da interface e preserve a ordem real das ações mostradas. Não invente botões, telas, opções ou comportamentos que não estejam presentes nos arquivos fornecidos.
+
+TÍTULO DO GUIDE
+
+Extraia o título principal a partir dos arquivos brutos do tutorial. Procure primeiro por títulos ou metadados nos arquivos Markdown, TXT ou de contexto. Se não houver um título explícito, deduza um título curto e descritivo com base no objetivo e no fluxo de ações do tutorial.
+
+Crie automaticamente:
+
+- Um título claro em inglês para a versão em docs/.
+- Um título natural em português para a versão em i18n/pt/.
+
+O título deve descrever o resultado que o usuário aprenderá a alcançar. Evite títulos genéricos como "Tutorial" ou "Guide" e não copie nomes internos de testes automatizados quando eles não representarem o objetivo real para o usuário.
+
+Antes de criar os arquivos, informe qual título foi extraído ou deduzido em inglês e qual tradução em português será usada.
+
+REGRAS DE CONTEÚDO
+
+- Escreva para iniciantes que talvez nunca tenham usado a ITsMagic Engine.
+- Explique brevemente o objetivo do guide antes dos passos.
+- Use linguagem simples, amigável e direta.
+- Organize o tutorial em passos numerados e subtítulos claros.
+- Mantenha exatamente a ordem das ações do tutorial original.
+- Preserve os nomes dos controles da interface em inglês quando eles aparecerem no aplicativo, por exemplo: New project, Confirm e Create project.
+- Explique em uma frase curta por que uma ação é necessária quando isso ajudar um iniciante.
+- Não trate valores exibidos nas imagens como obrigatórios se forem apenas exemplos ou nomes de teste.
+- Se o tutorial usar um nome, valor ou texto de exemplo, diga ao usuário para escolher um valor apropriado para o próprio projeto quando necessário.
+- Explique o resultado esperado ao final do guide.
+- Adicione uma seção de observações ou próximos passos somente quando ela for sustentada pelo tutorial ou por informações seguras e diretamente relacionadas ao fluxo.
+- Não transforme o guide em uma referência completa da API.
+- Não adicione informações especulativas.
+
+IMAGENS
+
+- Copie as imagens relevantes para uma pasta apropriada dentro de static/img/guides/.
+- Organize as imagens em uma subpasta com um nome curto baseado no guide.
+- Preserve a ordem das imagens.
+- Use nomes de arquivo seguros, em minúsculas quando possível, sem espaços desnecessários.
+- Inclua cada imagem no passo correspondente usando um caminho absoluto do site, por exemplo:
+
+![Descrição curta da ação](/img/guides/slug-gerado-automaticamente/01-acao.png)
+
+- Escreva alt text descritivo e acessível.
+- Não inclua imagens que não ajudam a explicar o fluxo.
+
+ARQUIVOS A CRIAR OU ATUALIZAR
+
+Crie a versão em inglês em:
+
+docs/guides/slug-gerado-automaticamente.mdx
+
+Crie a versão em português em:
+
+i18n/pt/docusaurus-plugin-content-docs/current/guides/slug-gerado-automaticamente.mdx
+
+Use o mesmo caminho relativo e o mesmo nome de arquivo nas duas versões.
+
+Se a categoria Guides ainda não existir, crie também:
+
+docs/guides/_category_.json
+i18n/pt/docusaurus-plugin-content-docs/current/guides/_category_.json
+
+Não altere a ordem das categorias principais. Guides deve permanecer na posição 1.
+
+FORMATO RECOMENDADO DO GUIDE
+
+Use uma estrutura semelhante a esta:
+
+# Título do guide
+
+Parágrafo curto explicando o que o usuário aprenderá.
+
+## Steps
+
+### 1. Título da primeira ação
+
+Explicação curta da ação.
+
+![Alt text](/img/guides/slug-gerado-automaticamente/01-acao.png)
+
+### 2. Título da segunda ação
+
+Explicação curta da ação.
+
+![Alt text](/img/guides/slug-gerado-automaticamente/02-acao.png)
+
+## Resultado
+
+Explique o que o usuário deve ter ao final e qual pode ser o próximo passo.
+
+Na versão em português, traduza todo o texto explicativo, mas preserve os nomes dos controles da interface quando eles forem nomes reais exibidos pelo aplicativo.
+
+LINKS E REFERÊNCIAS
+
+- Use links relativos entre páginas da documentação.
+- Guides devem usar links como ./outro-guide quando estiverem na mesma categoria.
+- Para Concepts, use caminhos como ../concepts/nome-da-pagina quando necessário.
+- Para API Reference, use caminhos como ../api-reference/Categoria/NomeDaClasse quando necessário.
+- Confirme que cada página apontada pelo guide realmente existe.
+- Não use links para categorias que não possuem uma página index.mdx.
+
+VALIDAÇÃO
+
+Depois de criar os arquivos:
+
+1. Verifique se as imagens usadas realmente existem.
+2. Verifique se os arquivos inglês e português têm a mesma estrutura e a mesma ordem de imagens.
+3. Procure por links quebrados ou caminhos antigos.
+4. Execute o build do idioma inglês:
+
+npm run build -- --locale en
+
+5. Execute o build do idioma português:
+
+npm run build -- --locale pt
+
+6. Corrija qualquer erro de Markdown, MDX, imagem, tradução ou link quebrado encontrado no build.
+
+RESPOSTA FINAL
+
+O slug do guide, o nome da pasta de imagens e todos os demais nomes de arquivos devem ser gerados automaticamente a partir do título extraído. Não deixe campos para o usuário preencher.
+
+Ao terminar, informe:
+
+- O título do guide em inglês e português.
+- Os caminhos dos arquivos MDX criados.
+- O caminho da pasta de imagens.
+- Um resumo curto do conteúdo gerado.
+- O resultado dos builds en e pt.
+
+IMPORTANTE
+
+Não apenas copie o texto bruto. Primeiro compreenda o fluxo, depois reescreva-o como uma documentação didática e consistente com os outros Guides da ITsMagic Engine.
