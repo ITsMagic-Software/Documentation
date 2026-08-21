@@ -3,12 +3,12 @@
 Official repository for the ITsMagic Engine documentation.
 
 - Documentation site: https://itsmagic.com.br/documentation
-- Repository & contribution guide: https://itsmagic.com.br/documentation/docs/topics/documentation-repository
+- Repository & contribution guide: https://itsmagic.com.br/documentation/docs/concepts/documentation-repository
 
 ## How to contribute
 
 1. Fork the repository.
-2. Create or edit files in `docs/` (or `docs/topics/`).
+2. Create or edit files in `docs/` (or `docs/concepts/`).
 3. Keep translations in sync under `i18n/pt/docusaurus-plugin-content-docs/current/`.
 4. Commit and open a Pull Request.
 

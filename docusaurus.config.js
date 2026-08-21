@@ -104,7 +104,7 @@ const config = {
             position: 'left'
           },*/
           {
-            to: '/docs/topics/basic-and-pro',
+            to: '/docs/concepts/basic-and-pro',
             label: 'Download',
             position: 'right',
           },
